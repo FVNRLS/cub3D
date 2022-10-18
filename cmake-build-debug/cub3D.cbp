@@ -78,6 +78,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/incl/cub3D.h">
+			<Option target="cub3D"/>
+		</Unit>
 		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/main.c">
 			<Option target="cub3D"/>
 		</Unit>
