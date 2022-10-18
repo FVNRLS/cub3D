@@ -1,5 +1,5 @@
 CMakeFiles/cub3D.dir/src/main.c.o: \
-  /Users/rmazurit/Documents/42_Projects/cub3D/src/main.c \
+  /Users/hoomen/CLionProjects/cub3D/src/main.c \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/stdio.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/_stdio.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/sys/cdefs.h \
