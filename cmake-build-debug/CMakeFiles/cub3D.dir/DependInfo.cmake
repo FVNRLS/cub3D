@@ -14,6 +14,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/rmazurit/Documents/42_Projects/cub3D/src/parser/map_parser.c" "CMakeFiles/cub3D.dir/src/parser/map_parser.c.o" "gcc" "CMakeFiles/cub3D.dir/src/parser/map_parser.c.o.d"
   "/Users/rmazurit/Documents/42_Projects/cub3D/src/parser/parser.c" "CMakeFiles/cub3D.dir/src/parser/parser.c.o" "gcc" "CMakeFiles/cub3D.dir/src/parser/parser.c.o.d"
   "/Users/rmazurit/Documents/42_Projects/cub3D/src/parser/textures_parser.c" "CMakeFiles/cub3D.dir/src/parser/textures_parser.c.o" "gcc" "CMakeFiles/cub3D.dir/src/parser/textures_parser.c.o.d"
+  "/Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_strlen.c" "CMakeFiles/cub3D.dir/src/tools/ft_strlen.c.o" "gcc" "CMakeFiles/cub3D.dir/src/tools/ft_strlen.c.o.d"
+  "/Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_strncmp.c" "CMakeFiles/cub3D.dir/src/tools/ft_strncmp.c.o" "gcc" "CMakeFiles/cub3D.dir/src/tools/ft_strncmp.c.o.d"
   )
 
 # Targets to which this target links.

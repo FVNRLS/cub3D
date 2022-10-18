@@ -1,6 +1,6 @@
-CMakeFiles/cub3D.dir/src/message_printer.c.o: \
-  /Users/rmazurit/Documents/42_Projects/cub3D/src/message_printer.c \
-  /Users/rmazurit/Documents/42_Projects/cub3D/src/../incl/cub3D.h \
+CMakeFiles/cub3D.dir/src/tools/ft_strncmp.c.o: \
+  /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_strncmp.c \
+  /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/../../incl/cub3D.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/stdlib.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/Availability.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/AvailabilityVersions.h \
@@ -102,6 +102,6 @@ CMakeFiles/cub3D.dir/src/message_printer.c.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_o_dsync.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_s_ifmt.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_filesec_t.h \
-  /Users/rmazurit/Documents/42_Projects/cub3D/src/../incl/struct.h \
-  /Users/rmazurit/Documents/42_Projects/cub3D/src/../incl/errors.h \
-  /Users/rmazurit/Documents/42_Projects/cub3D/src/../incl/tools.h
+  /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/../../incl/struct.h \
+  /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/../../incl/errors.h \
+  /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/../../incl/tools.h

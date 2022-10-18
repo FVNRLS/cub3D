@@ -273,6 +273,54 @@ src/parser/textures_parser.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/parser/textures_parser.c.s
 .PHONY : src/parser/textures_parser.c.s
 
+src/tools/ft_strlen.o: src/tools/ft_strlen.c.o
+.PHONY : src/tools/ft_strlen.o
+
+# target to build an object file
+src/tools/ft_strlen.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_strlen.c.o
+.PHONY : src/tools/ft_strlen.c.o
+
+src/tools/ft_strlen.i: src/tools/ft_strlen.c.i
+.PHONY : src/tools/ft_strlen.i
+
+# target to preprocess a source file
+src/tools/ft_strlen.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_strlen.c.i
+.PHONY : src/tools/ft_strlen.c.i
+
+src/tools/ft_strlen.s: src/tools/ft_strlen.c.s
+.PHONY : src/tools/ft_strlen.s
+
+# target to generate assembly for a file
+src/tools/ft_strlen.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_strlen.c.s
+.PHONY : src/tools/ft_strlen.c.s
+
+src/tools/ft_strncmp.o: src/tools/ft_strncmp.c.o
+.PHONY : src/tools/ft_strncmp.o
+
+# target to build an object file
+src/tools/ft_strncmp.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_strncmp.c.o
+.PHONY : src/tools/ft_strncmp.c.o
+
+src/tools/ft_strncmp.i: src/tools/ft_strncmp.c.i
+.PHONY : src/tools/ft_strncmp.i
+
+# target to preprocess a source file
+src/tools/ft_strncmp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_strncmp.c.i
+.PHONY : src/tools/ft_strncmp.c.i
+
+src/tools/ft_strncmp.s: src/tools/ft_strncmp.c.s
+.PHONY : src/tools/ft_strncmp.s
+
+# target to generate assembly for a file
+src/tools/ft_strncmp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_strncmp.c.s
+.PHONY : src/tools/ft_strncmp.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -300,6 +348,12 @@ help:
 	@echo "... src/parser/textures_parser.o"
 	@echo "... src/parser/textures_parser.i"
 	@echo "... src/parser/textures_parser.s"
+	@echo "... src/tools/ft_strlen.o"
+	@echo "... src/tools/ft_strlen.i"
+	@echo "... src/tools/ft_strlen.s"
+	@echo "... src/tools/ft_strncmp.o"
+	@echo "... src/tools/ft_strncmp.i"
+	@echo "... src/tools/ft_strncmp.s"
 .PHONY : help
 
 

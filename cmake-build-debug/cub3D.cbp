@@ -87,6 +87,9 @@
 		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/incl/struct.h">
 			<Option target="cub3D"/>
 		</Unit>
+		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/incl/tools.h">
+			<Option target="cub3D"/>
+		</Unit>
 		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/main.c">
 			<Option target="cub3D"/>
 		</Unit>
@@ -103,6 +106,12 @@
 			<Option target="cub3D"/>
 		</Unit>
 		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/parser/textures_parser.c">
+			<Option target="cub3D"/>
+		</Unit>
+		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_strlen.c">
+			<Option target="cub3D"/>
+		</Unit>
+		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_strncmp.c">
 			<Option target="cub3D"/>
 		</Unit>
 		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/CMakeLists.txt">

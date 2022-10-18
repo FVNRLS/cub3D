@@ -7,8 +7,16 @@ add_executable(cub3D src/main.c
 
         incl/cub3D.h
         incl/struct.h
+        incl/errors.h
+        incl/tools.h
 
         src/parser/textures_parser.c
         src/parser/colors_parser.c
 
-        src/parser/map_parser.c src/parser/parser.c src/message_printer.c incl/errors.h)
+        src/parser/map_parser.c
+        src/parser/parser.c
+
+        src/message_printer.c
+        src/tools/ft_strlen.c
+        src/tools/ft_strncmp.c
+        )

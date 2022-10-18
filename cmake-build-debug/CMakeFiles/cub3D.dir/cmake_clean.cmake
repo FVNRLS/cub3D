@@ -11,6 +11,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/cub3D.dir/src/parser/parser.c.o.d"
   "CMakeFiles/cub3D.dir/src/parser/textures_parser.c.o"
   "CMakeFiles/cub3D.dir/src/parser/textures_parser.c.o.d"
+  "CMakeFiles/cub3D.dir/src/tools/ft_strlen.c.o"
+  "CMakeFiles/cub3D.dir/src/tools/ft_strlen.c.o.d"
+  "CMakeFiles/cub3D.dir/src/tools/ft_strncmp.c.o"
+  "CMakeFiles/cub3D.dir/src/tools/ft_strncmp.c.o.d"
   "cub3D"
   "cub3D.pdb"
 )
