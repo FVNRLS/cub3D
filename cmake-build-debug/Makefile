@@ -57,10 +57,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/hoomen/CLionProjects/cub3D
+CMAKE_SOURCE_DIR = /Users/rmazurit/Documents/42_Projects/cub3D
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/hoomen/CLionProjects/cub3D/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hoomen/CLionProjects/cub3D/cmake-build-debug/CMakeFiles /Users/hoomen/CLionProjects/cub3D/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/CMakeFiles /Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hoomen/CLionProjects/cub3D/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -153,6 +153,126 @@ src/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/main.c.s
 .PHONY : src/main.c.s
 
+src/message_printer.o: src/message_printer.c.o
+.PHONY : src/message_printer.o
+
+# target to build an object file
+src/message_printer.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/message_printer.c.o
+.PHONY : src/message_printer.c.o
+
+src/message_printer.i: src/message_printer.c.i
+.PHONY : src/message_printer.i
+
+# target to preprocess a source file
+src/message_printer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/message_printer.c.i
+.PHONY : src/message_printer.c.i
+
+src/message_printer.s: src/message_printer.c.s
+.PHONY : src/message_printer.s
+
+# target to generate assembly for a file
+src/message_printer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/message_printer.c.s
+.PHONY : src/message_printer.c.s
+
+src/parser/colors_parser.o: src/parser/colors_parser.c.o
+.PHONY : src/parser/colors_parser.o
+
+# target to build an object file
+src/parser/colors_parser.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/parser/colors_parser.c.o
+.PHONY : src/parser/colors_parser.c.o
+
+src/parser/colors_parser.i: src/parser/colors_parser.c.i
+.PHONY : src/parser/colors_parser.i
+
+# target to preprocess a source file
+src/parser/colors_parser.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/parser/colors_parser.c.i
+.PHONY : src/parser/colors_parser.c.i
+
+src/parser/colors_parser.s: src/parser/colors_parser.c.s
+.PHONY : src/parser/colors_parser.s
+
+# target to generate assembly for a file
+src/parser/colors_parser.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/parser/colors_parser.c.s
+.PHONY : src/parser/colors_parser.c.s
+
+src/parser/map_parser.o: src/parser/map_parser.c.o
+.PHONY : src/parser/map_parser.o
+
+# target to build an object file
+src/parser/map_parser.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/parser/map_parser.c.o
+.PHONY : src/parser/map_parser.c.o
+
+src/parser/map_parser.i: src/parser/map_parser.c.i
+.PHONY : src/parser/map_parser.i
+
+# target to preprocess a source file
+src/parser/map_parser.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/parser/map_parser.c.i
+.PHONY : src/parser/map_parser.c.i
+
+src/parser/map_parser.s: src/parser/map_parser.c.s
+.PHONY : src/parser/map_parser.s
+
+# target to generate assembly for a file
+src/parser/map_parser.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/parser/map_parser.c.s
+.PHONY : src/parser/map_parser.c.s
+
+src/parser/parser.o: src/parser/parser.c.o
+.PHONY : src/parser/parser.o
+
+# target to build an object file
+src/parser/parser.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/parser/parser.c.o
+.PHONY : src/parser/parser.c.o
+
+src/parser/parser.i: src/parser/parser.c.i
+.PHONY : src/parser/parser.i
+
+# target to preprocess a source file
+src/parser/parser.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/parser/parser.c.i
+.PHONY : src/parser/parser.c.i
+
+src/parser/parser.s: src/parser/parser.c.s
+.PHONY : src/parser/parser.s
+
+# target to generate assembly for a file
+src/parser/parser.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/parser/parser.c.s
+.PHONY : src/parser/parser.c.s
+
+src/parser/textures_parser.o: src/parser/textures_parser.c.o
+.PHONY : src/parser/textures_parser.o
+
+# target to build an object file
+src/parser/textures_parser.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/parser/textures_parser.c.o
+.PHONY : src/parser/textures_parser.c.o
+
+src/parser/textures_parser.i: src/parser/textures_parser.c.i
+.PHONY : src/parser/textures_parser.i
+
+# target to preprocess a source file
+src/parser/textures_parser.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/parser/textures_parser.c.i
+.PHONY : src/parser/textures_parser.c.i
+
+src/parser/textures_parser.s: src/parser/textures_parser.c.s
+.PHONY : src/parser/textures_parser.s
+
+# target to generate assembly for a file
+src/parser/textures_parser.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/parser/textures_parser.c.s
+.PHONY : src/parser/textures_parser.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -165,6 +285,21 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/message_printer.o"
+	@echo "... src/message_printer.i"
+	@echo "... src/message_printer.s"
+	@echo "... src/parser/colors_parser.o"
+	@echo "... src/parser/colors_parser.i"
+	@echo "... src/parser/colors_parser.s"
+	@echo "... src/parser/map_parser.o"
+	@echo "... src/parser/map_parser.i"
+	@echo "... src/parser/map_parser.s"
+	@echo "... src/parser/parser.o"
+	@echo "... src/parser/parser.i"
+	@echo "... src/parser/parser.s"
+	@echo "... src/parser/textures_parser.o"
+	@echo "... src/parser/textures_parser.i"
+	@echo "... src/parser/textures_parser.s"
 .PHONY : help
 
 

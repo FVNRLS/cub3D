@@ -53,10 +53,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/hoomen/CLionProjects/cub3D
+CMAKE_SOURCE_DIR = /Users/rmazurit/Documents/42_Projects/cub3D
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/hoomen/CLionProjects/cub3D/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/cub3D.dir/depend.make
@@ -72,28 +72,108 @@ include CMakeFiles/cub3D.dir/flags.make
 CMakeFiles/cub3D.dir/src/main.c.o: CMakeFiles/cub3D.dir/flags.make
 CMakeFiles/cub3D.dir/src/main.c.o: ../src/main.c
 CMakeFiles/cub3D.dir/src/main.c.o: CMakeFiles/cub3D.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hoomen/CLionProjects/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/cub3D.dir/src/main.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cub3D.dir/src/main.c.o -MF CMakeFiles/cub3D.dir/src/main.c.o.d -o CMakeFiles/cub3D.dir/src/main.c.o -c /Users/hoomen/CLionProjects/cub3D/src/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/cub3D.dir/src/main.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cub3D.dir/src/main.c.o -MF CMakeFiles/cub3D.dir/src/main.c.o.d -o CMakeFiles/cub3D.dir/src/main.c.o -c /Users/rmazurit/Documents/42_Projects/cub3D/src/main.c
 
 CMakeFiles/cub3D.dir/src/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cub3D.dir/src/main.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hoomen/CLionProjects/cub3D/src/main.c > CMakeFiles/cub3D.dir/src/main.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/rmazurit/Documents/42_Projects/cub3D/src/main.c > CMakeFiles/cub3D.dir/src/main.c.i
 
 CMakeFiles/cub3D.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cub3D.dir/src/main.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hoomen/CLionProjects/cub3D/src/main.c -o CMakeFiles/cub3D.dir/src/main.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/rmazurit/Documents/42_Projects/cub3D/src/main.c -o CMakeFiles/cub3D.dir/src/main.c.s
+
+CMakeFiles/cub3D.dir/src/parser/textures_parser.c.o: CMakeFiles/cub3D.dir/flags.make
+CMakeFiles/cub3D.dir/src/parser/textures_parser.c.o: ../src/parser/textures_parser.c
+CMakeFiles/cub3D.dir/src/parser/textures_parser.c.o: CMakeFiles/cub3D.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/cub3D.dir/src/parser/textures_parser.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cub3D.dir/src/parser/textures_parser.c.o -MF CMakeFiles/cub3D.dir/src/parser/textures_parser.c.o.d -o CMakeFiles/cub3D.dir/src/parser/textures_parser.c.o -c /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/textures_parser.c
+
+CMakeFiles/cub3D.dir/src/parser/textures_parser.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cub3D.dir/src/parser/textures_parser.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/textures_parser.c > CMakeFiles/cub3D.dir/src/parser/textures_parser.c.i
+
+CMakeFiles/cub3D.dir/src/parser/textures_parser.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cub3D.dir/src/parser/textures_parser.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/textures_parser.c -o CMakeFiles/cub3D.dir/src/parser/textures_parser.c.s
+
+CMakeFiles/cub3D.dir/src/parser/colors_parser.c.o: CMakeFiles/cub3D.dir/flags.make
+CMakeFiles/cub3D.dir/src/parser/colors_parser.c.o: ../src/parser/colors_parser.c
+CMakeFiles/cub3D.dir/src/parser/colors_parser.c.o: CMakeFiles/cub3D.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/cub3D.dir/src/parser/colors_parser.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cub3D.dir/src/parser/colors_parser.c.o -MF CMakeFiles/cub3D.dir/src/parser/colors_parser.c.o.d -o CMakeFiles/cub3D.dir/src/parser/colors_parser.c.o -c /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/colors_parser.c
+
+CMakeFiles/cub3D.dir/src/parser/colors_parser.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cub3D.dir/src/parser/colors_parser.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/colors_parser.c > CMakeFiles/cub3D.dir/src/parser/colors_parser.c.i
+
+CMakeFiles/cub3D.dir/src/parser/colors_parser.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cub3D.dir/src/parser/colors_parser.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/colors_parser.c -o CMakeFiles/cub3D.dir/src/parser/colors_parser.c.s
+
+CMakeFiles/cub3D.dir/src/parser/map_parser.c.o: CMakeFiles/cub3D.dir/flags.make
+CMakeFiles/cub3D.dir/src/parser/map_parser.c.o: ../src/parser/map_parser.c
+CMakeFiles/cub3D.dir/src/parser/map_parser.c.o: CMakeFiles/cub3D.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/cub3D.dir/src/parser/map_parser.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cub3D.dir/src/parser/map_parser.c.o -MF CMakeFiles/cub3D.dir/src/parser/map_parser.c.o.d -o CMakeFiles/cub3D.dir/src/parser/map_parser.c.o -c /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/map_parser.c
+
+CMakeFiles/cub3D.dir/src/parser/map_parser.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cub3D.dir/src/parser/map_parser.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/map_parser.c > CMakeFiles/cub3D.dir/src/parser/map_parser.c.i
+
+CMakeFiles/cub3D.dir/src/parser/map_parser.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cub3D.dir/src/parser/map_parser.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/map_parser.c -o CMakeFiles/cub3D.dir/src/parser/map_parser.c.s
+
+CMakeFiles/cub3D.dir/src/parser/parser.c.o: CMakeFiles/cub3D.dir/flags.make
+CMakeFiles/cub3D.dir/src/parser/parser.c.o: ../src/parser/parser.c
+CMakeFiles/cub3D.dir/src/parser/parser.c.o: CMakeFiles/cub3D.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/cub3D.dir/src/parser/parser.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cub3D.dir/src/parser/parser.c.o -MF CMakeFiles/cub3D.dir/src/parser/parser.c.o.d -o CMakeFiles/cub3D.dir/src/parser/parser.c.o -c /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/parser.c
+
+CMakeFiles/cub3D.dir/src/parser/parser.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cub3D.dir/src/parser/parser.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/parser.c > CMakeFiles/cub3D.dir/src/parser/parser.c.i
+
+CMakeFiles/cub3D.dir/src/parser/parser.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cub3D.dir/src/parser/parser.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/parser.c -o CMakeFiles/cub3D.dir/src/parser/parser.c.s
+
+CMakeFiles/cub3D.dir/src/message_printer.c.o: CMakeFiles/cub3D.dir/flags.make
+CMakeFiles/cub3D.dir/src/message_printer.c.o: ../src/message_printer.c
+CMakeFiles/cub3D.dir/src/message_printer.c.o: CMakeFiles/cub3D.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/cub3D.dir/src/message_printer.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cub3D.dir/src/message_printer.c.o -MF CMakeFiles/cub3D.dir/src/message_printer.c.o.d -o CMakeFiles/cub3D.dir/src/message_printer.c.o -c /Users/rmazurit/Documents/42_Projects/cub3D/src/message_printer.c
+
+CMakeFiles/cub3D.dir/src/message_printer.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cub3D.dir/src/message_printer.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/rmazurit/Documents/42_Projects/cub3D/src/message_printer.c > CMakeFiles/cub3D.dir/src/message_printer.c.i
+
+CMakeFiles/cub3D.dir/src/message_printer.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cub3D.dir/src/message_printer.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/rmazurit/Documents/42_Projects/cub3D/src/message_printer.c -o CMakeFiles/cub3D.dir/src/message_printer.c.s
 
 # Object files for target cub3D
 cub3D_OBJECTS = \
-"CMakeFiles/cub3D.dir/src/main.c.o"
+"CMakeFiles/cub3D.dir/src/main.c.o" \
+"CMakeFiles/cub3D.dir/src/parser/textures_parser.c.o" \
+"CMakeFiles/cub3D.dir/src/parser/colors_parser.c.o" \
+"CMakeFiles/cub3D.dir/src/parser/map_parser.c.o" \
+"CMakeFiles/cub3D.dir/src/parser/parser.c.o" \
+"CMakeFiles/cub3D.dir/src/message_printer.c.o"
 
 # External object files for target cub3D
 cub3D_EXTERNAL_OBJECTS =
 
 cub3D: CMakeFiles/cub3D.dir/src/main.c.o
+cub3D: CMakeFiles/cub3D.dir/src/parser/textures_parser.c.o
+cub3D: CMakeFiles/cub3D.dir/src/parser/colors_parser.c.o
+cub3D: CMakeFiles/cub3D.dir/src/parser/map_parser.c.o
+cub3D: CMakeFiles/cub3D.dir/src/parser/parser.c.o
+cub3D: CMakeFiles/cub3D.dir/src/message_printer.c.o
 cub3D: CMakeFiles/cub3D.dir/build.make
 cub3D: CMakeFiles/cub3D.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/hoomen/CLionProjects/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable cub3D"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable cub3D"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cub3D.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -105,6 +185,6 @@ CMakeFiles/cub3D.dir/clean:
 .PHONY : CMakeFiles/cub3D.dir/clean
 
 CMakeFiles/cub3D.dir/depend:
-	cd /Users/hoomen/CLionProjects/cub3D/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/hoomen/CLionProjects/cub3D /Users/hoomen/CLionProjects/cub3D /Users/hoomen/CLionProjects/cub3D/cmake-build-debug /Users/hoomen/CLionProjects/cub3D/cmake-build-debug /Users/hoomen/CLionProjects/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/rmazurit/Documents/42_Projects/cub3D /Users/rmazurit/Documents/42_Projects/cub3D /Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug /Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug /Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/CMakeFiles/cub3D.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/cub3D.dir/depend
 

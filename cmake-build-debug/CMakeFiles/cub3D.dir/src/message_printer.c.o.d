@@ -1,5 +1,5 @@
-CMakeFiles/cub3D.dir/src/main.c.o: \
-  /Users/rmazurit/Documents/42_Projects/cub3D/src/main.c \
+CMakeFiles/cub3D.dir/src/message_printer.c.o: \
+  /Users/rmazurit/Documents/42_Projects/cub3D/src/message_printer.c \
   /Users/rmazurit/Documents/42_Projects/cub3D/src/../incl/cub3D.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/stdlib.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/Availability.h \
