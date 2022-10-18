@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug"
+			"value" : "/Users/hoomen/CLionProjects/cub3D/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -435,7 +435,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/local/include;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include;/System/Library/Frameworks;/Library/Frameworks"
+			"value" : "/Users/hoomen/.brew/include;.;/usr/local/include;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include;/System/Library/Frameworks;/Library/Frameworks"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -495,7 +495,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/rmazurit/Documents/42_Projects/cub3D"
+			"value" : "/Users/hoomen/CLionProjects/cub3D"
 		},
 		{
 			"name" : "CMAKE_INSTALL_NAME_TOOL",
@@ -1087,7 +1087,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug"
+			"value" : "/Users/hoomen/CLionProjects/cub3D/cmake-build-debug"
 		},
 		{
 			"name" : "cub3D_IS_TOP_LEVEL",
@@ -1111,7 +1111,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/rmazurit/Documents/42_Projects/cub3D"
+			"value" : "/Users/hoomen/CLionProjects/cub3D"
 		}
 	],
 	"kind" : "cache",

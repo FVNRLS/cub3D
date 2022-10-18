@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug",
-		"source" : "/Users/rmazurit/Documents/42_Projects/cub3D"
+		"build" : "/Users/hoomen/CLionProjects/cub3D/cmake-build-debug",
+		"source" : "/Users/hoomen/CLionProjects/cub3D"
 	},
 	"version" : 
 	{
