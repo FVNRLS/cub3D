@@ -90,10 +90,19 @@
 		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/incl/tools.h">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/main.c">
+		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/destructor.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/message_printer.c">
+		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/error_printer.c">
+			<Option target="cub3D"/>
+		</Unit>
+		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/initializer/initializer.c">
+			<Option target="cub3D"/>
+		</Unit>
+		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/initializer/map_objects.c">
+			<Option target="cub3D"/>
+		</Unit>
+		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/main.c">
 			<Option target="cub3D"/>
 		</Unit>
 		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/parser/colors_parser.c">
@@ -106,6 +115,24 @@
 			<Option target="cub3D"/>
 		</Unit>
 		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/parser/textures_parser.c">
+			<Option target="cub3D"/>
+		</Unit>
+		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_atoi.c">
+			<Option target="cub3D"/>
+		</Unit>
+		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_isdigit.c">
+			<Option target="cub3D"/>
+		</Unit>
+		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_split.c">
+			<Option target="cub3D"/>
+		</Unit>
+		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_splitlen.c">
+			<Option target="cub3D"/>
+		</Unit>
+		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_strcmp.c">
+			<Option target="cub3D"/>
+		</Unit>
+		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_strdup.c">
 			<Option target="cub3D"/>
 		</Unit>
 		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_strlen.c">

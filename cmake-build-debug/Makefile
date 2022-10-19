@@ -129,6 +129,102 @@ cub3D/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/build
 .PHONY : cub3D/fast
 
+src/destructor.o: src/destructor.c.o
+.PHONY : src/destructor.o
+
+# target to build an object file
+src/destructor.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/destructor.c.o
+.PHONY : src/destructor.c.o
+
+src/destructor.i: src/destructor.c.i
+.PHONY : src/destructor.i
+
+# target to preprocess a source file
+src/destructor.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/destructor.c.i
+.PHONY : src/destructor.c.i
+
+src/destructor.s: src/destructor.c.s
+.PHONY : src/destructor.s
+
+# target to generate assembly for a file
+src/destructor.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/destructor.c.s
+.PHONY : src/destructor.c.s
+
+src/error_printer.o: src/error_printer.c.o
+.PHONY : src/error_printer.o
+
+# target to build an object file
+src/error_printer.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/error_printer.c.o
+.PHONY : src/error_printer.c.o
+
+src/error_printer.i: src/error_printer.c.i
+.PHONY : src/error_printer.i
+
+# target to preprocess a source file
+src/error_printer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/error_printer.c.i
+.PHONY : src/error_printer.c.i
+
+src/error_printer.s: src/error_printer.c.s
+.PHONY : src/error_printer.s
+
+# target to generate assembly for a file
+src/error_printer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/error_printer.c.s
+.PHONY : src/error_printer.c.s
+
+src/initializer/initializer.o: src/initializer/initializer.c.o
+.PHONY : src/initializer/initializer.o
+
+# target to build an object file
+src/initializer/initializer.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/initializer/initializer.c.o
+.PHONY : src/initializer/initializer.c.o
+
+src/initializer/initializer.i: src/initializer/initializer.c.i
+.PHONY : src/initializer/initializer.i
+
+# target to preprocess a source file
+src/initializer/initializer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/initializer/initializer.c.i
+.PHONY : src/initializer/initializer.c.i
+
+src/initializer/initializer.s: src/initializer/initializer.c.s
+.PHONY : src/initializer/initializer.s
+
+# target to generate assembly for a file
+src/initializer/initializer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/initializer/initializer.c.s
+.PHONY : src/initializer/initializer.c.s
+
+src/initializer/map_objects.o: src/initializer/map_objects.c.o
+.PHONY : src/initializer/map_objects.o
+
+# target to build an object file
+src/initializer/map_objects.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/initializer/map_objects.c.o
+.PHONY : src/initializer/map_objects.c.o
+
+src/initializer/map_objects.i: src/initializer/map_objects.c.i
+.PHONY : src/initializer/map_objects.i
+
+# target to preprocess a source file
+src/initializer/map_objects.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/initializer/map_objects.c.i
+.PHONY : src/initializer/map_objects.c.i
+
+src/initializer/map_objects.s: src/initializer/map_objects.c.s
+.PHONY : src/initializer/map_objects.s
+
+# target to generate assembly for a file
+src/initializer/map_objects.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/initializer/map_objects.c.s
+.PHONY : src/initializer/map_objects.c.s
+
 src/main.o: src/main.c.o
 .PHONY : src/main.o
 
@@ -152,30 +248,6 @@ src/main.s: src/main.c.s
 src/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/main.c.s
 .PHONY : src/main.c.s
-
-src/message_printer.o: src/message_printer.c.o
-.PHONY : src/message_printer.o
-
-# target to build an object file
-src/message_printer.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/message_printer.c.o
-.PHONY : src/message_printer.c.o
-
-src/message_printer.i: src/message_printer.c.i
-.PHONY : src/message_printer.i
-
-# target to preprocess a source file
-src/message_printer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/message_printer.c.i
-.PHONY : src/message_printer.c.i
-
-src/message_printer.s: src/message_printer.c.s
-.PHONY : src/message_printer.s
-
-# target to generate assembly for a file
-src/message_printer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/message_printer.c.s
-.PHONY : src/message_printer.c.s
 
 src/parser/colors_parser.o: src/parser/colors_parser.c.o
 .PHONY : src/parser/colors_parser.o
@@ -273,6 +345,150 @@ src/parser/textures_parser.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/parser/textures_parser.c.s
 .PHONY : src/parser/textures_parser.c.s
 
+src/tools/ft_atoi.o: src/tools/ft_atoi.c.o
+.PHONY : src/tools/ft_atoi.o
+
+# target to build an object file
+src/tools/ft_atoi.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_atoi.c.o
+.PHONY : src/tools/ft_atoi.c.o
+
+src/tools/ft_atoi.i: src/tools/ft_atoi.c.i
+.PHONY : src/tools/ft_atoi.i
+
+# target to preprocess a source file
+src/tools/ft_atoi.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_atoi.c.i
+.PHONY : src/tools/ft_atoi.c.i
+
+src/tools/ft_atoi.s: src/tools/ft_atoi.c.s
+.PHONY : src/tools/ft_atoi.s
+
+# target to generate assembly for a file
+src/tools/ft_atoi.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_atoi.c.s
+.PHONY : src/tools/ft_atoi.c.s
+
+src/tools/ft_isdigit.o: src/tools/ft_isdigit.c.o
+.PHONY : src/tools/ft_isdigit.o
+
+# target to build an object file
+src/tools/ft_isdigit.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_isdigit.c.o
+.PHONY : src/tools/ft_isdigit.c.o
+
+src/tools/ft_isdigit.i: src/tools/ft_isdigit.c.i
+.PHONY : src/tools/ft_isdigit.i
+
+# target to preprocess a source file
+src/tools/ft_isdigit.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_isdigit.c.i
+.PHONY : src/tools/ft_isdigit.c.i
+
+src/tools/ft_isdigit.s: src/tools/ft_isdigit.c.s
+.PHONY : src/tools/ft_isdigit.s
+
+# target to generate assembly for a file
+src/tools/ft_isdigit.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_isdigit.c.s
+.PHONY : src/tools/ft_isdigit.c.s
+
+src/tools/ft_split.o: src/tools/ft_split.c.o
+.PHONY : src/tools/ft_split.o
+
+# target to build an object file
+src/tools/ft_split.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_split.c.o
+.PHONY : src/tools/ft_split.c.o
+
+src/tools/ft_split.i: src/tools/ft_split.c.i
+.PHONY : src/tools/ft_split.i
+
+# target to preprocess a source file
+src/tools/ft_split.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_split.c.i
+.PHONY : src/tools/ft_split.c.i
+
+src/tools/ft_split.s: src/tools/ft_split.c.s
+.PHONY : src/tools/ft_split.s
+
+# target to generate assembly for a file
+src/tools/ft_split.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_split.c.s
+.PHONY : src/tools/ft_split.c.s
+
+src/tools/ft_splitlen.o: src/tools/ft_splitlen.c.o
+.PHONY : src/tools/ft_splitlen.o
+
+# target to build an object file
+src/tools/ft_splitlen.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_splitlen.c.o
+.PHONY : src/tools/ft_splitlen.c.o
+
+src/tools/ft_splitlen.i: src/tools/ft_splitlen.c.i
+.PHONY : src/tools/ft_splitlen.i
+
+# target to preprocess a source file
+src/tools/ft_splitlen.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_splitlen.c.i
+.PHONY : src/tools/ft_splitlen.c.i
+
+src/tools/ft_splitlen.s: src/tools/ft_splitlen.c.s
+.PHONY : src/tools/ft_splitlen.s
+
+# target to generate assembly for a file
+src/tools/ft_splitlen.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_splitlen.c.s
+.PHONY : src/tools/ft_splitlen.c.s
+
+src/tools/ft_strcmp.o: src/tools/ft_strcmp.c.o
+.PHONY : src/tools/ft_strcmp.o
+
+# target to build an object file
+src/tools/ft_strcmp.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_strcmp.c.o
+.PHONY : src/tools/ft_strcmp.c.o
+
+src/tools/ft_strcmp.i: src/tools/ft_strcmp.c.i
+.PHONY : src/tools/ft_strcmp.i
+
+# target to preprocess a source file
+src/tools/ft_strcmp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_strcmp.c.i
+.PHONY : src/tools/ft_strcmp.c.i
+
+src/tools/ft_strcmp.s: src/tools/ft_strcmp.c.s
+.PHONY : src/tools/ft_strcmp.s
+
+# target to generate assembly for a file
+src/tools/ft_strcmp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_strcmp.c.s
+.PHONY : src/tools/ft_strcmp.c.s
+
+src/tools/ft_strdup.o: src/tools/ft_strdup.c.o
+.PHONY : src/tools/ft_strdup.o
+
+# target to build an object file
+src/tools/ft_strdup.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_strdup.c.o
+.PHONY : src/tools/ft_strdup.c.o
+
+src/tools/ft_strdup.i: src/tools/ft_strdup.c.i
+.PHONY : src/tools/ft_strdup.i
+
+# target to preprocess a source file
+src/tools/ft_strdup.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_strdup.c.i
+.PHONY : src/tools/ft_strdup.c.i
+
+src/tools/ft_strdup.s: src/tools/ft_strdup.c.s
+.PHONY : src/tools/ft_strdup.s
+
+# target to generate assembly for a file
+src/tools/ft_strdup.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_strdup.c.s
+.PHONY : src/tools/ft_strdup.c.s
+
 src/tools/ft_strlen.o: src/tools/ft_strlen.c.o
 .PHONY : src/tools/ft_strlen.o
 
@@ -330,12 +546,21 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... cub3D"
+	@echo "... src/destructor.o"
+	@echo "... src/destructor.i"
+	@echo "... src/destructor.s"
+	@echo "... src/error_printer.o"
+	@echo "... src/error_printer.i"
+	@echo "... src/error_printer.s"
+	@echo "... src/initializer/initializer.o"
+	@echo "... src/initializer/initializer.i"
+	@echo "... src/initializer/initializer.s"
+	@echo "... src/initializer/map_objects.o"
+	@echo "... src/initializer/map_objects.i"
+	@echo "... src/initializer/map_objects.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/message_printer.o"
-	@echo "... src/message_printer.i"
-	@echo "... src/message_printer.s"
 	@echo "... src/parser/colors_parser.o"
 	@echo "... src/parser/colors_parser.i"
 	@echo "... src/parser/colors_parser.s"
@@ -348,6 +573,24 @@ help:
 	@echo "... src/parser/textures_parser.o"
 	@echo "... src/parser/textures_parser.i"
 	@echo "... src/parser/textures_parser.s"
+	@echo "... src/tools/ft_atoi.o"
+	@echo "... src/tools/ft_atoi.i"
+	@echo "... src/tools/ft_atoi.s"
+	@echo "... src/tools/ft_isdigit.o"
+	@echo "... src/tools/ft_isdigit.i"
+	@echo "... src/tools/ft_isdigit.s"
+	@echo "... src/tools/ft_split.o"
+	@echo "... src/tools/ft_split.i"
+	@echo "... src/tools/ft_split.s"
+	@echo "... src/tools/ft_splitlen.o"
+	@echo "... src/tools/ft_splitlen.i"
+	@echo "... src/tools/ft_splitlen.s"
+	@echo "... src/tools/ft_strcmp.o"
+	@echo "... src/tools/ft_strcmp.i"
+	@echo "... src/tools/ft_strcmp.s"
+	@echo "... src/tools/ft_strdup.o"
+	@echo "... src/tools/ft_strdup.i"
+	@echo "... src/tools/ft_strdup.s"
 	@echo "... src/tools/ft_strlen.o"
 	@echo "... src/tools/ft_strlen.i"
 	@echo "... src/tools/ft_strlen.s"

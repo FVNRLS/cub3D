@@ -1,17 +1,27 @@
-//
-// Created by Roman Mazuritskiy on 10/18/22.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   errors.h                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/10/19 10:07:54 by rmazurit          #+#    #+#             */
+/*   Updated: 2022/10/19 13:43:30 by rmazurit         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #ifndef ERRORS_H
 # define ERRORS_H
 
-# define	ARG_ERROR			1
-# define	INVALID_EXTENSION	2
-# define	OPEN_ERROR			3
+# define	MALLOC_ERROR		1
+# define	ARG_ERROR			2
+# define	INVALID_EXTENSION	3
+# define	OPEN_ERROR			4
+# define	TEXTURE_ERROR		5
 
 
-void	print_error(int	error);
-int 	print_int_error(int error);
-void	*print_null_error(int error);
+void	print_error(int	error, char *s);
+int 	print_int_error(int error, char *s);
+void	*print_null_error(int error, char *s);
 
 #endif

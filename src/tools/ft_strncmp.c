@@ -1,17 +1,25 @@
-//
-// Created by Roman Mazuritskiy on 10/18/22.
-//
-
-/* The function int strncmp(const char *str1, const char *str2, size_t n)
-compares at most the first n bytes of str1 and str2.
-This function return values that are as follows −
-1) if Return value < 0 then it indicates str1 is less than str2.
-2) if Return value > 0 then it indicates str2 is less than str1.
-3) if Return value = 0 then it indicates str1 is equal to str2.
-*/
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rmazurit <rmazurit@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/10/19 10:08:27 by rmazurit          #+#    #+#             */
+/*   Updated: 2022/10/19 10:08:27 by rmazurit         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "../../incl/cub3D.h"
 
+/*
+	The function int strncmp(const char *str1, const char *str2, size_t n)
+	compares at most the first n bytes of str1 and str2.
+	This function return values that are as follows −
+	1) if Return value < 0 then it indicates str1 is less than str2.
+	2) if Return value > 0 then it indicates str2 is less than str1.
+	3) if Return value = 0 then it indicates str1 is equal to str2.
+*/
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	unsigned int	i;

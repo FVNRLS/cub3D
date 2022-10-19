@@ -104,4 +104,5 @@ CMakeFiles/cub3D.dir/src/main.c.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_filesec_t.h \
   /Users/rmazurit/Documents/42_Projects/cub3D/src/../incl/struct.h \
   /Users/rmazurit/Documents/42_Projects/cub3D/src/../incl/errors.h \
-  /Users/rmazurit/Documents/42_Projects/cub3D/src/../incl/tools.h
+  /Users/rmazurit/Documents/42_Projects/cub3D/src/../incl/tools.h \
+  /Users/rmazurit/Documents/42_Projects/cub3D/src/../incl/../lib/get_next_line/get_next_line.h
