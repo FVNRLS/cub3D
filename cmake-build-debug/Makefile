@@ -369,6 +369,54 @@ src/tools/ft_atoi.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_atoi.c.s
 .PHONY : src/tools/ft_atoi.c.s
 
+src/tools/ft_free_all_and_exit.o: src/tools/ft_free_all_and_exit.c.o
+.PHONY : src/tools/ft_free_all_and_exit.o
+
+# target to build an object file
+src/tools/ft_free_all_and_exit.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_free_all_and_exit.c.o
+.PHONY : src/tools/ft_free_all_and_exit.c.o
+
+src/tools/ft_free_all_and_exit.i: src/tools/ft_free_all_and_exit.c.i
+.PHONY : src/tools/ft_free_all_and_exit.i
+
+# target to preprocess a source file
+src/tools/ft_free_all_and_exit.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_free_all_and_exit.c.i
+.PHONY : src/tools/ft_free_all_and_exit.c.i
+
+src/tools/ft_free_all_and_exit.s: src/tools/ft_free_all_and_exit.c.s
+.PHONY : src/tools/ft_free_all_and_exit.s
+
+# target to generate assembly for a file
+src/tools/ft_free_all_and_exit.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_free_all_and_exit.c.s
+.PHONY : src/tools/ft_free_all_and_exit.c.s
+
+src/tools/ft_free_split.o: src/tools/ft_free_split.c.o
+.PHONY : src/tools/ft_free_split.o
+
+# target to build an object file
+src/tools/ft_free_split.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_free_split.c.o
+.PHONY : src/tools/ft_free_split.c.o
+
+src/tools/ft_free_split.i: src/tools/ft_free_split.c.i
+.PHONY : src/tools/ft_free_split.i
+
+# target to preprocess a source file
+src/tools/ft_free_split.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_free_split.c.i
+.PHONY : src/tools/ft_free_split.c.i
+
+src/tools/ft_free_split.s: src/tools/ft_free_split.c.s
+.PHONY : src/tools/ft_free_split.s
+
+# target to generate assembly for a file
+src/tools/ft_free_split.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_free_split.c.s
+.PHONY : src/tools/ft_free_split.c.s
+
 src/tools/ft_isdigit.o: src/tools/ft_isdigit.c.o
 .PHONY : src/tools/ft_isdigit.o
 
@@ -576,6 +624,12 @@ help:
 	@echo "... src/tools/ft_atoi.o"
 	@echo "... src/tools/ft_atoi.i"
 	@echo "... src/tools/ft_atoi.s"
+	@echo "... src/tools/ft_free_all_and_exit.o"
+	@echo "... src/tools/ft_free_all_and_exit.i"
+	@echo "... src/tools/ft_free_all_and_exit.s"
+	@echo "... src/tools/ft_free_split.o"
+	@echo "... src/tools/ft_free_split.i"
+	@echo "... src/tools/ft_free_split.s"
 	@echo "... src/tools/ft_isdigit.o"
 	@echo "... src/tools/ft_isdigit.i"
 	@echo "... src/tools/ft_isdigit.s"

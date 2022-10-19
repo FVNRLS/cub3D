@@ -5,14 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/19 12:32:38 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/19 13:55:51 by rmazurit         ###   ########.fr       */
+/*   Created: 2022/10/19 15:09:01 by rmazurit          #+#    #+#             */
+/*   Updated: 2022/10/19 15:35:27 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../incl/cub3D.h"
-
-//TODO: cont here!
 
 static int	try_extraction(t_data *data, char **tokens)
 {
@@ -26,26 +24,45 @@ static int	try_extraction(t_data *data, char **tokens)
 	{
 		if (data->texture->south != NULL)
 			return (print_int_error(TEXTURE_ERROR, "SO"));
+		data->texture->south = ft_strdup(tokens[1]);
 	}
+	else if (ft_strcmp(tokens[0], "EA") == 0)
+	{
+		if (data->texture->east != NULL)
+			return (print_int_error(TEXTURE_ERROR, "EA"));
+		data->texture->east = ft_strdup(tokens[1]);
+	}
+	else if (ft_strcmp(tokens[0], "WE") == 0)
+	{
+		if (data->texture->west != NULL)
+			return (print_int_error(TEXTURE_ERROR, "WE"));
+		data->texture->west = ft_strdup(tokens[1]);
+	}
+	return (EXIT_SUCCESS);
 }
 
 static int	extract_texture_path(t_data *data, char *line)
 {
-	char **tokens;
+	char	**tokens;
 
 	tokens = ft_split(line, SPACE);
 	if (!tokens)
 		return (print_int_error(MALLOC_ERROR, NULL));
-	if (ft_splitlen(tokens) != 2)
-		return (EXIT_SUCCESS);
-
-
+	if (ft_splitlen(tokens) == 2)
+	{
+		if (try_extraction(data, tokens) == TEXTURE_ERROR)
+		{
+			ft_free_split(tokens);
+			return (EXIT_FAILURE);
+		}
+	}
 	return (EXIT_SUCCESS);
 }
 
 void	parse_textures(t_data *data)
 {
 	char	*line;
+	int 	ret;
 
 	line = NULL;
 	while (true)
@@ -53,12 +70,13 @@ void	parse_textures(t_data *data)
 		line = get_next_line(data->fd);
 		if (!line)
 			break ;
-		if (extract_texture_path(data, line) != EXIT_SUCCESS)
+		ret = extract_texture_path(data, line);
+		free(line);
+		line = NULL;
+		if (ret == EXIT_FAILURE)
 		{
 			data->parse_error = true;
 			return ;
 		}
-		free(line);
-		line = NULL;
 	}
 }

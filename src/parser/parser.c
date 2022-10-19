@@ -6,11 +6,12 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 11:50:41 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/19 13:49:30 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/19 15:40:23 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../incl/cub3D.h"
+
 
 static bool check_extension(char *s)
 {
@@ -34,6 +35,14 @@ void	parse_input(t_data *data)
 	if (data->fd < 0)
 		return (print_error(OPEN_ERROR, NULL));
 	parse_textures(data);
+	if (data->parse_error == true)
+		ft_free_all_and_exit(data);
+
+	printf("%s\n", data->texture->north);
+	printf("%s\n", data->texture->south);
+	printf("%s\n", data->texture->east);
+	printf("%s\n", data->texture->west);
+	close(data->fd);
 }
 
 

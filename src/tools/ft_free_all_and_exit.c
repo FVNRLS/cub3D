@@ -1,27 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   errors.h                                           :+:      :+:    :+:   */
+/*   ft_free_all_and_exit.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rmazurit <rmazurit@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/19 15:05:25 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/19 15:05:25 by rmazurit         ###   ########.fr       */
+/*   Created: 2022/10/19 15:35:29 by rmazurit          #+#    #+#             */
+/*   Updated: 2022/10/19 15:35:29 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ERRORS_H
-# define ERRORS_H
+#include "../../incl/cub3D.h"
 
-# define	MALLOC_ERROR		1
-# define	ARG_ERROR			2
-# define	INVALID_EXTENSION	3
-# define	OPEN_ERROR			4
-# define	TEXTURE_ERROR		5
-
-
-void	print_error(int	error, char *s);
-int 	print_int_error(int error, char *s);
-void	*print_null_error(int error, char *s);
-
-#endif
+void	ft_free_all_and_exit(t_data *data)
+{
+	free_all_resources(data);
+	exit(EXIT_FAILURE);
+}

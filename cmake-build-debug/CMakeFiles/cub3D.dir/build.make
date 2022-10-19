@@ -307,6 +307,34 @@ CMakeFiles/cub3D.dir/src/tools/ft_splitlen.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cub3D.dir/src/tools/ft_splitlen.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_splitlen.c -o CMakeFiles/cub3D.dir/src/tools/ft_splitlen.c.s
 
+CMakeFiles/cub3D.dir/src/tools/ft_free_split.c.o: CMakeFiles/cub3D.dir/flags.make
+CMakeFiles/cub3D.dir/src/tools/ft_free_split.c.o: ../src/tools/ft_free_split.c
+CMakeFiles/cub3D.dir/src/tools/ft_free_split.c.o: CMakeFiles/cub3D.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/cub3D.dir/src/tools/ft_free_split.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cub3D.dir/src/tools/ft_free_split.c.o -MF CMakeFiles/cub3D.dir/src/tools/ft_free_split.c.o.d -o CMakeFiles/cub3D.dir/src/tools/ft_free_split.c.o -c /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_free_split.c
+
+CMakeFiles/cub3D.dir/src/tools/ft_free_split.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cub3D.dir/src/tools/ft_free_split.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_free_split.c > CMakeFiles/cub3D.dir/src/tools/ft_free_split.c.i
+
+CMakeFiles/cub3D.dir/src/tools/ft_free_split.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cub3D.dir/src/tools/ft_free_split.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_free_split.c -o CMakeFiles/cub3D.dir/src/tools/ft_free_split.c.s
+
+CMakeFiles/cub3D.dir/src/tools/ft_free_all_and_exit.c.o: CMakeFiles/cub3D.dir/flags.make
+CMakeFiles/cub3D.dir/src/tools/ft_free_all_and_exit.c.o: ../src/tools/ft_free_all_and_exit.c
+CMakeFiles/cub3D.dir/src/tools/ft_free_all_and_exit.c.o: CMakeFiles/cub3D.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/cub3D.dir/src/tools/ft_free_all_and_exit.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cub3D.dir/src/tools/ft_free_all_and_exit.c.o -MF CMakeFiles/cub3D.dir/src/tools/ft_free_all_and_exit.c.o.d -o CMakeFiles/cub3D.dir/src/tools/ft_free_all_and_exit.c.o -c /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_free_all_and_exit.c
+
+CMakeFiles/cub3D.dir/src/tools/ft_free_all_and_exit.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cub3D.dir/src/tools/ft_free_all_and_exit.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_free_all_and_exit.c > CMakeFiles/cub3D.dir/src/tools/ft_free_all_and_exit.c.i
+
+CMakeFiles/cub3D.dir/src/tools/ft_free_all_and_exit.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cub3D.dir/src/tools/ft_free_all_and_exit.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_free_all_and_exit.c -o CMakeFiles/cub3D.dir/src/tools/ft_free_all_and_exit.c.s
+
 # Object files for target cub3D
 cub3D_OBJECTS = \
 "CMakeFiles/cub3D.dir/src/main.c.o" \
@@ -325,7 +353,9 @@ cub3D_OBJECTS = \
 "CMakeFiles/cub3D.dir/src/tools/ft_atoi.c.o" \
 "CMakeFiles/cub3D.dir/src/tools/ft_isdigit.c.o" \
 "CMakeFiles/cub3D.dir/src/tools/ft_strcmp.c.o" \
-"CMakeFiles/cub3D.dir/src/tools/ft_splitlen.c.o"
+"CMakeFiles/cub3D.dir/src/tools/ft_splitlen.c.o" \
+"CMakeFiles/cub3D.dir/src/tools/ft_free_split.c.o" \
+"CMakeFiles/cub3D.dir/src/tools/ft_free_all_and_exit.c.o"
 
 # External object files for target cub3D
 cub3D_EXTERNAL_OBJECTS =
@@ -347,10 +377,12 @@ cub3D: CMakeFiles/cub3D.dir/src/tools/ft_atoi.c.o
 cub3D: CMakeFiles/cub3D.dir/src/tools/ft_isdigit.c.o
 cub3D: CMakeFiles/cub3D.dir/src/tools/ft_strcmp.c.o
 cub3D: CMakeFiles/cub3D.dir/src/tools/ft_splitlen.c.o
+cub3D: CMakeFiles/cub3D.dir/src/tools/ft_free_split.c.o
+cub3D: CMakeFiles/cub3D.dir/src/tools/ft_free_all_and_exit.c.o
 cub3D: CMakeFiles/cub3D.dir/build.make
 cub3D: ../lib/get_next_line/get_next_line.a
 cub3D: CMakeFiles/cub3D.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking C executable cub3D"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking C executable cub3D"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cub3D.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

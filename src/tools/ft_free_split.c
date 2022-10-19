@@ -1,21 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_splitlen.c                                      :+:      :+:    :+:   */
+/*   ft_free_split.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/19 15:05:08 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/19 15:05:39 by rmazurit         ###   ########.fr       */
+/*   Created: 2022/10/19 15:08:31 by rmazurit          #+#    #+#             */
+/*   Updated: 2022/10/19 15:09:26 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_splitlen(char **s)
-{
-	int	count;
+#include "../../incl/cub3D.h"
 
-	count = 0;
-	while (s && s[count] && s[count][0])
-		count++;
-	return (count);
+void	ft_free_split(char **split)
+{
+	int	i;
+
+	if (!split)
+		return ;
+	i = 0;
+	while (split[i] != NULL)
+	{
+		free(split[i]);
+		split[i] = NULL;
+		i++;
+	}
+	free(split);
+	split = NULL;
 }
