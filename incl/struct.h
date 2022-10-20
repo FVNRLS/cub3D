@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 10:07:54 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/19 12:47:29 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/20 12:22:18 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,11 +26,21 @@ typedef struct s_texture
 	char	*east;
 }		t_texture;
 
+typedef struct s_conf
+{
+	int 		fd;
+	char		*file;
+	char		*line;
+	char		**tokens;
+	char		**specs;
+}		t_conf;
+
+
 typedef struct s_data
 {
-	char		*conf;
-	int 		fd;
+
 	bool		parse_error;
+	t_conf		*conf;
 	t_map		*map;
 	t_texture	*texture;
 }		t_data;

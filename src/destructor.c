@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 11:50:30 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/19 11:51:12 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/20 12:22:18 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,14 @@
 
 static void	free_map_objects(t_data *data)
 {
+	ft_free_split(data->conf->specs);
+	free(data->conf);
+
 	free(data->texture->north);
 	free(data->texture->south);
 	free(data->texture->east);
 	free(data->texture->west);
 	free(data->texture);
-
 }
 
 void	free_all_resources(t_data *data)

@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 11:35:20 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/19 13:48:31 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/20 12:22:18 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,10 @@ void	print_error(int	error, char *s)
 		printf("Error\nFile extension invalid\n");
 	else if (error == OPEN_ERROR)
 		printf("Error\nUnable to open file\n");
+	else if (error == INVALID_TOKEN)
+		printf("Error\nInvalid characters found: %s\n", s);
 	else if (error == TEXTURE_ERROR)
-		printf("Error\nMultiple define of texture %s\n", s);
+		printf("Error\nMultiple define of texture: %s\n", s);
 }
 
 int 	print_int_error(int error, char *s)

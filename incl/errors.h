@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   errors.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rmazurit <rmazurit@student.42.fr>          +#+  +:+       +#+        */
+/*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 15:05:25 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/19 15:05:25 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/20 12:22:18 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,8 @@
 # define	ARG_ERROR			2
 # define	INVALID_EXTENSION	3
 # define	OPEN_ERROR			4
-# define	TEXTURE_ERROR		5
+# define 	INVALID_TOKEN		5
+# define	TEXTURE_ERROR		6
 
 
 void	print_error(int	error, char *s);
