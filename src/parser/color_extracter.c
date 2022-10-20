@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 18:52:08 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/20 19:43:54 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/20 19:45:08 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,7 @@ void	get_rgb_values(t_data *data, char **rgb)
 	data->color->b = ft_atoi(rgb[2]);
 }
 
+//TODO: probably worthy to improve with ft_strtrim of every argument..
 int	get_color(t_data *data)
 {
 	int		color;
