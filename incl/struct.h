@@ -33,6 +33,7 @@ typedef struct s_conf
 	char		*line;
 	char		**tokens;
 	char		**specs;
+	bool		map_parsed;
 }		t_conf;
 
 

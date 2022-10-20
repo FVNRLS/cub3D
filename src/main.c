@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 11:35:44 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/20 12:24:30 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/20 17:19:58 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int main(int argc, char **argv)
 {
 	t_data	data;
 
-	atexit(check_leaks);
+//	atexit(check_leaks);
 	if (argc != 2)
 		return (print_int_error(ARG_ERROR, NULL));
 	init_environment(&data);

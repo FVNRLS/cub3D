@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 15:05:15 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/20 17:20:57 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/20 17:23:38 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,9 +41,8 @@ static void init_config_items(t_data *data)
 	data->conf->line = NULL;
 	data->conf->tokens = NULL;
 	data->conf->fd = -1;
+	data->conf->map_parsed = false;
 	create_items_container(data);
-
-
 }
 
 static void	init_textures(t_data *data)
