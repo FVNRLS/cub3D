@@ -13,7 +13,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/rmazurit/Documents/42_Projects/cub3D/src/initializer/initializer.c" "CMakeFiles/cub3D.dir/src/initializer/initializer.c.o" "gcc" "CMakeFiles/cub3D.dir/src/initializer/initializer.c.o.d"
   "/Users/rmazurit/Documents/42_Projects/cub3D/src/initializer/map_objects.c" "CMakeFiles/cub3D.dir/src/initializer/map_objects.c.o" "gcc" "CMakeFiles/cub3D.dir/src/initializer/map_objects.c.o.d"
   "/Users/rmazurit/Documents/42_Projects/cub3D/src/main.c" "CMakeFiles/cub3D.dir/src/main.c.o" "gcc" "CMakeFiles/cub3D.dir/src/main.c.o.d"
-  "/Users/rmazurit/Documents/42_Projects/cub3D/src/parser/colors_parser.c" "CMakeFiles/cub3D.dir/src/parser/colors_parser.c.o" "gcc" "CMakeFiles/cub3D.dir/src/parser/colors_parser.c.o.d"
+  "/Users/rmazurit/Documents/42_Projects/cub3D/src/parser/floor_ceiling_parser.c" "CMakeFiles/cub3D.dir/src/parser/floor_ceiling_parser.c.o" "gcc" "CMakeFiles/cub3D.dir/src/parser/floor_ceiling_parser.c.o.d"
   "/Users/rmazurit/Documents/42_Projects/cub3D/src/parser/map_parser.c" "CMakeFiles/cub3D.dir/src/parser/map_parser.c.o" "gcc" "CMakeFiles/cub3D.dir/src/parser/map_parser.c.o.d"
   "/Users/rmazurit/Documents/42_Projects/cub3D/src/parser/parser.c" "CMakeFiles/cub3D.dir/src/parser/parser.c.o" "gcc" "CMakeFiles/cub3D.dir/src/parser/parser.c.o.d"
   "/Users/rmazurit/Documents/42_Projects/cub3D/src/parser/textures_parser.c" "CMakeFiles/cub3D.dir/src/parser/textures_parser.c.o" "gcc" "CMakeFiles/cub3D.dir/src/parser/textures_parser.c.o.d"

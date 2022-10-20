@@ -153,19 +153,19 @@ CMakeFiles/cub3D.dir/src/parser/textures_parser.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cub3D.dir/src/parser/textures_parser.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/textures_parser.c -o CMakeFiles/cub3D.dir/src/parser/textures_parser.c.s
 
-CMakeFiles/cub3D.dir/src/parser/colors_parser.c.o: CMakeFiles/cub3D.dir/flags.make
-CMakeFiles/cub3D.dir/src/parser/colors_parser.c.o: ../src/parser/colors_parser.c
-CMakeFiles/cub3D.dir/src/parser/colors_parser.c.o: CMakeFiles/cub3D.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/cub3D.dir/src/parser/colors_parser.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cub3D.dir/src/parser/colors_parser.c.o -MF CMakeFiles/cub3D.dir/src/parser/colors_parser.c.o.d -o CMakeFiles/cub3D.dir/src/parser/colors_parser.c.o -c /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/colors_parser.c
+CMakeFiles/cub3D.dir/src/parser/floor_ceiling_parser.c.o: CMakeFiles/cub3D.dir/flags.make
+CMakeFiles/cub3D.dir/src/parser/floor_ceiling_parser.c.o: ../src/parser/floor_ceiling_parser.c
+CMakeFiles/cub3D.dir/src/parser/floor_ceiling_parser.c.o: CMakeFiles/cub3D.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/cub3D.dir/src/parser/floor_ceiling_parser.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cub3D.dir/src/parser/floor_ceiling_parser.c.o -MF CMakeFiles/cub3D.dir/src/parser/floor_ceiling_parser.c.o.d -o CMakeFiles/cub3D.dir/src/parser/floor_ceiling_parser.c.o -c /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/floor_ceiling_parser.c
 
-CMakeFiles/cub3D.dir/src/parser/colors_parser.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cub3D.dir/src/parser/colors_parser.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/colors_parser.c > CMakeFiles/cub3D.dir/src/parser/colors_parser.c.i
+CMakeFiles/cub3D.dir/src/parser/floor_ceiling_parser.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cub3D.dir/src/parser/floor_ceiling_parser.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/floor_ceiling_parser.c > CMakeFiles/cub3D.dir/src/parser/floor_ceiling_parser.c.i
 
-CMakeFiles/cub3D.dir/src/parser/colors_parser.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cub3D.dir/src/parser/colors_parser.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/colors_parser.c -o CMakeFiles/cub3D.dir/src/parser/colors_parser.c.s
+CMakeFiles/cub3D.dir/src/parser/floor_ceiling_parser.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cub3D.dir/src/parser/floor_ceiling_parser.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/floor_ceiling_parser.c -o CMakeFiles/cub3D.dir/src/parser/floor_ceiling_parser.c.s
 
 CMakeFiles/cub3D.dir/src/parser/map_parser.c.o: CMakeFiles/cub3D.dir/flags.make
 CMakeFiles/cub3D.dir/src/parser/map_parser.c.o: ../src/parser/map_parser.c
@@ -343,7 +343,7 @@ cub3D_OBJECTS = \
 "CMakeFiles/cub3D.dir/src/destructor.c.o" \
 "CMakeFiles/cub3D.dir/src/parser/parser.c.o" \
 "CMakeFiles/cub3D.dir/src/parser/textures_parser.c.o" \
-"CMakeFiles/cub3D.dir/src/parser/colors_parser.c.o" \
+"CMakeFiles/cub3D.dir/src/parser/floor_ceiling_parser.c.o" \
 "CMakeFiles/cub3D.dir/src/parser/map_parser.c.o" \
 "CMakeFiles/cub3D.dir/src/error_printer.c.o" \
 "CMakeFiles/cub3D.dir/src/tools/ft_strlen.c.o" \
@@ -366,7 +366,7 @@ cub3D: CMakeFiles/cub3D.dir/src/initializer/map_objects.c.o
 cub3D: CMakeFiles/cub3D.dir/src/destructor.c.o
 cub3D: CMakeFiles/cub3D.dir/src/parser/parser.c.o
 cub3D: CMakeFiles/cub3D.dir/src/parser/textures_parser.c.o
-cub3D: CMakeFiles/cub3D.dir/src/parser/colors_parser.c.o
+cub3D: CMakeFiles/cub3D.dir/src/parser/floor_ceiling_parser.c.o
 cub3D: CMakeFiles/cub3D.dir/src/parser/map_parser.c.o
 cub3D: CMakeFiles/cub3D.dir/src/error_printer.c.o
 cub3D: CMakeFiles/cub3D.dir/src/tools/ft_strlen.c.o

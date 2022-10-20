@@ -208,7 +208,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/parser/colors_parser.c",
+			"path" : "src/parser/floor_ceiling_parser.c",
 			"sourceGroupIndex" : 0
 		},
 		{

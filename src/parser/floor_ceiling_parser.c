@@ -1,30 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   initializer.c                                      :+:      :+:    :+:   */
+/*   floor_ceiling_parser.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: rmazurit <rmazurit@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/19 12:32:47 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/20 12:24:30 by rmazurit         ###   ########.fr       */
+/*   Created: 2022/10/20 10:49:12 by rmazurit          #+#    #+#             */
+/*   Updated: 2022/10/20 10:49:12 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../incl/cub3D.h"
 
-static void init_flags(t_data *data)
-{
-	data->parse_error = false;
-}
-
-static void init_data_containers(t_data *data)
+void	parse_ceiling(t_data *data)
 {
 
 }
 
-void	init_environment(t_data *data)
+void	parse_floor(t_data *data)
 {
-	init_flags(data);
-	init_data_containers(data);
-	init_map_objects(data);
+
 }

@@ -19,7 +19,7 @@ add_executable(cub3D src/main.c
         #PARSER
         src/parser/parser.c
         src/parser/textures_parser.c
-        src/parser/colors_parser.c
+        src/parser/floor_ceiling_parser.c
         src/parser/map_parser.c
 
         #ERRORS
