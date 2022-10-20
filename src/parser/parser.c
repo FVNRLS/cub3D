@@ -59,10 +59,7 @@ static void	parse_line(t_data *data)
 	tok = get_first_token(data, first);
 
 	if (tok == T_INVALID)
-	{
-		ft_free_split(data->conf->tokens);
-		return (print_error(INVALID_TOKEN, first));
-	}
+		print_error(INVALID_TOKEN, first);
 	else if (tok == T_NEWLINE)
 	{
 		ft_free_split(data->conf->tokens);
