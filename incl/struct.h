@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 10:07:54 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/19 16:20:22 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/20 10:14:52 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,10 +29,10 @@ typedef struct s_texture
 typedef struct s_conf
 {
 	int 		fd;
-	char		*conf;
+	char		*file;
 	char		*line;
 	char		**tokens;
-	char		**items;
+	char		**specs;
 }		t_conf;
 
 

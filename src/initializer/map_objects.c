@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 15:05:15 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/19 15:05:39 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/20 12:12:54 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,21 +16,18 @@ static void create_items_container(t_data *data)
 {
 	int i;
 
-	data->conf->items[0] = ft_strdup(SPACE);
-	data->conf->items[1] = ft_strdup(NEWLINE);
-	data->conf->items[2] = ft_strdup(CEILING);
-	data->conf->items[3] = ft_strdup(FLOOR);
-	data->conf->items[4] = ft_strdup(NORTH);
-	data->conf->items[5] = ft_strdup(SOUTH);
-	data->conf->items[6] = ft_strdup(EAST);
-	data->conf->items[7] = ft_strdup(WEST);
-	data->conf->items[8] = ft_strdup(ZERO);
-	data->conf->items[9] = ft_strdup(ONE);
-	data->conf->items[NUM_ITEMS] = NULL;
+	data->conf->specs[0] = ft_strdup(NEWLINE);
+	data->conf->specs[1] = ft_strdup(NORTH);
+	data->conf->specs[2] = ft_strdup(SOUTH);
+	data->conf->specs[3] = ft_strdup(EAST);
+	data->conf->specs[4] = ft_strdup(WEST);
+	data->conf->specs[5] = ft_strdup(CEILING);
+	data->conf->specs[6] = ft_strdup(FLOOR);
+	data->conf->specs[NUM_ITEMS] = NULL;
 	i = 0;
 	while (i < NUM_ITEMS)
 	{
-		if (!data->conf->items[i])
+		if (!data->conf->specs[i])
 		{
 			print_int_error(MALLOC_ERROR, NULL);
 			ft_free_all_and_exit(data);
@@ -47,8 +44,8 @@ static void init_config_items(t_data *data)
 		print_int_error(MALLOC_ERROR, NULL);
 		ft_free_all_and_exit(data);
 	}
-	data->conf->items = malloc(sizeof(char *) * (NUM_ITEMS + 1));
-	if (!data->conf->items)
+	data->conf->specs = malloc(sizeof(char *) * (NUM_ITEMS + 1));
+	if (!data->conf->specs)
 	{
 		print_int_error(MALLOC_ERROR, NULL);
 		ft_free_all_and_exit(data);

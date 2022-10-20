@@ -17,7 +17,8 @@
 # define	ARG_ERROR			2
 # define	INVALID_EXTENSION	3
 # define	OPEN_ERROR			4
-# define	TEXTURE_ERROR		5
+# define 	INVALID_TOKEN		5
+# define	TEXTURE_ERROR		6
 
 
 void	print_error(int	error, char *s);
