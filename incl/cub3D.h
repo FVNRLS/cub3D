@@ -25,8 +25,20 @@
 # include "tools.h"
 # include "../lib/get_next_line/get_next_line.h"
 
-# define RIGHTS	0644
-# define SPACE	' '
+# define RIGHTS		0644
+# define NUM_ITEMS	10
+
+# define SPACE		" "
+# define NEWLINE	"\n"
+# define CEILING	"C"
+# define FLOOR		"F"
+# define NORTH		"NO"
+# define SOUTH		"SO"
+# define EAST		"EA"
+# define WEST		"WE"
+# define ZERO		"0"
+# define ONE		"1"
+
 
 //INITIALIZER
 void	init_environment(t_data *data);

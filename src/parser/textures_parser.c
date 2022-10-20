@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 15:09:01 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/19 15:35:27 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/19 16:32:02 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,14 +41,13 @@ static int	try_extraction(t_data *data, char **tokens)
 	return (EXIT_SUCCESS);
 }
 
-static int	extract_texture_path(t_data *data, char *line)
+void	#(t_data *data)
 {
 	char	**tokens;
 
-	tokens = ft_split(line, SPACE);
+	tokens =
 	if (!tokens)
-		return (print_int_error(MALLOC_ERROR, NULL));
-	if (ft_splitlen(tokens) == 2)
+
 	{
 		if (try_extraction(data, tokens) == TEXTURE_ERROR)
 		{
@@ -57,26 +56,4 @@ static int	extract_texture_path(t_data *data, char *line)
 		}
 	}
 	return (EXIT_SUCCESS);
-}
-
-void	parse_textures(t_data *data)
-{
-	char	*line;
-	int 	ret;
-
-	line = NULL;
-	while (true)
-	{
-		line = get_next_line(data->fd);
-		if (!line)
-			break ;
-		ret = extract_texture_path(data, line);
-		free(line);
-		line = NULL;
-		if (ret == EXIT_FAILURE)
-		{
-			data->parse_error = true;
-			return ;
-		}
-	}
 }

@@ -249,29 +249,29 @@ src/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/main.c.s
 .PHONY : src/main.c.s
 
-src/parser/colors_parser.o: src/parser/colors_parser.c.o
-.PHONY : src/parser/colors_parser.o
+src/parser/floor_ceiling_parser.o: src/parser/floor_ceiling_parser.c.o
+.PHONY : src/parser/floor_ceiling_parser.o
 
 # target to build an object file
-src/parser/colors_parser.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/parser/colors_parser.c.o
-.PHONY : src/parser/colors_parser.c.o
+src/parser/floor_ceiling_parser.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/parser/floor_ceiling_parser.c.o
+.PHONY : src/parser/floor_ceiling_parser.c.o
 
-src/parser/colors_parser.i: src/parser/colors_parser.c.i
-.PHONY : src/parser/colors_parser.i
+src/parser/floor_ceiling_parser.i: src/parser/floor_ceiling_parser.c.i
+.PHONY : src/parser/floor_ceiling_parser.i
 
 # target to preprocess a source file
-src/parser/colors_parser.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/parser/colors_parser.c.i
-.PHONY : src/parser/colors_parser.c.i
+src/parser/floor_ceiling_parser.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/parser/floor_ceiling_parser.c.i
+.PHONY : src/parser/floor_ceiling_parser.c.i
 
-src/parser/colors_parser.s: src/parser/colors_parser.c.s
-.PHONY : src/parser/colors_parser.s
+src/parser/floor_ceiling_parser.s: src/parser/floor_ceiling_parser.c.s
+.PHONY : src/parser/floor_ceiling_parser.s
 
 # target to generate assembly for a file
-src/parser/colors_parser.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/parser/colors_parser.c.s
-.PHONY : src/parser/colors_parser.c.s
+src/parser/floor_ceiling_parser.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/parser/floor_ceiling_parser.c.s
+.PHONY : src/parser/floor_ceiling_parser.c.s
 
 src/parser/map_parser.o: src/parser/map_parser.c.o
 .PHONY : src/parser/map_parser.o
@@ -609,9 +609,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/parser/colors_parser.o"
-	@echo "... src/parser/colors_parser.i"
-	@echo "... src/parser/colors_parser.s"
+	@echo "... src/parser/floor_ceiling_parser.o"
+	@echo "... src/parser/floor_ceiling_parser.i"
+	@echo "... src/parser/floor_ceiling_parser.s"
 	@echo "... src/parser/map_parser.o"
 	@echo "... src/parser/map_parser.i"
 	@echo "... src/parser/map_parser.s"
