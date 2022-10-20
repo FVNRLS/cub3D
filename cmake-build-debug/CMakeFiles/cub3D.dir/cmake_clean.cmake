@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/cub3D.dir/src/initializer/map_objects.c.o.d"
   "CMakeFiles/cub3D.dir/src/main.c.o"
   "CMakeFiles/cub3D.dir/src/main.c.o.d"
+  "CMakeFiles/cub3D.dir/src/parser/color_extracter.c.o"
+  "CMakeFiles/cub3D.dir/src/parser/color_extracter.c.o.d"
   "CMakeFiles/cub3D.dir/src/parser/floor_ceiling_parser.c.o"
   "CMakeFiles/cub3D.dir/src/parser/floor_ceiling_parser.c.o.d"
   "CMakeFiles/cub3D.dir/src/parser/map_parser.c.o"

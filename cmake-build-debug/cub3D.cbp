@@ -105,6 +105,9 @@
 		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/main.c">
 			<Option target="cub3D"/>
 		</Unit>
+		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/parser/color_extracter.c">
+			<Option target="cub3D"/>
+		</Unit>
 		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/parser/floor_ceiling_parser.c">
 			<Option target="cub3D"/>
 		</Unit>

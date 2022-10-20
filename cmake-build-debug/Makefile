@@ -249,6 +249,30 @@ src/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/main.c.s
 .PHONY : src/main.c.s
 
+src/parser/color_extracter.o: src/parser/color_extracter.c.o
+.PHONY : src/parser/color_extracter.o
+
+# target to build an object file
+src/parser/color_extracter.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/parser/color_extracter.c.o
+.PHONY : src/parser/color_extracter.c.o
+
+src/parser/color_extracter.i: src/parser/color_extracter.c.i
+.PHONY : src/parser/color_extracter.i
+
+# target to preprocess a source file
+src/parser/color_extracter.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/parser/color_extracter.c.i
+.PHONY : src/parser/color_extracter.c.i
+
+src/parser/color_extracter.s: src/parser/color_extracter.c.s
+.PHONY : src/parser/color_extracter.s
+
+# target to generate assembly for a file
+src/parser/color_extracter.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/parser/color_extracter.c.s
+.PHONY : src/parser/color_extracter.c.s
+
 src/parser/floor_ceiling_parser.o: src/parser/floor_ceiling_parser.c.o
 .PHONY : src/parser/floor_ceiling_parser.o
 
@@ -609,6 +633,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/parser/color_extracter.o"
+	@echo "... src/parser/color_extracter.i"
+	@echo "... src/parser/color_extracter.s"
 	@echo "... src/parser/floor_ceiling_parser.o"
 	@echo "... src/parser/floor_ceiling_parser.i"
 	@echo "... src/parser/floor_ceiling_parser.s"

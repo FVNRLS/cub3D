@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/19 10:07:54 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/20 12:24:30 by rmazurit         ###   ########.fr       */
+/*   Created: 2022/10/20 17:40:14 by rmazurit          #+#    #+#             */
+/*   Updated: 2022/10/20 19:36:34 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,14 +26,24 @@ typedef struct s_texture
 	char	*east;
 }		t_texture;
 
+typedef struct s_color
+{
+	int		ceil;
+	int		floor;
+	int 	r;
+	int 	g;
+	int 	b;
+}		t_color;
+
+
 typedef struct s_conf
 {
-	int 		fd;
-	char		*file;
-	char		*line;
-	char		**tokens;
-	char		**specs;
-	bool		map_parsed;
+	int		fd;
+	char	*file;
+	char	*line;
+	char	**tokens;
+	char	**specs;
+	bool	map_parsed;
 }		t_conf;
 
 
@@ -42,8 +52,9 @@ typedef struct s_data
 
 	bool		parse_error;
 	t_conf		*conf;
-	t_map		*map;
 	t_texture	*texture;
+	t_color		*color;
+	t_map		*map;
 }		t_data;
 
 #endif
