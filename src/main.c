@@ -21,7 +21,7 @@ int main(int argc, char **argv)
 {
 	t_data	data;
 
-//	atexit(check_leaks);
+	atexit(check_leaks);
 	if (argc != 2)
 		return (print_int_error(ARG_ERROR, NULL));
 	init_environment(&data);

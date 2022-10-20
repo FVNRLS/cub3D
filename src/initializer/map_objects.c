@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 15:05:15 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/20 12:24:30 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/20 17:20:57 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,26 +14,14 @@
 
 static void create_items_container(t_data *data)
 {
-	int i;
-
-	data->conf->specs[0] = ft_strdup(NEWLINE);
-	data->conf->specs[1] = ft_strdup(NORTH);
-	data->conf->specs[2] = ft_strdup(SOUTH);
-	data->conf->specs[3] = ft_strdup(EAST);
-	data->conf->specs[4] = ft_strdup(WEST);
-	data->conf->specs[5] = ft_strdup(CEILING);
-	data->conf->specs[6] = ft_strdup(FLOOR);
+	data->conf->specs[0] = NEWLINE;
+	data->conf->specs[1] = NORTH;
+	data->conf->specs[2] = SOUTH;
+	data->conf->specs[3] = EAST;
+	data->conf->specs[4] = WEST;
+	data->conf->specs[5] = CEILING;
+	data->conf->specs[6] = FLOOR;
 	data->conf->specs[NUM_ITEMS] = NULL;
-	i = 0;
-	while (i < NUM_ITEMS)
-	{
-		if (!data->conf->specs[i])
-		{
-			print_int_error(MALLOC_ERROR, NULL);
-			ft_free_all_and_exit(data);
-		}
-		i++;
-	}
 }
 
 static void init_config_items(t_data *data)
