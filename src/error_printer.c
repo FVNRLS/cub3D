@@ -25,7 +25,9 @@ void	print_error(int	error, char *s)
 	else if (error == INVALID_TOKEN)
 		printf("Error\nInvalid characters found: %s\n", s);
 	else if (error == TEXTURE_ERROR)
-		printf("Error\nMultiple define of texture: %s\n", s);
+		printf("Error\nMultiple definition of texture: %s\n", s);
+	else if (error == COLOR_ERROR)
+		printf("Error\nMultiple definition of color: %s\n", s);
 }
 
 int 	print_int_error(int error, char *s)

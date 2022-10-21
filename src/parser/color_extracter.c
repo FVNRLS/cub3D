@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 18:52:08 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/20 19:45:08 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/21 11:46:34 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,6 +58,7 @@ int	get_color(t_data *data)
 	get_rgb_values(data, rgb);
 	color = convert_rgb_to_hex(data->color->r, data->color->g, data->color->b);
 	printf("r: %d, g: %d, b: %d\n", data->color->r, data->color->g, data->color->b);
+	printf("ceiling hex-color: %X\n", color);
 	reset_rgb_values(data);
 	ft_free_split(rgb);
 	return (color);

@@ -98,7 +98,6 @@ void	parse_input(t_data *data)
 		if (data->parse_error == true)
 			break ;
 	}
-	printf("ceiling hex-color: %X\n",data->color->ceil);
 	close(data->conf->fd);
 }
 

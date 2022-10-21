@@ -19,6 +19,7 @@
 # define	OPEN_ERROR			4
 # define 	INVALID_TOKEN		5
 # define	TEXTURE_ERROR		6
+# define	COLOR_ERROR			7
 
 
 void	print_error(int	error, char *s);
