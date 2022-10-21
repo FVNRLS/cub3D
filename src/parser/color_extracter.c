@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 18:52:08 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/21 16:37:47 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/21 16:48:41 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 /*
 	Separate colors and combine them back together with bit shifting method.
-	The trgb paramter is always an int, represented as HEX Value.
+	The trgb parameter is always an int, represented as HEX Value.
 */
 
 static int	convert_rgb_to_hex(int r, int g, int b)
