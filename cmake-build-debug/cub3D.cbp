@@ -120,9 +120,6 @@
 		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/parser/textures_parser.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_atoi.c">
-			<Option target="cub3D"/>
-		</Unit>
 		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_free_all_and_exit.c">
 			<Option target="cub3D"/>
 		</Unit>
@@ -130,6 +127,9 @@
 			<Option target="cub3D"/>
 		</Unit>
 		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_isdigit.c">
+			<Option target="cub3D"/>
+		</Unit>
+		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_rgb_atoi.c">
 			<Option target="cub3D"/>
 		</Unit>
 		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_split.c">
@@ -144,10 +144,16 @@
 		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_strdup.c">
 			<Option target="cub3D"/>
 		</Unit>
+		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_strjoin.c">
+			<Option target="cub3D"/>
+		</Unit>
 		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_strlen.c">
 			<Option target="cub3D"/>
 		</Unit>
 		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_strncmp.c">
+			<Option target="cub3D"/>
+		</Unit>
+		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_strtrim.c">
 			<Option target="cub3D"/>
 		</Unit>
 		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/CMakeLists.txt">

@@ -265,19 +265,19 @@ CMakeFiles/cub3D.dir/src/tools/ft_strdup.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cub3D.dir/src/tools/ft_strdup.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_strdup.c -o CMakeFiles/cub3D.dir/src/tools/ft_strdup.c.s
 
-CMakeFiles/cub3D.dir/src/tools/ft_atoi.c.o: CMakeFiles/cub3D.dir/flags.make
-CMakeFiles/cub3D.dir/src/tools/ft_atoi.c.o: ../src/tools/ft_atoi.c
-CMakeFiles/cub3D.dir/src/tools/ft_atoi.c.o: CMakeFiles/cub3D.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/cub3D.dir/src/tools/ft_atoi.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cub3D.dir/src/tools/ft_atoi.c.o -MF CMakeFiles/cub3D.dir/src/tools/ft_atoi.c.o.d -o CMakeFiles/cub3D.dir/src/tools/ft_atoi.c.o -c /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_atoi.c
+CMakeFiles/cub3D.dir/src/tools/ft_rgb_atoi.c.o: CMakeFiles/cub3D.dir/flags.make
+CMakeFiles/cub3D.dir/src/tools/ft_rgb_atoi.c.o: ../src/tools/ft_rgb_atoi.c
+CMakeFiles/cub3D.dir/src/tools/ft_rgb_atoi.c.o: CMakeFiles/cub3D.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/cub3D.dir/src/tools/ft_rgb_atoi.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cub3D.dir/src/tools/ft_rgb_atoi.c.o -MF CMakeFiles/cub3D.dir/src/tools/ft_rgb_atoi.c.o.d -o CMakeFiles/cub3D.dir/src/tools/ft_rgb_atoi.c.o -c /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_rgb_atoi.c
 
-CMakeFiles/cub3D.dir/src/tools/ft_atoi.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cub3D.dir/src/tools/ft_atoi.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_atoi.c > CMakeFiles/cub3D.dir/src/tools/ft_atoi.c.i
+CMakeFiles/cub3D.dir/src/tools/ft_rgb_atoi.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cub3D.dir/src/tools/ft_rgb_atoi.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_rgb_atoi.c > CMakeFiles/cub3D.dir/src/tools/ft_rgb_atoi.c.i
 
-CMakeFiles/cub3D.dir/src/tools/ft_atoi.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cub3D.dir/src/tools/ft_atoi.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_atoi.c -o CMakeFiles/cub3D.dir/src/tools/ft_atoi.c.s
+CMakeFiles/cub3D.dir/src/tools/ft_rgb_atoi.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cub3D.dir/src/tools/ft_rgb_atoi.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_rgb_atoi.c -o CMakeFiles/cub3D.dir/src/tools/ft_rgb_atoi.c.s
 
 CMakeFiles/cub3D.dir/src/tools/ft_isdigit.c.o: CMakeFiles/cub3D.dir/flags.make
 CMakeFiles/cub3D.dir/src/tools/ft_isdigit.c.o: ../src/tools/ft_isdigit.c
@@ -349,6 +349,34 @@ CMakeFiles/cub3D.dir/src/tools/ft_free_all_and_exit.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cub3D.dir/src/tools/ft_free_all_and_exit.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_free_all_and_exit.c -o CMakeFiles/cub3D.dir/src/tools/ft_free_all_and_exit.c.s
 
+CMakeFiles/cub3D.dir/src/tools/ft_strtrim.c.o: CMakeFiles/cub3D.dir/flags.make
+CMakeFiles/cub3D.dir/src/tools/ft_strtrim.c.o: ../src/tools/ft_strtrim.c
+CMakeFiles/cub3D.dir/src/tools/ft_strtrim.c.o: CMakeFiles/cub3D.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/cub3D.dir/src/tools/ft_strtrim.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cub3D.dir/src/tools/ft_strtrim.c.o -MF CMakeFiles/cub3D.dir/src/tools/ft_strtrim.c.o.d -o CMakeFiles/cub3D.dir/src/tools/ft_strtrim.c.o -c /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_strtrim.c
+
+CMakeFiles/cub3D.dir/src/tools/ft_strtrim.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cub3D.dir/src/tools/ft_strtrim.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_strtrim.c > CMakeFiles/cub3D.dir/src/tools/ft_strtrim.c.i
+
+CMakeFiles/cub3D.dir/src/tools/ft_strtrim.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cub3D.dir/src/tools/ft_strtrim.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_strtrim.c -o CMakeFiles/cub3D.dir/src/tools/ft_strtrim.c.s
+
+CMakeFiles/cub3D.dir/src/tools/ft_strjoin.c.o: CMakeFiles/cub3D.dir/flags.make
+CMakeFiles/cub3D.dir/src/tools/ft_strjoin.c.o: ../src/tools/ft_strjoin.c
+CMakeFiles/cub3D.dir/src/tools/ft_strjoin.c.o: CMakeFiles/cub3D.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/cub3D.dir/src/tools/ft_strjoin.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cub3D.dir/src/tools/ft_strjoin.c.o -MF CMakeFiles/cub3D.dir/src/tools/ft_strjoin.c.o.d -o CMakeFiles/cub3D.dir/src/tools/ft_strjoin.c.o -c /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_strjoin.c
+
+CMakeFiles/cub3D.dir/src/tools/ft_strjoin.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cub3D.dir/src/tools/ft_strjoin.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_strjoin.c > CMakeFiles/cub3D.dir/src/tools/ft_strjoin.c.i
+
+CMakeFiles/cub3D.dir/src/tools/ft_strjoin.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cub3D.dir/src/tools/ft_strjoin.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_strjoin.c -o CMakeFiles/cub3D.dir/src/tools/ft_strjoin.c.s
+
 # Object files for target cub3D
 cub3D_OBJECTS = \
 "CMakeFiles/cub3D.dir/src/main.c.o" \
@@ -365,12 +393,14 @@ cub3D_OBJECTS = \
 "CMakeFiles/cub3D.dir/src/tools/ft_strncmp.c.o" \
 "CMakeFiles/cub3D.dir/src/tools/ft_split.c.o" \
 "CMakeFiles/cub3D.dir/src/tools/ft_strdup.c.o" \
-"CMakeFiles/cub3D.dir/src/tools/ft_atoi.c.o" \
+"CMakeFiles/cub3D.dir/src/tools/ft_rgb_atoi.c.o" \
 "CMakeFiles/cub3D.dir/src/tools/ft_isdigit.c.o" \
 "CMakeFiles/cub3D.dir/src/tools/ft_strcmp.c.o" \
 "CMakeFiles/cub3D.dir/src/tools/ft_splitlen.c.o" \
 "CMakeFiles/cub3D.dir/src/tools/ft_free_split.c.o" \
-"CMakeFiles/cub3D.dir/src/tools/ft_free_all_and_exit.c.o"
+"CMakeFiles/cub3D.dir/src/tools/ft_free_all_and_exit.c.o" \
+"CMakeFiles/cub3D.dir/src/tools/ft_strtrim.c.o" \
+"CMakeFiles/cub3D.dir/src/tools/ft_strjoin.c.o"
 
 # External object files for target cub3D
 cub3D_EXTERNAL_OBJECTS =
@@ -389,16 +419,18 @@ cub3D: CMakeFiles/cub3D.dir/src/tools/ft_strlen.c.o
 cub3D: CMakeFiles/cub3D.dir/src/tools/ft_strncmp.c.o
 cub3D: CMakeFiles/cub3D.dir/src/tools/ft_split.c.o
 cub3D: CMakeFiles/cub3D.dir/src/tools/ft_strdup.c.o
-cub3D: CMakeFiles/cub3D.dir/src/tools/ft_atoi.c.o
+cub3D: CMakeFiles/cub3D.dir/src/tools/ft_rgb_atoi.c.o
 cub3D: CMakeFiles/cub3D.dir/src/tools/ft_isdigit.c.o
 cub3D: CMakeFiles/cub3D.dir/src/tools/ft_strcmp.c.o
 cub3D: CMakeFiles/cub3D.dir/src/tools/ft_splitlen.c.o
 cub3D: CMakeFiles/cub3D.dir/src/tools/ft_free_split.c.o
 cub3D: CMakeFiles/cub3D.dir/src/tools/ft_free_all_and_exit.c.o
+cub3D: CMakeFiles/cub3D.dir/src/tools/ft_strtrim.c.o
+cub3D: CMakeFiles/cub3D.dir/src/tools/ft_strjoin.c.o
 cub3D: CMakeFiles/cub3D.dir/build.make
 cub3D: ../lib/get_next_line/get_next_line.a
 cub3D: CMakeFiles/cub3D.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking C executable cub3D"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking C executable cub3D"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cub3D.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

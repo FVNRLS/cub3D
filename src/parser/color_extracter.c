@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 18:52:08 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/21 11:46:34 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/21 16:37:34 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,44 +22,92 @@ static int	convert_rgb_to_hex(int r, int g, int b)
 	return (r << 16 | g << 8 | b);
 }
 
-void 	reset_rgb_values(t_data *data)
+static void	get_rgb_values(t_data *data, char **rgb)
 {
+	char	*r;
+	char 	*g;
+	char 	*b;
+
+	r = ft_strtrim(rgb[0], " \n");
+	g = ft_strtrim(rgb[1], " \n");
+	b = ft_strtrim(rgb[2], " \n");
+	data->color->r = ft_rgb_atoi(r);
+	data->color->g = ft_rgb_atoi(g);
+	data->color->b = ft_rgb_atoi(b);
+	free(r);
+	free(g);
+	free(b);
+}
+
+static int	extract_hex_color(t_data *data, char **rgb)
+{
+	int color;
+
+	get_rgb_values(data, rgb);
+	if (data->color->r == -1 || data->color->g == -1 || data->color->b == -1)
+		color = -1;
+	else
+		color = convert_rgb_to_hex(data->color->r, data->color->g,
+								   data->color->b);
 	data->color->r = -1;
 	data->color->g = -1;
 	data->color->b = -1;
+	return (color);
 }
 
-void	get_rgb_values(t_data *data, char **rgb)
+static char	*join_arguments(t_data *data)
 {
-	data->color->r = ft_atoi(rgb[0]);
-	data->color->g = ft_atoi(rgb[1]);
-	data->color->b = ft_atoi(rgb[2]);
+	int 	i;
+	char	*res;
+	int 	len;
+
+	res = NULL;
+	len = ft_splitlen(data->conf->tokens);
+	i = 1;
+	if (len == 2)
+		res = ft_strdup(data->conf->tokens[1]);
+	else
+	{
+		while (i < len)
+		{
+			res = ft_strjoin(res, data->conf->tokens[i]);
+			if (!res)
+				return (print_null_error(MALLOC_ERROR, NULL));
+			i++;
+		}
+	}
+	return (res);
 }
 
-//TODO: probably worthy to improve with ft_strtrim of every argument..
 int	get_color(t_data *data)
 {
 	int		color;
 	char	*color_str;
 	char	**rgb;
 
-	color_str = data->conf->tokens[1];
+	color = -1;
+	color_str = join_arguments(data);
 	rgb = ft_split(color_str, ',');
-	if (!rgb)
-	{
-		print_error(MALLOC_ERROR, NULL);
-		ft_free_all_and_exit(data);
-	}
-	if (ft_splitlen(rgb) != 3)
+	if (!color_str || !rgb)
 	{
 		data->parse_error = true;
-		return (print_int_error(INVALID_TOKEN, color_str));
+		print_error(MALLOC_ERROR, NULL);
 	}
-	get_rgb_values(data, rgb);
-	color = convert_rgb_to_hex(data->color->r, data->color->g, data->color->b);
-	printf("r: %d, g: %d, b: %d\n", data->color->r, data->color->g, data->color->b);
-	printf("ceiling hex-color: %X\n", color);
-	reset_rgb_values(data);
+	else if (ft_splitlen(rgb) != 3)
+	{
+		data->parse_error = true;
+		print_error(INVALID_TOKEN, color_str);
+	}
+	else
+		color = extract_hex_color(data, rgb);
+	if (color == -1)
+	{
+		data->parse_error = true;
+		print_error(INVALID_TOKEN, color_str);
+	}
 	ft_free_split(rgb);
+	printf("rgb:	%s",color_str);
+	printf("color:	%X\n",color);
+	free(color_str);
 	return (color);
 }

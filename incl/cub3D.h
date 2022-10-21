@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 12:32:53 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/20 19:36:34 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/21 15:08:05 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,8 +69,6 @@ void	parse_map(t_data *data);
 
 //COLORIZER
 int		get_color(t_data *data);
-void	get_rgb_values(t_data *data, char **rgb);
-void 	reset_rgb_values(t_data *data);
 
 
 //DESTRUCTOR
