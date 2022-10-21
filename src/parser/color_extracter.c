@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 18:52:08 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/21 16:37:34 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/21 16:37:47 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -106,8 +106,6 @@ int	get_color(t_data *data)
 		print_error(INVALID_TOKEN, color_str);
 	}
 	ft_free_split(rgb);
-	printf("rgb:	%s",color_str);
-	printf("color:	%X\n",color);
 	free(color_str);
 	return (color);
 }
