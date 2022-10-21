@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 15:05:15 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/20 17:23:38 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/21 16:51:33 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,8 +56,24 @@ static void	init_textures(t_data *data)
 	data->texture->west = NULL;
 }
 
+static void init_ceiling_floor(t_data *data)
+{
+	data->color = malloc(sizeof(t_color));
+	if (!data->color)
+	{
+		print_error(MALLOC_ERROR, NULL);
+		ft_free_all_and_exit(data);
+	}
+	data->color->ceil = -1;
+	data->color->floor = -1;
+	data->color->r = -1;
+	data->color->g = -1;
+	data->color->b = -1;
+}
+
 void	init_map_objects(t_data *data)
 {
-	init_textures(data);
 	init_config_items(data);
+	init_textures(data);
+	init_ceiling_floor(data);
 }

@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 11:50:41 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/20 12:24:30 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/21 16:51:33 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,6 +76,7 @@ static void	parse_line(t_data *data)
 	ft_free_split(data->conf->tokens);
 }
 
+//TODO: after parsing - write checker, if everything was parsed!
 void	parse_input(t_data *data)
 {
 	bool	ext_valid;
@@ -98,11 +99,6 @@ void	parse_input(t_data *data)
 			break ;
 	}
 	close(data->conf->fd);
-
-	printf("%s\n", data->texture->north);
-	printf("%s\n", data->texture->south);
-	printf("%s\n", data->texture->east);
-	printf("%s\n", data->texture->west);
 }
 
 
