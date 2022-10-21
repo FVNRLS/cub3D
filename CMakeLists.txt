@@ -21,6 +21,7 @@ add_executable(cub3D src/main.c
         src/parser/textures_parser.c
         src/parser/floor_ceiling_parser.c
         src/parser/map_parser.c
+        src/parser/color_extracter.c
 
         #ERRORS
         src/error_printer.c
@@ -30,12 +31,15 @@ add_executable(cub3D src/main.c
         src/tools/ft_strncmp.c
         src/tools/ft_split.c
         src/tools/ft_strdup.c
-        src/tools/ft_atoi.c
+        src/tools/ft_rgb_atoi.c
         src/tools/ft_isdigit.c
         src/tools/ft_strcmp.c
         src/tools/ft_splitlen.c
         src/tools/ft_free_split.c
-        src/tools/ft_free_all_and_exit.c)
+        src/tools/ft_free_all_and_exit.c
+        src/tools/ft_strtrim.c
+        src/tools/ft_strjoin.c
+        )
 
 ADD_LIBRARY(get_next_line STATIC IMPORTED)
 SET_TARGET_PROPERTIES(get_next_line PROPERTIES IMPORTED_LOCATION ${CMAKE_SOURCE_DIR}/lib/get_next_line/get_next_line.a)

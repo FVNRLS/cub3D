@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 11:50:41 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/21 16:55:49 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/21 16:59:57 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,6 +98,13 @@ void	parse_input(t_data *data)
 		if (data->parse_error == true)
 			break ;
 	}
+	printf("%s\n",data->texture->north);
+	printf("%s\n",data->texture->south);
+	printf("%s\n",data->texture->east);
+	printf("%s\n",data->texture->west);
+	printf("ceiling hex-color: %X\n",data->color->ceil);
+	printf("floor hex-color: %X\n",data->color->floor);
+
 	close(data->conf->fd);
 }
 

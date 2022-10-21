@@ -249,6 +249,30 @@ src/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/main.c.s
 .PHONY : src/main.c.s
 
+src/parser/color_extracter.o: src/parser/color_extracter.c.o
+.PHONY : src/parser/color_extracter.o
+
+# target to build an object file
+src/parser/color_extracter.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/parser/color_extracter.c.o
+.PHONY : src/parser/color_extracter.c.o
+
+src/parser/color_extracter.i: src/parser/color_extracter.c.i
+.PHONY : src/parser/color_extracter.i
+
+# target to preprocess a source file
+src/parser/color_extracter.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/parser/color_extracter.c.i
+.PHONY : src/parser/color_extracter.c.i
+
+src/parser/color_extracter.s: src/parser/color_extracter.c.s
+.PHONY : src/parser/color_extracter.s
+
+# target to generate assembly for a file
+src/parser/color_extracter.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/parser/color_extracter.c.s
+.PHONY : src/parser/color_extracter.c.s
+
 src/parser/floor_ceiling_parser.o: src/parser/floor_ceiling_parser.c.o
 .PHONY : src/parser/floor_ceiling_parser.o
 
@@ -345,30 +369,6 @@ src/parser/textures_parser.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/parser/textures_parser.c.s
 .PHONY : src/parser/textures_parser.c.s
 
-src/tools/ft_atoi.o: src/tools/ft_atoi.c.o
-.PHONY : src/tools/ft_atoi.o
-
-# target to build an object file
-src/tools/ft_atoi.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_atoi.c.o
-.PHONY : src/tools/ft_atoi.c.o
-
-src/tools/ft_atoi.i: src/tools/ft_atoi.c.i
-.PHONY : src/tools/ft_atoi.i
-
-# target to preprocess a source file
-src/tools/ft_atoi.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_atoi.c.i
-.PHONY : src/tools/ft_atoi.c.i
-
-src/tools/ft_atoi.s: src/tools/ft_atoi.c.s
-.PHONY : src/tools/ft_atoi.s
-
-# target to generate assembly for a file
-src/tools/ft_atoi.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_atoi.c.s
-.PHONY : src/tools/ft_atoi.c.s
-
 src/tools/ft_free_all_and_exit.o: src/tools/ft_free_all_and_exit.c.o
 .PHONY : src/tools/ft_free_all_and_exit.o
 
@@ -440,6 +440,30 @@ src/tools/ft_isdigit.s: src/tools/ft_isdigit.c.s
 src/tools/ft_isdigit.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_isdigit.c.s
 .PHONY : src/tools/ft_isdigit.c.s
+
+src/tools/ft_rgb_atoi.o: src/tools/ft_rgb_atoi.c.o
+.PHONY : src/tools/ft_rgb_atoi.o
+
+# target to build an object file
+src/tools/ft_rgb_atoi.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_rgb_atoi.c.o
+.PHONY : src/tools/ft_rgb_atoi.c.o
+
+src/tools/ft_rgb_atoi.i: src/tools/ft_rgb_atoi.c.i
+.PHONY : src/tools/ft_rgb_atoi.i
+
+# target to preprocess a source file
+src/tools/ft_rgb_atoi.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_rgb_atoi.c.i
+.PHONY : src/tools/ft_rgb_atoi.c.i
+
+src/tools/ft_rgb_atoi.s: src/tools/ft_rgb_atoi.c.s
+.PHONY : src/tools/ft_rgb_atoi.s
+
+# target to generate assembly for a file
+src/tools/ft_rgb_atoi.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_rgb_atoi.c.s
+.PHONY : src/tools/ft_rgb_atoi.c.s
 
 src/tools/ft_split.o: src/tools/ft_split.c.o
 .PHONY : src/tools/ft_split.o
@@ -537,6 +561,30 @@ src/tools/ft_strdup.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_strdup.c.s
 .PHONY : src/tools/ft_strdup.c.s
 
+src/tools/ft_strjoin.o: src/tools/ft_strjoin.c.o
+.PHONY : src/tools/ft_strjoin.o
+
+# target to build an object file
+src/tools/ft_strjoin.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_strjoin.c.o
+.PHONY : src/tools/ft_strjoin.c.o
+
+src/tools/ft_strjoin.i: src/tools/ft_strjoin.c.i
+.PHONY : src/tools/ft_strjoin.i
+
+# target to preprocess a source file
+src/tools/ft_strjoin.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_strjoin.c.i
+.PHONY : src/tools/ft_strjoin.c.i
+
+src/tools/ft_strjoin.s: src/tools/ft_strjoin.c.s
+.PHONY : src/tools/ft_strjoin.s
+
+# target to generate assembly for a file
+src/tools/ft_strjoin.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_strjoin.c.s
+.PHONY : src/tools/ft_strjoin.c.s
+
 src/tools/ft_strlen.o: src/tools/ft_strlen.c.o
 .PHONY : src/tools/ft_strlen.o
 
@@ -585,6 +633,30 @@ src/tools/ft_strncmp.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_strncmp.c.s
 .PHONY : src/tools/ft_strncmp.c.s
 
+src/tools/ft_strtrim.o: src/tools/ft_strtrim.c.o
+.PHONY : src/tools/ft_strtrim.o
+
+# target to build an object file
+src/tools/ft_strtrim.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_strtrim.c.o
+.PHONY : src/tools/ft_strtrim.c.o
+
+src/tools/ft_strtrim.i: src/tools/ft_strtrim.c.i
+.PHONY : src/tools/ft_strtrim.i
+
+# target to preprocess a source file
+src/tools/ft_strtrim.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_strtrim.c.i
+.PHONY : src/tools/ft_strtrim.c.i
+
+src/tools/ft_strtrim.s: src/tools/ft_strtrim.c.s
+.PHONY : src/tools/ft_strtrim.s
+
+# target to generate assembly for a file
+src/tools/ft_strtrim.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_strtrim.c.s
+.PHONY : src/tools/ft_strtrim.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -609,6 +681,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/parser/color_extracter.o"
+	@echo "... src/parser/color_extracter.i"
+	@echo "... src/parser/color_extracter.s"
 	@echo "... src/parser/floor_ceiling_parser.o"
 	@echo "... src/parser/floor_ceiling_parser.i"
 	@echo "... src/parser/floor_ceiling_parser.s"
@@ -621,9 +696,6 @@ help:
 	@echo "... src/parser/textures_parser.o"
 	@echo "... src/parser/textures_parser.i"
 	@echo "... src/parser/textures_parser.s"
-	@echo "... src/tools/ft_atoi.o"
-	@echo "... src/tools/ft_atoi.i"
-	@echo "... src/tools/ft_atoi.s"
 	@echo "... src/tools/ft_free_all_and_exit.o"
 	@echo "... src/tools/ft_free_all_and_exit.i"
 	@echo "... src/tools/ft_free_all_and_exit.s"
@@ -633,6 +705,9 @@ help:
 	@echo "... src/tools/ft_isdigit.o"
 	@echo "... src/tools/ft_isdigit.i"
 	@echo "... src/tools/ft_isdigit.s"
+	@echo "... src/tools/ft_rgb_atoi.o"
+	@echo "... src/tools/ft_rgb_atoi.i"
+	@echo "... src/tools/ft_rgb_atoi.s"
 	@echo "... src/tools/ft_split.o"
 	@echo "... src/tools/ft_split.i"
 	@echo "... src/tools/ft_split.s"
@@ -645,12 +720,18 @@ help:
 	@echo "... src/tools/ft_strdup.o"
 	@echo "... src/tools/ft_strdup.i"
 	@echo "... src/tools/ft_strdup.s"
+	@echo "... src/tools/ft_strjoin.o"
+	@echo "... src/tools/ft_strjoin.i"
+	@echo "... src/tools/ft_strjoin.s"
 	@echo "... src/tools/ft_strlen.o"
 	@echo "... src/tools/ft_strlen.i"
 	@echo "... src/tools/ft_strlen.s"
 	@echo "... src/tools/ft_strncmp.o"
 	@echo "... src/tools/ft_strncmp.i"
 	@echo "... src/tools/ft_strncmp.s"
+	@echo "... src/tools/ft_strtrim.o"
+	@echo "... src/tools/ft_strtrim.i"
+	@echo "... src/tools/ft_strtrim.s"
 .PHONY : help
 
 
