@@ -23,7 +23,7 @@ add_executable(cub3D src/main.c
         src/parser/map_parser/map_parser.c
         src/parser/color_extracter.c
         src/parser/map_parser/map_creator.c
-        src/parser/map_parser/map_checker.c
+        src/parser/map_parser/map_borders_checker.c
 
         #ERRORS
         src/error_printer.c

@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/22 11:53:19 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/22 20:16:11 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/22 20:25:07 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -124,7 +124,7 @@ static int check_top(t_data *data)
 	return (EXIT_SUCCESS);
 }
 
-void	check_map(t_data *data)
+void	check_map_borders(t_data *data)
 {
 	if (check_top(data) == EXIT_FAILURE)
 		data->parse_error = true;

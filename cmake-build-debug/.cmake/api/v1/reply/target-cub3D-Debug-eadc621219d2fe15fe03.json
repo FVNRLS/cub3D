@@ -255,7 +255,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/parser/map_parser/map_checker.c",
+			"path" : "src/parser/map_parser/map_borders_checker.c",
 			"sourceGroupIndex" : 0
 		},
 		{

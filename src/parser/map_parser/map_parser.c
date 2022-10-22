@@ -23,6 +23,6 @@ void	parse_map(t_data *data)
 		return;
 	}
 	print_map(data);
-	check_map(data);
+	check_map_borders(data);
 	data->map_parsed = true;
 }
