@@ -20,6 +20,7 @@
 # define 	INVALID_TOKEN		5
 # define	TEXTURE_ERROR		6
 # define	COLOR_ERROR			7
+# define 	INVALID_MAP			8
 
 
 void	print_error(int	error, char *s);

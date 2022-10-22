@@ -23,6 +23,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_free_all_and_exit.c" "CMakeFiles/cub3D.dir/src/tools/ft_free_all_and_exit.c.o" "gcc" "CMakeFiles/cub3D.dir/src/tools/ft_free_all_and_exit.c.o.d"
   "/Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_free_split.c" "CMakeFiles/cub3D.dir/src/tools/ft_free_split.c.o" "gcc" "CMakeFiles/cub3D.dir/src/tools/ft_free_split.c.o.d"
   "/Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_isdigit.c" "CMakeFiles/cub3D.dir/src/tools/ft_isdigit.c.o" "gcc" "CMakeFiles/cub3D.dir/src/tools/ft_isdigit.c.o.d"
+  "/Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_itoa.c" "CMakeFiles/cub3D.dir/src/tools/ft_itoa.c.o" "gcc" "CMakeFiles/cub3D.dir/src/tools/ft_itoa.c.o.d"
   "/Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_rgb_atoi.c" "CMakeFiles/cub3D.dir/src/tools/ft_rgb_atoi.c.o" "gcc" "CMakeFiles/cub3D.dir/src/tools/ft_rgb_atoi.c.o.d"
   "/Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_split.c" "CMakeFiles/cub3D.dir/src/tools/ft_split.c.o" "gcc" "CMakeFiles/cub3D.dir/src/tools/ft_split.c.o.d"
   "/Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_splitlen.c" "CMakeFiles/cub3D.dir/src/tools/ft_splitlen.c.o" "gcc" "CMakeFiles/cub3D.dir/src/tools/ft_splitlen.c.o.d"

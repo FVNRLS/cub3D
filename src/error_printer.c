@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 11:35:20 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/22 14:58:41 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/22 17:38:11 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,8 @@ void	print_error(int	error, char *s)
 		printf("Error\nMultiple definition of texture: %s\n", s);
 	else if (error == COLOR_ERROR)
 		printf("Error\nMultiple definition of color: %s\n", s);
+	else if (error == INVALID_MAP)
+		printf("Error\nInvalid map configuration on line: %s\n", s);
 }
 
 int 	print_int_error(int error, char *s)
@@ -60,4 +62,5 @@ void	print_map(t_data *data)
 		printf("\n");
 		y++;
 	}
+	printf("\n");
 }

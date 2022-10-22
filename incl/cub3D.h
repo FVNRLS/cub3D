@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 12:32:53 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/22 14:58:41 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/22 16:31:08 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@
 # define FLOOR		"F"
 
 # define SPACE		' '
-# define FILLER		'-'
+# define VOID		'-'
 # define NEWLINE	'\n'
 # define ZERO		'0'
 # define ONE		'1'
@@ -70,6 +70,7 @@ void	parse_ceiling(t_data *data);
 void	parse_floor(t_data *data);
 void	parse_map(t_data *data);
 int		create_map(t_data *data);
+void	check_map(t_data *data);
 
 //COLORIZER
 int		get_color(t_data *data);

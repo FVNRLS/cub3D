@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 10:52:59 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/22 15:41:32 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/22 17:14:28 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,6 @@ void	parse_map(t_data *data)
 		return;
 	}
 	print_map(data);
-
-
-
-//	check_map(data);
-//	convert_map(); //?
+	check_map(data);
 	data->map_parsed = true;
 }

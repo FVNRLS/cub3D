@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/22 11:37:56 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/22 16:21:34 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/22 16:22:00 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ static int	create_rectangular_map_template(t_data *data)
 		y = 0;
 		while (y < data->tab->max_y)
 		{
-			data->tab->map[x][y] = FILLER;
+			data->tab->map[x][y] = VOID;
 			y++;
 		}
 		data->tab->map[x][y] = '\0';

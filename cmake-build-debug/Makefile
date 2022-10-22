@@ -489,6 +489,30 @@ src/tools/ft_isdigit.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_isdigit.c.s
 .PHONY : src/tools/ft_isdigit.c.s
 
+src/tools/ft_itoa.o: src/tools/ft_itoa.c.o
+.PHONY : src/tools/ft_itoa.o
+
+# target to build an object file
+src/tools/ft_itoa.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_itoa.c.o
+.PHONY : src/tools/ft_itoa.c.o
+
+src/tools/ft_itoa.i: src/tools/ft_itoa.c.i
+.PHONY : src/tools/ft_itoa.i
+
+# target to preprocess a source file
+src/tools/ft_itoa.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_itoa.c.i
+.PHONY : src/tools/ft_itoa.c.i
+
+src/tools/ft_itoa.s: src/tools/ft_itoa.c.s
+.PHONY : src/tools/ft_itoa.s
+
+# target to generate assembly for a file
+src/tools/ft_itoa.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_itoa.c.s
+.PHONY : src/tools/ft_itoa.c.s
+
 src/tools/ft_rgb_atoi.o: src/tools/ft_rgb_atoi.c.o
 .PHONY : src/tools/ft_rgb_atoi.o
 
@@ -759,6 +783,9 @@ help:
 	@echo "... src/tools/ft_isdigit.o"
 	@echo "... src/tools/ft_isdigit.i"
 	@echo "... src/tools/ft_isdigit.s"
+	@echo "... src/tools/ft_itoa.o"
+	@echo "... src/tools/ft_itoa.i"
+	@echo "... src/tools/ft_itoa.s"
 	@echo "... src/tools/ft_rgb_atoi.o"
 	@echo "... src/tools/ft_rgb_atoi.i"
 	@echo "... src/tools/ft_rgb_atoi.s"

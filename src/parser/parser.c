@@ -93,6 +93,7 @@ void	parse_input(t_data *data)
 		if (!data->conf->line)
 			break ;
 		parse_line(data);
+		data->conf->line_num++;
 		free(data->conf->line);
 		data->conf->line = NULL;
 		if (data->parse_error == true)

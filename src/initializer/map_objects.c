@@ -41,6 +41,7 @@ static void init_config_items(t_data *data)
 	data->conf->line = NULL;
 	data->conf->tokens = NULL;
 	data->conf->fd = -1;
+	data->conf->line_num = 1;
 	create_items_container(data);
 }
 

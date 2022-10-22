@@ -135,6 +135,9 @@
 		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_isdigit.c">
 			<Option target="cub3D"/>
 		</Unit>
+		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_itoa.c">
+			<Option target="cub3D"/>
+		</Unit>
 		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_rgb_atoi.c">
 			<Option target="cub3D"/>
 		</Unit>

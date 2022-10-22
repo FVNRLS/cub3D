@@ -41,7 +41,7 @@ add_executable(cub3D src/main.c
         src/tools/ft_free_all_and_exit.c
         src/tools/ft_strtrim.c
         src/tools/ft_strjoin.c
-        )
+        src/tools/ft_itoa.c)
 
 # STATIC LIBRARIES
 ADD_LIBRARY(get_next_line STATIC IMPORTED)

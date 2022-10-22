@@ -47,6 +47,7 @@ typedef struct s_conf
 	char	*line;
 	char	**tokens;
 	char	**specs;
+	int 	line_num;
 }		t_conf;
 
 
