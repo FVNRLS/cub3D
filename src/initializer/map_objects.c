@@ -14,7 +14,7 @@
 
 static void create_items_container(t_data *data)
 {
-	data->conf->specs[0] = NEWLINE;
+	data->conf->specs[0] = S_NEWLINE;
 	data->conf->specs[1] = NORTH;
 	data->conf->specs[2] = SOUTH;
 	data->conf->specs[3] = EAST;
@@ -41,7 +41,6 @@ static void init_config_items(t_data *data)
 	data->conf->line = NULL;
 	data->conf->tokens = NULL;
 	data->conf->fd = -1;
-	data->conf->map_parsed = false;
 	create_items_container(data);
 }
 

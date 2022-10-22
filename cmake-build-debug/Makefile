@@ -297,29 +297,77 @@ src/parser/floor_ceiling_parser.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/parser/floor_ceiling_parser.c.s
 .PHONY : src/parser/floor_ceiling_parser.c.s
 
-src/parser/map_parser.o: src/parser/map_parser.c.o
-.PHONY : src/parser/map_parser.o
+src/parser/map_parser/map_checker.o: src/parser/map_parser/map_checker.c.o
+.PHONY : src/parser/map_parser/map_checker.o
 
 # target to build an object file
-src/parser/map_parser.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/parser/map_parser.c.o
-.PHONY : src/parser/map_parser.c.o
+src/parser/map_parser/map_checker.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/parser/map_parser/map_checker.c.o
+.PHONY : src/parser/map_parser/map_checker.c.o
 
-src/parser/map_parser.i: src/parser/map_parser.c.i
-.PHONY : src/parser/map_parser.i
+src/parser/map_parser/map_checker.i: src/parser/map_parser/map_checker.c.i
+.PHONY : src/parser/map_parser/map_checker.i
 
 # target to preprocess a source file
-src/parser/map_parser.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/parser/map_parser.c.i
-.PHONY : src/parser/map_parser.c.i
+src/parser/map_parser/map_checker.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/parser/map_parser/map_checker.c.i
+.PHONY : src/parser/map_parser/map_checker.c.i
 
-src/parser/map_parser.s: src/parser/map_parser.c.s
-.PHONY : src/parser/map_parser.s
+src/parser/map_parser/map_checker.s: src/parser/map_parser/map_checker.c.s
+.PHONY : src/parser/map_parser/map_checker.s
 
 # target to generate assembly for a file
-src/parser/map_parser.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/parser/map_parser.c.s
-.PHONY : src/parser/map_parser.c.s
+src/parser/map_parser/map_checker.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/parser/map_parser/map_checker.c.s
+.PHONY : src/parser/map_parser/map_checker.c.s
+
+src/parser/map_parser/map_creator.o: src/parser/map_parser/map_creator.c.o
+.PHONY : src/parser/map_parser/map_creator.o
+
+# target to build an object file
+src/parser/map_parser/map_creator.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/parser/map_parser/map_creator.c.o
+.PHONY : src/parser/map_parser/map_creator.c.o
+
+src/parser/map_parser/map_creator.i: src/parser/map_parser/map_creator.c.i
+.PHONY : src/parser/map_parser/map_creator.i
+
+# target to preprocess a source file
+src/parser/map_parser/map_creator.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/parser/map_parser/map_creator.c.i
+.PHONY : src/parser/map_parser/map_creator.c.i
+
+src/parser/map_parser/map_creator.s: src/parser/map_parser/map_creator.c.s
+.PHONY : src/parser/map_parser/map_creator.s
+
+# target to generate assembly for a file
+src/parser/map_parser/map_creator.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/parser/map_parser/map_creator.c.s
+.PHONY : src/parser/map_parser/map_creator.c.s
+
+src/parser/map_parser/map_parser.o: src/parser/map_parser/map_parser.c.o
+.PHONY : src/parser/map_parser/map_parser.o
+
+# target to build an object file
+src/parser/map_parser/map_parser.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/parser/map_parser/map_parser.c.o
+.PHONY : src/parser/map_parser/map_parser.c.o
+
+src/parser/map_parser/map_parser.i: src/parser/map_parser/map_parser.c.i
+.PHONY : src/parser/map_parser/map_parser.i
+
+# target to preprocess a source file
+src/parser/map_parser/map_parser.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/parser/map_parser/map_parser.c.i
+.PHONY : src/parser/map_parser/map_parser.c.i
+
+src/parser/map_parser/map_parser.s: src/parser/map_parser/map_parser.c.s
+.PHONY : src/parser/map_parser/map_parser.s
+
+# target to generate assembly for a file
+src/parser/map_parser/map_parser.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/parser/map_parser/map_parser.c.s
+.PHONY : src/parser/map_parser/map_parser.c.s
 
 src/parser/parser.o: src/parser/parser.c.o
 .PHONY : src/parser/parser.o
@@ -687,9 +735,15 @@ help:
 	@echo "... src/parser/floor_ceiling_parser.o"
 	@echo "... src/parser/floor_ceiling_parser.i"
 	@echo "... src/parser/floor_ceiling_parser.s"
-	@echo "... src/parser/map_parser.o"
-	@echo "... src/parser/map_parser.i"
-	@echo "... src/parser/map_parser.s"
+	@echo "... src/parser/map_parser/map_checker.o"
+	@echo "... src/parser/map_parser/map_checker.i"
+	@echo "... src/parser/map_parser/map_checker.s"
+	@echo "... src/parser/map_parser/map_creator.o"
+	@echo "... src/parser/map_parser/map_creator.i"
+	@echo "... src/parser/map_parser/map_creator.s"
+	@echo "... src/parser/map_parser/map_parser.o"
+	@echo "... src/parser/map_parser/map_parser.i"
+	@echo "... src/parser/map_parser/map_parser.s"
 	@echo "... src/parser/parser.o"
 	@echo "... src/parser/parser.i"
 	@echo "... src/parser/parser.s"

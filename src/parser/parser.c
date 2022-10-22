@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 11:50:41 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/22 11:14:15 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/22 12:03:53 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,7 +87,7 @@ void	parse_input(t_data *data)
 	data->conf->fd = open(data->conf->file, O_RDONLY, RIGHTS);
 	if (data->conf->fd < 0)
 		return (print_error(OPEN_ERROR, NULL));
-	while (true)
+	while (data->map_parsed == false)
 	{
 		data->conf->line = get_next_line(data->conf->fd);
 		if (!data->conf->line)

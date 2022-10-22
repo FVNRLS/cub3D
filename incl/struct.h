@@ -6,17 +6,21 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 17:40:14 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/21 16:56:36 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/22 12:54:34 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef STRUCT_H
 # define STRUCT_H
 
-typedef struct s_map
+typedef struct s_tab
 {
+	char	*buf;
 	char	**map;
-}		t_map;
+	int		max_x;
+	int		max_y;
+
+}		t_tab;
 
 typedef struct s_texture
 {
@@ -43,7 +47,6 @@ typedef struct s_conf
 	char	*line;
 	char	**tokens;
 	char	**specs;
-	bool	map_parsed;
 }		t_conf;
 
 
@@ -51,10 +54,12 @@ typedef struct s_data
 {
 
 	bool		parse_error;
+	bool		map_parsed;
 	t_conf		*conf;
 	t_texture	*texture;
 	t_color		*color;
-	t_map		*map;
+	t_tab		*tab;
+	char		**map;
 }		t_data;
 
 #endif

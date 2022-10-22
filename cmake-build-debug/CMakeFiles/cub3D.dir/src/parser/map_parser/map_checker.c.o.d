@@ -1,6 +1,6 @@
-CMakeFiles/cub3D.dir/src/parser/floor_ceiling_parser.c.o: \
-  /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/floor_ceiling_parser.c \
-  /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/../../incl/cub3D.h \
+CMakeFiles/cub3D.dir/src/parser/map_parser/map_checker.c.o: \
+  /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/map_parser/map_checker.c \
+  /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/map_parser/../../../incl/cub3D.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/stdlib.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/Availability.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/AvailabilityVersions.h \
@@ -102,8 +102,8 @@ CMakeFiles/cub3D.dir/src/parser/floor_ceiling_parser.c.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_o_dsync.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_s_ifmt.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_filesec_t.h \
-  /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/../../incl/struct.h \
-  /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/../../incl/errors.h \
-  /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/../../incl/tools.h \
-  /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/../../incl/../lib/get_next_line/get_next_line.h \
-  /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/../../incl/../lib/minilibx/mlx.h
+  /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/map_parser/../../../incl/struct.h \
+  /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/map_parser/../../../incl/errors.h \
+  /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/map_parser/../../../incl/tools.h \
+  /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/map_parser/../../../incl/../lib/get_next_line/get_next_line.h \
+  /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/map_parser/../../../incl/../lib/minilibx/mlx.h

@@ -167,19 +167,19 @@ CMakeFiles/cub3D.dir/src/parser/floor_ceiling_parser.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cub3D.dir/src/parser/floor_ceiling_parser.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/floor_ceiling_parser.c -o CMakeFiles/cub3D.dir/src/parser/floor_ceiling_parser.c.s
 
-CMakeFiles/cub3D.dir/src/parser/map_parser.c.o: CMakeFiles/cub3D.dir/flags.make
-CMakeFiles/cub3D.dir/src/parser/map_parser.c.o: ../src/parser/map_parser.c
-CMakeFiles/cub3D.dir/src/parser/map_parser.c.o: CMakeFiles/cub3D.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/cub3D.dir/src/parser/map_parser.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cub3D.dir/src/parser/map_parser.c.o -MF CMakeFiles/cub3D.dir/src/parser/map_parser.c.o.d -o CMakeFiles/cub3D.dir/src/parser/map_parser.c.o -c /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/map_parser.c
+CMakeFiles/cub3D.dir/src/parser/map_parser/map_parser.c.o: CMakeFiles/cub3D.dir/flags.make
+CMakeFiles/cub3D.dir/src/parser/map_parser/map_parser.c.o: ../src/parser/map_parser/map_parser.c
+CMakeFiles/cub3D.dir/src/parser/map_parser/map_parser.c.o: CMakeFiles/cub3D.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/cub3D.dir/src/parser/map_parser/map_parser.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cub3D.dir/src/parser/map_parser/map_parser.c.o -MF CMakeFiles/cub3D.dir/src/parser/map_parser/map_parser.c.o.d -o CMakeFiles/cub3D.dir/src/parser/map_parser/map_parser.c.o -c /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/map_parser/map_parser.c
 
-CMakeFiles/cub3D.dir/src/parser/map_parser.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cub3D.dir/src/parser/map_parser.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/map_parser.c > CMakeFiles/cub3D.dir/src/parser/map_parser.c.i
+CMakeFiles/cub3D.dir/src/parser/map_parser/map_parser.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cub3D.dir/src/parser/map_parser/map_parser.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/map_parser/map_parser.c > CMakeFiles/cub3D.dir/src/parser/map_parser/map_parser.c.i
 
-CMakeFiles/cub3D.dir/src/parser/map_parser.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cub3D.dir/src/parser/map_parser.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/map_parser.c -o CMakeFiles/cub3D.dir/src/parser/map_parser.c.s
+CMakeFiles/cub3D.dir/src/parser/map_parser/map_parser.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cub3D.dir/src/parser/map_parser/map_parser.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/map_parser/map_parser.c -o CMakeFiles/cub3D.dir/src/parser/map_parser/map_parser.c.s
 
 CMakeFiles/cub3D.dir/src/parser/color_extracter.c.o: CMakeFiles/cub3D.dir/flags.make
 CMakeFiles/cub3D.dir/src/parser/color_extracter.c.o: ../src/parser/color_extracter.c
@@ -377,6 +377,34 @@ CMakeFiles/cub3D.dir/src/tools/ft_strjoin.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cub3D.dir/src/tools/ft_strjoin.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_strjoin.c -o CMakeFiles/cub3D.dir/src/tools/ft_strjoin.c.s
 
+CMakeFiles/cub3D.dir/src/parser/map_parser/map_creator.c.o: CMakeFiles/cub3D.dir/flags.make
+CMakeFiles/cub3D.dir/src/parser/map_parser/map_creator.c.o: ../src/parser/map_parser/map_creator.c
+CMakeFiles/cub3D.dir/src/parser/map_parser/map_creator.c.o: CMakeFiles/cub3D.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/cub3D.dir/src/parser/map_parser/map_creator.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cub3D.dir/src/parser/map_parser/map_creator.c.o -MF CMakeFiles/cub3D.dir/src/parser/map_parser/map_creator.c.o.d -o CMakeFiles/cub3D.dir/src/parser/map_parser/map_creator.c.o -c /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/map_parser/map_creator.c
+
+CMakeFiles/cub3D.dir/src/parser/map_parser/map_creator.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cub3D.dir/src/parser/map_parser/map_creator.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/map_parser/map_creator.c > CMakeFiles/cub3D.dir/src/parser/map_parser/map_creator.c.i
+
+CMakeFiles/cub3D.dir/src/parser/map_parser/map_creator.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cub3D.dir/src/parser/map_parser/map_creator.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/map_parser/map_creator.c -o CMakeFiles/cub3D.dir/src/parser/map_parser/map_creator.c.s
+
+CMakeFiles/cub3D.dir/src/parser/map_parser/map_checker.c.o: CMakeFiles/cub3D.dir/flags.make
+CMakeFiles/cub3D.dir/src/parser/map_parser/map_checker.c.o: ../src/parser/map_parser/map_checker.c
+CMakeFiles/cub3D.dir/src/parser/map_parser/map_checker.c.o: CMakeFiles/cub3D.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/cub3D.dir/src/parser/map_parser/map_checker.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cub3D.dir/src/parser/map_parser/map_checker.c.o -MF CMakeFiles/cub3D.dir/src/parser/map_parser/map_checker.c.o.d -o CMakeFiles/cub3D.dir/src/parser/map_parser/map_checker.c.o -c /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/map_parser/map_checker.c
+
+CMakeFiles/cub3D.dir/src/parser/map_parser/map_checker.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cub3D.dir/src/parser/map_parser/map_checker.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/map_parser/map_checker.c > CMakeFiles/cub3D.dir/src/parser/map_parser/map_checker.c.i
+
+CMakeFiles/cub3D.dir/src/parser/map_parser/map_checker.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cub3D.dir/src/parser/map_parser/map_checker.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/map_parser/map_checker.c -o CMakeFiles/cub3D.dir/src/parser/map_parser/map_checker.c.s
+
 # Object files for target cub3D
 cub3D_OBJECTS = \
 "CMakeFiles/cub3D.dir/src/main.c.o" \
@@ -386,7 +414,7 @@ cub3D_OBJECTS = \
 "CMakeFiles/cub3D.dir/src/parser/parser.c.o" \
 "CMakeFiles/cub3D.dir/src/parser/textures_parser.c.o" \
 "CMakeFiles/cub3D.dir/src/parser/floor_ceiling_parser.c.o" \
-"CMakeFiles/cub3D.dir/src/parser/map_parser.c.o" \
+"CMakeFiles/cub3D.dir/src/parser/map_parser/map_parser.c.o" \
 "CMakeFiles/cub3D.dir/src/parser/color_extracter.c.o" \
 "CMakeFiles/cub3D.dir/src/error_printer.c.o" \
 "CMakeFiles/cub3D.dir/src/tools/ft_strlen.c.o" \
@@ -400,7 +428,9 @@ cub3D_OBJECTS = \
 "CMakeFiles/cub3D.dir/src/tools/ft_free_split.c.o" \
 "CMakeFiles/cub3D.dir/src/tools/ft_free_all_and_exit.c.o" \
 "CMakeFiles/cub3D.dir/src/tools/ft_strtrim.c.o" \
-"CMakeFiles/cub3D.dir/src/tools/ft_strjoin.c.o"
+"CMakeFiles/cub3D.dir/src/tools/ft_strjoin.c.o" \
+"CMakeFiles/cub3D.dir/src/parser/map_parser/map_creator.c.o" \
+"CMakeFiles/cub3D.dir/src/parser/map_parser/map_checker.c.o"
 
 # External object files for target cub3D
 cub3D_EXTERNAL_OBJECTS =
@@ -412,7 +442,7 @@ cub3D: CMakeFiles/cub3D.dir/src/destructor.c.o
 cub3D: CMakeFiles/cub3D.dir/src/parser/parser.c.o
 cub3D: CMakeFiles/cub3D.dir/src/parser/textures_parser.c.o
 cub3D: CMakeFiles/cub3D.dir/src/parser/floor_ceiling_parser.c.o
-cub3D: CMakeFiles/cub3D.dir/src/parser/map_parser.c.o
+cub3D: CMakeFiles/cub3D.dir/src/parser/map_parser/map_parser.c.o
 cub3D: CMakeFiles/cub3D.dir/src/parser/color_extracter.c.o
 cub3D: CMakeFiles/cub3D.dir/src/error_printer.c.o
 cub3D: CMakeFiles/cub3D.dir/src/tools/ft_strlen.c.o
@@ -427,11 +457,13 @@ cub3D: CMakeFiles/cub3D.dir/src/tools/ft_free_split.c.o
 cub3D: CMakeFiles/cub3D.dir/src/tools/ft_free_all_and_exit.c.o
 cub3D: CMakeFiles/cub3D.dir/src/tools/ft_strtrim.c.o
 cub3D: CMakeFiles/cub3D.dir/src/tools/ft_strjoin.c.o
+cub3D: CMakeFiles/cub3D.dir/src/parser/map_parser/map_creator.c.o
+cub3D: CMakeFiles/cub3D.dir/src/parser/map_parser/map_checker.c.o
 cub3D: CMakeFiles/cub3D.dir/build.make
 cub3D: ../lib/get_next_line/get_next_line.a
 cub3D: ../lib/minilibx/libmlx.a
 cub3D: CMakeFiles/cub3D.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking C executable cub3D"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Linking C executable cub3D"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cub3D.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

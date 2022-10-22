@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 11:35:20 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/21 16:56:36 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/22 14:58:41 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,4 +40,24 @@ void	*print_null_error(int error, char *s)
 {
 	print_error(error, NULL);
 	return (NULL);
+}
+
+//TODO: del before submission
+void	print_map(t_data *data)
+{
+	int x;
+	int	y;
+
+	y = 0;
+	while (y < data->tab->max_y)
+	{
+		x = 0;
+		while (x < data->tab->max_x)
+		{
+			printf("%c", data->map[x][y]);
+			x++;
+		}
+		printf("\n");
+		y++;
+	}
 }
