@@ -41,6 +41,11 @@ add_executable(cub3D src/main.c
         src/tools/ft_strjoin.c
         )
 
+# STATIC LIBRARIES
 ADD_LIBRARY(get_next_line STATIC IMPORTED)
 SET_TARGET_PROPERTIES(get_next_line PROPERTIES IMPORTED_LOCATION ${CMAKE_SOURCE_DIR}/lib/get_next_line/get_next_line.a)
 TARGET_LINK_LIBRARIES(cub3D get_next_line)
+
+ADD_LIBRARY(libmlx STATIC IMPORTED)
+SET_TARGET_PROPERTIES(libmlx PROPERTIES IMPORTED_LOCATION ${CMAKE_SOURCE_DIR}/lib/minilibx/libmlx.a)
+TARGET_LINK_LIBRARIES(cub3D libmlx)

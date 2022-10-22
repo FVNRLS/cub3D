@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 12:32:53 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/21 16:56:36 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/21 16:56:37 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@
 # include "errors.h"
 # include "tools.h"
 # include "../lib/get_next_line/get_next_line.h"
+# include "../lib/minilibx/mlx.h"
 
 # define RIGHTS		0644
 # define NUM_ITEMS	7
