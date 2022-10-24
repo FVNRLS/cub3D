@@ -6,12 +6,26 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 11:50:41 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/22 12:03:53 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/24 19:59:32 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../incl/cub3D.h"
 
+//TODO: complete and test!
+static bool	all_args_parsed(t_data *data)
+{
+	if (!data->texture->north || data->texture->south || !data->texture->east
+		|| !data->texture->west)
+		return (false);
+	if (data->color->ceil == -1 || data->color->floor == -1)
+		return (false);
+	if (data->map == NULL)
+		return (false);
+	if (data->player->dir == VOID)
+		return (false);
+	return (true);
+}
 
 static bool check_extension(char *s)
 {
@@ -75,7 +89,6 @@ static void	parse_line(t_data *data)
 	ft_free_split(data->conf->tokens);
 }
 
-//TODO: after parsing - write checker, if everything was parsed!
 void	parse_input(t_data *data)
 {
 	bool	ext_valid;
@@ -98,5 +111,7 @@ void	parse_input(t_data *data)
 		if (data->parse_error == true)
 			break ;
 	}
+	if (all_args_parsed(data) == false)
+		data->parse_error = true;
 	close(data->conf->fd);
 }
