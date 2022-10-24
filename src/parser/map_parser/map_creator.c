@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/22 11:37:56 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/22 16:22:00 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/24 19:26:44 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,6 +94,9 @@ static void	calculate_map_size(t_data *data)
 
 static int	read_map(t_data *data)
 {
+	int line;
+
+	line = 1;
 	data->tab->buf = ft_strdup(data->conf->line);
 	if (!data->tab->buf)
 		return (print_int_error(MALLOC_ERROR, NULL));
@@ -104,11 +107,14 @@ static int	read_map(t_data *data)
 		data->conf->line = get_next_line(data->conf->fd);
 		if (!data->conf->line)
 			break ;
+		if (data->conf->line[0] == NEWLINE)
+			return (print_line_error(data, line));
 		data->tab->buf = ft_strjoin(data->tab->buf, data->conf->line);
 		if (!data->tab->buf)
 			return (print_int_error(MALLOC_ERROR, NULL));
 		free(data->conf->line);
 		data->conf->line = NULL;
+		line++;
 	}
 	return (EXIT_SUCCESS);
 }
