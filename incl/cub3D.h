@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 12:32:53 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/22 16:31:08 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/24 16:57:11 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,6 +70,7 @@ void	parse_ceiling(t_data *data);
 void	parse_floor(t_data *data);
 void	parse_map(t_data *data);
 int		create_map(t_data *data);
+void	parse_player(t_data *data);
 void	check_map_borders(t_data *data);
 void	check_invalid_void_spaces(t_data *data);
 

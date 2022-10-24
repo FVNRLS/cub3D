@@ -37,8 +37,7 @@ static int get_first_token(t_data *data, char *first)
 		i++;
 	}
 	c = first[0];
-	if (c == T_SPACE || c == ZERO || c == ONE || c == PLAYER_N || c == PLAYER_S
-		|| c == PLAYER_E || c == PLAYER_W)
+	if (c == T_SPACE || c == ZERO || c == ONE)
 		return (T_MAP);
 	else
 	{

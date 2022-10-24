@@ -22,6 +22,16 @@ static void create_items_container(t_data *data)
 	data->conf->specs[5] = CEILING;
 	data->conf->specs[6] = FLOOR;
 	data->conf->specs[NUM_ITEMS] = NULL;
+
+	data->conf->items[0] = VOID;
+	data->conf->items[1] = ZERO;
+	data->conf->items[2] = ONE;
+	data->conf->items[3] = PLAYER_N;
+	data->conf->items[4] = PLAYER_S;
+	data->conf->items[5] = PLAYER_E;
+	data->conf->items[6] = PLAYER_W;
+	data->conf->items[7] = '\0';
+
 }
 
 static void init_config_items(t_data *data)
@@ -34,6 +44,12 @@ static void init_config_items(t_data *data)
 	}
 	data->conf->specs = malloc(sizeof(char *) * (NUM_ITEMS + 1));
 	if (!data->conf->specs)
+	{
+		print_int_error(MALLOC_ERROR, NULL);
+		ft_free_all_and_exit(data);
+	}
+	data->conf->items = malloc(sizeof(char) * (NUM_ITEMS + 1));
+	if (!data->conf->items)
 	{
 		print_int_error(MALLOC_ERROR, NULL);
 		ft_free_all_and_exit(data);

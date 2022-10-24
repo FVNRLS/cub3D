@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 11:35:20 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/24 15:32:01 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/24 17:49:43 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,8 @@ void	print_error(int	error, char *s)
 		printf("Error\nMultiple definition of color: %s\n", s);
 	else if (error == INVALID_MAP)
 		printf("Error\nInvalid map configuration on line: %s\n", s);
+	else if (error == NO_PLAYER)
+		printf("Error\nInvalid map: no player specified\n");
 }
 
 int 	print_int_error(int error, char *s)
@@ -64,6 +66,7 @@ void	print_map(t_data *data)
 	int x;
 	int	y;
 
+	printf("\n");
 	y = 0;
 	while (y < data->tab->max_y)
 	{

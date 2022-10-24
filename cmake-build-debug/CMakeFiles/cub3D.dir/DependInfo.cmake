@@ -18,6 +18,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/rmazurit/Documents/42_Projects/cub3D/src/parser/map_parser/map_borders_checker.c" "CMakeFiles/cub3D.dir/src/parser/map_parser/map_borders_checker.c.o" "gcc" "CMakeFiles/cub3D.dir/src/parser/map_parser/map_borders_checker.c.o.d"
   "/Users/rmazurit/Documents/42_Projects/cub3D/src/parser/map_parser/map_creator.c" "CMakeFiles/cub3D.dir/src/parser/map_parser/map_creator.c.o" "gcc" "CMakeFiles/cub3D.dir/src/parser/map_parser/map_creator.c.o.d"
   "/Users/rmazurit/Documents/42_Projects/cub3D/src/parser/map_parser/map_parser.c" "CMakeFiles/cub3D.dir/src/parser/map_parser/map_parser.c.o" "gcc" "CMakeFiles/cub3D.dir/src/parser/map_parser/map_parser.c.o.d"
+  "/Users/rmazurit/Documents/42_Projects/cub3D/src/parser/map_parser/map_player_parser.c" "CMakeFiles/cub3D.dir/src/parser/map_parser/map_player_parser.c.o" "gcc" "CMakeFiles/cub3D.dir/src/parser/map_parser/map_player_parser.c.o.d"
   "/Users/rmazurit/Documents/42_Projects/cub3D/src/parser/map_parser/map_void_checker.c" "CMakeFiles/cub3D.dir/src/parser/map_parser/map_void_checker.c.o" "gcc" "CMakeFiles/cub3D.dir/src/parser/map_parser/map_void_checker.c.o.d"
   "/Users/rmazurit/Documents/42_Projects/cub3D/src/parser/parser.c" "CMakeFiles/cub3D.dir/src/parser/parser.c.o" "gcc" "CMakeFiles/cub3D.dir/src/parser/parser.c.o.d"
   "/Users/rmazurit/Documents/42_Projects/cub3D/src/parser/textures_parser.c" "CMakeFiles/cub3D.dir/src/parser/textures_parser.c.o" "gcc" "CMakeFiles/cub3D.dir/src/parser/textures_parser.c.o.d"

@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 12:32:47 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/22 13:38:05 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/24 15:47:47 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ static void init_data_containers(t_data *data)
 
 }
 
+/*	Init map to contain 2D array and player */
 static void init_map(t_data *data)
 {
 	data->tab = malloc(sizeof(t_tab));
@@ -36,6 +37,16 @@ static void init_map(t_data *data)
 	data->tab->map = NULL;
 	data->tab->max_x = 0;
 	data->tab->max_y = 1;
+
+	data->player = malloc(sizeof(t_player));
+	if (!data->player)
+	{
+		print_int_error(MALLOC_ERROR, NULL);
+		ft_free_all_and_exit(data);
+	}
+	data->player->x = -1;
+	data->player->y = -1;
+	data->player->dir = VOID;
 }
 
 void	init_environment(t_data *data)

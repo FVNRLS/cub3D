@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 17:40:14 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/22 12:54:34 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/24 15:47:47 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,9 +47,16 @@ typedef struct s_conf
 	char	*line;
 	char	**tokens;
 	char	**specs;
+	char 	*items;
 	int 	line_num;
 }		t_conf;
 
+typedef struct	s_player
+{
+	int 	x;
+	int 	y;
+	char	dir;
+}		t_player;
 
 typedef struct s_data
 {
@@ -60,6 +67,7 @@ typedef struct s_data
 	t_texture	*texture;
 	t_color		*color;
 	t_tab		*tab;
+	t_player	*player;
 	char		**map;
 }		t_data;
 
