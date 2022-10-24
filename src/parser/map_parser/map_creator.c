@@ -25,7 +25,7 @@ static void fill_map_with_objects(t_data *data)
 		x = 0;
 		while (data->tab->buf[i] != NEWLINE && data->tab->buf[i] != '\0')
 		{
-			if (data->tab->buf[i] != SPACE)
+			if (x < data->tab->max_x && data->tab->buf[i] != SPACE)
 				data->map[x][y] = data->tab->buf[i];
 			i++;
 			x++;

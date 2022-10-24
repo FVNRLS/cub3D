@@ -369,6 +369,30 @@ src/parser/map_parser/map_parser.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/parser/map_parser/map_parser.c.s
 .PHONY : src/parser/map_parser/map_parser.c.s
 
+src/parser/map_parser/map_void_checker.o: src/parser/map_parser/map_void_checker.c.o
+.PHONY : src/parser/map_parser/map_void_checker.o
+
+# target to build an object file
+src/parser/map_parser/map_void_checker.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/parser/map_parser/map_void_checker.c.o
+.PHONY : src/parser/map_parser/map_void_checker.c.o
+
+src/parser/map_parser/map_void_checker.i: src/parser/map_parser/map_void_checker.c.i
+.PHONY : src/parser/map_parser/map_void_checker.i
+
+# target to preprocess a source file
+src/parser/map_parser/map_void_checker.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/parser/map_parser/map_void_checker.c.i
+.PHONY : src/parser/map_parser/map_void_checker.c.i
+
+src/parser/map_parser/map_void_checker.s: src/parser/map_parser/map_void_checker.c.s
+.PHONY : src/parser/map_parser/map_void_checker.s
+
+# target to generate assembly for a file
+src/parser/map_parser/map_void_checker.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/parser/map_parser/map_void_checker.c.s
+.PHONY : src/parser/map_parser/map_void_checker.c.s
+
 src/parser/parser.o: src/parser/parser.c.o
 .PHONY : src/parser/parser.o
 
@@ -768,6 +792,9 @@ help:
 	@echo "... src/parser/map_parser/map_parser.o"
 	@echo "... src/parser/map_parser/map_parser.i"
 	@echo "... src/parser/map_parser/map_parser.s"
+	@echo "... src/parser/map_parser/map_void_checker.o"
+	@echo "... src/parser/map_parser/map_void_checker.i"
+	@echo "... src/parser/map_parser/map_void_checker.s"
 	@echo "... src/parser/parser.o"
 	@echo "... src/parser/parser.i"
 	@echo "... src/parser/parser.s"

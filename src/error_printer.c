@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 11:35:20 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/22 17:38:11 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/24 15:32:01 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,20 @@ void	print_error(int	error, char *s)
 int 	print_int_error(int error, char *s)
 {
 	print_error(error, s);
+	return (EXIT_FAILURE);
+}
+
+int print_line_error(t_data *data, int y_pos)
+{
+	char	*line;
+
+	data->parse_error = true;
+	line = ft_itoa(data->conf->line_num + y_pos);
+	if (!line)
+		print_error(MALLOC_ERROR, NULL);
+	else
+		print_error(INVALID_MAP, line);
+	free(line);
 	return (EXIT_FAILURE);
 }
 

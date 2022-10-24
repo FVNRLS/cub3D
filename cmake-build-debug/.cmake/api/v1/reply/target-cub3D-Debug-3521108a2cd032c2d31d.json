@@ -31,13 +31,13 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 49,
+				"line" : 51,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 53,
+				"line" : 55,
 				"parent" : 0
 			}
 		]
@@ -89,7 +89,8 @@
 				25,
 				26,
 				27,
-				28
+				28,
+				29
 			]
 		}
 	],
@@ -156,7 +157,8 @@
 				25,
 				26,
 				27,
-				28
+				28,
+				29
 			]
 		},
 		{
@@ -256,6 +258,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/parser/map_parser/map_borders_checker.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/parser/map_parser/map_void_checker.c",
 			"sourceGroupIndex" : 0
 		},
 		{

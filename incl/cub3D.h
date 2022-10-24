@@ -71,6 +71,7 @@ void	parse_floor(t_data *data);
 void	parse_map(t_data *data);
 int		create_map(t_data *data);
 void	check_map_borders(t_data *data);
+void	check_invalid_void_spaces(t_data *data);
 
 //COLORIZER
 int		get_color(t_data *data);

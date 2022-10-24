@@ -19,6 +19,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/cub3D.dir/src/parser/map_parser/map_creator.c.o.d"
   "CMakeFiles/cub3D.dir/src/parser/map_parser/map_parser.c.o"
   "CMakeFiles/cub3D.dir/src/parser/map_parser/map_parser.c.o.d"
+  "CMakeFiles/cub3D.dir/src/parser/map_parser/map_void_checker.c.o"
+  "CMakeFiles/cub3D.dir/src/parser/map_parser/map_void_checker.c.o.d"
   "CMakeFiles/cub3D.dir/src/parser/parser.c.o"
   "CMakeFiles/cub3D.dir/src/parser/parser.c.o.d"
   "CMakeFiles/cub3D.dir/src/parser/textures_parser.c.o"

@@ -120,6 +120,9 @@
 		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/parser/map_parser/map_parser.c">
 			<Option target="cub3D"/>
 		</Unit>
+		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/parser/map_parser/map_void_checker.c">
+			<Option target="cub3D"/>
+		</Unit>
 		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/parser/parser.c">
 			<Option target="cub3D"/>
 		</Unit>

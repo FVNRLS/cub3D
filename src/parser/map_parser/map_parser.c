@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 10:52:59 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/22 17:14:28 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/24 14:19:23 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,12 @@
 
 void	parse_map(t_data *data)
 {
-	int ret;
-
-	ret = create_map(data);
-	if (ret == EXIT_FAILURE)
-	{
+	if (create_map(data) == EXIT_FAILURE)
 		data->parse_error = true;
-		return;
-	}
 	print_map(data);
-	check_map_borders(data);
+	if (data->parse_error == false)
+		check_map_borders(data);
+	if (data->parse_error == false)
+		check_invalid_void_spaces(data);
 	data->map_parsed = true;
 }
