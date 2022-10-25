@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 12:32:47 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/25 11:24:28 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/25 11:43:22 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,6 @@ static void init_flags(t_data *data)
 {
 	data->parse_error = false;
 	data->map_parsed = false;
-}
-
-static void init_data_containers(t_data *data)
-{
-
 }
 
 /*	Init map to contain 2D array and player */
@@ -52,7 +47,6 @@ static void init_map(t_data *data)
 void	init_environment(t_data *data)
 {
 	init_flags(data);
-	init_data_containers(data);
 	init_map_objects(data);
 	init_map(data);
 }
