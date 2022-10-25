@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/rmazurit/Documents/42_Projects/cub3D/src/bonus/minimap/minimap.c" "CMakeFiles/cub3D.dir/src/bonus/minimap/minimap.c.o" "gcc" "CMakeFiles/cub3D.dir/src/bonus/minimap/minimap.c.o.d"
   "/Users/rmazurit/Documents/42_Projects/cub3D/src/destructor.c" "CMakeFiles/cub3D.dir/src/destructor.c.o" "gcc" "CMakeFiles/cub3D.dir/src/destructor.c.o.d"
   "/Users/rmazurit/Documents/42_Projects/cub3D/src/error_printer.c" "CMakeFiles/cub3D.dir/src/error_printer.c.o" "gcc" "CMakeFiles/cub3D.dir/src/error_printer.c.o.d"
   "/Users/rmazurit/Documents/42_Projects/cub3D/src/initializer/initializer.c" "CMakeFiles/cub3D.dir/src/initializer/initializer.c.o" "gcc" "CMakeFiles/cub3D.dir/src/initializer/initializer.c.o.d"

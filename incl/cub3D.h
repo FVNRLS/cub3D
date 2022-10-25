@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 12:29:53 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/25 14:56:10 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/25 14:57:07 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@
 # include "struct.h"
 # include "errors.h"
 # include "tools.h"
+# include "bonus.h"
 # include "../lib/get_next_line/get_next_line.h"
 # include "../lib/minilibx/mlx.h"
 

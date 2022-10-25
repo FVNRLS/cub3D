@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/25 12:30:19 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/25 14:56:10 by rmazurit         ###   ########.fr       */
+/*   Created: 2022/10/25 14:57:15 by rmazurit          #+#    #+#             */
+/*   Updated: 2022/10/25 14:57:21 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ int main(int argc, char **argv)
 	parse_input(&data);
 	if (data.parse_error == true)
 		ft_free_all_and_exit(&data);
+//	start_minimap(data);
 
 	free_all_resources(&data);
 	return (EXIT_SUCCESS);

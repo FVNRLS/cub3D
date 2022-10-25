@@ -129,6 +129,30 @@ cub3D/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/build
 .PHONY : cub3D/fast
 
+src/bonus/minimap/minimap.o: src/bonus/minimap/minimap.c.o
+.PHONY : src/bonus/minimap/minimap.o
+
+# target to build an object file
+src/bonus/minimap/minimap.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/bonus/minimap/minimap.c.o
+.PHONY : src/bonus/minimap/minimap.c.o
+
+src/bonus/minimap/minimap.i: src/bonus/minimap/minimap.c.i
+.PHONY : src/bonus/minimap/minimap.i
+
+# target to preprocess a source file
+src/bonus/minimap/minimap.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/bonus/minimap/minimap.c.i
+.PHONY : src/bonus/minimap/minimap.c.i
+
+src/bonus/minimap/minimap.s: src/bonus/minimap/minimap.c.s
+.PHONY : src/bonus/minimap/minimap.s
+
+# target to generate assembly for a file
+src/bonus/minimap/minimap.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/bonus/minimap/minimap.c.s
+.PHONY : src/bonus/minimap/minimap.c.s
+
 src/destructor.o: src/destructor.c.o
 .PHONY : src/destructor.o
 
@@ -810,6 +834,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... cub3D"
+	@echo "... src/bonus/minimap/minimap.o"
+	@echo "... src/bonus/minimap/minimap.i"
+	@echo "... src/bonus/minimap/minimap.s"
 	@echo "... src/destructor.o"
 	@echo "... src/destructor.i"
 	@echo "... src/destructor.s"
