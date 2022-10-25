@@ -6,9 +6,13 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 15:59:05 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/25 16:06:43 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/25 18:22:34 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../incl/cub3D.h"
 
+int	check_mouse_hooks(t_data *data)
+{
+	return (EXIT_SUCCESS);
+}
