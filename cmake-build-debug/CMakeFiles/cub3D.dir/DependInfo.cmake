@@ -15,6 +15,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/rmazurit/Documents/42_Projects/cub3D/src/main.c" "CMakeFiles/cub3D.dir/src/main.c.o" "gcc" "CMakeFiles/cub3D.dir/src/main.c.o.d"
   "/Users/rmazurit/Documents/42_Projects/cub3D/src/parser/color_extracter.c" "CMakeFiles/cub3D.dir/src/parser/color_extracter.c.o" "gcc" "CMakeFiles/cub3D.dir/src/parser/color_extracter.c.o.d"
   "/Users/rmazurit/Documents/42_Projects/cub3D/src/parser/floor_ceiling_parser.c" "CMakeFiles/cub3D.dir/src/parser/floor_ceiling_parser.c.o" "gcc" "CMakeFiles/cub3D.dir/src/parser/floor_ceiling_parser.c.o.d"
+  "/Users/rmazurit/Documents/42_Projects/cub3D/src/parser/map_parser/arguments_checker.c" "CMakeFiles/cub3D.dir/src/parser/map_parser/arguments_checker.c.o" "gcc" "CMakeFiles/cub3D.dir/src/parser/map_parser/arguments_checker.c.o.d"
   "/Users/rmazurit/Documents/42_Projects/cub3D/src/parser/map_parser/map_borders_checker.c" "CMakeFiles/cub3D.dir/src/parser/map_parser/map_borders_checker.c.o" "gcc" "CMakeFiles/cub3D.dir/src/parser/map_parser/map_borders_checker.c.o.d"
   "/Users/rmazurit/Documents/42_Projects/cub3D/src/parser/map_parser/map_creator.c" "CMakeFiles/cub3D.dir/src/parser/map_parser/map_creator.c.o" "gcc" "CMakeFiles/cub3D.dir/src/parser/map_parser/map_creator.c.o.d"
   "/Users/rmazurit/Documents/42_Projects/cub3D/src/parser/map_parser/map_parser.c" "CMakeFiles/cub3D.dir/src/parser/map_parser/map_parser.c.o" "gcc" "CMakeFiles/cub3D.dir/src/parser/map_parser/map_parser.c.o.d"

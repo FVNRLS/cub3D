@@ -36,4 +36,5 @@ static void	free_map_objects(t_data *data)
 void	free_all_resources(t_data *data)
 {
 	free_map_objects(data);
+	close(data->conf->fd);
 }

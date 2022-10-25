@@ -297,6 +297,30 @@ src/parser/floor_ceiling_parser.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/parser/floor_ceiling_parser.c.s
 .PHONY : src/parser/floor_ceiling_parser.c.s
 
+src/parser/map_parser/arguments_checker.o: src/parser/map_parser/arguments_checker.c.o
+.PHONY : src/parser/map_parser/arguments_checker.o
+
+# target to build an object file
+src/parser/map_parser/arguments_checker.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/parser/map_parser/arguments_checker.c.o
+.PHONY : src/parser/map_parser/arguments_checker.c.o
+
+src/parser/map_parser/arguments_checker.i: src/parser/map_parser/arguments_checker.c.i
+.PHONY : src/parser/map_parser/arguments_checker.i
+
+# target to preprocess a source file
+src/parser/map_parser/arguments_checker.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/parser/map_parser/arguments_checker.c.i
+.PHONY : src/parser/map_parser/arguments_checker.c.i
+
+src/parser/map_parser/arguments_checker.s: src/parser/map_parser/arguments_checker.c.s
+.PHONY : src/parser/map_parser/arguments_checker.s
+
+# target to generate assembly for a file
+src/parser/map_parser/arguments_checker.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/parser/map_parser/arguments_checker.c.s
+.PHONY : src/parser/map_parser/arguments_checker.c.s
+
 src/parser/map_parser/map_borders_checker.o: src/parser/map_parser/map_borders_checker.c.o
 .PHONY : src/parser/map_parser/map_borders_checker.o
 
@@ -807,6 +831,9 @@ help:
 	@echo "... src/parser/floor_ceiling_parser.o"
 	@echo "... src/parser/floor_ceiling_parser.i"
 	@echo "... src/parser/floor_ceiling_parser.s"
+	@echo "... src/parser/map_parser/arguments_checker.o"
+	@echo "... src/parser/map_parser/arguments_checker.i"
+	@echo "... src/parser/map_parser/arguments_checker.s"
 	@echo "... src/parser/map_parser/map_borders_checker.o"
 	@echo "... src/parser/map_parser/map_borders_checker.i"
 	@echo "... src/parser/map_parser/map_borders_checker.s"

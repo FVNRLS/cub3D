@@ -31,13 +31,13 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 51,
+				"line" : 54,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 55,
+				"line" : 58,
 				"parent" : 0
 			}
 		]
@@ -91,7 +91,8 @@
 				27,
 				28,
 				29,
-				30
+				30,
+				31
 			]
 		}
 	],
@@ -160,7 +161,8 @@
 				27,
 				28,
 				29,
-				30
+				30,
+				31
 			]
 		},
 		{
@@ -271,6 +273,18 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
+			"path" : "src/parser/map_parser/map_player_parser.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/parser/map_parser/arguments_checker.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
 			"path" : "src/error_printer.c",
 			"sourceGroupIndex" : 0
 		},
@@ -350,12 +364,6 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/tools/ft_itoa.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "src/parser/map_parser/map_player_parser.c",
 			"sourceGroupIndex" : 0
 		}
 	],

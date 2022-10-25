@@ -6,26 +6,11 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 11:50:41 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/24 19:59:32 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/25 11:01:01 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../incl/cub3D.h"
-
-//TODO: complete and test!
-static bool	all_args_parsed(t_data *data)
-{
-	if (!data->texture->north || data->texture->south || !data->texture->east
-		|| !data->texture->west)
-		return (false);
-	if (data->color->ceil == -1 || data->color->floor == -1)
-		return (false);
-	if (data->map == NULL)
-		return (false);
-	if (data->player->dir == VOID)
-		return (false);
-	return (true);
-}
 
 static bool check_extension(char *s)
 {
@@ -89,16 +74,8 @@ static void	parse_line(t_data *data)
 	ft_free_split(data->conf->tokens);
 }
 
-void	parse_input(t_data *data)
+static int	parse_args(t_data *data)
 {
-	bool	ext_valid;
-
-	ext_valid = check_extension(data->conf->file);
-	if (ext_valid == false)
-		return(print_error(INVALID_EXTENSION, NULL));
-	data->conf->fd = open(data->conf->file, O_RDONLY, RIGHTS);
-	if (data->conf->fd < 0)
-		return (print_error(OPEN_ERROR, NULL));
 	while (data->map_parsed == false)
 	{
 		data->conf->line = get_next_line(data->conf->fd);
@@ -109,9 +86,33 @@ void	parse_input(t_data *data)
 		free(data->conf->line);
 		data->conf->line = NULL;
 		if (data->parse_error == true)
-			break ;
+			return (EXIT_FAILURE);
 	}
-	if (all_args_parsed(data) == false)
+	return (EXIT_SUCCESS);
+}
+
+void	parse_input(t_data *data)
+{
+	bool	ext_valid;
+	bool	all_args_parsed;
+
+	ext_valid = check_extension(data->conf->file);
+	if (ext_valid == false)
+	{
 		data->parse_error = true;
+		return(print_error(INVALID_EXTENSION, NULL));
+	}
+	data->conf->fd = open(data->conf->file, O_RDONLY, RIGHTS);
+	if (data->conf->fd < 0)
+	{
+		data->parse_error = true;
+		return (print_error(OPEN_ERROR, NULL));
+	}
+	if (parse_args(data) == EXIT_SUCCESS)
+	{
+		all_args_parsed = (check_args(data) == false);
+		if (all_args_parsed == false)
+			data->parse_error = true;
+	}
 	close(data->conf->fd);
 }

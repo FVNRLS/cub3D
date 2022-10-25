@@ -21,8 +21,10 @@
 # define	TEXTURE_ERROR		6
 # define	COLOR_ERROR			7
 # define 	INVALID_MAP			8
-# define	NO_PLAYER			9
-
+# define	NO_TEXTURE			9
+# define	NO_COLOR			10
+# define	NO_PLAYER			11
+# define	NO_MAP				12
 
 void	print_error(int	error, char *s);
 int 	print_int_error(int error, char *s);

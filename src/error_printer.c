@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 11:35:20 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/24 18:26:59 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/25 10:51:30 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,13 @@ void	print_error(int	error, char *s)
 	else if (error == INVALID_MAP)
 		printf("Error\nInvalid map configuration on line: %s\n", s);
 	else if (error == NO_PLAYER)
-		printf("Error\nInvalid map: no player specified\n");
-	else if (error == NO_PLAYER)
-		printf("Error\nInvalid map: no player specified\n");
+		printf("Error\nMissing input: no player specified\n");
+	else if (error == NO_TEXTURE)
+		printf("Error\nMissing input: no %s texture specified\n", s);
+	else if (error == NO_COLOR)
+		printf("Error\nMissing input: no %s color specified\n", s);
+	else if (error == NO_MAP)
+		printf("Error\nMissing input: no map\n");
 }
 
 int 	print_int_error(int error, char *s)

@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 12:32:53 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/24 16:57:11 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/25 10:51:30 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,6 +73,7 @@ int		create_map(t_data *data);
 void	parse_player(t_data *data);
 void	check_map_borders(t_data *data);
 void	check_invalid_void_spaces(t_data *data);
+bool	check_args(t_data *data);
 
 //COLORIZER
 int		get_color(t_data *data);
