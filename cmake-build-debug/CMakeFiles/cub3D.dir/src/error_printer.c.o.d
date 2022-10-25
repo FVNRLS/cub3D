@@ -105,5 +105,7 @@ CMakeFiles/cub3D.dir/src/error_printer.c.o: \
   /Users/rmazurit/Documents/42_Projects/cub3D/src/../incl/struct.h \
   /Users/rmazurit/Documents/42_Projects/cub3D/src/../incl/errors.h \
   /Users/rmazurit/Documents/42_Projects/cub3D/src/../incl/tools.h \
+  /Users/rmazurit/Documents/42_Projects/cub3D/src/../incl/bonus.h \
+  /Users/rmazurit/Documents/42_Projects/cub3D/src/../incl/hooks.h \
   /Users/rmazurit/Documents/42_Projects/cub3D/src/../incl/../lib/get_next_line/get_next_line.h \
   /Users/rmazurit/Documents/42_Projects/cub3D/src/../incl/../lib/minilibx/mlx.h

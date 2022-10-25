@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 12:29:53 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/25 14:57:07 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/25 15:31:09 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,11 +24,13 @@
 # include "errors.h"
 # include "tools.h"
 # include "bonus.h"
+# include "hooks.h"
 # include "../lib/get_next_line/get_next_line.h"
 # include "../lib/minilibx/mlx.h"
 
 # define RIGHTS		0644
 # define NUM_ITEMS	7
+# define WINSIZE	700
 
 # define S_NEWLINE	"\n"
 # define NORTH		"NO"
@@ -62,7 +64,7 @@
 //INITIALIZER
 void	init_environment(t_data *data);
 void	init_map_objects(t_data *data);
-
+void	init_mlx(t_data *data);
 
 //PARSER
 void	parse_input(t_data *data);
@@ -75,6 +77,8 @@ void	parse_player(t_data *data);
 void	check_map_borders(t_data *data);
 void	check_invalid_void_spaces(t_data *data);
 bool	check_args(t_data *data);
+
+//MLX
 
 //COLORIZER
 int		get_color(t_data *data);

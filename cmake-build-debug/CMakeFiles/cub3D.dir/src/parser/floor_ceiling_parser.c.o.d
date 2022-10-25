@@ -105,5 +105,7 @@ CMakeFiles/cub3D.dir/src/parser/floor_ceiling_parser.c.o: \
   /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/../../incl/struct.h \
   /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/../../incl/errors.h \
   /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/../../incl/tools.h \
+  /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/../../incl/bonus.h \
+  /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/../../incl/hooks.h \
   /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/../../incl/../lib/get_next_line/get_next_line.h \
   /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/../../incl/../lib/minilibx/mlx.h

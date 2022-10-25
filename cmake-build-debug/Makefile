@@ -201,6 +201,78 @@ src/error_printer.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/error_printer.c.s
 .PHONY : src/error_printer.c.s
 
+src/hooks_and_events/hooks_catcher.o: src/hooks_and_events/hooks_catcher.c.o
+.PHONY : src/hooks_and_events/hooks_catcher.o
+
+# target to build an object file
+src/hooks_and_events/hooks_catcher.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/hooks_and_events/hooks_catcher.c.o
+.PHONY : src/hooks_and_events/hooks_catcher.c.o
+
+src/hooks_and_events/hooks_catcher.i: src/hooks_and_events/hooks_catcher.c.i
+.PHONY : src/hooks_and_events/hooks_catcher.i
+
+# target to preprocess a source file
+src/hooks_and_events/hooks_catcher.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/hooks_and_events/hooks_catcher.c.i
+.PHONY : src/hooks_and_events/hooks_catcher.c.i
+
+src/hooks_and_events/hooks_catcher.s: src/hooks_and_events/hooks_catcher.c.s
+.PHONY : src/hooks_and_events/hooks_catcher.s
+
+# target to generate assembly for a file
+src/hooks_and_events/hooks_catcher.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/hooks_and_events/hooks_catcher.c.s
+.PHONY : src/hooks_and_events/hooks_catcher.c.s
+
+src/hooks_and_events/key_hooks.o: src/hooks_and_events/key_hooks.c.o
+.PHONY : src/hooks_and_events/key_hooks.o
+
+# target to build an object file
+src/hooks_and_events/key_hooks.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/hooks_and_events/key_hooks.c.o
+.PHONY : src/hooks_and_events/key_hooks.c.o
+
+src/hooks_and_events/key_hooks.i: src/hooks_and_events/key_hooks.c.i
+.PHONY : src/hooks_and_events/key_hooks.i
+
+# target to preprocess a source file
+src/hooks_and_events/key_hooks.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/hooks_and_events/key_hooks.c.i
+.PHONY : src/hooks_and_events/key_hooks.c.i
+
+src/hooks_and_events/key_hooks.s: src/hooks_and_events/key_hooks.c.s
+.PHONY : src/hooks_and_events/key_hooks.s
+
+# target to generate assembly for a file
+src/hooks_and_events/key_hooks.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/hooks_and_events/key_hooks.c.s
+.PHONY : src/hooks_and_events/key_hooks.c.s
+
+src/hooks_and_events/mouse_hooks.o: src/hooks_and_events/mouse_hooks.c.o
+.PHONY : src/hooks_and_events/mouse_hooks.o
+
+# target to build an object file
+src/hooks_and_events/mouse_hooks.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/hooks_and_events/mouse_hooks.c.o
+.PHONY : src/hooks_and_events/mouse_hooks.c.o
+
+src/hooks_and_events/mouse_hooks.i: src/hooks_and_events/mouse_hooks.c.i
+.PHONY : src/hooks_and_events/mouse_hooks.i
+
+# target to preprocess a source file
+src/hooks_and_events/mouse_hooks.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/hooks_and_events/mouse_hooks.c.i
+.PHONY : src/hooks_and_events/mouse_hooks.c.i
+
+src/hooks_and_events/mouse_hooks.s: src/hooks_and_events/mouse_hooks.c.s
+.PHONY : src/hooks_and_events/mouse_hooks.s
+
+# target to generate assembly for a file
+src/hooks_and_events/mouse_hooks.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/hooks_and_events/mouse_hooks.c.s
+.PHONY : src/hooks_and_events/mouse_hooks.c.s
+
 src/initializer/initializer.o: src/initializer/initializer.c.o
 .PHONY : src/initializer/initializer.o
 
@@ -248,6 +320,30 @@ src/initializer/map_objects.s: src/initializer/map_objects.c.s
 src/initializer/map_objects.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/initializer/map_objects.c.s
 .PHONY : src/initializer/map_objects.c.s
+
+src/initializer/mlx_initializer.o: src/initializer/mlx_initializer.c.o
+.PHONY : src/initializer/mlx_initializer.o
+
+# target to build an object file
+src/initializer/mlx_initializer.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/initializer/mlx_initializer.c.o
+.PHONY : src/initializer/mlx_initializer.c.o
+
+src/initializer/mlx_initializer.i: src/initializer/mlx_initializer.c.i
+.PHONY : src/initializer/mlx_initializer.i
+
+# target to preprocess a source file
+src/initializer/mlx_initializer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/initializer/mlx_initializer.c.i
+.PHONY : src/initializer/mlx_initializer.c.i
+
+src/initializer/mlx_initializer.s: src/initializer/mlx_initializer.c.s
+.PHONY : src/initializer/mlx_initializer.s
+
+# target to generate assembly for a file
+src/initializer/mlx_initializer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/initializer/mlx_initializer.c.s
+.PHONY : src/initializer/mlx_initializer.c.s
 
 src/main.o: src/main.c.o
 .PHONY : src/main.o
@@ -843,12 +939,24 @@ help:
 	@echo "... src/error_printer.o"
 	@echo "... src/error_printer.i"
 	@echo "... src/error_printer.s"
+	@echo "... src/hooks_and_events/hooks_catcher.o"
+	@echo "... src/hooks_and_events/hooks_catcher.i"
+	@echo "... src/hooks_and_events/hooks_catcher.s"
+	@echo "... src/hooks_and_events/key_hooks.o"
+	@echo "... src/hooks_and_events/key_hooks.i"
+	@echo "... src/hooks_and_events/key_hooks.s"
+	@echo "... src/hooks_and_events/mouse_hooks.o"
+	@echo "... src/hooks_and_events/mouse_hooks.i"
+	@echo "... src/hooks_and_events/mouse_hooks.s"
 	@echo "... src/initializer/initializer.o"
 	@echo "... src/initializer/initializer.i"
 	@echo "... src/initializer/initializer.s"
 	@echo "... src/initializer/map_objects.o"
 	@echo "... src/initializer/map_objects.i"
 	@echo "... src/initializer/map_objects.s"
+	@echo "... src/initializer/mlx_initializer.o"
+	@echo "... src/initializer/mlx_initializer.i"
+	@echo "... src/initializer/mlx_initializer.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

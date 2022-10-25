@@ -49,4 +49,5 @@ void	init_environment(t_data *data)
 	init_flags(data);
 	init_map_objects(data);
 	init_map(data);
+	init_mlx(data);
 }

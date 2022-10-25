@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 14:57:15 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/25 14:57:21 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/25 16:13:12 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,8 @@ int main(int argc, char **argv)
 	parse_input(&data);
 	if (data.parse_error == true)
 		ft_free_all_and_exit(&data);
+	catch_hooks(data);
+	mlx_loop(data.gui->mlx);
 //	start_minimap(data);
 
 	free_all_resources(&data);

@@ -105,5 +105,7 @@ CMakeFiles/cub3D.dir/src/initializer/initializer.c.o: \
   /Users/rmazurit/Documents/42_Projects/cub3D/src/initializer/../../incl/struct.h \
   /Users/rmazurit/Documents/42_Projects/cub3D/src/initializer/../../incl/errors.h \
   /Users/rmazurit/Documents/42_Projects/cub3D/src/initializer/../../incl/tools.h \
+  /Users/rmazurit/Documents/42_Projects/cub3D/src/initializer/../../incl/bonus.h \
+  /Users/rmazurit/Documents/42_Projects/cub3D/src/initializer/../../incl/hooks.h \
   /Users/rmazurit/Documents/42_Projects/cub3D/src/initializer/../../incl/../lib/get_next_line/get_next_line.h \
   /Users/rmazurit/Documents/42_Projects/cub3D/src/initializer/../../incl/../lib/minilibx/mlx.h

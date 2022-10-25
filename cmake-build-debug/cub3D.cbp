@@ -87,6 +87,9 @@
 		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/incl/errors.h">
 			<Option target="cub3D"/>
 		</Unit>
+		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/incl/hooks.h">
+			<Option target="cub3D"/>
+		</Unit>
 		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/incl/struct.h">
 			<Option target="cub3D"/>
 		</Unit>
@@ -102,10 +105,22 @@
 		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/error_printer.c">
 			<Option target="cub3D"/>
 		</Unit>
+		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/hooks_and_events/hooks_catcher.c">
+			<Option target="cub3D"/>
+		</Unit>
+		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/hooks_and_events/key_hooks.c">
+			<Option target="cub3D"/>
+		</Unit>
+		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/hooks_and_events/mouse_hooks.c">
+			<Option target="cub3D"/>
+		</Unit>
 		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/initializer/initializer.c">
 			<Option target="cub3D"/>
 		</Unit>
 		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/initializer/map_objects.c">
+			<Option target="cub3D"/>
+		</Unit>
+		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/initializer/mlx_initializer.c">
 			<Option target="cub3D"/>
 		</Unit>
 		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/main.c">
