@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 10:37:50 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/25 10:51:30 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/25 13:51:02 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,7 +70,7 @@ static bool	textures_parsed(t_data *data)
 bool	check_args(t_data *data)
 {
 	if (textures_parsed(data) && colors_parsed(data) && map_parsed(data))
-		return (true);
-	else
 		return (false);
+	else
+		return (true);
 }
