@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/19 15:05:15 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/25 11:45:36 by rmazurit         ###   ########.fr       */
+/*   Created: 2022/10/25 12:30:10 by rmazurit          #+#    #+#             */
+/*   Updated: 2022/10/25 12:35:16 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@ static void create_items_container(t_data *data)
 	data->conf->specs[5] = CEILING;
 	data->conf->specs[6] = FLOOR;
 	data->conf->specs[NUM_ITEMS] = NULL;
-
 	data->conf->items[0] = VOID;
 	data->conf->items[1] = ZERO;
 	data->conf->items[2] = ONE;

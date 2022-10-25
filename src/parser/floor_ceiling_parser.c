@@ -12,7 +12,6 @@
 
 #include "../../incl/cub3D.h"
 
-
 void	parse_ceiling(t_data *data)
 {
 	if (data->color->ceil != -1)
