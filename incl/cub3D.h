@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 12:32:53 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/22 11:06:16 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/25 11:21:35 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@
 # define RIGHTS		0644
 # define NUM_ITEMS	7
 
-# define NEWLINE	"\n"
+# define S_NEWLINE	"\n"
 # define NORTH		"NO"
 # define SOUTH		"SO"
 # define EAST		"EA"
@@ -38,6 +38,8 @@
 # define FLOOR		"F"
 
 # define SPACE		' '
+# define VOID		'-'
+# define NEWLINE	'\n'
 # define ZERO		'0'
 # define ONE		'1'
 # define PLAYER_N	'N'
@@ -67,6 +69,11 @@ void	parse_textures(t_data *data, int token);
 void	parse_ceiling(t_data *data);
 void	parse_floor(t_data *data);
 void	parse_map(t_data *data);
+int		create_map(t_data *data);
+void	parse_player(t_data *data);
+void	check_map_borders(t_data *data);
+void	check_invalid_void_spaces(t_data *data);
+bool	check_args(t_data *data);
 
 //COLORIZER
 int		get_color(t_data *data);
@@ -75,5 +82,8 @@ int		get_color(t_data *data);
 //DESTRUCTOR
 void	free_all_resources(t_data *data);
 
+
+//TODO: del before submission
+void	print_map(t_data *data);
 
 #endif

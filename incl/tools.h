@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 10:08:53 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/21 16:56:36 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/25 11:21:35 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,6 @@ void	ft_free_split(char **split);
 void	ft_free_all_and_exit(t_data *data);
 char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_strjoin(char *buf, char *tmp);
+char	*ft_itoa(int n);
 
 #endif

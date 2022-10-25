@@ -6,12 +6,11 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 11:50:41 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/22 11:06:16 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/25 11:21:35 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../incl/cub3D.h"
-
 
 static bool check_extension(char *s)
 {
@@ -37,8 +36,7 @@ static int get_first_token(t_data *data, char *first)
 		i++;
 	}
 	c = first[0];
-	if (c == T_SPACE || c == ZERO || c == ONE || c == PLAYER_N || c == PLAYER_S
-		|| c == PLAYER_E || c == PLAYER_W)
+	if (c == T_SPACE || c == ZERO || c == ONE)
 		return (T_MAP);
 	else
 	{
@@ -76,27 +74,45 @@ static void	parse_line(t_data *data)
 	ft_free_split(data->conf->tokens);
 }
 
-//TODO: after parsing - write checker, if everything was parsed!
-void	parse_input(t_data *data)
+static int	parse_args(t_data *data)
 {
-	bool	ext_valid;
-
-	ext_valid = check_extension(data->conf->file);
-	if (ext_valid == false)
-		return(print_error(INVALID_EXTENSION, NULL));
-	data->conf->fd = open(data->conf->file, O_RDONLY, RIGHTS);
-	if (data->conf->fd < 0)
-		return (print_error(OPEN_ERROR, NULL));
-	while (true)
+	while (data->map_parsed == false)
 	{
 		data->conf->line = get_next_line(data->conf->fd);
 		if (!data->conf->line)
 			break ;
 		parse_line(data);
+		data->conf->line_num++;
 		free(data->conf->line);
 		data->conf->line = NULL;
 		if (data->parse_error == true)
-			break ;
+			return (EXIT_FAILURE);
+	}
+	return (EXIT_SUCCESS);
+}
+
+void	parse_input(t_data *data)
+{
+	bool	ext_valid;
+	bool	all_args_parsed;
+
+	ext_valid = check_extension(data->conf->file);
+	if (ext_valid == false)
+	{
+		data->parse_error = true;
+		return(print_error(INVALID_EXTENSION, NULL));
+	}
+	data->conf->fd = open(data->conf->file, O_RDONLY, RIGHTS);
+	if (data->conf->fd < 0)
+	{
+		data->parse_error = true;
+		return (print_error(OPEN_ERROR, NULL));
+	}
+	if (parse_args(data) == EXIT_SUCCESS)
+	{
+		all_args_parsed = (check_args(data) == false);
+		if (all_args_parsed == false)
+			data->parse_error = true;
 	}
 	close(data->conf->fd);
 }
