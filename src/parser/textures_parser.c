@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   textures_parser.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: rmazurit <rmazurit@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/19 15:09:01 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/25 13:51:02 by rmazurit         ###   ########.fr       */
+/*   Created: 2022/10/25 13:52:07 by rmazurit          #+#    #+#             */
+/*   Updated: 2022/10/25 13:52:07 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ void	parse_textures(t_data *data, int token)
 	int	ret;
 
 	if (ft_splitlen(data->conf->tokens) != 2)
-		ret = (print_int_error(INVALID_TOKEN, NULL));
+		ret = (print_int_error(INVALID_TOKEN, data->conf->line));
 	else
 	{
 		ret = 0;
