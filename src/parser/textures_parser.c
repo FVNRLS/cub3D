@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 15:09:01 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/20 12:24:30 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/25 12:39:11 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ void	parse_textures(t_data *data, int token)
 	int	ret;
 
 	if (ft_splitlen(data->conf->tokens) != 2)
-		ret = (print_int_error(INVALID_TOKEN, NULL));
+		ret = (print_int_error(INVALID_TOKEN, data->conf->line));
 	else
 	{
 		ret = 0;
