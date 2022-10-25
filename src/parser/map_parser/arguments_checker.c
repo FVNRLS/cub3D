@@ -70,7 +70,7 @@ static bool	textures_parsed(t_data *data)
 bool	check_args(t_data *data)
 {
 	if (textures_parsed(data) && colors_parsed(data) && map_parsed(data))
-		return (true);
-	else
 		return (false);
+	else
+		return (true);
 }
