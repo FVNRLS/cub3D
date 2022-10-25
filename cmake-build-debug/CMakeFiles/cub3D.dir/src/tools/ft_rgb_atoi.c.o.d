@@ -105,4 +105,5 @@ CMakeFiles/cub3D.dir/src/tools/ft_rgb_atoi.c.o: \
   /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/../../incl/struct.h \
   /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/../../incl/errors.h \
   /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/../../incl/tools.h \
-  /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/../../incl/../lib/get_next_line/get_next_line.h
+  /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/../../incl/../lib/get_next_line/get_next_line.h \
+  /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/../../incl/../lib/minilibx/mlx.h

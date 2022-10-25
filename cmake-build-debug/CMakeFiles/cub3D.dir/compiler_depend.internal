@@ -109,7 +109,6 @@ CMakeFiles/cub3D.dir/src/destructor.c.o
  /Users/rmazurit/Documents/42_Projects/cub3D/incl/errors.h
  /Users/rmazurit/Documents/42_Projects/cub3D/incl/tools.h
  /Users/rmazurit/Documents/42_Projects/cub3D/lib/get_next_line/get_next_line.h
- /Users/rmazurit/Documents/42_Projects/cub3D/lib/minilibx/mlx.h
 
 CMakeFiles/cub3D.dir/src/error_printer.c.o
  /Users/rmazurit/Documents/42_Projects/cub3D/src/error_printer.c
@@ -219,7 +218,6 @@ CMakeFiles/cub3D.dir/src/error_printer.c.o
  /Users/rmazurit/Documents/42_Projects/cub3D/incl/errors.h
  /Users/rmazurit/Documents/42_Projects/cub3D/incl/tools.h
  /Users/rmazurit/Documents/42_Projects/cub3D/lib/get_next_line/get_next_line.h
- /Users/rmazurit/Documents/42_Projects/cub3D/lib/minilibx/mlx.h
 
 CMakeFiles/cub3D.dir/src/initializer/initializer.c.o
  /Users/rmazurit/Documents/42_Projects/cub3D/src/initializer/initializer.c
@@ -329,7 +327,6 @@ CMakeFiles/cub3D.dir/src/initializer/initializer.c.o
  /Users/rmazurit/Documents/42_Projects/cub3D/incl/errors.h
  /Users/rmazurit/Documents/42_Projects/cub3D/incl/tools.h
  /Users/rmazurit/Documents/42_Projects/cub3D/lib/get_next_line/get_next_line.h
- /Users/rmazurit/Documents/42_Projects/cub3D/lib/minilibx/mlx.h
 
 CMakeFiles/cub3D.dir/src/initializer/map_objects.c.o
  /Users/rmazurit/Documents/42_Projects/cub3D/src/initializer/map_objects.c
@@ -439,7 +436,6 @@ CMakeFiles/cub3D.dir/src/initializer/map_objects.c.o
  /Users/rmazurit/Documents/42_Projects/cub3D/incl/errors.h
  /Users/rmazurit/Documents/42_Projects/cub3D/incl/tools.h
  /Users/rmazurit/Documents/42_Projects/cub3D/lib/get_next_line/get_next_line.h
- /Users/rmazurit/Documents/42_Projects/cub3D/lib/minilibx/mlx.h
 
 CMakeFiles/cub3D.dir/src/main.c.o
  /Users/rmazurit/Documents/42_Projects/cub3D/src/main.c
@@ -549,7 +545,6 @@ CMakeFiles/cub3D.dir/src/main.c.o
  /Users/rmazurit/Documents/42_Projects/cub3D/incl/errors.h
  /Users/rmazurit/Documents/42_Projects/cub3D/incl/tools.h
  /Users/rmazurit/Documents/42_Projects/cub3D/lib/get_next_line/get_next_line.h
- /Users/rmazurit/Documents/42_Projects/cub3D/lib/minilibx/mlx.h
 
 CMakeFiles/cub3D.dir/src/parser/color_extracter.c.o
  /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/color_extracter.c
@@ -659,7 +654,6 @@ CMakeFiles/cub3D.dir/src/parser/color_extracter.c.o
  /Users/rmazurit/Documents/42_Projects/cub3D/incl/errors.h
  /Users/rmazurit/Documents/42_Projects/cub3D/incl/tools.h
  /Users/rmazurit/Documents/42_Projects/cub3D/lib/get_next_line/get_next_line.h
- /Users/rmazurit/Documents/42_Projects/cub3D/lib/minilibx/mlx.h
 
 CMakeFiles/cub3D.dir/src/parser/floor_ceiling_parser.c.o
  /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/floor_ceiling_parser.c
@@ -769,7 +763,6 @@ CMakeFiles/cub3D.dir/src/parser/floor_ceiling_parser.c.o
  /Users/rmazurit/Documents/42_Projects/cub3D/incl/errors.h
  /Users/rmazurit/Documents/42_Projects/cub3D/incl/tools.h
  /Users/rmazurit/Documents/42_Projects/cub3D/lib/get_next_line/get_next_line.h
- /Users/rmazurit/Documents/42_Projects/cub3D/lib/minilibx/mlx.h
 
 CMakeFiles/cub3D.dir/src/parser/map_parser.c.o
  /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/map_parser.c
@@ -879,7 +872,6 @@ CMakeFiles/cub3D.dir/src/parser/map_parser.c.o
  /Users/rmazurit/Documents/42_Projects/cub3D/incl/errors.h
  /Users/rmazurit/Documents/42_Projects/cub3D/incl/tools.h
  /Users/rmazurit/Documents/42_Projects/cub3D/lib/get_next_line/get_next_line.h
- /Users/rmazurit/Documents/42_Projects/cub3D/lib/minilibx/mlx.h
 
 CMakeFiles/cub3D.dir/src/parser/parser.c.o
  /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/parser.c
@@ -989,7 +981,6 @@ CMakeFiles/cub3D.dir/src/parser/parser.c.o
  /Users/rmazurit/Documents/42_Projects/cub3D/incl/errors.h
  /Users/rmazurit/Documents/42_Projects/cub3D/incl/tools.h
  /Users/rmazurit/Documents/42_Projects/cub3D/lib/get_next_line/get_next_line.h
- /Users/rmazurit/Documents/42_Projects/cub3D/lib/minilibx/mlx.h
 
 CMakeFiles/cub3D.dir/src/parser/textures_parser.c.o
  /Users/rmazurit/Documents/42_Projects/cub3D/src/parser/textures_parser.c
@@ -1099,7 +1090,6 @@ CMakeFiles/cub3D.dir/src/parser/textures_parser.c.o
  /Users/rmazurit/Documents/42_Projects/cub3D/incl/errors.h
  /Users/rmazurit/Documents/42_Projects/cub3D/incl/tools.h
  /Users/rmazurit/Documents/42_Projects/cub3D/lib/get_next_line/get_next_line.h
- /Users/rmazurit/Documents/42_Projects/cub3D/lib/minilibx/mlx.h
 
 CMakeFiles/cub3D.dir/src/tools/ft_free_all_and_exit.c.o
  /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_free_all_and_exit.c
@@ -1209,7 +1199,6 @@ CMakeFiles/cub3D.dir/src/tools/ft_free_all_and_exit.c.o
  /Users/rmazurit/Documents/42_Projects/cub3D/incl/errors.h
  /Users/rmazurit/Documents/42_Projects/cub3D/incl/tools.h
  /Users/rmazurit/Documents/42_Projects/cub3D/lib/get_next_line/get_next_line.h
- /Users/rmazurit/Documents/42_Projects/cub3D/lib/minilibx/mlx.h
 
 CMakeFiles/cub3D.dir/src/tools/ft_free_split.c.o
  /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_free_split.c
@@ -1319,7 +1308,6 @@ CMakeFiles/cub3D.dir/src/tools/ft_free_split.c.o
  /Users/rmazurit/Documents/42_Projects/cub3D/incl/errors.h
  /Users/rmazurit/Documents/42_Projects/cub3D/incl/tools.h
  /Users/rmazurit/Documents/42_Projects/cub3D/lib/get_next_line/get_next_line.h
- /Users/rmazurit/Documents/42_Projects/cub3D/lib/minilibx/mlx.h
 
 CMakeFiles/cub3D.dir/src/tools/ft_isdigit.c.o
  /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_isdigit.c
@@ -1429,7 +1417,6 @@ CMakeFiles/cub3D.dir/src/tools/ft_isdigit.c.o
  /Users/rmazurit/Documents/42_Projects/cub3D/incl/errors.h
  /Users/rmazurit/Documents/42_Projects/cub3D/incl/tools.h
  /Users/rmazurit/Documents/42_Projects/cub3D/lib/get_next_line/get_next_line.h
- /Users/rmazurit/Documents/42_Projects/cub3D/lib/minilibx/mlx.h
 
 CMakeFiles/cub3D.dir/src/tools/ft_rgb_atoi.c.o
  /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_rgb_atoi.c
@@ -1539,7 +1526,6 @@ CMakeFiles/cub3D.dir/src/tools/ft_rgb_atoi.c.o
  /Users/rmazurit/Documents/42_Projects/cub3D/incl/errors.h
  /Users/rmazurit/Documents/42_Projects/cub3D/incl/tools.h
  /Users/rmazurit/Documents/42_Projects/cub3D/lib/get_next_line/get_next_line.h
- /Users/rmazurit/Documents/42_Projects/cub3D/lib/minilibx/mlx.h
 
 CMakeFiles/cub3D.dir/src/tools/ft_split.c.o
  /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_split.c
@@ -1649,7 +1635,6 @@ CMakeFiles/cub3D.dir/src/tools/ft_split.c.o
  /Users/rmazurit/Documents/42_Projects/cub3D/incl/errors.h
  /Users/rmazurit/Documents/42_Projects/cub3D/incl/tools.h
  /Users/rmazurit/Documents/42_Projects/cub3D/lib/get_next_line/get_next_line.h
- /Users/rmazurit/Documents/42_Projects/cub3D/lib/minilibx/mlx.h
 
 CMakeFiles/cub3D.dir/src/tools/ft_splitlen.c.o
  /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_splitlen.c
@@ -1765,7 +1750,6 @@ CMakeFiles/cub3D.dir/src/tools/ft_strdup.c.o
  /Users/rmazurit/Documents/42_Projects/cub3D/incl/errors.h
  /Users/rmazurit/Documents/42_Projects/cub3D/incl/tools.h
  /Users/rmazurit/Documents/42_Projects/cub3D/lib/get_next_line/get_next_line.h
- /Users/rmazurit/Documents/42_Projects/cub3D/lib/minilibx/mlx.h
 
 CMakeFiles/cub3D.dir/src/tools/ft_strjoin.c.o
  /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_strjoin.c
@@ -1984,7 +1968,6 @@ CMakeFiles/cub3D.dir/src/tools/ft_strlen.c.o
  /Users/rmazurit/Documents/42_Projects/cub3D/incl/errors.h
  /Users/rmazurit/Documents/42_Projects/cub3D/incl/tools.h
  /Users/rmazurit/Documents/42_Projects/cub3D/lib/get_next_line/get_next_line.h
- /Users/rmazurit/Documents/42_Projects/cub3D/lib/minilibx/mlx.h
 
 CMakeFiles/cub3D.dir/src/tools/ft_strncmp.c.o
  /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_strncmp.c
@@ -2094,7 +2077,6 @@ CMakeFiles/cub3D.dir/src/tools/ft_strncmp.c.o
  /Users/rmazurit/Documents/42_Projects/cub3D/incl/errors.h
  /Users/rmazurit/Documents/42_Projects/cub3D/incl/tools.h
  /Users/rmazurit/Documents/42_Projects/cub3D/lib/get_next_line/get_next_line.h
- /Users/rmazurit/Documents/42_Projects/cub3D/lib/minilibx/mlx.h
 
 CMakeFiles/cub3D.dir/src/tools/ft_strtrim.c.o
  /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_strtrim.c
