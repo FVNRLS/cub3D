@@ -46,7 +46,7 @@ add_executable(cub3D src/main.c
         src/tools/ft_strjoin.c
         src/tools/ft_itoa.c
 
-        )
+        src/bonus/minimap/minimap.c incl/bonus.h)
 
 # STATIC LIBRARIES
 ADD_LIBRARY(get_next_line STATIC IMPORTED)

@@ -23,6 +23,7 @@
 # include "struct.h"
 # include "errors.h"
 # include "tools.h"
+# include "bonus.h"
 # include "../lib/get_next_line/get_next_line.h"
 # include "../lib/minilibx/mlx.h"
 
