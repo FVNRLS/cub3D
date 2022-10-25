@@ -111,7 +111,22 @@
 		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/parser/floor_ceiling_parser.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/parser/map_parser.c">
+		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/parser/map_parser/arguments_checker.c">
+			<Option target="cub3D"/>
+		</Unit>
+		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/parser/map_parser/map_borders_checker.c">
+			<Option target="cub3D"/>
+		</Unit>
+		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/parser/map_parser/map_creator.c">
+			<Option target="cub3D"/>
+		</Unit>
+		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/parser/map_parser/map_parser.c">
+			<Option target="cub3D"/>
+		</Unit>
+		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/parser/map_parser/map_player_parser.c">
+			<Option target="cub3D"/>
+		</Unit>
+		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/parser/map_parser/map_void_checker.c">
 			<Option target="cub3D"/>
 		</Unit>
 		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/parser/parser.c">
@@ -127,6 +142,9 @@
 			<Option target="cub3D"/>
 		</Unit>
 		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_isdigit.c">
+			<Option target="cub3D"/>
+		</Unit>
+		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_itoa.c">
 			<Option target="cub3D"/>
 		</Unit>
 		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_rgb_atoi.c">

@@ -20,8 +20,13 @@ add_executable(cub3D src/main.c
         src/parser/parser.c
         src/parser/textures_parser.c
         src/parser/floor_ceiling_parser.c
-        src/parser/map_parser.c
+        src/parser/map_parser/map_parser.c
         src/parser/color_extracter.c
+        src/parser/map_parser/map_creator.c
+        src/parser/map_parser/map_borders_checker.c
+        src/parser/map_parser/map_void_checker.c
+        src/parser/map_parser/map_player_parser.c
+        src/parser/map_parser/arguments_checker.c
 
         #ERRORS
         src/error_printer.c
@@ -39,6 +44,8 @@ add_executable(cub3D src/main.c
         src/tools/ft_free_all_and_exit.c
         src/tools/ft_strtrim.c
         src/tools/ft_strjoin.c
+        src/tools/ft_itoa.c
+
         )
 
 # STATIC LIBRARIES
