@@ -103,9 +103,38 @@ CMakeFiles/cub3D.dir/src/tools/ft_strdup.c.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_s_ifmt.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_filesec_t.h \
   /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/../../incl/struct.h \
+  /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/../../incl/../lib/minilibx/include/MLX42/MLX42.h \
+  /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/../../incl/../lib/minilibx/include/MLX42/MLX42_Input.h \
   /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/../../incl/errors.h \
   /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/../../incl/tools.h \
   /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/../../incl/bonus.h \
   /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/../../incl/hooks.h \
   /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/../../incl/../lib/get_next_line/get_next_line.h \
-  /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/../../incl/../lib/minilibx/mlx.h
+  /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/../../incl/../lib/minilibx/include/MLX42/MLX42_Int.h \
+  /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/../../incl/../lib/minilibx/include/MLX42/../MLX42/MLX42.h \
+  /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/../../incl/../lib/minilibx/include/MLX42/../lodepng/lodepng.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/string.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_rsize_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_errno_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/strings.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/secure/_strings.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/secure/_string.h \
+  /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/../../incl/../lib/minilibx/include/MLX42/../glad/glad.h \
+  /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/../../incl/../lib/minilibx/include/MLX42/../glad/../KHR/khrplatform.h \
+  /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/../../incl/../lib/minilibx/include/MLX42/../KHR/khrplatform.h \
+  /Users/rmazurit/.brew/include/GLFW/glfw3.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stddef.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/memory.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/limits.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/limits.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/machine/limits.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/i386/limits.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/i386/_limits.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/sys/syslimits.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/err.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/ctype.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/_ctype.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/runetype.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_wint_t.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stdarg.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h

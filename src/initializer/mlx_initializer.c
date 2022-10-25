@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 15:02:58 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/25 15:40:45 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/25 17:20:35 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,40 +14,42 @@
 
 static void init_mlx_flags(t_data *data)
 {
-	data->gui->mlx = NULL;
-	data->gui->win = NULL;
-	data->gui->img = NULL;
-	data->gui->addr = NULL;
+	data->mlx = NULL;
+	data->img = NULL;
 }
 
-static void init_gui_environment(t_data *data)
+static void init_mlx_environment(t_data *data)
 {
-	data->gui->mlx = mlx_init();
-	if (!data->gui->mlx)
+	mlx_t		mlx;
+	mlx_image_t	img;
+
+	data->mlx = &mlx;
+	data->img = &img;
+	mlx_set_setting(MLX_MAXIMIZED, true);
+	data->mlx = mlx_init(WINSIZE, WINSIZE, "cub3D", true);
+	if (!data->mlx)
 	{
 		print_int_error(MALLOC_ERROR, NULL);
 		ft_free_all_and_exit(data);
 	}
-	data->gui->win = mlx_new_window(data->gui->mlx, WINSIZE, WINSIZE, "cub3D");
-	if (!data->gui->win)
-	{
-		print_int_error(MALLOC_ERROR, NULL);
-		ft_free_all_and_exit(data);
-	}
-	data->gui->img = mlx_new_image(data->gui->mlx, WINSIZE, WINSIZE);
-	data->gui->addr = mlx_get_data_addr(data->gui->img,
-	&data->gui->bits_per_pixel, &data->gui->line_length, &data->gui->endian);
-	mlx_put_image_to_window(data->gui->mlx, data->gui->win, data->gui->img, 0, 0);
+	data->img = mlx_new_image(data->mlx, WINSIZE, WINSIZE);
+	mlx_image_to_window(data->mlx, data->img, 0, 0);
 }
 
 void	init_mlx(t_data *data)
 {
-	data->gui = malloc(sizeof(t_gui));
-	if (!data->gui)
-	{
-		print_int_error(MALLOC_ERROR, NULL);
-		ft_free_all_and_exit(data);
-	}
-	init_mlx_flags(data);
-	init_gui_environment(data);
+//	data->mlx = malloc(sizeof(mlx_t));
+//	if (!data->mlx)
+//	{
+//		print_int_error(MALLOC_ERROR, NULL);
+//		ft_free_all_and_exit(data);
+//	}
+//	data->mlx = malloc(sizeof(mlx_image_t));
+//	if (!data->img)
+//	{
+//		print_int_error(MALLOC_ERROR, NULL);
+//		ft_free_all_and_exit(data);
+//	}
+//	init_mlx_flags(data);
+	init_mlx_environment(data);
 }

@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 12:29:53 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/25 15:31:09 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/25 16:41:20 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,9 @@
 # include "bonus.h"
 # include "hooks.h"
 # include "../lib/get_next_line/get_next_line.h"
-# include "../lib/minilibx/mlx.h"
+# include "../lib/minilibx/include/MLX42/MLX42.h"
+# include "../lib/minilibx/include/MLX42/MLX42_Input.h"
+# include "../lib/minilibx/include/MLX42/MLX42_Int.h"
 
 # define RIGHTS		0644
 # define NUM_ITEMS	7

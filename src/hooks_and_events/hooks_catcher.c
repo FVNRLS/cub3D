@@ -6,13 +6,11 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 16:06:45 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/25 16:09:00 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/25 16:12:32 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../incl/cub3D.h"
-
-
 
 void	catch_hooks(t_data data)
 {

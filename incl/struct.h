@@ -6,12 +6,14 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 12:30:28 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/25 15:36:14 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/25 17:21:41 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef STRUCT_H
 # define STRUCT_H
+
+# include "../lib/minilibx/include/MLX42/MLX42.h"
 
 typedef struct s_tab
 {
@@ -58,21 +60,8 @@ typedef struct	s_player
 	char	dir;
 }		t_player;
 
-typedef struct s_gui
-{
-	void	*mlx;
-	void	*win;
-	void	*img;
-	char 	*addr;
-	int		bits_per_pixel;
-	int		line_length;
-	int		endian;
-
-}		t_gui;
-
 typedef struct s_data
 {
-
 	bool		parse_error;
 	bool		map_parsed;
 	t_conf		*conf;
@@ -80,7 +69,8 @@ typedef struct s_data
 	t_color		*color;
 	t_tab		*tab;
 	t_player	*player;
-	t_gui 		*gui;
+	mlx_t 		*mlx;
+	mlx_image_t	*img;
 	char		**map;
 }		t_data;
 

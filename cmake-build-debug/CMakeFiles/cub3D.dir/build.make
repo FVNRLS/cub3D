@@ -605,7 +605,8 @@ cub3D: CMakeFiles/cub3D.dir/src/hooks_and_events/key_hooks.c.o
 cub3D: CMakeFiles/cub3D.dir/src/bonus/minimap/minimap.c.o
 cub3D: CMakeFiles/cub3D.dir/build.make
 cub3D: ../lib/get_next_line/get_next_line.a
-cub3D: ../lib/minilibx/libmlx.a
+cub3D: ../lib/minilibx/libmlx42.a
+cub3D: /Users/rmazurit/.brew/lib/libglfw.3.3.dylib
 cub3D: CMakeFiles/cub3D.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Linking C executable cub3D"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cub3D.dir/link.txt --verbose=$(VERBOSE)

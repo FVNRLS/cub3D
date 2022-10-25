@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 12:46:56 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/25 15:34:57 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/25 18:08:11 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,16 +35,12 @@ static void	free_map_objects(t_data *data)
 
 static void free_mlx_objects(t_data *data)
 {
-	mlx_destroy_image(data->gui->mlx, data->gui->img);
-	mlx_clear_window(data->gui->mlx, data->gui->win);
-	free(data->gui->mlx);
-	free(data->gui);
+	mlx_terminate(data->mlx);
 }
 
 void	free_all_resources(t_data *data)
 {
 	free_map_objects(data);
-	if (data->gui != NULL)
-		free_mlx_objects(data);
+	free_mlx_objects(data);
 	close(data->conf->fd);
 }

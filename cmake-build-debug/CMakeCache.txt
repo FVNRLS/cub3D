@@ -212,6 +212,9 @@ cub3D_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 cub3D_SOURCE_DIR:STATIC=/Users/rmazurit/Documents/42_Projects/cub3D
 
+//The directory containing a CMake configuration file for glfw3.
+glfw3_DIR:PATH=/Users/rmazurit/.brew/lib/cmake/glfw3
+
 
 ########################
 # INTERNAL cache entries

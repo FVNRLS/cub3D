@@ -12,6 +12,9 @@ add_executable(cub3D src/main.c
         incl/tools.h
         incl/bonus.h
         incl/hooks.h
+        lib/minilibx/include/MLX42/MLX42.h
+        lib/minilibx/include/MLX42/MLX42_Input.h
+        lib/minilibx/include/MLX42/MLX42_Int.h
 
         #INITIALIZER AND DESTRUCTOR
         src/initializer/initializer.c
@@ -61,8 +64,8 @@ add_executable(cub3D src/main.c
 # STATIC LIBRARIES
 ADD_LIBRARY(get_next_line STATIC IMPORTED)
 SET_TARGET_PROPERTIES(get_next_line PROPERTIES IMPORTED_LOCATION ${CMAKE_SOURCE_DIR}/lib/get_next_line/get_next_line.a)
-TARGET_LINK_LIBRARIES(cub3D get_next_line)
 
-ADD_LIBRARY(libmlx STATIC IMPORTED)
-SET_TARGET_PROPERTIES(libmlx PROPERTIES IMPORTED_LOCATION ${CMAKE_SOURCE_DIR}/lib/minilibx/libmlx.a)
-TARGET_LINK_LIBRARIES(cub3D libmlx)
+ADD_LIBRARY(libmlx42 STATIC IMPORTED)
+SET_TARGET_PROPERTIES(libmlx42 PROPERTIES IMPORTED_LOCATION ${CMAKE_SOURCE_DIR}/lib/minilibx/libmlx42.a)
+find_package(glfw3 3.3 REQUIRED)
+TARGET_LINK_LIBRARIES(cub3D get_next_line libmlx42 glfw)
