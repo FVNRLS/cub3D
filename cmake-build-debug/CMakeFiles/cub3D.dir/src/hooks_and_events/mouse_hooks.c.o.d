@@ -107,9 +107,7 @@ CMakeFiles/cub3D.dir/src/hooks_and_events/mouse_hooks.c.o: \
   /Users/rmazurit/Documents/42_Projects/cub3D/src/hooks_and_events/../../incl/../lib/minilibx/include/MLX42/MLX42_Input.h \
   /Users/rmazurit/Documents/42_Projects/cub3D/src/hooks_and_events/../../incl/errors.h \
   /Users/rmazurit/Documents/42_Projects/cub3D/src/hooks_and_events/../../incl/tools.h \
-  /Users/rmazurit/Documents/42_Projects/cub3D/src/hooks_and_events/../../incl/bonus.h \
   /Users/rmazurit/Documents/42_Projects/cub3D/src/hooks_and_events/../../incl/hooks.h \
-  /Users/rmazurit/Documents/42_Projects/cub3D/src/hooks_and_events/../../incl/../lib/get_next_line/get_next_line.h \
   /Users/rmazurit/Documents/42_Projects/cub3D/src/hooks_and_events/../../incl/../lib/minilibx/include/MLX42/MLX42_Int.h \
   /Users/rmazurit/Documents/42_Projects/cub3D/src/hooks_and_events/../../incl/../lib/minilibx/include/MLX42/../MLX42/MLX42.h \
   /Users/rmazurit/Documents/42_Projects/cub3D/src/hooks_and_events/../../incl/../lib/minilibx/include/MLX42/../lodepng/lodepng.h \
@@ -137,4 +135,7 @@ CMakeFiles/cub3D.dir/src/hooks_and_events/mouse_hooks.c.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/runetype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_wint_t.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stdarg.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h \
+  /Users/rmazurit/Documents/42_Projects/cub3D/src/hooks_and_events/../../incl/gui.h \
+  /Users/rmazurit/Documents/42_Projects/cub3D/src/hooks_and_events/../../incl/bonus.h \
+  /Users/rmazurit/Documents/42_Projects/cub3D/src/hooks_and_events/../../incl/../lib/get_next_line/get_next_line.h

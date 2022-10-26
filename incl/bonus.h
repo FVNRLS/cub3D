@@ -13,10 +13,6 @@
 #ifndef BONUS_H
 # define BONUS_H
 
-# define GREEN	0x00008000
-# define NAVY	0x00000080
-# define SILVER	0x00C0C0C0
-
 //MINIMAP
 
 

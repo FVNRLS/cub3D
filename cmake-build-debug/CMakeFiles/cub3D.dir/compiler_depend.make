@@ -109,9 +109,7 @@ CMakeFiles/cub3D.dir/src/bonus/minimap/minimap.c.o: ../src/bonus/minimap/minimap
   ../lib/minilibx/include/MLX42/MLX42_Input.h \
   ../incl/errors.h \
   ../incl/tools.h \
-  ../incl/bonus.h \
   ../incl/hooks.h \
-  ../lib/get_next_line/get_next_line.h \
   ../lib/minilibx/include/MLX42/MLX42_Int.h \
   ../lib/minilibx/include/MLX42/MLX42.h \
   ../lib/minilibx/include/lodepng/lodepng.h \
@@ -139,7 +137,10 @@ CMakeFiles/cub3D.dir/src/bonus/minimap/minimap.c.o: ../src/bonus/minimap/minimap
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/runetype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_wint_t.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stdarg.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h \
+  ../incl/gui.h \
+  ../incl/bonus.h \
+  ../lib/get_next_line/get_next_line.h
 
 CMakeFiles/cub3D.dir/src/destructor.c.o: ../src/destructor.c \
   ../incl/cub3D.h \
@@ -249,9 +250,7 @@ CMakeFiles/cub3D.dir/src/destructor.c.o: ../src/destructor.c \
   ../lib/minilibx/include/MLX42/MLX42_Input.h \
   ../incl/errors.h \
   ../incl/tools.h \
-  ../incl/bonus.h \
   ../incl/hooks.h \
-  ../lib/get_next_line/get_next_line.h \
   ../lib/minilibx/include/MLX42/MLX42_Int.h \
   ../lib/minilibx/include/MLX42/MLX42.h \
   ../lib/minilibx/include/lodepng/lodepng.h \
@@ -279,7 +278,10 @@ CMakeFiles/cub3D.dir/src/destructor.c.o: ../src/destructor.c \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/runetype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_wint_t.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stdarg.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h \
+  ../incl/gui.h \
+  ../incl/bonus.h \
+  ../lib/get_next_line/get_next_line.h
 
 CMakeFiles/cub3D.dir/src/error_printer.c.o: ../src/error_printer.c \
   ../incl/cub3D.h \
@@ -389,9 +391,7 @@ CMakeFiles/cub3D.dir/src/error_printer.c.o: ../src/error_printer.c \
   ../lib/minilibx/include/MLX42/MLX42_Input.h \
   ../incl/errors.h \
   ../incl/tools.h \
-  ../incl/bonus.h \
   ../incl/hooks.h \
-  ../lib/get_next_line/get_next_line.h \
   ../lib/minilibx/include/MLX42/MLX42_Int.h \
   ../lib/minilibx/include/MLX42/MLX42.h \
   ../lib/minilibx/include/lodepng/lodepng.h \
@@ -419,7 +419,10 @@ CMakeFiles/cub3D.dir/src/error_printer.c.o: ../src/error_printer.c \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/runetype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_wint_t.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stdarg.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h \
+  ../incl/gui.h \
+  ../incl/bonus.h \
+  ../lib/get_next_line/get_next_line.h
 
 CMakeFiles/cub3D.dir/src/hooks_and_events/hooks_catcher.c.o: ../src/hooks_and_events/hooks_catcher.c \
   ../incl/cub3D.h \
@@ -529,9 +532,7 @@ CMakeFiles/cub3D.dir/src/hooks_and_events/hooks_catcher.c.o: ../src/hooks_and_ev
   ../lib/minilibx/include/MLX42/MLX42_Input.h \
   ../incl/errors.h \
   ../incl/tools.h \
-  ../incl/bonus.h \
   ../incl/hooks.h \
-  ../lib/get_next_line/get_next_line.h \
   ../lib/minilibx/include/MLX42/MLX42_Int.h \
   ../lib/minilibx/include/MLX42/MLX42.h \
   ../lib/minilibx/include/lodepng/lodepng.h \
@@ -559,7 +560,10 @@ CMakeFiles/cub3D.dir/src/hooks_and_events/hooks_catcher.c.o: ../src/hooks_and_ev
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/runetype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_wint_t.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stdarg.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h \
+  ../incl/gui.h \
+  ../incl/bonus.h \
+  ../lib/get_next_line/get_next_line.h
 
 CMakeFiles/cub3D.dir/src/hooks_and_events/key_hooks.c.o: ../src/hooks_and_events/key_hooks.c \
   ../incl/cub3D.h \
@@ -669,9 +673,7 @@ CMakeFiles/cub3D.dir/src/hooks_and_events/key_hooks.c.o: ../src/hooks_and_events
   ../lib/minilibx/include/MLX42/MLX42_Input.h \
   ../incl/errors.h \
   ../incl/tools.h \
-  ../incl/bonus.h \
   ../incl/hooks.h \
-  ../lib/get_next_line/get_next_line.h \
   ../lib/minilibx/include/MLX42/MLX42_Int.h \
   ../lib/minilibx/include/MLX42/MLX42.h \
   ../lib/minilibx/include/lodepng/lodepng.h \
@@ -699,7 +701,10 @@ CMakeFiles/cub3D.dir/src/hooks_and_events/key_hooks.c.o: ../src/hooks_and_events
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/runetype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_wint_t.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stdarg.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h \
+  ../incl/gui.h \
+  ../incl/bonus.h \
+  ../lib/get_next_line/get_next_line.h
 
 CMakeFiles/cub3D.dir/src/hooks_and_events/mouse_hooks.c.o: ../src/hooks_and_events/mouse_hooks.c \
   ../incl/cub3D.h \
@@ -809,9 +814,7 @@ CMakeFiles/cub3D.dir/src/hooks_and_events/mouse_hooks.c.o: ../src/hooks_and_even
   ../lib/minilibx/include/MLX42/MLX42_Input.h \
   ../incl/errors.h \
   ../incl/tools.h \
-  ../incl/bonus.h \
   ../incl/hooks.h \
-  ../lib/get_next_line/get_next_line.h \
   ../lib/minilibx/include/MLX42/MLX42_Int.h \
   ../lib/minilibx/include/MLX42/MLX42.h \
   ../lib/minilibx/include/lodepng/lodepng.h \
@@ -839,7 +842,10 @@ CMakeFiles/cub3D.dir/src/hooks_and_events/mouse_hooks.c.o: ../src/hooks_and_even
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/runetype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_wint_t.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stdarg.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h \
+  ../incl/gui.h \
+  ../incl/bonus.h \
+  ../lib/get_next_line/get_next_line.h
 
 CMakeFiles/cub3D.dir/src/initializer/initializer.c.o: ../src/initializer/initializer.c \
   ../incl/cub3D.h \
@@ -949,9 +955,7 @@ CMakeFiles/cub3D.dir/src/initializer/initializer.c.o: ../src/initializer/initial
   ../lib/minilibx/include/MLX42/MLX42_Input.h \
   ../incl/errors.h \
   ../incl/tools.h \
-  ../incl/bonus.h \
   ../incl/hooks.h \
-  ../lib/get_next_line/get_next_line.h \
   ../lib/minilibx/include/MLX42/MLX42_Int.h \
   ../lib/minilibx/include/MLX42/MLX42.h \
   ../lib/minilibx/include/lodepng/lodepng.h \
@@ -979,7 +983,10 @@ CMakeFiles/cub3D.dir/src/initializer/initializer.c.o: ../src/initializer/initial
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/runetype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_wint_t.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stdarg.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h \
+  ../incl/gui.h \
+  ../incl/bonus.h \
+  ../lib/get_next_line/get_next_line.h
 
 CMakeFiles/cub3D.dir/src/initializer/map_objects.c.o: ../src/initializer/map_objects.c \
   ../incl/cub3D.h \
@@ -1089,9 +1096,7 @@ CMakeFiles/cub3D.dir/src/initializer/map_objects.c.o: ../src/initializer/map_obj
   ../lib/minilibx/include/MLX42/MLX42_Input.h \
   ../incl/errors.h \
   ../incl/tools.h \
-  ../incl/bonus.h \
   ../incl/hooks.h \
-  ../lib/get_next_line/get_next_line.h \
   ../lib/minilibx/include/MLX42/MLX42_Int.h \
   ../lib/minilibx/include/MLX42/MLX42.h \
   ../lib/minilibx/include/lodepng/lodepng.h \
@@ -1119,7 +1124,10 @@ CMakeFiles/cub3D.dir/src/initializer/map_objects.c.o: ../src/initializer/map_obj
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/runetype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_wint_t.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stdarg.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h \
+  ../incl/gui.h \
+  ../incl/bonus.h \
+  ../lib/get_next_line/get_next_line.h
 
 CMakeFiles/cub3D.dir/src/initializer/mlx_initializer.c.o: ../src/initializer/mlx_initializer.c \
   ../incl/cub3D.h \
@@ -1229,9 +1237,7 @@ CMakeFiles/cub3D.dir/src/initializer/mlx_initializer.c.o: ../src/initializer/mlx
   ../lib/minilibx/include/MLX42/MLX42_Input.h \
   ../incl/errors.h \
   ../incl/tools.h \
-  ../incl/bonus.h \
   ../incl/hooks.h \
-  ../lib/get_next_line/get_next_line.h \
   ../lib/minilibx/include/MLX42/MLX42_Int.h \
   ../lib/minilibx/include/MLX42/MLX42.h \
   ../lib/minilibx/include/lodepng/lodepng.h \
@@ -1259,7 +1265,10 @@ CMakeFiles/cub3D.dir/src/initializer/mlx_initializer.c.o: ../src/initializer/mlx
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/runetype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_wint_t.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stdarg.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h \
+  ../incl/gui.h \
+  ../incl/bonus.h \
+  ../lib/get_next_line/get_next_line.h
 
 CMakeFiles/cub3D.dir/src/main.c.o: ../src/main.c \
   ../incl/cub3D.h \
@@ -1369,9 +1378,7 @@ CMakeFiles/cub3D.dir/src/main.c.o: ../src/main.c \
   ../lib/minilibx/include/MLX42/MLX42_Input.h \
   ../incl/errors.h \
   ../incl/tools.h \
-  ../incl/bonus.h \
   ../incl/hooks.h \
-  ../lib/get_next_line/get_next_line.h \
   ../lib/minilibx/include/MLX42/MLX42_Int.h \
   ../lib/minilibx/include/MLX42/MLX42.h \
   ../lib/minilibx/include/lodepng/lodepng.h \
@@ -1399,7 +1406,10 @@ CMakeFiles/cub3D.dir/src/main.c.o: ../src/main.c \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/runetype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_wint_t.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stdarg.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h \
+  ../incl/gui.h \
+  ../incl/bonus.h \
+  ../lib/get_next_line/get_next_line.h
 
 CMakeFiles/cub3D.dir/src/parser/color_extracter.c.o: ../src/parser/color_extracter.c \
   ../incl/cub3D.h \
@@ -1509,9 +1519,7 @@ CMakeFiles/cub3D.dir/src/parser/color_extracter.c.o: ../src/parser/color_extract
   ../lib/minilibx/include/MLX42/MLX42_Input.h \
   ../incl/errors.h \
   ../incl/tools.h \
-  ../incl/bonus.h \
   ../incl/hooks.h \
-  ../lib/get_next_line/get_next_line.h \
   ../lib/minilibx/include/MLX42/MLX42_Int.h \
   ../lib/minilibx/include/MLX42/MLX42.h \
   ../lib/minilibx/include/lodepng/lodepng.h \
@@ -1539,7 +1547,10 @@ CMakeFiles/cub3D.dir/src/parser/color_extracter.c.o: ../src/parser/color_extract
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/runetype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_wint_t.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stdarg.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h \
+  ../incl/gui.h \
+  ../incl/bonus.h \
+  ../lib/get_next_line/get_next_line.h
 
 CMakeFiles/cub3D.dir/src/parser/floor_ceiling_parser.c.o: ../src/parser/floor_ceiling_parser.c \
   ../incl/cub3D.h \
@@ -1649,9 +1660,7 @@ CMakeFiles/cub3D.dir/src/parser/floor_ceiling_parser.c.o: ../src/parser/floor_ce
   ../lib/minilibx/include/MLX42/MLX42_Input.h \
   ../incl/errors.h \
   ../incl/tools.h \
-  ../incl/bonus.h \
   ../incl/hooks.h \
-  ../lib/get_next_line/get_next_line.h \
   ../lib/minilibx/include/MLX42/MLX42_Int.h \
   ../lib/minilibx/include/MLX42/MLX42.h \
   ../lib/minilibx/include/lodepng/lodepng.h \
@@ -1679,7 +1688,10 @@ CMakeFiles/cub3D.dir/src/parser/floor_ceiling_parser.c.o: ../src/parser/floor_ce
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/runetype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_wint_t.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stdarg.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h \
+  ../incl/gui.h \
+  ../incl/bonus.h \
+  ../lib/get_next_line/get_next_line.h
 
 CMakeFiles/cub3D.dir/src/parser/map_parser/arguments_checker.c.o: ../src/parser/map_parser/arguments_checker.c \
   ../incl/cub3D.h \
@@ -1789,9 +1801,7 @@ CMakeFiles/cub3D.dir/src/parser/map_parser/arguments_checker.c.o: ../src/parser/
   ../lib/minilibx/include/MLX42/MLX42_Input.h \
   ../incl/errors.h \
   ../incl/tools.h \
-  ../incl/bonus.h \
   ../incl/hooks.h \
-  ../lib/get_next_line/get_next_line.h \
   ../lib/minilibx/include/MLX42/MLX42_Int.h \
   ../lib/minilibx/include/MLX42/MLX42.h \
   ../lib/minilibx/include/lodepng/lodepng.h \
@@ -1819,7 +1829,10 @@ CMakeFiles/cub3D.dir/src/parser/map_parser/arguments_checker.c.o: ../src/parser/
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/runetype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_wint_t.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stdarg.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h \
+  ../incl/gui.h \
+  ../incl/bonus.h \
+  ../lib/get_next_line/get_next_line.h
 
 CMakeFiles/cub3D.dir/src/parser/map_parser/map_borders_checker.c.o: ../src/parser/map_parser/map_borders_checker.c \
   ../incl/cub3D.h \
@@ -1929,9 +1942,7 @@ CMakeFiles/cub3D.dir/src/parser/map_parser/map_borders_checker.c.o: ../src/parse
   ../lib/minilibx/include/MLX42/MLX42_Input.h \
   ../incl/errors.h \
   ../incl/tools.h \
-  ../incl/bonus.h \
   ../incl/hooks.h \
-  ../lib/get_next_line/get_next_line.h \
   ../lib/minilibx/include/MLX42/MLX42_Int.h \
   ../lib/minilibx/include/MLX42/MLX42.h \
   ../lib/minilibx/include/lodepng/lodepng.h \
@@ -1959,7 +1970,10 @@ CMakeFiles/cub3D.dir/src/parser/map_parser/map_borders_checker.c.o: ../src/parse
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/runetype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_wint_t.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stdarg.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h \
+  ../incl/gui.h \
+  ../incl/bonus.h \
+  ../lib/get_next_line/get_next_line.h
 
 CMakeFiles/cub3D.dir/src/parser/map_parser/map_creator.c.o: ../src/parser/map_parser/map_creator.c \
   ../incl/cub3D.h \
@@ -2069,9 +2083,7 @@ CMakeFiles/cub3D.dir/src/parser/map_parser/map_creator.c.o: ../src/parser/map_pa
   ../lib/minilibx/include/MLX42/MLX42_Input.h \
   ../incl/errors.h \
   ../incl/tools.h \
-  ../incl/bonus.h \
   ../incl/hooks.h \
-  ../lib/get_next_line/get_next_line.h \
   ../lib/minilibx/include/MLX42/MLX42_Int.h \
   ../lib/minilibx/include/MLX42/MLX42.h \
   ../lib/minilibx/include/lodepng/lodepng.h \
@@ -2099,7 +2111,10 @@ CMakeFiles/cub3D.dir/src/parser/map_parser/map_creator.c.o: ../src/parser/map_pa
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/runetype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_wint_t.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stdarg.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h \
+  ../incl/gui.h \
+  ../incl/bonus.h \
+  ../lib/get_next_line/get_next_line.h
 
 CMakeFiles/cub3D.dir/src/parser/map_parser/map_parser.c.o: ../src/parser/map_parser/map_parser.c \
   ../incl/cub3D.h \
@@ -2209,9 +2224,7 @@ CMakeFiles/cub3D.dir/src/parser/map_parser/map_parser.c.o: ../src/parser/map_par
   ../lib/minilibx/include/MLX42/MLX42_Input.h \
   ../incl/errors.h \
   ../incl/tools.h \
-  ../incl/bonus.h \
   ../incl/hooks.h \
-  ../lib/get_next_line/get_next_line.h \
   ../lib/minilibx/include/MLX42/MLX42_Int.h \
   ../lib/minilibx/include/MLX42/MLX42.h \
   ../lib/minilibx/include/lodepng/lodepng.h \
@@ -2239,7 +2252,10 @@ CMakeFiles/cub3D.dir/src/parser/map_parser/map_parser.c.o: ../src/parser/map_par
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/runetype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_wint_t.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stdarg.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h \
+  ../incl/gui.h \
+  ../incl/bonus.h \
+  ../lib/get_next_line/get_next_line.h
 
 CMakeFiles/cub3D.dir/src/parser/map_parser/map_player_parser.c.o: ../src/parser/map_parser/map_player_parser.c \
   ../incl/cub3D.h \
@@ -2349,9 +2365,7 @@ CMakeFiles/cub3D.dir/src/parser/map_parser/map_player_parser.c.o: ../src/parser/
   ../lib/minilibx/include/MLX42/MLX42_Input.h \
   ../incl/errors.h \
   ../incl/tools.h \
-  ../incl/bonus.h \
   ../incl/hooks.h \
-  ../lib/get_next_line/get_next_line.h \
   ../lib/minilibx/include/MLX42/MLX42_Int.h \
   ../lib/minilibx/include/MLX42/MLX42.h \
   ../lib/minilibx/include/lodepng/lodepng.h \
@@ -2379,7 +2393,10 @@ CMakeFiles/cub3D.dir/src/parser/map_parser/map_player_parser.c.o: ../src/parser/
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/runetype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_wint_t.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stdarg.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h \
+  ../incl/gui.h \
+  ../incl/bonus.h \
+  ../lib/get_next_line/get_next_line.h
 
 CMakeFiles/cub3D.dir/src/parser/map_parser/map_void_checker.c.o: ../src/parser/map_parser/map_void_checker.c \
   ../incl/cub3D.h \
@@ -2489,9 +2506,7 @@ CMakeFiles/cub3D.dir/src/parser/map_parser/map_void_checker.c.o: ../src/parser/m
   ../lib/minilibx/include/MLX42/MLX42_Input.h \
   ../incl/errors.h \
   ../incl/tools.h \
-  ../incl/bonus.h \
   ../incl/hooks.h \
-  ../lib/get_next_line/get_next_line.h \
   ../lib/minilibx/include/MLX42/MLX42_Int.h \
   ../lib/minilibx/include/MLX42/MLX42.h \
   ../lib/minilibx/include/lodepng/lodepng.h \
@@ -2519,7 +2534,10 @@ CMakeFiles/cub3D.dir/src/parser/map_parser/map_void_checker.c.o: ../src/parser/m
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/runetype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_wint_t.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stdarg.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h \
+  ../incl/gui.h \
+  ../incl/bonus.h \
+  ../lib/get_next_line/get_next_line.h
 
 CMakeFiles/cub3D.dir/src/parser/parser.c.o: ../src/parser/parser.c \
   ../incl/cub3D.h \
@@ -2629,9 +2647,7 @@ CMakeFiles/cub3D.dir/src/parser/parser.c.o: ../src/parser/parser.c \
   ../lib/minilibx/include/MLX42/MLX42_Input.h \
   ../incl/errors.h \
   ../incl/tools.h \
-  ../incl/bonus.h \
   ../incl/hooks.h \
-  ../lib/get_next_line/get_next_line.h \
   ../lib/minilibx/include/MLX42/MLX42_Int.h \
   ../lib/minilibx/include/MLX42/MLX42.h \
   ../lib/minilibx/include/lodepng/lodepng.h \
@@ -2659,7 +2675,10 @@ CMakeFiles/cub3D.dir/src/parser/parser.c.o: ../src/parser/parser.c \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/runetype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_wint_t.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stdarg.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h \
+  ../incl/gui.h \
+  ../incl/bonus.h \
+  ../lib/get_next_line/get_next_line.h
 
 CMakeFiles/cub3D.dir/src/parser/textures_parser.c.o: ../src/parser/textures_parser.c \
   ../incl/cub3D.h \
@@ -2769,9 +2788,7 @@ CMakeFiles/cub3D.dir/src/parser/textures_parser.c.o: ../src/parser/textures_pars
   ../lib/minilibx/include/MLX42/MLX42_Input.h \
   ../incl/errors.h \
   ../incl/tools.h \
-  ../incl/bonus.h \
   ../incl/hooks.h \
-  ../lib/get_next_line/get_next_line.h \
   ../lib/minilibx/include/MLX42/MLX42_Int.h \
   ../lib/minilibx/include/MLX42/MLX42.h \
   ../lib/minilibx/include/lodepng/lodepng.h \
@@ -2799,7 +2816,10 @@ CMakeFiles/cub3D.dir/src/parser/textures_parser.c.o: ../src/parser/textures_pars
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/runetype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_wint_t.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stdarg.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h \
+  ../incl/gui.h \
+  ../incl/bonus.h \
+  ../lib/get_next_line/get_next_line.h
 
 CMakeFiles/cub3D.dir/src/tools/ft_free_all_and_exit.c.o: ../src/tools/ft_free_all_and_exit.c \
   ../incl/cub3D.h \
@@ -2909,9 +2929,7 @@ CMakeFiles/cub3D.dir/src/tools/ft_free_all_and_exit.c.o: ../src/tools/ft_free_al
   ../lib/minilibx/include/MLX42/MLX42_Input.h \
   ../incl/errors.h \
   ../incl/tools.h \
-  ../incl/bonus.h \
   ../incl/hooks.h \
-  ../lib/get_next_line/get_next_line.h \
   ../lib/minilibx/include/MLX42/MLX42_Int.h \
   ../lib/minilibx/include/MLX42/MLX42.h \
   ../lib/minilibx/include/lodepng/lodepng.h \
@@ -2939,7 +2957,10 @@ CMakeFiles/cub3D.dir/src/tools/ft_free_all_and_exit.c.o: ../src/tools/ft_free_al
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/runetype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_wint_t.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stdarg.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h \
+  ../incl/gui.h \
+  ../incl/bonus.h \
+  ../lib/get_next_line/get_next_line.h
 
 CMakeFiles/cub3D.dir/src/tools/ft_free_split.c.o: ../src/tools/ft_free_split.c \
   ../incl/cub3D.h \
@@ -3049,9 +3070,7 @@ CMakeFiles/cub3D.dir/src/tools/ft_free_split.c.o: ../src/tools/ft_free_split.c \
   ../lib/minilibx/include/MLX42/MLX42_Input.h \
   ../incl/errors.h \
   ../incl/tools.h \
-  ../incl/bonus.h \
   ../incl/hooks.h \
-  ../lib/get_next_line/get_next_line.h \
   ../lib/minilibx/include/MLX42/MLX42_Int.h \
   ../lib/minilibx/include/MLX42/MLX42.h \
   ../lib/minilibx/include/lodepng/lodepng.h \
@@ -3079,7 +3098,10 @@ CMakeFiles/cub3D.dir/src/tools/ft_free_split.c.o: ../src/tools/ft_free_split.c \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/runetype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_wint_t.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stdarg.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h \
+  ../incl/gui.h \
+  ../incl/bonus.h \
+  ../lib/get_next_line/get_next_line.h
 
 CMakeFiles/cub3D.dir/src/tools/ft_isdigit.c.o: ../src/tools/ft_isdigit.c \
   ../incl/cub3D.h \
@@ -3189,9 +3211,7 @@ CMakeFiles/cub3D.dir/src/tools/ft_isdigit.c.o: ../src/tools/ft_isdigit.c \
   ../lib/minilibx/include/MLX42/MLX42_Input.h \
   ../incl/errors.h \
   ../incl/tools.h \
-  ../incl/bonus.h \
   ../incl/hooks.h \
-  ../lib/get_next_line/get_next_line.h \
   ../lib/minilibx/include/MLX42/MLX42_Int.h \
   ../lib/minilibx/include/MLX42/MLX42.h \
   ../lib/minilibx/include/lodepng/lodepng.h \
@@ -3219,7 +3239,10 @@ CMakeFiles/cub3D.dir/src/tools/ft_isdigit.c.o: ../src/tools/ft_isdigit.c \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/runetype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_wint_t.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stdarg.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h \
+  ../incl/gui.h \
+  ../incl/bonus.h \
+  ../lib/get_next_line/get_next_line.h
 
 CMakeFiles/cub3D.dir/src/tools/ft_itoa.c.o: ../src/tools/ft_itoa.c \
   ../incl/cub3D.h \
@@ -3329,9 +3352,7 @@ CMakeFiles/cub3D.dir/src/tools/ft_itoa.c.o: ../src/tools/ft_itoa.c \
   ../lib/minilibx/include/MLX42/MLX42_Input.h \
   ../incl/errors.h \
   ../incl/tools.h \
-  ../incl/bonus.h \
   ../incl/hooks.h \
-  ../lib/get_next_line/get_next_line.h \
   ../lib/minilibx/include/MLX42/MLX42_Int.h \
   ../lib/minilibx/include/MLX42/MLX42.h \
   ../lib/minilibx/include/lodepng/lodepng.h \
@@ -3359,7 +3380,10 @@ CMakeFiles/cub3D.dir/src/tools/ft_itoa.c.o: ../src/tools/ft_itoa.c \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/runetype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_wint_t.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stdarg.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h \
+  ../incl/gui.h \
+  ../incl/bonus.h \
+  ../lib/get_next_line/get_next_line.h
 
 CMakeFiles/cub3D.dir/src/tools/ft_rgb_atoi.c.o: ../src/tools/ft_rgb_atoi.c \
   ../incl/cub3D.h \
@@ -3469,9 +3493,7 @@ CMakeFiles/cub3D.dir/src/tools/ft_rgb_atoi.c.o: ../src/tools/ft_rgb_atoi.c \
   ../lib/minilibx/include/MLX42/MLX42_Input.h \
   ../incl/errors.h \
   ../incl/tools.h \
-  ../incl/bonus.h \
   ../incl/hooks.h \
-  ../lib/get_next_line/get_next_line.h \
   ../lib/minilibx/include/MLX42/MLX42_Int.h \
   ../lib/minilibx/include/MLX42/MLX42.h \
   ../lib/minilibx/include/lodepng/lodepng.h \
@@ -3499,7 +3521,10 @@ CMakeFiles/cub3D.dir/src/tools/ft_rgb_atoi.c.o: ../src/tools/ft_rgb_atoi.c \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/runetype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_wint_t.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stdarg.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h \
+  ../incl/gui.h \
+  ../incl/bonus.h \
+  ../lib/get_next_line/get_next_line.h
 
 CMakeFiles/cub3D.dir/src/tools/ft_split.c.o: ../src/tools/ft_split.c \
   ../incl/cub3D.h \
@@ -3609,9 +3634,7 @@ CMakeFiles/cub3D.dir/src/tools/ft_split.c.o: ../src/tools/ft_split.c \
   ../lib/minilibx/include/MLX42/MLX42_Input.h \
   ../incl/errors.h \
   ../incl/tools.h \
-  ../incl/bonus.h \
   ../incl/hooks.h \
-  ../lib/get_next_line/get_next_line.h \
   ../lib/minilibx/include/MLX42/MLX42_Int.h \
   ../lib/minilibx/include/MLX42/MLX42.h \
   ../lib/minilibx/include/lodepng/lodepng.h \
@@ -3639,7 +3662,10 @@ CMakeFiles/cub3D.dir/src/tools/ft_split.c.o: ../src/tools/ft_split.c \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/runetype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_wint_t.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stdarg.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h \
+  ../incl/gui.h \
+  ../incl/bonus.h \
+  ../lib/get_next_line/get_next_line.h
 
 CMakeFiles/cub3D.dir/src/tools/ft_splitlen.c.o: ../src/tools/ft_splitlen.c
 
@@ -3753,9 +3779,7 @@ CMakeFiles/cub3D.dir/src/tools/ft_strdup.c.o: ../src/tools/ft_strdup.c \
   ../lib/minilibx/include/MLX42/MLX42_Input.h \
   ../incl/errors.h \
   ../incl/tools.h \
-  ../incl/bonus.h \
   ../incl/hooks.h \
-  ../lib/get_next_line/get_next_line.h \
   ../lib/minilibx/include/MLX42/MLX42_Int.h \
   ../lib/minilibx/include/MLX42/MLX42.h \
   ../lib/minilibx/include/lodepng/lodepng.h \
@@ -3783,7 +3807,10 @@ CMakeFiles/cub3D.dir/src/tools/ft_strdup.c.o: ../src/tools/ft_strdup.c \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/runetype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_wint_t.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stdarg.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h \
+  ../incl/gui.h \
+  ../incl/bonus.h \
+  ../lib/get_next_line/get_next_line.h
 
 CMakeFiles/cub3D.dir/src/tools/ft_strjoin.c.o: ../src/tools/ft_strjoin.c \
   ../incl/cub3D.h \
@@ -3893,9 +3920,7 @@ CMakeFiles/cub3D.dir/src/tools/ft_strjoin.c.o: ../src/tools/ft_strjoin.c \
   ../lib/minilibx/include/MLX42/MLX42_Input.h \
   ../incl/errors.h \
   ../incl/tools.h \
-  ../incl/bonus.h \
   ../incl/hooks.h \
-  ../lib/get_next_line/get_next_line.h \
   ../lib/minilibx/include/MLX42/MLX42_Int.h \
   ../lib/minilibx/include/MLX42/MLX42.h \
   ../lib/minilibx/include/lodepng/lodepng.h \
@@ -3923,7 +3948,10 @@ CMakeFiles/cub3D.dir/src/tools/ft_strjoin.c.o: ../src/tools/ft_strjoin.c \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/runetype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_wint_t.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stdarg.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h \
+  ../incl/gui.h \
+  ../incl/bonus.h \
+  ../lib/get_next_line/get_next_line.h
 
 CMakeFiles/cub3D.dir/src/tools/ft_strlen.c.o: ../src/tools/ft_strlen.c \
   ../incl/cub3D.h \
@@ -4033,9 +4061,7 @@ CMakeFiles/cub3D.dir/src/tools/ft_strlen.c.o: ../src/tools/ft_strlen.c \
   ../lib/minilibx/include/MLX42/MLX42_Input.h \
   ../incl/errors.h \
   ../incl/tools.h \
-  ../incl/bonus.h \
   ../incl/hooks.h \
-  ../lib/get_next_line/get_next_line.h \
   ../lib/minilibx/include/MLX42/MLX42_Int.h \
   ../lib/minilibx/include/MLX42/MLX42.h \
   ../lib/minilibx/include/lodepng/lodepng.h \
@@ -4063,7 +4089,10 @@ CMakeFiles/cub3D.dir/src/tools/ft_strlen.c.o: ../src/tools/ft_strlen.c \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/runetype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_wint_t.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stdarg.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h \
+  ../incl/gui.h \
+  ../incl/bonus.h \
+  ../lib/get_next_line/get_next_line.h
 
 CMakeFiles/cub3D.dir/src/tools/ft_strncmp.c.o: ../src/tools/ft_strncmp.c \
   ../incl/cub3D.h \
@@ -4173,9 +4202,7 @@ CMakeFiles/cub3D.dir/src/tools/ft_strncmp.c.o: ../src/tools/ft_strncmp.c \
   ../lib/minilibx/include/MLX42/MLX42_Input.h \
   ../incl/errors.h \
   ../incl/tools.h \
-  ../incl/bonus.h \
   ../incl/hooks.h \
-  ../lib/get_next_line/get_next_line.h \
   ../lib/minilibx/include/MLX42/MLX42_Int.h \
   ../lib/minilibx/include/MLX42/MLX42.h \
   ../lib/minilibx/include/lodepng/lodepng.h \
@@ -4203,7 +4230,10 @@ CMakeFiles/cub3D.dir/src/tools/ft_strncmp.c.o: ../src/tools/ft_strncmp.c \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/runetype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_wint_t.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stdarg.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h \
+  ../incl/gui.h \
+  ../incl/bonus.h \
+  ../lib/get_next_line/get_next_line.h
 
 CMakeFiles/cub3D.dir/src/tools/ft_strtrim.c.o: ../src/tools/ft_strtrim.c \
   ../incl/cub3D.h \
@@ -4313,9 +4343,7 @@ CMakeFiles/cub3D.dir/src/tools/ft_strtrim.c.o: ../src/tools/ft_strtrim.c \
   ../lib/minilibx/include/MLX42/MLX42_Input.h \
   ../incl/errors.h \
   ../incl/tools.h \
-  ../incl/bonus.h \
   ../incl/hooks.h \
-  ../lib/get_next_line/get_next_line.h \
   ../lib/minilibx/include/MLX42/MLX42_Int.h \
   ../lib/minilibx/include/MLX42/MLX42.h \
   ../lib/minilibx/include/lodepng/lodepng.h \
@@ -4343,7 +4371,10 @@ CMakeFiles/cub3D.dir/src/tools/ft_strtrim.c.o: ../src/tools/ft_strtrim.c \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/runetype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_wint_t.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stdarg.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h \
+  ../incl/gui.h \
+  ../incl/bonus.h \
+  ../lib/get_next_line/get_next_line.h
 
 
 ../src/tools/ft_strlen.c:
@@ -4353,8 +4384,6 @@ CMakeFiles/cub3D.dir/src/tools/ft_strtrim.c.o: ../src/tools/ft_strtrim.c \
 ../src/tools/ft_rgb_atoi.c:
 
 ../src/tools/ft_isdigit.c:
-
-../src/parser/parser.c:
 
 ../src/parser/map_parser/map_void_checker.c:
 
@@ -4379,6 +4408,10 @@ CMakeFiles/cub3D.dir/src/tools/ft_strtrim.c.o: ../src/tools/ft_strtrim.c \
 ../src/tools/ft_itoa.c:
 
 ../src/error_printer.c:
+
+../src/parser/parser.c:
+
+../incl/gui.h:
 
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stdarg.h:
 
@@ -4436,9 +4469,9 @@ CMakeFiles/cub3D.dir/src/tools/ft_strtrim.c.o: ../src/tools/ft_strtrim.c \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/fcntl.h:
 
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stddef.h:
-
 ../lib/get_next_line/get_next_line.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stddef.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/machine/types.h:
 

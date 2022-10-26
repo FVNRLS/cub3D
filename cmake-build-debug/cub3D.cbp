@@ -89,6 +89,9 @@
 		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/incl/errors.h">
 			<Option target="cub3D"/>
 		</Unit>
+		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/incl/gui.h">
+			<Option target="cub3D"/>
+		</Unit>
 		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/incl/hooks.h">
 			<Option target="cub3D"/>
 		</Unit>

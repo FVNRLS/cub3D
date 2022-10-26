@@ -12,6 +12,7 @@ add_executable(cub3D src/main.c
         incl/tools.h
         incl/bonus.h
         incl/hooks.h
+        incl/gui.h
         lib/minilibx/include/MLX42/MLX42.h
         lib/minilibx/include/MLX42/MLX42_Input.h
         lib/minilibx/include/MLX42/MLX42_Int.h
@@ -59,7 +60,7 @@ add_executable(cub3D src/main.c
 
         #BONUS
         src/bonus/minimap/minimap.c
-        )
+       )
 
 # STATIC LIBRARIES
 ADD_LIBRARY(get_next_line STATIC IMPORTED)

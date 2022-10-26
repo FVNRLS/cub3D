@@ -31,7 +31,7 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 71,
+				"line" : 72,
 				"parent" : 0
 			}
 		]
@@ -68,7 +68,6 @@
 			"sourceIndexes" : 
 			[
 				0,
-				10,
 				11,
 				12,
 				13,
@@ -99,7 +98,8 @@
 				38,
 				39,
 				40,
-				41
+				41,
+				42
 			]
 		}
 	],
@@ -152,7 +152,6 @@
 			"sourceIndexes" : 
 			[
 				0,
-				10,
 				11,
 				12,
 				13,
@@ -183,7 +182,8 @@
 				38,
 				39,
 				40,
-				41
+				41,
+				42
 			]
 		},
 		{
@@ -198,7 +198,8 @@
 				6,
 				7,
 				8,
-				9
+				9,
+				10
 			]
 		}
 	],
@@ -238,6 +239,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "incl/hooks.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "incl/gui.h",
 			"sourceGroupIndex" : 1
 		},
 		{

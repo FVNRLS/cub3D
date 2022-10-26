@@ -1,20 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   mouse_hooks.c                                      :+:      :+:    :+:   */
+/*   gui.h                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/25 15:59:05 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/26 10:57:38 by rmazurit         ###   ########.fr       */
+/*   Created: 2022/10/26 10:50:26 by rmazurit          #+#    #+#             */
+/*   Updated: 2022/10/26 10:52:50 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../incl/cub3D.h"
+#ifndef GUI_H
+# define GUI_H
 
-void	check_mouse_hooks(mlx_mouse_t mouse, void *param)
-{
-	t_data	*data;
+//WINDOW SIZE
+# define WIDTH		720
+# define HEIGHT		480
 
-	data = (t_data*)param;
-}
+//COLORS
+# define GREEN	0x00008000
+# define NAVY	0x00000080
+# define SILVER	0x00C0C0C0
+
+#endif
