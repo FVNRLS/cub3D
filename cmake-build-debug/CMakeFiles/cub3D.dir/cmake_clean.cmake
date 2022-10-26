@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/cub3D.dir/src/bonus/bonus_initializer.c.o"
+  "CMakeFiles/cub3D.dir/src/bonus/bonus_initializer.c.o.d"
   "CMakeFiles/cub3D.dir/src/bonus/minimap/minimap.c.o"
   "CMakeFiles/cub3D.dir/src/bonus/minimap/minimap.c.o.d"
   "CMakeFiles/cub3D.dir/src/destructor.c.o"
@@ -11,6 +13,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/cub3D.dir/src/hooks_and_events/key_hooks.c.o.d"
   "CMakeFiles/cub3D.dir/src/hooks_and_events/mouse_hooks.c.o"
   "CMakeFiles/cub3D.dir/src/hooks_and_events/mouse_hooks.c.o.d"
+  "CMakeFiles/cub3D.dir/src/hooks_and_events/rotation_hooks.c.o"
+  "CMakeFiles/cub3D.dir/src/hooks_and_events/rotation_hooks.c.o.d"
   "CMakeFiles/cub3D.dir/src/initializer/initializer.c.o"
   "CMakeFiles/cub3D.dir/src/initializer/initializer.c.o.d"
   "CMakeFiles/cub3D.dir/src/initializer/map_objects.c.o"

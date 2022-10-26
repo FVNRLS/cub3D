@@ -1,31 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   mlx_initializer.c                                  :+:      :+:    :+:   */
+/*   bonus_initializer.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/25 15:02:58 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/26 15:27:08 by rmazurit         ###   ########.fr       */
+/*   Created: 2022/10/26 12:24:42 by rmazurit          #+#    #+#             */
+/*   Updated: 2022/10/26 15:49:41 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../incl/cub3D.h"
 
-void	init_mlx(t_data *data)
-{
-	mlx_t		mlx;
-	mlx_image_t	img;
 
-	data->mlx = &mlx;
-	data->img = &img;
-	mlx_set_setting(MLX_MAXIMIZED, true);
-	data->mlx = mlx_init(WIDTH, HEIGHT, "cub3D", false);
-	if (!data->mlx)
+static void	init_minimap(t_data *data)
+{
+	data->minimap = NULL;
+	data->minimap = malloc(sizeof(t_minimap));
+	if (!data->minimap)
 	{
 		print_int_error(MALLOC_ERROR, NULL);
 		ft_free_all_and_exit(data);
 	}
-	data->img = mlx_new_image(data->mlx, WIDTH, HEIGHT);
-	mlx_image_to_window(data->mlx, data->img, 0, 0);
+	data->minimap->width = WIDTH / MINIMAP_FACTOR;
+	data->minimap->height = HEIGHT / MINIMAP_FACTOR;
+	data->minimap->img = mlx_new_image(data->mlx, data->minimap->width,
+   		data->minimap->height);
+}
+
+void	init_bonus_objects(t_data *data)
+{
+	init_minimap(data);
+	update_minimap(data);
+
 }

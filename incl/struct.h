@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 12:30:28 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/26 11:36:26 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/26 17:22:16 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,10 +55,23 @@ typedef struct s_conf
 
 typedef struct	s_player
 {
-	int 	x;
-	int 	y;
+	double 	x;
+	double 	y;
+	double	x_factor;
+	double	y_factor;
 	char	dir;
+	int 	angle;
+	int 	max_angle;
 }		t_player;
+
+typedef	struct s_minimap
+{
+	mlx_image_t	*img;
+	int 		height;
+	int 		width;
+
+
+}		t_minimap;
 
 typedef struct s_data
 {
@@ -71,6 +84,7 @@ typedef struct s_data
 	t_player	*player;
 	mlx_t 		*mlx;
 	mlx_image_t	*img;
+	t_minimap	*minimap;
 	char		**map;
 }		t_data;
 

@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/26 11:36:48 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/26 11:41:19 by rmazurit         ###   ########.fr       */
+/*   Created: 2022/10/25 14:57:15 by rmazurit          #+#    #+#             */
+/*   Updated: 2022/10/26 12:44:37 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int main(int argc, char **argv)
 {
 	t_data	data;
 
-	atexit(check_leaks);
+//	atexit(check_leaks);
 	if (argc != 2)
 		return (print_int_error(ARG_ERROR, NULL));
 	init_environment(&data);
@@ -30,9 +30,8 @@ int main(int argc, char **argv)
 	if (data.parse_error == true)
 		ft_free_all_and_exit(&data);
 	hooks_catcher_loop(&data);
+	init_bonus_objects(&data);
 	mlx_loop(data.mlx);
-//	start_minimap(data);
-
 	free_all_resources(&data);
 	return (EXIT_SUCCESS);
 }

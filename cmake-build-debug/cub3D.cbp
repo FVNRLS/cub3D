@@ -110,6 +110,9 @@
 		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/lib/minilibx/include/MLX42/MLX42_Int.h">
 			<Option target="cub3D"/>
 		</Unit>
+		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/bonus/bonus_initializer.c">
+			<Option target="cub3D"/>
+		</Unit>
 		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/bonus/minimap/minimap.c">
 			<Option target="cub3D"/>
 		</Unit>
@@ -126,6 +129,9 @@
 			<Option target="cub3D"/>
 		</Unit>
 		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/hooks_and_events/mouse_hooks.c">
+			<Option target="cub3D"/>
+		</Unit>
+		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/hooks_and_events/rotation_hooks.c">
 			<Option target="cub3D"/>
 		</Unit>
 		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/initializer/initializer.c">

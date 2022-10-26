@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 12:29:53 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/26 11:36:26 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/26 11:44:49 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 # include <math.h>
 # include <stdio.h>
 # include <fcntl.h>
+# include <math.h>
 
 # include "struct.h"
 # include "errors.h"

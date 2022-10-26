@@ -8,12 +8,14 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/rmazurit/Documents/42_Projects/cub3D/src/bonus/bonus_initializer.c" "CMakeFiles/cub3D.dir/src/bonus/bonus_initializer.c.o" "gcc" "CMakeFiles/cub3D.dir/src/bonus/bonus_initializer.c.o.d"
   "/Users/rmazurit/Documents/42_Projects/cub3D/src/bonus/minimap/minimap.c" "CMakeFiles/cub3D.dir/src/bonus/minimap/minimap.c.o" "gcc" "CMakeFiles/cub3D.dir/src/bonus/minimap/minimap.c.o.d"
   "/Users/rmazurit/Documents/42_Projects/cub3D/src/destructor.c" "CMakeFiles/cub3D.dir/src/destructor.c.o" "gcc" "CMakeFiles/cub3D.dir/src/destructor.c.o.d"
   "/Users/rmazurit/Documents/42_Projects/cub3D/src/error_printer.c" "CMakeFiles/cub3D.dir/src/error_printer.c.o" "gcc" "CMakeFiles/cub3D.dir/src/error_printer.c.o.d"
   "/Users/rmazurit/Documents/42_Projects/cub3D/src/hooks_and_events/hooks_catcher.c" "CMakeFiles/cub3D.dir/src/hooks_and_events/hooks_catcher.c.o" "gcc" "CMakeFiles/cub3D.dir/src/hooks_and_events/hooks_catcher.c.o.d"
   "/Users/rmazurit/Documents/42_Projects/cub3D/src/hooks_and_events/key_hooks.c" "CMakeFiles/cub3D.dir/src/hooks_and_events/key_hooks.c.o" "gcc" "CMakeFiles/cub3D.dir/src/hooks_and_events/key_hooks.c.o.d"
   "/Users/rmazurit/Documents/42_Projects/cub3D/src/hooks_and_events/mouse_hooks.c" "CMakeFiles/cub3D.dir/src/hooks_and_events/mouse_hooks.c.o" "gcc" "CMakeFiles/cub3D.dir/src/hooks_and_events/mouse_hooks.c.o.d"
+  "/Users/rmazurit/Documents/42_Projects/cub3D/src/hooks_and_events/rotation_hooks.c" "CMakeFiles/cub3D.dir/src/hooks_and_events/rotation_hooks.c.o" "gcc" "CMakeFiles/cub3D.dir/src/hooks_and_events/rotation_hooks.c.o.d"
   "/Users/rmazurit/Documents/42_Projects/cub3D/src/initializer/initializer.c" "CMakeFiles/cub3D.dir/src/initializer/initializer.c.o" "gcc" "CMakeFiles/cub3D.dir/src/initializer/initializer.c.o.d"
   "/Users/rmazurit/Documents/42_Projects/cub3D/src/initializer/map_objects.c" "CMakeFiles/cub3D.dir/src/initializer/map_objects.c.o" "gcc" "CMakeFiles/cub3D.dir/src/initializer/map_objects.c.o.d"
   "/Users/rmazurit/Documents/42_Projects/cub3D/src/initializer/mlx_initializer.c" "CMakeFiles/cub3D.dir/src/initializer/mlx_initializer.c.o" "gcc" "CMakeFiles/cub3D.dir/src/initializer/mlx_initializer.c.o.d"

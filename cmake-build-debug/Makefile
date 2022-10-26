@@ -129,6 +129,30 @@ cub3D/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/build
 .PHONY : cub3D/fast
 
+src/bonus/bonus_initializer.o: src/bonus/bonus_initializer.c.o
+.PHONY : src/bonus/bonus_initializer.o
+
+# target to build an object file
+src/bonus/bonus_initializer.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/bonus/bonus_initializer.c.o
+.PHONY : src/bonus/bonus_initializer.c.o
+
+src/bonus/bonus_initializer.i: src/bonus/bonus_initializer.c.i
+.PHONY : src/bonus/bonus_initializer.i
+
+# target to preprocess a source file
+src/bonus/bonus_initializer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/bonus/bonus_initializer.c.i
+.PHONY : src/bonus/bonus_initializer.c.i
+
+src/bonus/bonus_initializer.s: src/bonus/bonus_initializer.c.s
+.PHONY : src/bonus/bonus_initializer.s
+
+# target to generate assembly for a file
+src/bonus/bonus_initializer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/bonus/bonus_initializer.c.s
+.PHONY : src/bonus/bonus_initializer.c.s
+
 src/bonus/minimap/minimap.o: src/bonus/minimap/minimap.c.o
 .PHONY : src/bonus/minimap/minimap.o
 
@@ -272,6 +296,30 @@ src/hooks_and_events/mouse_hooks.s: src/hooks_and_events/mouse_hooks.c.s
 src/hooks_and_events/mouse_hooks.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/hooks_and_events/mouse_hooks.c.s
 .PHONY : src/hooks_and_events/mouse_hooks.c.s
+
+src/hooks_and_events/rotation_hooks.o: src/hooks_and_events/rotation_hooks.c.o
+.PHONY : src/hooks_and_events/rotation_hooks.o
+
+# target to build an object file
+src/hooks_and_events/rotation_hooks.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/hooks_and_events/rotation_hooks.c.o
+.PHONY : src/hooks_and_events/rotation_hooks.c.o
+
+src/hooks_and_events/rotation_hooks.i: src/hooks_and_events/rotation_hooks.c.i
+.PHONY : src/hooks_and_events/rotation_hooks.i
+
+# target to preprocess a source file
+src/hooks_and_events/rotation_hooks.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/hooks_and_events/rotation_hooks.c.i
+.PHONY : src/hooks_and_events/rotation_hooks.c.i
+
+src/hooks_and_events/rotation_hooks.s: src/hooks_and_events/rotation_hooks.c.s
+.PHONY : src/hooks_and_events/rotation_hooks.s
+
+# target to generate assembly for a file
+src/hooks_and_events/rotation_hooks.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/hooks_and_events/rotation_hooks.c.s
+.PHONY : src/hooks_and_events/rotation_hooks.c.s
 
 src/initializer/initializer.o: src/initializer/initializer.c.o
 .PHONY : src/initializer/initializer.o
@@ -930,6 +978,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... cub3D"
+	@echo "... src/bonus/bonus_initializer.o"
+	@echo "... src/bonus/bonus_initializer.i"
+	@echo "... src/bonus/bonus_initializer.s"
 	@echo "... src/bonus/minimap/minimap.o"
 	@echo "... src/bonus/minimap/minimap.i"
 	@echo "... src/bonus/minimap/minimap.s"
@@ -948,6 +999,9 @@ help:
 	@echo "... src/hooks_and_events/mouse_hooks.o"
 	@echo "... src/hooks_and_events/mouse_hooks.i"
 	@echo "... src/hooks_and_events/mouse_hooks.s"
+	@echo "... src/hooks_and_events/rotation_hooks.o"
+	@echo "... src/hooks_and_events/rotation_hooks.i"
+	@echo "... src/hooks_and_events/rotation_hooks.s"
 	@echo "... src/initializer/initializer.o"
 	@echo "... src/initializer/initializer.i"
 	@echo "... src/initializer/initializer.s"
