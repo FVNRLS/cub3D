@@ -12,7 +12,9 @@
 
 #include "../../incl/cub3D.h"
 
-int	check_mouse_hooks(t_data *data)
+void	check_mouse_hooks(void *param)
 {
-	return (EXIT_SUCCESS);
+	t_data	*data;
+
+	data = (t_data*)param;
 }

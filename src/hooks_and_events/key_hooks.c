@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 16:05:58 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/25 19:54:56 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/26 10:42:53 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,14 +29,21 @@ void	check_move_keys(t_data *data, int keycode)
 //		move_right();
 }
 
-void	check_esc_key(mlx_key_data_t keydata, void *data)
+void	check_esc_key(mlx_key_data_t keycode, t_data *data)
 {
-	if (keydata.key == ESC && keydata.action == MLX_PRESS)
-		ft_free_all_and_exit(data);
+	if (keycode.key == MLX_KEY_ESCAPE && keycode.action == MLX_PRESS)
+	{
+		free_all_resources(data);
+		exit(EXIT_SUCCESS);
+	}
 }
 
-void 	check_key_hooks(mlx_key_data_t keydata, void *data)
+void 	check_key_hooks(mlx_key_data_t keycode, void *param)
 {
-//	check_move_keys(data, keycode);
-	check_esc_key(keydata, data);
+	t_data *data;
+
+	data = (t_data*)param;
+
+//	check_move_keys(1data, keycode);
+	check_esc_key(keycode, data);
 }
