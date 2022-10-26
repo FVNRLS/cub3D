@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 12:30:02 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/26 11:35:53 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/26 11:36:26 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,4 +49,5 @@ void	init_environment(t_data *data)
 	init_flags(data);
 	init_map_objects(data);
 	init_map(data);
+	init_mlx(data);
 }

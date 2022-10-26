@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: rmazurit <rmazurit@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/25 12:46:56 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/26 11:35:53 by rmazurit         ###   ########.fr       */
+/*   Created: 2022/10/26 11:36:56 by rmazurit          #+#    #+#             */
+/*   Updated: 2022/10/26 11:36:56 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,8 +33,14 @@ static void	free_map_objects(t_data *data)
 	free(data->player);
 }
 
+static void free_mlx_objects(t_data *data)
+{
+	mlx_terminate(data->mlx);
+}
+
 void	free_all_resources(t_data *data)
 {
 	free_map_objects(data);
+	free_mlx_objects(data);
 	close(data->conf->fd);
 }
