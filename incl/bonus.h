@@ -6,16 +6,12 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 14:45:58 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/25 14:49:16 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/26 11:35:53 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef BONUS_H
 # define BONUS_H
-
-# define GREEN	0x00008000
-# define NAVY	0x00000080
-# define SILVER	0x00C0C0C0
 
 //MINIMAP
 

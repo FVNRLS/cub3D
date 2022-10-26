@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 12:29:53 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/25 12:46:39 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/26 11:35:53 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,13 @@
 # include "struct.h"
 # include "errors.h"
 # include "tools.h"
+# include "hooks.h"
+# include "gui.h"
 # include "bonus.h"
 # include "../lib/get_next_line/get_next_line.h"
-# include "../lib/minilibx/mlx.h"
+# include "../lib/minilibx/include/MLX42/MLX42.h"
+# include "../lib/minilibx/include/MLX42/MLX42_Input.h"
+# include "../lib/minilibx/include/MLX42/MLX42_Int.h"
 
 # define RIGHTS		0644
 # define NUM_ITEMS	7
@@ -62,7 +66,7 @@
 //INITIALIZER
 void	init_environment(t_data *data);
 void	init_map_objects(t_data *data);
-
+void	init_mlx(t_data *data);
 
 //PARSER
 void	parse_input(t_data *data);
@@ -75,6 +79,8 @@ void	parse_player(t_data *data);
 void	check_map_borders(t_data *data);
 void	check_invalid_void_spaces(t_data *data);
 bool	check_args(t_data *data);
+
+//MLX
 
 //COLORIZER
 int		get_color(t_data *data);
