@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 10:50:26 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/26 16:49:05 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/27 13:29:52 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@
 # define HEIGHT		480
 
 //COLORS
-# define GREEN	0xFF7CFCFF
-# define NAVY	0x0000001A
+# define GREEN	0x00FF00FF
+# define NAVY	0x0000FFFF
 # define SILVER	0x00C0C0C0
 
 #endif

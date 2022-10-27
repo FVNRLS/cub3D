@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/rmazurit/Documents/42_Projects/cub3D/src/bonus/bonus_initializer.c" "CMakeFiles/cub3D.dir/src/bonus/bonus_initializer.c.o" "gcc" "CMakeFiles/cub3D.dir/src/bonus/bonus_initializer.c.o.d"
   "/Users/rmazurit/Documents/42_Projects/cub3D/src/bonus/minimap/minimap.c" "CMakeFiles/cub3D.dir/src/bonus/minimap/minimap.c.o" "gcc" "CMakeFiles/cub3D.dir/src/bonus/minimap/minimap.c.o.d"
+  "/Users/rmazurit/Documents/42_Projects/cub3D/src/bonus/minimap/wall_drawer.c" "CMakeFiles/cub3D.dir/src/bonus/minimap/wall_drawer.c.o" "gcc" "CMakeFiles/cub3D.dir/src/bonus/minimap/wall_drawer.c.o.d"
   "/Users/rmazurit/Documents/42_Projects/cub3D/src/destructor.c" "CMakeFiles/cub3D.dir/src/destructor.c.o" "gcc" "CMakeFiles/cub3D.dir/src/destructor.c.o.d"
   "/Users/rmazurit/Documents/42_Projects/cub3D/src/error_printer.c" "CMakeFiles/cub3D.dir/src/error_printer.c.o" "gcc" "CMakeFiles/cub3D.dir/src/error_printer.c.o.d"
   "/Users/rmazurit/Documents/42_Projects/cub3D/src/hooks_and_events/hooks_catcher.c" "CMakeFiles/cub3D.dir/src/hooks_and_events/hooks_catcher.c.o" "gcc" "CMakeFiles/cub3D.dir/src/hooks_and_events/hooks_catcher.c.o.d"

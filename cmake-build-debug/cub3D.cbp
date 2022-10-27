@@ -116,6 +116,9 @@
 		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/bonus/minimap/minimap.c">
 			<Option target="cub3D"/>
 		</Unit>
+		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/bonus/minimap/wall_drawer.c">
+			<Option target="cub3D"/>
+		</Unit>
 		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/destructor.c">
 			<Option target="cub3D"/>
 		</Unit>

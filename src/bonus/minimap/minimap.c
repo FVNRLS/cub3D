@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 14:45:19 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/27 11:30:01 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/27 13:42:39 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,13 +36,17 @@ static void	draw_minimap(t_data *data)
 	int y;
 
 	y = 0;
+	data->minimap->x_offset = (int)data->player->x - 5;
+	data->minimap->y_offset = (int)data->player->y - 5;
 	while (y < data->minimap->height)
 	{
 		x = 0;
 		while (x < data->minimap->width)
 		{
 			if (check_player_pos(data, x, y) == true)
-				mlx_put_pixel(data->minimap->img, x, y, 0x00FF00FF);
+				mlx_put_pixel(data->minimap->img, x, y, GREEN);
+			else if (check_wall(data, x, y) == true)
+				mlx_put_pixel(data->minimap->img,x, y, NAVY);
 			else
 				mlx_put_pixel(data->minimap->img, x, y, 0xFFFFFF1A);
 			x++;

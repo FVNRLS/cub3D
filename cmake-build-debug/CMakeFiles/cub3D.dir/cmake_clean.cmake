@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/cub3D.dir/src/bonus/bonus_initializer.c.o.d"
   "CMakeFiles/cub3D.dir/src/bonus/minimap/minimap.c.o"
   "CMakeFiles/cub3D.dir/src/bonus/minimap/minimap.c.o.d"
+  "CMakeFiles/cub3D.dir/src/bonus/minimap/wall_drawer.c.o"
+  "CMakeFiles/cub3D.dir/src/bonus/minimap/wall_drawer.c.o.d"
   "CMakeFiles/cub3D.dir/src/destructor.c.o"
   "CMakeFiles/cub3D.dir/src/destructor.c.o.d"
   "CMakeFiles/cub3D.dir/src/error_printer.c.o"

@@ -177,6 +177,30 @@ src/bonus/minimap/minimap.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/bonus/minimap/minimap.c.s
 .PHONY : src/bonus/minimap/minimap.c.s
 
+src/bonus/minimap/wall_drawer.o: src/bonus/minimap/wall_drawer.c.o
+.PHONY : src/bonus/minimap/wall_drawer.o
+
+# target to build an object file
+src/bonus/minimap/wall_drawer.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/bonus/minimap/wall_drawer.c.o
+.PHONY : src/bonus/minimap/wall_drawer.c.o
+
+src/bonus/minimap/wall_drawer.i: src/bonus/minimap/wall_drawer.c.i
+.PHONY : src/bonus/minimap/wall_drawer.i
+
+# target to preprocess a source file
+src/bonus/minimap/wall_drawer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/bonus/minimap/wall_drawer.c.i
+.PHONY : src/bonus/minimap/wall_drawer.c.i
+
+src/bonus/minimap/wall_drawer.s: src/bonus/minimap/wall_drawer.c.s
+.PHONY : src/bonus/minimap/wall_drawer.s
+
+# target to generate assembly for a file
+src/bonus/minimap/wall_drawer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/bonus/minimap/wall_drawer.c.s
+.PHONY : src/bonus/minimap/wall_drawer.c.s
+
 src/destructor.o: src/destructor.c.o
 .PHONY : src/destructor.o
 
@@ -1032,6 +1056,9 @@ help:
 	@echo "... src/bonus/minimap/minimap.o"
 	@echo "... src/bonus/minimap/minimap.i"
 	@echo "... src/bonus/minimap/minimap.s"
+	@echo "... src/bonus/minimap/wall_drawer.o"
+	@echo "... src/bonus/minimap/wall_drawer.i"
+	@echo "... src/bonus/minimap/wall_drawer.s"
 	@echo "... src/destructor.o"
 	@echo "... src/destructor.i"
 	@echo "... src/destructor.s"

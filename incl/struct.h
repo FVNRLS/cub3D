@@ -69,6 +69,8 @@ typedef	struct s_minimap
 	mlx_image_t	*img;
 	int 		height;
 	int 		width;
+	int 		x_offset;
+	int 		y_offset;
 
 
 }		t_minimap;
