@@ -32,7 +32,7 @@ void 	check_key_hooks(mlx_key_data_t keycode, void *param)
 
 	data = (t_data*)param;
 
-//	check_move_keys(data, keycode);
+	check_move_keys(data, keycode);
 	check_rotation_keys(data, keycode);
 	check_esc_key(data, keycode);
 }
