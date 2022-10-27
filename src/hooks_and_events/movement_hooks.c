@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 17:03:54 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/27 11:57:36 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/27 16:50:47 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,9 @@
 static void	move_right(t_data *data)
 {
 	data->player->x_factor = sin(ft_degree_to_radian(data->player->angle + 90));
-	data->player->y_factor = cos(ft_degree_to_radian(data->player->angle + 90));
+	data->player->y_factor = -1 * cos(ft_degree_to_radian(data->player->angle + 90));
+	if (check_collisions(data) == true)
+		return ;
 	data->player->x += data->player->x_factor;
 	data->player->y += data->player->y_factor;
 	update_minimap(data);
@@ -23,8 +25,10 @@ static void	move_right(t_data *data)
 
 static void	move_left(t_data *data)
 {
-	data->player->x_factor = sin(ft_degree_to_radian(data->player->angle - 90));
-	data->player->y_factor = cos(ft_degree_to_radian(data->player->angle - 90));
+	data->player->x_factor =  sin(ft_degree_to_radian(data->player->angle - 90));
+	data->player->y_factor = -1 * cos(ft_degree_to_radian(data->player->angle - 90));
+	if (check_collisions(data) == true)
+		return ;
 	data->player->x += data->player->x_factor;
 	data->player->y += data->player->y_factor;
 	update_minimap(data);
@@ -33,11 +37,15 @@ static void	move_left(t_data *data)
 static void	move_backward(t_data *data)
 {
 	data->player->x_factor = -1 * sin(ft_degree_to_radian(data->player->angle));
-	data->player->y_factor = -1 * cos(ft_degree_to_radian(data->player->angle));
+	data->player->y_factor = cos(ft_degree_to_radian(data->player->angle));
+	if (check_collisions(data) == true)
+		return ;
 	data->player->x += data->player->x_factor;
 	data->player->y += data->player->y_factor;
 	update_minimap(data);
 }
+
+
 
 /*
  * 	+-------------+-------------+-------------+
@@ -55,9 +63,11 @@ static void	move_backward(t_data *data)
 static void	move_forward(t_data *data)
 {
 	data->player->x_factor = sin(ft_degree_to_radian(data->player->angle));
-	data->player->y_factor = cos(ft_degree_to_radian(data->player->angle));
-	data->player->x += data->player->x_factor;
-	data->player->y += data->player->y_factor;
+	data->player->y_factor = -1 * cos(ft_degree_to_radian(data->player->angle));
+	if (check_collisions(data) == true)
+		return ;
+	data->player->x = data->player->x + data->player->x_factor;
+	data->player->y = data->player->y + data->player->y_factor;
 	update_minimap(data);
 }
 

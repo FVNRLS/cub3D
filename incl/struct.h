@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 12:30:28 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/26 17:22:16 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/27 16:36:07 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,6 +71,8 @@ typedef	struct s_minimap
 	int 		width;
 	int 		x_offset;
 	int 		y_offset;
+	int 		x_player;
+	int 		y_player;
 
 
 }		t_minimap;

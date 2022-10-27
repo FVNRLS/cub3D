@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 14:45:19 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/27 13:42:39 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/27 19:17:48 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ static bool check_player_pos(t_data *data, int x, int y)
 	int y_sqr;
 
 	r = data->minimap->width / 80;
-	h = data->minimap->width / 2;
-	k = data->minimap->height / 2;
+	h = data->minimap->x_player;
+	k = data->minimap->y_player;
 	x_sqr = (x - h) * (x - h);
 	y_sqr = (y - k) * (y - k);
 	if (x_sqr + y_sqr <= (r * r))
@@ -35,16 +35,19 @@ static void	draw_minimap(t_data *data)
 	int x;
 	int y;
 
+
+	set_offset(data);
 	y = 0;
-	data->minimap->x_offset = (int)data->player->x - 5;
-	data->minimap->y_offset = (int)data->player->y - 5;
 	while (y < data->minimap->height)
 	{
 		x = 0;
 		while (x < data->minimap->width)
 		{
 			if (check_player_pos(data, x, y) == true)
+			{
+				printf("here!\n");
 				mlx_put_pixel(data->minimap->img, x, y, GREEN);
+			}
 			else if (check_wall(data, x, y) == true)
 				mlx_put_pixel(data->minimap->img,x, y, NAVY);
 			else
@@ -62,5 +65,7 @@ void	update_minimap(t_data *data)
 									   data->minimap->height);
 	draw_minimap(data);
 	mlx_image_to_window(data->mlx, data->minimap->img, 0, 0);
-	printf("angle: %d,		x_fact: %lf,	y_fact: %lf\n", data->player->angle, data->player->x_factor, data->player->y_factor);
+//	printf("angle: %d,		x_fact: %lf,	y_fact: %lf\n", data->player->angle, data->player->x_factor, data->player->y_factor);
+	printf("x: %lf,	y: %lf\n", data->player->x, data->player->y);
+
 }

@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 12:34:26 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/27 16:07:41 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/27 16:10:58 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,6 @@ bool	check_wall(t_data *data, int x, int y)
 	y = data->minimap->y_offset + (int)y_round;
 	if (x < 0 || y < 0 || x >= data->tab->max_x || y >= data->tab->max_y)
 		return (false);
-//	printf("x:	%d, y:	%d\n", x, data->minimap->y_offset + (int) y_round );
-
 	if (data->map[x][y] == '1')
 		return (true);
 	return (false);

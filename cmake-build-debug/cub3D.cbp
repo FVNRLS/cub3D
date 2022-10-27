@@ -113,6 +113,9 @@
 		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/bonus/bonus_initializer.c">
 			<Option target="cub3D"/>
 		</Unit>
+		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/bonus/minimap/collisions_checker.c">
+			<Option target="cub3D"/>
+		</Unit>
 		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/bonus/minimap/minimap.c">
 			<Option target="cub3D"/>
 		</Unit>

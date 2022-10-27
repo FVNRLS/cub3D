@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/rmazurit/Documents/42_Projects/cub3D/src/bonus/bonus_initializer.c" "CMakeFiles/cub3D.dir/src/bonus/bonus_initializer.c.o" "gcc" "CMakeFiles/cub3D.dir/src/bonus/bonus_initializer.c.o.d"
+  "/Users/rmazurit/Documents/42_Projects/cub3D/src/bonus/minimap/collisions_checker.c" "CMakeFiles/cub3D.dir/src/bonus/minimap/collisions_checker.c.o" "gcc" "CMakeFiles/cub3D.dir/src/bonus/minimap/collisions_checker.c.o.d"
   "/Users/rmazurit/Documents/42_Projects/cub3D/src/bonus/minimap/minimap.c" "CMakeFiles/cub3D.dir/src/bonus/minimap/minimap.c.o" "gcc" "CMakeFiles/cub3D.dir/src/bonus/minimap/minimap.c.o.d"
   "/Users/rmazurit/Documents/42_Projects/cub3D/src/bonus/minimap/wall_drawer.c" "CMakeFiles/cub3D.dir/src/bonus/minimap/wall_drawer.c.o" "gcc" "CMakeFiles/cub3D.dir/src/bonus/minimap/wall_drawer.c.o.d"
   "/Users/rmazurit/Documents/42_Projects/cub3D/src/destructor.c" "CMakeFiles/cub3D.dir/src/destructor.c.o" "gcc" "CMakeFiles/cub3D.dir/src/destructor.c.o.d"

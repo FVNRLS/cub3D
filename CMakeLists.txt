@@ -64,7 +64,9 @@ add_executable(cub3D src/main.c
         #BONUS
         src/bonus/bonus_initializer.c
         src/bonus/minimap/minimap.c
-        src/bonus/minimap/wall_drawer.c)
+        src/bonus/minimap/wall_drawer.c
+        src/bonus/minimap/collisions_checker.c
+        )
 
 # STATIC LIBRARIES
 ADD_LIBRARY(get_next_line STATIC IMPORTED)
