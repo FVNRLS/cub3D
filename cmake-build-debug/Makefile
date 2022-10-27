@@ -297,6 +297,30 @@ src/hooks_and_events/mouse_hooks.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/hooks_and_events/mouse_hooks.c.s
 .PHONY : src/hooks_and_events/mouse_hooks.c.s
 
+src/hooks_and_events/movement_hooks.o: src/hooks_and_events/movement_hooks.c.o
+.PHONY : src/hooks_and_events/movement_hooks.o
+
+# target to build an object file
+src/hooks_and_events/movement_hooks.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/hooks_and_events/movement_hooks.c.o
+.PHONY : src/hooks_and_events/movement_hooks.c.o
+
+src/hooks_and_events/movement_hooks.i: src/hooks_and_events/movement_hooks.c.i
+.PHONY : src/hooks_and_events/movement_hooks.i
+
+# target to preprocess a source file
+src/hooks_and_events/movement_hooks.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/hooks_and_events/movement_hooks.c.i
+.PHONY : src/hooks_and_events/movement_hooks.c.i
+
+src/hooks_and_events/movement_hooks.s: src/hooks_and_events/movement_hooks.c.s
+.PHONY : src/hooks_and_events/movement_hooks.s
+
+# target to generate assembly for a file
+src/hooks_and_events/movement_hooks.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/hooks_and_events/movement_hooks.c.s
+.PHONY : src/hooks_and_events/movement_hooks.c.s
+
 src/hooks_and_events/rotation_hooks.o: src/hooks_and_events/rotation_hooks.c.o
 .PHONY : src/hooks_and_events/rotation_hooks.o
 
@@ -657,6 +681,30 @@ src/parser/textures_parser.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/parser/textures_parser.c.s
 .PHONY : src/parser/textures_parser.c.s
 
+src/tools/ft_degree_to_radian.o: src/tools/ft_degree_to_radian.c.o
+.PHONY : src/tools/ft_degree_to_radian.o
+
+# target to build an object file
+src/tools/ft_degree_to_radian.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_degree_to_radian.c.o
+.PHONY : src/tools/ft_degree_to_radian.c.o
+
+src/tools/ft_degree_to_radian.i: src/tools/ft_degree_to_radian.c.i
+.PHONY : src/tools/ft_degree_to_radian.i
+
+# target to preprocess a source file
+src/tools/ft_degree_to_radian.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_degree_to_radian.c.i
+.PHONY : src/tools/ft_degree_to_radian.c.i
+
+src/tools/ft_degree_to_radian.s: src/tools/ft_degree_to_radian.c.s
+.PHONY : src/tools/ft_degree_to_radian.s
+
+# target to generate assembly for a file
+src/tools/ft_degree_to_radian.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_degree_to_radian.c.s
+.PHONY : src/tools/ft_degree_to_radian.c.s
+
 src/tools/ft_free_all_and_exit.o: src/tools/ft_free_all_and_exit.c.o
 .PHONY : src/tools/ft_free_all_and_exit.o
 
@@ -999,6 +1047,9 @@ help:
 	@echo "... src/hooks_and_events/mouse_hooks.o"
 	@echo "... src/hooks_and_events/mouse_hooks.i"
 	@echo "... src/hooks_and_events/mouse_hooks.s"
+	@echo "... src/hooks_and_events/movement_hooks.o"
+	@echo "... src/hooks_and_events/movement_hooks.i"
+	@echo "... src/hooks_and_events/movement_hooks.s"
 	@echo "... src/hooks_and_events/rotation_hooks.o"
 	@echo "... src/hooks_and_events/rotation_hooks.i"
 	@echo "... src/hooks_and_events/rotation_hooks.s"
@@ -1044,6 +1095,9 @@ help:
 	@echo "... src/parser/textures_parser.o"
 	@echo "... src/parser/textures_parser.i"
 	@echo "... src/parser/textures_parser.s"
+	@echo "... src/tools/ft_degree_to_radian.o"
+	@echo "... src/tools/ft_degree_to_radian.i"
+	@echo "... src/tools/ft_degree_to_radian.s"
 	@echo "... src/tools/ft_free_all_and_exit.o"
 	@echo "... src/tools/ft_free_all_and_exit.i"
 	@echo "... src/tools/ft_free_all_and_exit.s"

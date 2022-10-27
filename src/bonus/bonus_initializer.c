@@ -12,7 +12,6 @@
 
 #include "../../incl/cub3D.h"
 
-
 static void	init_minimap(t_data *data)
 {
 	data->minimap = NULL;
@@ -24,8 +23,7 @@ static void	init_minimap(t_data *data)
 	}
 	data->minimap->width = WIDTH / MINIMAP_FACTOR;
 	data->minimap->height = HEIGHT / MINIMAP_FACTOR;
-	data->minimap->img = mlx_new_image(data->mlx, data->minimap->width,
-   		data->minimap->height);
+	data->minimap->img = NULL;
 }
 
 void	init_bonus_objects(t_data *data)

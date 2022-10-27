@@ -475,10 +475,24 @@ CMakeFiles/cub3D.dir/src/tools/ft_itoa.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cub3D.dir/src/tools/ft_itoa.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_itoa.c -o CMakeFiles/cub3D.dir/src/tools/ft_itoa.c.s
 
+CMakeFiles/cub3D.dir/src/tools/ft_degree_to_radian.c.o: CMakeFiles/cub3D.dir/flags.make
+CMakeFiles/cub3D.dir/src/tools/ft_degree_to_radian.c.o: ../src/tools/ft_degree_to_radian.c
+CMakeFiles/cub3D.dir/src/tools/ft_degree_to_radian.c.o: CMakeFiles/cub3D.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/cub3D.dir/src/tools/ft_degree_to_radian.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cub3D.dir/src/tools/ft_degree_to_radian.c.o -MF CMakeFiles/cub3D.dir/src/tools/ft_degree_to_radian.c.o.d -o CMakeFiles/cub3D.dir/src/tools/ft_degree_to_radian.c.o -c /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_degree_to_radian.c
+
+CMakeFiles/cub3D.dir/src/tools/ft_degree_to_radian.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cub3D.dir/src/tools/ft_degree_to_radian.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_degree_to_radian.c > CMakeFiles/cub3D.dir/src/tools/ft_degree_to_radian.c.i
+
+CMakeFiles/cub3D.dir/src/tools/ft_degree_to_radian.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cub3D.dir/src/tools/ft_degree_to_radian.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_degree_to_radian.c -o CMakeFiles/cub3D.dir/src/tools/ft_degree_to_radian.c.s
+
 CMakeFiles/cub3D.dir/src/hooks_and_events/hooks_catcher.c.o: CMakeFiles/cub3D.dir/flags.make
 CMakeFiles/cub3D.dir/src/hooks_and_events/hooks_catcher.c.o: ../src/hooks_and_events/hooks_catcher.c
 CMakeFiles/cub3D.dir/src/hooks_and_events/hooks_catcher.c.o: CMakeFiles/cub3D.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/cub3D.dir/src/hooks_and_events/hooks_catcher.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/cub3D.dir/src/hooks_and_events/hooks_catcher.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cub3D.dir/src/hooks_and_events/hooks_catcher.c.o -MF CMakeFiles/cub3D.dir/src/hooks_and_events/hooks_catcher.c.o.d -o CMakeFiles/cub3D.dir/src/hooks_and_events/hooks_catcher.c.o -c /Users/rmazurit/Documents/42_Projects/cub3D/src/hooks_and_events/hooks_catcher.c
 
 CMakeFiles/cub3D.dir/src/hooks_and_events/hooks_catcher.c.i: cmake_force
@@ -492,7 +506,7 @@ CMakeFiles/cub3D.dir/src/hooks_and_events/hooks_catcher.c.s: cmake_force
 CMakeFiles/cub3D.dir/src/hooks_and_events/mouse_hooks.c.o: CMakeFiles/cub3D.dir/flags.make
 CMakeFiles/cub3D.dir/src/hooks_and_events/mouse_hooks.c.o: ../src/hooks_and_events/mouse_hooks.c
 CMakeFiles/cub3D.dir/src/hooks_and_events/mouse_hooks.c.o: CMakeFiles/cub3D.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/cub3D.dir/src/hooks_and_events/mouse_hooks.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/cub3D.dir/src/hooks_and_events/mouse_hooks.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cub3D.dir/src/hooks_and_events/mouse_hooks.c.o -MF CMakeFiles/cub3D.dir/src/hooks_and_events/mouse_hooks.c.o.d -o CMakeFiles/cub3D.dir/src/hooks_and_events/mouse_hooks.c.o -c /Users/rmazurit/Documents/42_Projects/cub3D/src/hooks_and_events/mouse_hooks.c
 
 CMakeFiles/cub3D.dir/src/hooks_and_events/mouse_hooks.c.i: cmake_force
@@ -506,7 +520,7 @@ CMakeFiles/cub3D.dir/src/hooks_and_events/mouse_hooks.c.s: cmake_force
 CMakeFiles/cub3D.dir/src/hooks_and_events/key_hooks.c.o: CMakeFiles/cub3D.dir/flags.make
 CMakeFiles/cub3D.dir/src/hooks_and_events/key_hooks.c.o: ../src/hooks_and_events/key_hooks.c
 CMakeFiles/cub3D.dir/src/hooks_and_events/key_hooks.c.o: CMakeFiles/cub3D.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/cub3D.dir/src/hooks_and_events/key_hooks.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/cub3D.dir/src/hooks_and_events/key_hooks.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cub3D.dir/src/hooks_and_events/key_hooks.c.o -MF CMakeFiles/cub3D.dir/src/hooks_and_events/key_hooks.c.o.d -o CMakeFiles/cub3D.dir/src/hooks_and_events/key_hooks.c.o -c /Users/rmazurit/Documents/42_Projects/cub3D/src/hooks_and_events/key_hooks.c
 
 CMakeFiles/cub3D.dir/src/hooks_and_events/key_hooks.c.i: cmake_force
@@ -520,7 +534,7 @@ CMakeFiles/cub3D.dir/src/hooks_and_events/key_hooks.c.s: cmake_force
 CMakeFiles/cub3D.dir/src/hooks_and_events/rotation_hooks.c.o: CMakeFiles/cub3D.dir/flags.make
 CMakeFiles/cub3D.dir/src/hooks_and_events/rotation_hooks.c.o: ../src/hooks_and_events/rotation_hooks.c
 CMakeFiles/cub3D.dir/src/hooks_and_events/rotation_hooks.c.o: CMakeFiles/cub3D.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/cub3D.dir/src/hooks_and_events/rotation_hooks.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/cub3D.dir/src/hooks_and_events/rotation_hooks.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cub3D.dir/src/hooks_and_events/rotation_hooks.c.o -MF CMakeFiles/cub3D.dir/src/hooks_and_events/rotation_hooks.c.o.d -o CMakeFiles/cub3D.dir/src/hooks_and_events/rotation_hooks.c.o -c /Users/rmazurit/Documents/42_Projects/cub3D/src/hooks_and_events/rotation_hooks.c
 
 CMakeFiles/cub3D.dir/src/hooks_and_events/rotation_hooks.c.i: cmake_force
@@ -531,10 +545,24 @@ CMakeFiles/cub3D.dir/src/hooks_and_events/rotation_hooks.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cub3D.dir/src/hooks_and_events/rotation_hooks.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/rmazurit/Documents/42_Projects/cub3D/src/hooks_and_events/rotation_hooks.c -o CMakeFiles/cub3D.dir/src/hooks_and_events/rotation_hooks.c.s
 
+CMakeFiles/cub3D.dir/src/hooks_and_events/movement_hooks.c.o: CMakeFiles/cub3D.dir/flags.make
+CMakeFiles/cub3D.dir/src/hooks_and_events/movement_hooks.c.o: ../src/hooks_and_events/movement_hooks.c
+CMakeFiles/cub3D.dir/src/hooks_and_events/movement_hooks.c.o: CMakeFiles/cub3D.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/cub3D.dir/src/hooks_and_events/movement_hooks.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cub3D.dir/src/hooks_and_events/movement_hooks.c.o -MF CMakeFiles/cub3D.dir/src/hooks_and_events/movement_hooks.c.o.d -o CMakeFiles/cub3D.dir/src/hooks_and_events/movement_hooks.c.o -c /Users/rmazurit/Documents/42_Projects/cub3D/src/hooks_and_events/movement_hooks.c
+
+CMakeFiles/cub3D.dir/src/hooks_and_events/movement_hooks.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cub3D.dir/src/hooks_and_events/movement_hooks.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/rmazurit/Documents/42_Projects/cub3D/src/hooks_and_events/movement_hooks.c > CMakeFiles/cub3D.dir/src/hooks_and_events/movement_hooks.c.i
+
+CMakeFiles/cub3D.dir/src/hooks_and_events/movement_hooks.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cub3D.dir/src/hooks_and_events/movement_hooks.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/rmazurit/Documents/42_Projects/cub3D/src/hooks_and_events/movement_hooks.c -o CMakeFiles/cub3D.dir/src/hooks_and_events/movement_hooks.c.s
+
 CMakeFiles/cub3D.dir/src/bonus/bonus_initializer.c.o: CMakeFiles/cub3D.dir/flags.make
 CMakeFiles/cub3D.dir/src/bonus/bonus_initializer.c.o: ../src/bonus/bonus_initializer.c
 CMakeFiles/cub3D.dir/src/bonus/bonus_initializer.c.o: CMakeFiles/cub3D.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/cub3D.dir/src/bonus/bonus_initializer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/cub3D.dir/src/bonus/bonus_initializer.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cub3D.dir/src/bonus/bonus_initializer.c.o -MF CMakeFiles/cub3D.dir/src/bonus/bonus_initializer.c.o.d -o CMakeFiles/cub3D.dir/src/bonus/bonus_initializer.c.o -c /Users/rmazurit/Documents/42_Projects/cub3D/src/bonus/bonus_initializer.c
 
 CMakeFiles/cub3D.dir/src/bonus/bonus_initializer.c.i: cmake_force
@@ -548,7 +576,7 @@ CMakeFiles/cub3D.dir/src/bonus/bonus_initializer.c.s: cmake_force
 CMakeFiles/cub3D.dir/src/bonus/minimap/minimap.c.o: CMakeFiles/cub3D.dir/flags.make
 CMakeFiles/cub3D.dir/src/bonus/minimap/minimap.c.o: ../src/bonus/minimap/minimap.c
 CMakeFiles/cub3D.dir/src/bonus/minimap/minimap.c.o: CMakeFiles/cub3D.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/cub3D.dir/src/bonus/minimap/minimap.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/cub3D.dir/src/bonus/minimap/minimap.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cub3D.dir/src/bonus/minimap/minimap.c.o -MF CMakeFiles/cub3D.dir/src/bonus/minimap/minimap.c.o.d -o CMakeFiles/cub3D.dir/src/bonus/minimap/minimap.c.o -c /Users/rmazurit/Documents/42_Projects/cub3D/src/bonus/minimap/minimap.c
 
 CMakeFiles/cub3D.dir/src/bonus/minimap/minimap.c.i: cmake_force
@@ -590,10 +618,12 @@ cub3D_OBJECTS = \
 "CMakeFiles/cub3D.dir/src/tools/ft_strtrim.c.o" \
 "CMakeFiles/cub3D.dir/src/tools/ft_strjoin.c.o" \
 "CMakeFiles/cub3D.dir/src/tools/ft_itoa.c.o" \
+"CMakeFiles/cub3D.dir/src/tools/ft_degree_to_radian.c.o" \
 "CMakeFiles/cub3D.dir/src/hooks_and_events/hooks_catcher.c.o" \
 "CMakeFiles/cub3D.dir/src/hooks_and_events/mouse_hooks.c.o" \
 "CMakeFiles/cub3D.dir/src/hooks_and_events/key_hooks.c.o" \
 "CMakeFiles/cub3D.dir/src/hooks_and_events/rotation_hooks.c.o" \
+"CMakeFiles/cub3D.dir/src/hooks_and_events/movement_hooks.c.o" \
 "CMakeFiles/cub3D.dir/src/bonus/bonus_initializer.c.o" \
 "CMakeFiles/cub3D.dir/src/bonus/minimap/minimap.c.o"
 
@@ -629,10 +659,12 @@ cub3D: CMakeFiles/cub3D.dir/src/tools/ft_free_all_and_exit.c.o
 cub3D: CMakeFiles/cub3D.dir/src/tools/ft_strtrim.c.o
 cub3D: CMakeFiles/cub3D.dir/src/tools/ft_strjoin.c.o
 cub3D: CMakeFiles/cub3D.dir/src/tools/ft_itoa.c.o
+cub3D: CMakeFiles/cub3D.dir/src/tools/ft_degree_to_radian.c.o
 cub3D: CMakeFiles/cub3D.dir/src/hooks_and_events/hooks_catcher.c.o
 cub3D: CMakeFiles/cub3D.dir/src/hooks_and_events/mouse_hooks.c.o
 cub3D: CMakeFiles/cub3D.dir/src/hooks_and_events/key_hooks.c.o
 cub3D: CMakeFiles/cub3D.dir/src/hooks_and_events/rotation_hooks.c.o
+cub3D: CMakeFiles/cub3D.dir/src/hooks_and_events/movement_hooks.c.o
 cub3D: CMakeFiles/cub3D.dir/src/bonus/bonus_initializer.c.o
 cub3D: CMakeFiles/cub3D.dir/src/bonus/minimap/minimap.c.o
 cub3D: CMakeFiles/cub3D.dir/build.make
@@ -640,7 +672,7 @@ cub3D: ../lib/get_next_line/get_next_line.a
 cub3D: ../lib/minilibx/libmlx42.a
 cub3D: /Users/rmazurit/.brew/lib/libglfw.3.3.dylib
 cub3D: CMakeFiles/cub3D.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Linking C executable cub3D"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Linking C executable cub3D"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cub3D.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

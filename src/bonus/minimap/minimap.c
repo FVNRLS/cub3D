@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 14:45:19 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/26 16:50:40 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/27 11:30:01 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,12 +20,9 @@ static bool check_player_pos(t_data *data, int x, int y)
 	int x_sqr;
 	int y_sqr;
 
-
 	r = data->minimap->width / 80;
-
 	h = data->minimap->width / 2;
 	k = data->minimap->height / 2;
-
 	x_sqr = (x - h) * (x - h);
 	y_sqr = (y - k) * (y - k);
 	if (x_sqr + y_sqr <= (r * r))
@@ -33,13 +30,10 @@ static bool check_player_pos(t_data *data, int x, int y)
 	return(false);
 }
 
-static void	draw_minimap_background(t_data *data)
+static void	draw_minimap(t_data *data)
 {
 	int x;
 	int y;
-
-
-
 
 	y = 0;
 	while (y < data->minimap->height)
@@ -59,6 +53,10 @@ static void	draw_minimap_background(t_data *data)
 
 void	update_minimap(t_data *data)
 {
-	draw_minimap_background(data);
+	mlx_delete_image(data->mlx, data->minimap->img);
+	data->minimap->img = mlx_new_image(data->mlx, data->minimap->width,
+									   data->minimap->height);
+	draw_minimap(data);
 	mlx_image_to_window(data->mlx, data->minimap->img, 0, 0);
+	printf("angle: %d,		x_fact: %lf,	y_fact: %lf\n", data->player->angle, data->player->x_factor, data->player->y_factor);
 }

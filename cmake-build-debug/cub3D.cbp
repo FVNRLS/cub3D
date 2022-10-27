@@ -131,6 +131,9 @@
 		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/hooks_and_events/mouse_hooks.c">
 			<Option target="cub3D"/>
 		</Unit>
+		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/hooks_and_events/movement_hooks.c">
+			<Option target="cub3D"/>
+		</Unit>
 		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/hooks_and_events/rotation_hooks.c">
 			<Option target="cub3D"/>
 		</Unit>
@@ -174,6 +177,9 @@
 			<Option target="cub3D"/>
 		</Unit>
 		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/parser/textures_parser.c">
+			<Option target="cub3D"/>
+		</Unit>
+		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_degree_to_radian.c">
 			<Option target="cub3D"/>
 		</Unit>
 		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_free_all_and_exit.c">
