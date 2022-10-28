@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 17:03:54 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/27 16:50:47 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/28 13:49:00 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,8 +50,6 @@ static void	move_backward(t_data *data)
 	update_minimap(data);
 }
 
-
-
 /*
  * 	+-------------+-------------+-------------+
 	|Angle 	  	  | x (cos)		| y (sin)	  |
@@ -79,12 +77,16 @@ static void	move_forward(t_data *data)
 
 void	check_move_keys(t_data *data, mlx_key_data_t keycode)
 {
-	if (keycode.key == MLX_KEY_W && keycode.action == MLX_PRESS)
+	if (keycode.key == MLX_KEY_W && (keycode.action == MLX_PRESS
+        || keycode.action == MLX_REPEAT))
 		move_forward(data);
-	else if (keycode.key == MLX_KEY_S && keycode.action == MLX_PRESS)
+	else if (keycode.key == MLX_KEY_S && (keycode.action == MLX_PRESS
+        || keycode.action == MLX_REPEAT))
 		move_backward(data);
-	else if (keycode.key == MLX_KEY_A && keycode.action == MLX_PRESS)
+	else if (keycode.key == MLX_KEY_A && (keycode.action == MLX_PRESS
+        || keycode.action == MLX_REPEAT))
 		move_left(data);
-	else if (keycode.key == MLX_KEY_D && keycode.action == MLX_PRESS)
+	else if (keycode.key == MLX_KEY_D && (keycode.action == MLX_PRESS
+        || keycode.action == MLX_REPEAT))
 		move_right(data);
 }

@@ -16,7 +16,7 @@
 # include "../lib/minilibx/include/MLX42/MLX42_Int.h"
 
 //META-FUNCTION
-void	hooks_catcher_loop(t_data *data);
+void	hooks_catcher_loop(void *param);
 
 //KEY HOOKS
 void	check_key_hooks(mlx_key_data_t keydata, void *param);

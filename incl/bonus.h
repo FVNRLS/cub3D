@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 14:45:58 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/28 12:53:30 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/10/28 13:24:08 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # define MINIMAP_FACTOR	2.5
 # define MINIMAP_SCOPE	10
 # define STEP           0.3
+# define ROTATION_MOD   3
 
 //MINIMAP
 void	init_bonus_objects(t_data *data);

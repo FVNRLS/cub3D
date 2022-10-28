@@ -6,14 +6,19 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 16:06:45 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/26 10:55:58 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/28 13:40:59 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../incl/cub3D.h"
 
-void	hooks_catcher_loop(t_data *data)
+void	hooks_catcher_loop(void *param)
 {
-	mlx_key_hook(data->mlx, &check_key_hooks, data);
-	mlx_mouse_hook(data->mlx, (mlx_mousefunc)&check_mouse_hooks, data);
+    t_data *data;
+
+    data = (t_data *) param;
+    mlx_key_hook(data->mlx, &check_key_hooks, data);
+//    bool mlx_loop_hook(mlx_t* mlx, void (*f)(void*), void* param);
+
+    mlx_mouse_hook(data->mlx, (mlx_mousefunc)&check_mouse_hooks, data);
 }

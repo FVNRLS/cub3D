@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 14:57:15 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/28 12:53:30 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/10/28 13:51:02 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int main(int argc, char **argv)
 		ft_free_all_and_exit(&data);
 	hooks_catcher_loop(&data);
 	init_bonus_objects(&data);
-	mlx_loop(data.mlx);
+    mlx_loop(data.mlx);
 	free_all_resources(&data);
 	return (EXIT_SUCCESS);
 }

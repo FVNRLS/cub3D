@@ -16,7 +16,7 @@ static void	rotate_left(t_data *data)
 {
 	int tmp;
 
-	tmp = data->player->angle - 5;
+	tmp = data->player->angle - ROTATION_MOD;
 	if (tmp < 0)
 		data->player->angle = 360 + tmp;
 	else
@@ -28,7 +28,7 @@ static void	rotate_right(t_data *data)
 {
 	int tmp;
 
-	tmp = data->player->angle + 5;
+	tmp = data->player->angle + ROTATION_MOD;
 	if (tmp > 359)
 		data->player->angle = tmp - 360;
 	else
@@ -38,8 +38,10 @@ static void	rotate_right(t_data *data)
 
 void 	check_rotation_keys(t_data *data, mlx_key_data_t keycode)
 {
-	if (keycode.key == MLX_KEY_LEFT && keycode.action == MLX_PRESS)
+	if (keycode.key == MLX_KEY_LEFT && keycode.action == MLX_PRESS
+        ||  keycode.action == MLX_REPEAT)
 		rotate_left(data);
-	else if (keycode.key == MLX_KEY_RIGHT && keycode.action == MLX_PRESS)
+	else if (keycode.key == MLX_KEY_RIGHT && keycode.action == MLX_PRESS
+        || keycode.action == MLX_REPEAT)
 		rotate_right(data);
 }
