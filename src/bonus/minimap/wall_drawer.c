@@ -20,8 +20,8 @@ bool	check_wall(t_data *data, int x, int y)
 	double 	x_round;
 	double 	y_round;
 
-	x_scal = ((double)x * ((double) MINIMAP_SCOPE / (double) data->minimap->width));
-	y_scal = ((double)y * ((double) MINIMAP_SCOPE / (double) data->minimap->height));
+	x_scal = ((double)x * ((double) MINIMAP_SCOPE / (double) data->minimap->size));
+	y_scal = ((double)y * ((double) MINIMAP_SCOPE / (double) data->minimap->size));
 	x_round = round(x_scal);
 	y_round = round(y_scal);
 	if ((x_scal - x_round < 0.03 && x_scal - x_round > -0.03))

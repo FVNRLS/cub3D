@@ -22,7 +22,6 @@ static void set_player_angle(t_data *data)
 		data->player->angle = 180;
 	else if (data->player->dir == PLAYER_W)
 		data->player->angle = 270;
-	data->player->max_angle = 360;
 }
 
 static int	config_player(t_data *data, int x, int y)

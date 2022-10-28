@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 14:45:19 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/27 19:17:48 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/28 11:14:29 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ static bool check_player_pos(t_data *data, int x, int y)
 	int x_sqr;
 	int y_sqr;
 
-	r = data->minimap->width / 80;
+	r = data->minimap->size / 80;
 	h = data->minimap->x_player;
 	k = data->minimap->y_player;
 	x_sqr = (x - h) * (x - h);
@@ -38,16 +38,13 @@ static void	draw_minimap(t_data *data)
 
 	set_offset(data);
 	y = 0;
-	while (y < data->minimap->height)
+	while (y < data->minimap->size)
 	{
 		x = 0;
-		while (x < data->minimap->width)
+		while (x < data->minimap->size)
 		{
 			if (check_player_pos(data, x, y) == true)
-			{
-				printf("here!\n");
 				mlx_put_pixel(data->minimap->img, x, y, GREEN);
-			}
 			else if (check_wall(data, x, y) == true)
 				mlx_put_pixel(data->minimap->img,x, y, NAVY);
 			else
@@ -61,8 +58,8 @@ static void	draw_minimap(t_data *data)
 void	update_minimap(t_data *data)
 {
 	mlx_delete_image(data->mlx, data->minimap->img);
-	data->minimap->img = mlx_new_image(data->mlx, data->minimap->width,
-									   data->minimap->height);
+	data->minimap->img = mlx_new_image(data->mlx, data->minimap->size,
+									   data->minimap->size);
 	draw_minimap(data);
 	mlx_image_to_window(data->mlx, data->minimap->img, 0, 0);
 //	printf("angle: %d,		x_fact: %lf,	y_fact: %lf\n", data->player->angle, data->player->x_factor, data->player->y_factor);

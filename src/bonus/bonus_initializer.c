@@ -21,8 +21,7 @@ static void	init_minimap(t_data *data)
 		print_int_error(MALLOC_ERROR, NULL);
 		ft_free_all_and_exit(data);
 	}
-	data->minimap->width = WIDTH / MINIMAP_FACTOR;
-	data->minimap->height = HEIGHT / MINIMAP_FACTOR;
+	data->minimap->size = WIDTH / MINIMAP_FACTOR;
 	data->minimap->img = NULL;
 }
 

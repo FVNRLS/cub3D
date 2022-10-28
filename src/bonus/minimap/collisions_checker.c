@@ -44,17 +44,15 @@ static void	set_player_y_pos(t_data *data, double y_step)
 void	set_offset(t_data *data)
 {
 
-	double x_step;
-	double y_step;
+	double step;
 
-	x_step = (double)data->minimap->width / MINIMAP_SCOPE;
-	y_step = (double)data->minimap->height / MINIMAP_SCOPE;
-	data->minimap->x_player = data->minimap->width / 2;
-	data->minimap->y_player = data->minimap->height / 2;
+	step = (double)data->minimap->size / MINIMAP_SCOPE;
+	data->minimap->x_player = data->minimap->size / 2;
+	data->minimap->y_player = data->minimap->size / 2;
 	data->minimap->x_offset = (int)data->player->x - MINIMAP_SCOPE / 2;
 	data->minimap->y_offset = (int)data->player->y - MINIMAP_SCOPE / 2;
-	set_player_x_pos(data, x_step);
-	set_player_y_pos(data, y_step);
+	set_player_x_pos(data, step);
+	set_player_y_pos(data, step);
 }
 
 bool	check_collisions(t_data *data)

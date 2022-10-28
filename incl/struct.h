@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 12:30:28 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/27 16:36:07 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/28 11:11:53 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,14 +61,12 @@ typedef struct	s_player
 	double	y_factor;
 	char	dir;
 	int 	angle;
-	int 	max_angle;
 }		t_player;
 
 typedef	struct s_minimap
 {
 	mlx_image_t	*img;
-	int 		height;
-	int 		width;
+	int 		size;
 	int 		x_offset;
 	int 		y_offset;
 	int 		x_player;
