@@ -6,11 +6,11 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 16:39:50 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/28 12:34:51 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/28 13:15:39 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../../incl/cub3D.h"
+#include "../../incl/cub3D.h"
 
 static void	set_offset_x_pos(t_data *data)
 {
@@ -44,9 +44,11 @@ bool	check_collisions(t_data *data)
 	new_x = data->player->x + data->player->x_factor;
 	new_y = data->player->y + data->player->y_factor;
 
-	if (new_x >= data->tab->max_x - 0.85 || new_y >= data->tab->max_y - 0.85)
-		return (true);
-	if (new_x <=  0.85 || new_y <=  0.85)
-		return (true);
+//	if (new_x >= data->tab->max_x - 0.85 || new_y >= data->tab->max_y - 0.85)
+//		return (true);
+//	if (new_x <=  0.85 || new_y <=  0.85)
+//		return (true);
+    if (data->map[(int)new_x][(int)new_y] == '1')
+        return (true);
 	return (false);
 }

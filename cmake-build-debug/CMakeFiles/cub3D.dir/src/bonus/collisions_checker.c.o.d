@@ -1,6 +1,6 @@
-CMakeFiles/cub3D.dir/src/message_printer.c.o: \
-  /Users/rmazurit/Documents/42_Projects/cub3D/src/message_printer.c \
-  /Users/rmazurit/Documents/42_Projects/cub3D/src/../incl/cub3D.h \
+CMakeFiles/cub3D.dir/src/bonus/collisions_checker.c.o: \
+  /Users/hoomen/CLionProjects/cub3D/src/bonus/collisions_checker.c \
+  /Users/hoomen/CLionProjects/cub3D/src/bonus/../../incl/cub3D.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/stdlib.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/Availability.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/AvailabilityVersions.h \
@@ -102,7 +102,40 @@ CMakeFiles/cub3D.dir/src/message_printer.c.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_o_dsync.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_s_ifmt.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_filesec_t.h \
-  /Users/rmazurit/Documents/42_Projects/cub3D/src/../incl/struct.h \
-  /Users/rmazurit/Documents/42_Projects/cub3D/src/../incl/errors.h \
-  /Users/rmazurit/Documents/42_Projects/cub3D/src/../incl/tools.h \
-  /Users/rmazurit/Documents/42_Projects/cub3D/src/../incl/../lib/get_next_line/get_next_line.h
+  /Users/hoomen/CLionProjects/cub3D/src/bonus/../../incl/struct.h \
+  /Users/hoomen/CLionProjects/cub3D/src/bonus/../../incl/../lib/minilibx/include/MLX42/MLX42.h \
+  /Users/hoomen/CLionProjects/cub3D/src/bonus/../../incl/../lib/minilibx/include/MLX42/MLX42_Input.h \
+  /Users/hoomen/CLionProjects/cub3D/src/bonus/../../incl/errors.h \
+  /Users/hoomen/CLionProjects/cub3D/src/bonus/../../incl/tools.h \
+  /Users/hoomen/CLionProjects/cub3D/src/bonus/../../incl/hooks.h \
+  /Users/hoomen/CLionProjects/cub3D/src/bonus/../../incl/../lib/minilibx/include/MLX42/MLX42_Int.h \
+  /Users/hoomen/CLionProjects/cub3D/src/bonus/../../incl/../lib/minilibx/include/MLX42/../MLX42/MLX42.h \
+  /Users/hoomen/CLionProjects/cub3D/src/bonus/../../incl/../lib/minilibx/include/MLX42/../lodepng/lodepng.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/string.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_rsize_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_errno_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/strings.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/secure/_strings.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/secure/_string.h \
+  /Users/hoomen/CLionProjects/cub3D/src/bonus/../../incl/../lib/minilibx/include/MLX42/../glad/glad.h \
+  /Users/hoomen/CLionProjects/cub3D/src/bonus/../../incl/../lib/minilibx/include/MLX42/../glad/../KHR/khrplatform.h \
+  /Users/hoomen/CLionProjects/cub3D/src/bonus/../../incl/../lib/minilibx/include/MLX42/../KHR/khrplatform.h \
+  /Users/hoomen/.brew/include/GLFW/glfw3.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stddef.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/memory.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/limits.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/limits.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/machine/limits.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/i386/limits.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/i386/_limits.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/sys/syslimits.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/err.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/ctype.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/_ctype.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/runetype.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_wint_t.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stdarg.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/assert.h \
+  /Users/hoomen/CLionProjects/cub3D/src/bonus/../../incl/gui.h \
+  /Users/hoomen/CLionProjects/cub3D/src/bonus/../../incl/bonus.h \
+  /Users/hoomen/CLionProjects/cub3D/src/bonus/../../incl/../lib/get_next_line/get_next_line.h

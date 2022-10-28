@@ -57,10 +57,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/rmazurit/Documents/42_Projects/cub3D
+CMAKE_SOURCE_DIR = /Users/hoomen/CLionProjects/cub3D
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/hoomen/CLionProjects/cub3D/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/CMakeFiles /Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hoomen/CLionProjects/cub3D/cmake-build-debug/CMakeFiles /Users/hoomen/CLionProjects/cub3D/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hoomen/CLionProjects/cub3D/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -153,29 +153,29 @@ src/bonus/bonus_initializer.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/bonus/bonus_initializer.c.s
 .PHONY : src/bonus/bonus_initializer.c.s
 
-src/bonus/minimap/collisions_checker.o: src/bonus/minimap/collisions_checker.c.o
-.PHONY : src/bonus/minimap/collisions_checker.o
+src/bonus/collisions_checker.o: src/bonus/collisions_checker.c.o
+.PHONY : src/bonus/collisions_checker.o
 
 # target to build an object file
-src/bonus/minimap/collisions_checker.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/bonus/minimap/collisions_checker.c.o
-.PHONY : src/bonus/minimap/collisions_checker.c.o
+src/bonus/collisions_checker.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/bonus/collisions_checker.c.o
+.PHONY : src/bonus/collisions_checker.c.o
 
-src/bonus/minimap/collisions_checker.i: src/bonus/minimap/collisions_checker.c.i
-.PHONY : src/bonus/minimap/collisions_checker.i
+src/bonus/collisions_checker.i: src/bonus/collisions_checker.c.i
+.PHONY : src/bonus/collisions_checker.i
 
 # target to preprocess a source file
-src/bonus/minimap/collisions_checker.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/bonus/minimap/collisions_checker.c.i
-.PHONY : src/bonus/minimap/collisions_checker.c.i
+src/bonus/collisions_checker.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/bonus/collisions_checker.c.i
+.PHONY : src/bonus/collisions_checker.c.i
 
-src/bonus/minimap/collisions_checker.s: src/bonus/minimap/collisions_checker.c.s
-.PHONY : src/bonus/minimap/collisions_checker.s
+src/bonus/collisions_checker.s: src/bonus/collisions_checker.c.s
+.PHONY : src/bonus/collisions_checker.s
 
 # target to generate assembly for a file
-src/bonus/minimap/collisions_checker.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/bonus/minimap/collisions_checker.c.s
-.PHONY : src/bonus/minimap/collisions_checker.c.s
+src/bonus/collisions_checker.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/bonus/collisions_checker.c.s
+.PHONY : src/bonus/collisions_checker.c.s
 
 src/bonus/minimap/minimap.o: src/bonus/minimap/minimap.c.o
 .PHONY : src/bonus/minimap/minimap.o
@@ -1077,9 +1077,9 @@ help:
 	@echo "... src/bonus/bonus_initializer.o"
 	@echo "... src/bonus/bonus_initializer.i"
 	@echo "... src/bonus/bonus_initializer.s"
-	@echo "... src/bonus/minimap/collisions_checker.o"
-	@echo "... src/bonus/minimap/collisions_checker.i"
-	@echo "... src/bonus/minimap/collisions_checker.s"
+	@echo "... src/bonus/collisions_checker.o"
+	@echo "... src/bonus/collisions_checker.i"
+	@echo "... src/bonus/collisions_checker.s"
 	@echo "... src/bonus/minimap/minimap.o"
 	@echo "... src/bonus/minimap/minimap.i"
 	@echo "... src/bonus/minimap/minimap.s"

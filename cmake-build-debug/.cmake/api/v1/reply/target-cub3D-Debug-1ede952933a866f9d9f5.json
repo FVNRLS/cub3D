@@ -48,14 +48,6 @@
 					"fragment" : "-std=gnu99"
 				}
 			],
-			"includes" : 
-			[
-				{
-					"backtrace" : 2,
-					"isSystem" : true,
-					"path" : "/Users/rmazurit/.brew/include"
-				}
-			],
 			"language" : "C",
 			"languageStandard" : 
 			{
@@ -123,10 +115,6 @@
 				"role" : "flags"
 			},
 			{
-				"fragment" : "-Wl,-rpath,/Users/rmazurit/.brew/lib",
-				"role" : "libraries"
-			},
-			{
 				"backtrace" : 2,
 				"fragment" : "../lib/get_next_line/get_next_line.a",
 				"role" : "libraries"
@@ -138,7 +126,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/Users/rmazurit/.brew/lib/libglfw.3.3.dylib",
+				"fragment" : "/Users/hoomen/.brew/lib/libglfw.3.3.dylib",
 				"role" : "libraries"
 			}
 		],
@@ -498,7 +486,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/bonus/minimap/collisions_checker.c",
+			"path" : "src/bonus/collisions_checker.c",
 			"sourceGroupIndex" : 0
 		}
 	],

@@ -122,7 +122,7 @@ CMakeFiles/cub3D.dir/src/bonus/bonus_initializer.c.o: ../src/bonus/bonus_initial
   ../lib/minilibx/include/glad/glad.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
-  /Users/rmazurit/.brew/include/GLFW/glfw3.h \
+  /Users/hoomen/.brew/include/GLFW/glfw3.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/memory.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/limits.h \
@@ -142,7 +142,7 @@ CMakeFiles/cub3D.dir/src/bonus/bonus_initializer.c.o: ../src/bonus/bonus_initial
   ../incl/bonus.h \
   ../lib/get_next_line/get_next_line.h
 
-CMakeFiles/cub3D.dir/src/bonus/minimap/collisions_checker.c.o: ../src/bonus/minimap/collisions_checker.c \
+CMakeFiles/cub3D.dir/src/bonus/collisions_checker.c.o: ../src/bonus/collisions_checker.c \
   ../incl/cub3D.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/stdlib.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/Availability.h \
@@ -263,7 +263,7 @@ CMakeFiles/cub3D.dir/src/bonus/minimap/collisions_checker.c.o: ../src/bonus/mini
   ../lib/minilibx/include/glad/glad.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
-  /Users/rmazurit/.brew/include/GLFW/glfw3.h \
+  /Users/hoomen/.brew/include/GLFW/glfw3.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/memory.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/limits.h \
@@ -404,7 +404,7 @@ CMakeFiles/cub3D.dir/src/bonus/minimap/minimap.c.o: ../src/bonus/minimap/minimap
   ../lib/minilibx/include/glad/glad.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
-  /Users/rmazurit/.brew/include/GLFW/glfw3.h \
+  /Users/hoomen/.brew/include/GLFW/glfw3.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/memory.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/limits.h \
@@ -545,7 +545,7 @@ CMakeFiles/cub3D.dir/src/bonus/minimap/wall_drawer.c.o: ../src/bonus/minimap/wal
   ../lib/minilibx/include/glad/glad.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
-  /Users/rmazurit/.brew/include/GLFW/glfw3.h \
+  /Users/hoomen/.brew/include/GLFW/glfw3.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/memory.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/limits.h \
@@ -686,7 +686,7 @@ CMakeFiles/cub3D.dir/src/destructor.c.o: ../src/destructor.c \
   ../lib/minilibx/include/glad/glad.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
-  /Users/rmazurit/.brew/include/GLFW/glfw3.h \
+  /Users/hoomen/.brew/include/GLFW/glfw3.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/memory.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/limits.h \
@@ -827,7 +827,7 @@ CMakeFiles/cub3D.dir/src/error_printer.c.o: ../src/error_printer.c \
   ../lib/minilibx/include/glad/glad.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
-  /Users/rmazurit/.brew/include/GLFW/glfw3.h \
+  /Users/hoomen/.brew/include/GLFW/glfw3.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/memory.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/limits.h \
@@ -968,7 +968,7 @@ CMakeFiles/cub3D.dir/src/hooks_and_events/hooks_catcher.c.o: ../src/hooks_and_ev
   ../lib/minilibx/include/glad/glad.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
-  /Users/rmazurit/.brew/include/GLFW/glfw3.h \
+  /Users/hoomen/.brew/include/GLFW/glfw3.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/memory.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/limits.h \
@@ -1109,7 +1109,7 @@ CMakeFiles/cub3D.dir/src/hooks_and_events/key_hooks.c.o: ../src/hooks_and_events
   ../lib/minilibx/include/glad/glad.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
-  /Users/rmazurit/.brew/include/GLFW/glfw3.h \
+  /Users/hoomen/.brew/include/GLFW/glfw3.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/memory.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/limits.h \
@@ -1250,7 +1250,7 @@ CMakeFiles/cub3D.dir/src/hooks_and_events/mouse_hooks.c.o: ../src/hooks_and_even
   ../lib/minilibx/include/glad/glad.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
-  /Users/rmazurit/.brew/include/GLFW/glfw3.h \
+  /Users/hoomen/.brew/include/GLFW/glfw3.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/memory.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/limits.h \
@@ -1391,7 +1391,7 @@ CMakeFiles/cub3D.dir/src/hooks_and_events/movement_hooks.c.o: ../src/hooks_and_e
   ../lib/minilibx/include/glad/glad.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
-  /Users/rmazurit/.brew/include/GLFW/glfw3.h \
+  /Users/hoomen/.brew/include/GLFW/glfw3.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/memory.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/limits.h \
@@ -1532,7 +1532,7 @@ CMakeFiles/cub3D.dir/src/hooks_and_events/rotation_hooks.c.o: ../src/hooks_and_e
   ../lib/minilibx/include/glad/glad.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
-  /Users/rmazurit/.brew/include/GLFW/glfw3.h \
+  /Users/hoomen/.brew/include/GLFW/glfw3.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/memory.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/limits.h \
@@ -1673,7 +1673,7 @@ CMakeFiles/cub3D.dir/src/initializer/initializer.c.o: ../src/initializer/initial
   ../lib/minilibx/include/glad/glad.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
-  /Users/rmazurit/.brew/include/GLFW/glfw3.h \
+  /Users/hoomen/.brew/include/GLFW/glfw3.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/memory.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/limits.h \
@@ -1814,7 +1814,7 @@ CMakeFiles/cub3D.dir/src/initializer/map_objects.c.o: ../src/initializer/map_obj
   ../lib/minilibx/include/glad/glad.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
-  /Users/rmazurit/.brew/include/GLFW/glfw3.h \
+  /Users/hoomen/.brew/include/GLFW/glfw3.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/memory.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/limits.h \
@@ -1955,7 +1955,7 @@ CMakeFiles/cub3D.dir/src/initializer/mlx_initializer.c.o: ../src/initializer/mlx
   ../lib/minilibx/include/glad/glad.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
-  /Users/rmazurit/.brew/include/GLFW/glfw3.h \
+  /Users/hoomen/.brew/include/GLFW/glfw3.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/memory.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/limits.h \
@@ -2096,7 +2096,7 @@ CMakeFiles/cub3D.dir/src/main.c.o: ../src/main.c \
   ../lib/minilibx/include/glad/glad.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
-  /Users/rmazurit/.brew/include/GLFW/glfw3.h \
+  /Users/hoomen/.brew/include/GLFW/glfw3.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/memory.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/limits.h \
@@ -2237,7 +2237,7 @@ CMakeFiles/cub3D.dir/src/parser/color_extracter.c.o: ../src/parser/color_extract
   ../lib/minilibx/include/glad/glad.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
-  /Users/rmazurit/.brew/include/GLFW/glfw3.h \
+  /Users/hoomen/.brew/include/GLFW/glfw3.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/memory.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/limits.h \
@@ -2378,7 +2378,7 @@ CMakeFiles/cub3D.dir/src/parser/floor_ceiling_parser.c.o: ../src/parser/floor_ce
   ../lib/minilibx/include/glad/glad.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
-  /Users/rmazurit/.brew/include/GLFW/glfw3.h \
+  /Users/hoomen/.brew/include/GLFW/glfw3.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/memory.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/limits.h \
@@ -2519,7 +2519,7 @@ CMakeFiles/cub3D.dir/src/parser/map_parser/arguments_checker.c.o: ../src/parser/
   ../lib/minilibx/include/glad/glad.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
-  /Users/rmazurit/.brew/include/GLFW/glfw3.h \
+  /Users/hoomen/.brew/include/GLFW/glfw3.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/memory.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/limits.h \
@@ -2660,7 +2660,7 @@ CMakeFiles/cub3D.dir/src/parser/map_parser/map_borders_checker.c.o: ../src/parse
   ../lib/minilibx/include/glad/glad.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
-  /Users/rmazurit/.brew/include/GLFW/glfw3.h \
+  /Users/hoomen/.brew/include/GLFW/glfw3.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/memory.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/limits.h \
@@ -2801,7 +2801,7 @@ CMakeFiles/cub3D.dir/src/parser/map_parser/map_creator.c.o: ../src/parser/map_pa
   ../lib/minilibx/include/glad/glad.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
-  /Users/rmazurit/.brew/include/GLFW/glfw3.h \
+  /Users/hoomen/.brew/include/GLFW/glfw3.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/memory.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/limits.h \
@@ -2942,7 +2942,7 @@ CMakeFiles/cub3D.dir/src/parser/map_parser/map_parser.c.o: ../src/parser/map_par
   ../lib/minilibx/include/glad/glad.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
-  /Users/rmazurit/.brew/include/GLFW/glfw3.h \
+  /Users/hoomen/.brew/include/GLFW/glfw3.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/memory.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/limits.h \
@@ -3083,7 +3083,7 @@ CMakeFiles/cub3D.dir/src/parser/map_parser/map_player_parser.c.o: ../src/parser/
   ../lib/minilibx/include/glad/glad.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
-  /Users/rmazurit/.brew/include/GLFW/glfw3.h \
+  /Users/hoomen/.brew/include/GLFW/glfw3.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/memory.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/limits.h \
@@ -3224,7 +3224,7 @@ CMakeFiles/cub3D.dir/src/parser/map_parser/map_void_checker.c.o: ../src/parser/m
   ../lib/minilibx/include/glad/glad.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
-  /Users/rmazurit/.brew/include/GLFW/glfw3.h \
+  /Users/hoomen/.brew/include/GLFW/glfw3.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/memory.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/limits.h \
@@ -3365,7 +3365,7 @@ CMakeFiles/cub3D.dir/src/parser/parser.c.o: ../src/parser/parser.c \
   ../lib/minilibx/include/glad/glad.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
-  /Users/rmazurit/.brew/include/GLFW/glfw3.h \
+  /Users/hoomen/.brew/include/GLFW/glfw3.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/memory.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/limits.h \
@@ -3506,7 +3506,7 @@ CMakeFiles/cub3D.dir/src/parser/textures_parser.c.o: ../src/parser/textures_pars
   ../lib/minilibx/include/glad/glad.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
-  /Users/rmazurit/.brew/include/GLFW/glfw3.h \
+  /Users/hoomen/.brew/include/GLFW/glfw3.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/memory.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/limits.h \
@@ -3647,7 +3647,7 @@ CMakeFiles/cub3D.dir/src/tools/ft_degree_to_radian.c.o: ../src/tools/ft_degree_t
   ../lib/minilibx/include/glad/glad.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
-  /Users/rmazurit/.brew/include/GLFW/glfw3.h \
+  /Users/hoomen/.brew/include/GLFW/glfw3.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/memory.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/limits.h \
@@ -3788,7 +3788,7 @@ CMakeFiles/cub3D.dir/src/tools/ft_free_all_and_exit.c.o: ../src/tools/ft_free_al
   ../lib/minilibx/include/glad/glad.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
-  /Users/rmazurit/.brew/include/GLFW/glfw3.h \
+  /Users/hoomen/.brew/include/GLFW/glfw3.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/memory.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/limits.h \
@@ -3929,7 +3929,7 @@ CMakeFiles/cub3D.dir/src/tools/ft_free_split.c.o: ../src/tools/ft_free_split.c \
   ../lib/minilibx/include/glad/glad.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
-  /Users/rmazurit/.brew/include/GLFW/glfw3.h \
+  /Users/hoomen/.brew/include/GLFW/glfw3.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/memory.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/limits.h \
@@ -4070,7 +4070,7 @@ CMakeFiles/cub3D.dir/src/tools/ft_isdigit.c.o: ../src/tools/ft_isdigit.c \
   ../lib/minilibx/include/glad/glad.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
-  /Users/rmazurit/.brew/include/GLFW/glfw3.h \
+  /Users/hoomen/.brew/include/GLFW/glfw3.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/memory.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/limits.h \
@@ -4211,7 +4211,7 @@ CMakeFiles/cub3D.dir/src/tools/ft_itoa.c.o: ../src/tools/ft_itoa.c \
   ../lib/minilibx/include/glad/glad.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
-  /Users/rmazurit/.brew/include/GLFW/glfw3.h \
+  /Users/hoomen/.brew/include/GLFW/glfw3.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/memory.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/limits.h \
@@ -4352,7 +4352,7 @@ CMakeFiles/cub3D.dir/src/tools/ft_rgb_atoi.c.o: ../src/tools/ft_rgb_atoi.c \
   ../lib/minilibx/include/glad/glad.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
-  /Users/rmazurit/.brew/include/GLFW/glfw3.h \
+  /Users/hoomen/.brew/include/GLFW/glfw3.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/memory.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/limits.h \
@@ -4493,7 +4493,7 @@ CMakeFiles/cub3D.dir/src/tools/ft_split.c.o: ../src/tools/ft_split.c \
   ../lib/minilibx/include/glad/glad.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
-  /Users/rmazurit/.brew/include/GLFW/glfw3.h \
+  /Users/hoomen/.brew/include/GLFW/glfw3.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/memory.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/limits.h \
@@ -4638,7 +4638,7 @@ CMakeFiles/cub3D.dir/src/tools/ft_strdup.c.o: ../src/tools/ft_strdup.c \
   ../lib/minilibx/include/glad/glad.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
-  /Users/rmazurit/.brew/include/GLFW/glfw3.h \
+  /Users/hoomen/.brew/include/GLFW/glfw3.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/memory.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/limits.h \
@@ -4779,7 +4779,7 @@ CMakeFiles/cub3D.dir/src/tools/ft_strjoin.c.o: ../src/tools/ft_strjoin.c \
   ../lib/minilibx/include/glad/glad.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
-  /Users/rmazurit/.brew/include/GLFW/glfw3.h \
+  /Users/hoomen/.brew/include/GLFW/glfw3.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/memory.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/limits.h \
@@ -4920,7 +4920,7 @@ CMakeFiles/cub3D.dir/src/tools/ft_strlen.c.o: ../src/tools/ft_strlen.c \
   ../lib/minilibx/include/glad/glad.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
-  /Users/rmazurit/.brew/include/GLFW/glfw3.h \
+  /Users/hoomen/.brew/include/GLFW/glfw3.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/memory.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/limits.h \
@@ -5061,7 +5061,7 @@ CMakeFiles/cub3D.dir/src/tools/ft_strncmp.c.o: ../src/tools/ft_strncmp.c \
   ../lib/minilibx/include/glad/glad.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
-  /Users/rmazurit/.brew/include/GLFW/glfw3.h \
+  /Users/hoomen/.brew/include/GLFW/glfw3.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/memory.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/limits.h \
@@ -5202,7 +5202,7 @@ CMakeFiles/cub3D.dir/src/tools/ft_strtrim.c.o: ../src/tools/ft_strtrim.c \
   ../lib/minilibx/include/glad/glad.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
   ../lib/minilibx/include/KHR/khrplatform.h \
-  /Users/rmazurit/.brew/include/GLFW/glfw3.h \
+  /Users/hoomen/.brew/include/GLFW/glfw3.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/memory.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include/limits.h \
@@ -5231,6 +5231,8 @@ CMakeFiles/cub3D.dir/src/tools/ft_strtrim.c.o: ../src/tools/ft_strtrim.c \
 
 ../src/tools/ft_isdigit.c:
 
+../src/parser/textures_parser.c:
+
 ../src/parser/map_parser/map_void_checker.c:
 
 ../src/parser/map_parser/map_creator.c:
@@ -5255,7 +5257,7 @@ CMakeFiles/cub3D.dir/src/tools/ft_strtrim.c.o: ../src/tools/ft_strtrim.c \
 
 ../src/error_printer.c:
 
-../src/bonus/minimap/collisions_checker.c:
+../src/bonus/collisions_checker.c:
 
 ../src/parser/parser.c:
 
@@ -5275,9 +5277,7 @@ CMakeFiles/cub3D.dir/src/tools/ft_strtrim.c.o: ../src/tools/ft_strtrim.c \
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/limits.h:
 
-../src/parser/textures_parser.c:
-
-/Users/rmazurit/.brew/include/GLFW/glfw3.h:
+/Users/hoomen/.brew/include/GLFW/glfw3.h:
 
 ../lib/minilibx/include/glad/glad.h:
 

@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 12:34:26 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/28 12:23:40 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/28 13:06:45 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,11 +30,11 @@ bool	check_wall(t_data *data, int x, int y, double step)
 //		return (false);
 //	x = data->minimap->x_offset + (int)x_round;
 //	y = data->minimap->y_offset + (int)y_round;
-	int x_on_map;
-	int y_on_map;
+	double     x_on_map;
+	double     y_on_map;
 
-	x_on_map = data->minimap->x_offset + (int) (((double) x) / step);
-	y_on_map = data->minimap->y_offset + (int) (((double) y) / step);
+	x_on_map = data->minimap->x_offset + (((double) x) / step);
+	y_on_map = data->minimap->y_offset + (((double) y) / step);
 //	printf("x_on_map = %d\n", x_on_map);
 //	printf("y_on_map = %d\n", y_on_map);
 //	printf("object at data->map[%d][%d] = %c\n", x_on_map, y_on_map, data->map[x_on_map][y_on_map]);
@@ -43,10 +43,13 @@ bool	check_wall(t_data *data, int x, int y, double step)
 //		return (false);
 //	if (data->map[x][y] == '1')
 //		return (true);
-
+	if ((x_on_map - round(x_on_map) < 0.03 && x_on_map - round(x_on_map) > -0.03))
+		return (false);
+    if ((y_on_map - round(y_on_map) < 0.03 && y_on_map - round(y_on_map) > -0.03))
+		return (false);
 	if (x_on_map >= data->tab->max_x)
 		return (false);
-	if (data->map[x_on_map][y_on_map] == '1')
+	if (data->map[(int)x_on_map][(int)y_on_map] == '1')
 		return (true);
 	return (false);
 }

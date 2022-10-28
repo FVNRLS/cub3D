@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/cub3D.dir/src/bonus/bonus_initializer.c.o"
   "CMakeFiles/cub3D.dir/src/bonus/bonus_initializer.c.o.d"
-  "CMakeFiles/cub3D.dir/src/bonus/minimap/collisions_checker.c.o"
-  "CMakeFiles/cub3D.dir/src/bonus/minimap/collisions_checker.c.o.d"
+  "CMakeFiles/cub3D.dir/src/bonus/collisions_checker.c.o"
+  "CMakeFiles/cub3D.dir/src/bonus/collisions_checker.c.o.d"
   "CMakeFiles/cub3D.dir/src/bonus/minimap/minimap.c.o"
   "CMakeFiles/cub3D.dir/src/bonus/minimap/minimap.c.o.d"
   "CMakeFiles/cub3D.dir/src/bonus/minimap/wall_drawer.c.o"

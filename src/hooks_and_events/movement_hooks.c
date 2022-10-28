@@ -14,8 +14,9 @@
 
 static void	move_right(t_data *data)
 {
-	data->player->x_factor = sin(ft_degree_to_radian(data->player->angle + 90));
-	data->player->y_factor = -1 * cos(ft_degree_to_radian(data->player->angle + 90));
+	data->player->x_factor = sin(ft_degree_to_radian(data->player->angle + 90))* STEP;
+	data->player->y_factor = -1 * cos(ft_degree_to_radian(data->player->angle
+            + 90)) * STEP;
 	if (check_collisions(data) == true)
 		return ;
 	data->player->x += data->player->x_factor;
@@ -25,8 +26,10 @@ static void	move_right(t_data *data)
 
 static void	move_left(t_data *data)
 {
-	data->player->x_factor =  sin(ft_degree_to_radian(data->player->angle - 90));
-	data->player->y_factor = -1 * cos(ft_degree_to_radian(data->player->angle - 90));
+	data->player->x_factor =  sin(ft_degree_to_radian(data->player->angle -
+            90)) * STEP;
+	data->player->y_factor = -1 * cos(ft_degree_to_radian(data->player->angle
+            - 90)) * STEP;
 	if (check_collisions(data) == true)
 		return ;
 	data->player->x += data->player->x_factor;
@@ -36,8 +39,10 @@ static void	move_left(t_data *data)
 
 static void	move_backward(t_data *data)
 {
-	data->player->x_factor = -1 * sin(ft_degree_to_radian(data->player->angle));
-	data->player->y_factor = cos(ft_degree_to_radian(data->player->angle));
+	data->player->x_factor = -1 * sin(ft_degree_to_radian
+            (data->player->angle)) * STEP;
+	data->player->y_factor = cos(ft_degree_to_radian(data->player->angle)) *
+            STEP;
 	if (check_collisions(data) == true)
 		return ;
 	data->player->x += data->player->x_factor;
@@ -62,8 +67,9 @@ static void	move_backward(t_data *data)
  * */
 static void	move_forward(t_data *data)
 {
-	data->player->x_factor = sin(ft_degree_to_radian(data->player->angle));
-	data->player->y_factor = -1 * cos(ft_degree_to_radian(data->player->angle));
+	data->player->x_factor = sin(ft_degree_to_radian(data->player->angle)) * STEP;
+	data->player->y_factor = -1 * cos(ft_degree_to_radian
+            (data->player->angle)) * STEP;
 	if (check_collisions(data) == true)
 		return ;
 	data->player->x = data->player->x + data->player->x_factor;
