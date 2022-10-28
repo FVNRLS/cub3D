@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 14:45:58 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/27 20:00:08 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/28 11:42:52 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 # define BONUS_H
 
 # define MINIMAP_FACTOR	2.5
-# define MINIMAP_SCOPE	11
+# define MINIMAP_SCOPE	10
 
 //MINIMAP
 void	init_bonus_objects(t_data *data);
 void	update_minimap(t_data *data);
-bool	check_wall(t_data *data, int x, int y);
+bool	check_wall(t_data *data, int x, int y, double step);
 bool	check_collisions(t_data *data);
 void	set_offset(t_data *data);
 
