@@ -3,14 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   destructor.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 11:36:56 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/26 11:43:36 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/30 14:13:50 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../incl/cub3D.h"
+
+static void destroy_bonus_objects(t_data *data)
+{
+	free(data->minimap);
+}
 
 static void	free_map_objects(t_data *data)
 {
@@ -42,5 +47,6 @@ void	free_all_resources(t_data *data)
 {
 	free_map_objects(data);
 	free_mlx_objects(data);
+	destroy_bonus_objects(data);
 	close(data->conf->fd);
 }

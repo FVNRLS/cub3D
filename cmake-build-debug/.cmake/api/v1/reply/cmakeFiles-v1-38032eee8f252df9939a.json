@@ -119,26 +119,26 @@
 		},
 		{
 			"isExternal" : true,
-			"path" : "/Users/rmazurit/.brew/lib/cmake/glfw3/glfw3ConfigVersion.cmake"
+			"path" : "/Users/hoomen/.brew/lib/cmake/glfw3/glfw3ConfigVersion.cmake"
 		},
 		{
 			"isExternal" : true,
-			"path" : "/Users/rmazurit/.brew/lib/cmake/glfw3/glfw3Config.cmake"
+			"path" : "/Users/hoomen/.brew/lib/cmake/glfw3/glfw3Config.cmake"
 		},
 		{
 			"isExternal" : true,
-			"path" : "/Users/rmazurit/.brew/lib/cmake/glfw3/glfw3Targets.cmake"
+			"path" : "/Users/hoomen/.brew/lib/cmake/glfw3/glfw3Targets.cmake"
 		},
 		{
 			"isExternal" : true,
-			"path" : "/Users/rmazurit/.brew/lib/cmake/glfw3/glfw3Targets-release.cmake"
+			"path" : "/Users/hoomen/.brew/lib/cmake/glfw3/glfw3Targets-release.cmake"
 		}
 	],
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug",
-		"source" : "/Users/rmazurit/Documents/42_Projects/cub3D"
+		"build" : "/Users/hoomen/CLionProjects/cub3D/cmake-build-debug",
+		"source" : "/Users/hoomen/CLionProjects/cub3D"
 	},
 	"version" : 
 	{

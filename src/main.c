@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 14:57:15 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/26 11:43:36 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/30 14:13:54 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,9 +30,8 @@ int main(int argc, char **argv)
 	if (data.parse_error == true)
 		ft_free_all_and_exit(&data);
 	hooks_catcher_loop(&data);
-	mlx_loop(data.mlx);
-//	start_minimap(data);
-
+	init_bonus_objects(&data);
+    mlx_loop(data.mlx);
 	free_all_resources(&data);
 	return (EXIT_SUCCESS);
 }

@@ -6,11 +6,23 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 17:41:27 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/24 18:25:16 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/28 12:53:30 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../../incl/cub3D.h"
+
+static void set_player_angle(t_data *data)
+{
+	if (data->player->dir == PLAYER_N)
+		data->player->angle = 0;
+	else if (data->player->dir == PLAYER_E)
+		data->player->angle = 90;
+	else if (data->player->dir == PLAYER_S)
+		data->player->angle = 180;
+	else if (data->player->dir == PLAYER_W)
+		data->player->angle = 270;
+}
 
 static int	config_player(t_data *data, int x, int y)
 {
@@ -24,6 +36,7 @@ static int	config_player(t_data *data, int x, int y)
 	data->player->y = y;
 	data->player->dir = data->map[x][y];
 	data->map[x][y] = ZERO;
+	set_player_angle(data);
 	return (EXIT_SUCCESS);
 }
 

@@ -52,15 +52,21 @@ add_executable(cub3D src/main.c
         src/tools/ft_strtrim.c
         src/tools/ft_strjoin.c
         src/tools/ft_itoa.c
+        src/tools/ft_degree_to_radian.c
 
         #HOOKS
         src/hooks_and_events/hooks_catcher.c
         src/hooks_and_events/mouse_hooks.c
         src/hooks_and_events/key_hooks.c
+        src/hooks_and_events/rotation_hooks.c
+        src/hooks_and_events/movement_hooks.c
 
         #BONUS
+        src/bonus/bonus_initializer.c
         src/bonus/minimap/minimap.c
-       )
+        src/bonus/minimap/wall_drawer.c
+        src/bonus/collisions_checker.c
+        )
 
 # STATIC LIBRARIES
 ADD_LIBRARY(get_next_line STATIC IMPORTED)

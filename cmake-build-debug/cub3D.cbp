@@ -5,26 +5,27 @@
 		<Option title="cub3D"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\.brew\;CMake Files\..\..\..\.brew\lib\;CMake Files\..\..\..\.brew\lib\cmake\;CMake Files\..\..\..\.brew\lib\cmake\glfw3\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\.brew\;CMake Files\..\..\.brew\lib\;CMake Files\..\..\.brew\lib\cmake\;CMake Files\..\..\.brew\lib\cmake\glfw3\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug"/>
+				<Option working_dir="/Users/hoomen/CLionProjects/cub3D/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/hoomen/CLionProjects/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/hoomen/CLionProjects/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/hoomen/CLionProjects/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/hoomen/CLionProjects/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="cub3D">
-				<Option output="/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/cub3D" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug"/>
+				<Option output="/Users/hoomen/CLionProjects/cub3D/cmake-build-debug/cub3D" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hoomen/CLionProjects/cub3D/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/rmazurit/.brew/include"/>
+					<Add directory="/Users/hoomen/.brew/include"/>
+					<Add directory="."/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -32,20 +33,21 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 cub3D"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/hoomen/CLionProjects/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 cub3D"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/hoomen/CLionProjects/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/hoomen/CLionProjects/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/hoomen/CLionProjects/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="cub3D/fast">
-				<Option output="/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/cub3D" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug"/>
+				<Option output="/Users/hoomen/CLionProjects/cub3D/cmake-build-debug/cub3D" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hoomen/CLionProjects/cub3D/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/rmazurit/.brew/include"/>
+					<Add directory="/Users/hoomen/.brew/include"/>
+					<Add directory="."/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -53,176 +55,194 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 cub3D/fast"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/hoomen/CLionProjects/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 cub3D/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/hoomen/CLionProjects/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/hoomen/CLionProjects/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/hoomen/CLionProjects/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug"/>
+				<Option working_dir="/Users/hoomen/CLionProjects/cub3D/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/hoomen/CLionProjects/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/hoomen/CLionProjects/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/hoomen/CLionProjects/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/hoomen/CLionProjects/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug"/>
+				<Option working_dir="/Users/hoomen/CLionProjects/cub3D/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/hoomen/CLionProjects/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/hoomen/CLionProjects/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/hoomen/CLionProjects/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/hoomen/CLionProjects/cub3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/incl/bonus.h">
+		<Unit filename="/Users/hoomen/CLionProjects/cub3D/incl/bonus.h">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/incl/cub3D.h">
+		<Unit filename="/Users/hoomen/CLionProjects/cub3D/incl/cub3D.h">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/incl/errors.h">
+		<Unit filename="/Users/hoomen/CLionProjects/cub3D/incl/errors.h">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/incl/gui.h">
+		<Unit filename="/Users/hoomen/CLionProjects/cub3D/incl/gui.h">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/incl/hooks.h">
+		<Unit filename="/Users/hoomen/CLionProjects/cub3D/incl/hooks.h">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/incl/struct.h">
+		<Unit filename="/Users/hoomen/CLionProjects/cub3D/incl/struct.h">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/incl/tools.h">
+		<Unit filename="/Users/hoomen/CLionProjects/cub3D/incl/tools.h">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/lib/minilibx/include/MLX42/MLX42.h">
+		<Unit filename="/Users/hoomen/CLionProjects/cub3D/lib/minilibx/include/MLX42/MLX42.h">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/lib/minilibx/include/MLX42/MLX42_Input.h">
+		<Unit filename="/Users/hoomen/CLionProjects/cub3D/lib/minilibx/include/MLX42/MLX42_Input.h">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/lib/minilibx/include/MLX42/MLX42_Int.h">
+		<Unit filename="/Users/hoomen/CLionProjects/cub3D/lib/minilibx/include/MLX42/MLX42_Int.h">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/bonus/minimap/minimap.c">
+		<Unit filename="/Users/hoomen/CLionProjects/cub3D/src/bonus/bonus_initializer.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/destructor.c">
+		<Unit filename="/Users/hoomen/CLionProjects/cub3D/src/bonus/collisions_checker.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/error_printer.c">
+		<Unit filename="/Users/hoomen/CLionProjects/cub3D/src/bonus/minimap/minimap.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/hooks_and_events/hooks_catcher.c">
+		<Unit filename="/Users/hoomen/CLionProjects/cub3D/src/bonus/minimap/wall_drawer.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/hooks_and_events/key_hooks.c">
+		<Unit filename="/Users/hoomen/CLionProjects/cub3D/src/destructor.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/hooks_and_events/mouse_hooks.c">
+		<Unit filename="/Users/hoomen/CLionProjects/cub3D/src/error_printer.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/initializer/initializer.c">
+		<Unit filename="/Users/hoomen/CLionProjects/cub3D/src/hooks_and_events/hooks_catcher.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/initializer/map_objects.c">
+		<Unit filename="/Users/hoomen/CLionProjects/cub3D/src/hooks_and_events/key_hooks.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/initializer/mlx_initializer.c">
+		<Unit filename="/Users/hoomen/CLionProjects/cub3D/src/hooks_and_events/mouse_hooks.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/main.c">
+		<Unit filename="/Users/hoomen/CLionProjects/cub3D/src/hooks_and_events/movement_hooks.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/parser/color_extracter.c">
+		<Unit filename="/Users/hoomen/CLionProjects/cub3D/src/hooks_and_events/rotation_hooks.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/parser/floor_ceiling_parser.c">
+		<Unit filename="/Users/hoomen/CLionProjects/cub3D/src/initializer/initializer.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/parser/map_parser/arguments_checker.c">
+		<Unit filename="/Users/hoomen/CLionProjects/cub3D/src/initializer/map_objects.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/parser/map_parser/map_borders_checker.c">
+		<Unit filename="/Users/hoomen/CLionProjects/cub3D/src/initializer/mlx_initializer.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/parser/map_parser/map_creator.c">
+		<Unit filename="/Users/hoomen/CLionProjects/cub3D/src/main.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/parser/map_parser/map_parser.c">
+		<Unit filename="/Users/hoomen/CLionProjects/cub3D/src/parser/color_extracter.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/parser/map_parser/map_player_parser.c">
+		<Unit filename="/Users/hoomen/CLionProjects/cub3D/src/parser/floor_ceiling_parser.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/parser/map_parser/map_void_checker.c">
+		<Unit filename="/Users/hoomen/CLionProjects/cub3D/src/parser/map_parser/arguments_checker.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/parser/parser.c">
+		<Unit filename="/Users/hoomen/CLionProjects/cub3D/src/parser/map_parser/map_borders_checker.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/parser/textures_parser.c">
+		<Unit filename="/Users/hoomen/CLionProjects/cub3D/src/parser/map_parser/map_creator.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_free_all_and_exit.c">
+		<Unit filename="/Users/hoomen/CLionProjects/cub3D/src/parser/map_parser/map_parser.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_free_split.c">
+		<Unit filename="/Users/hoomen/CLionProjects/cub3D/src/parser/map_parser/map_player_parser.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_isdigit.c">
+		<Unit filename="/Users/hoomen/CLionProjects/cub3D/src/parser/map_parser/map_void_checker.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_itoa.c">
+		<Unit filename="/Users/hoomen/CLionProjects/cub3D/src/parser/parser.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_rgb_atoi.c">
+		<Unit filename="/Users/hoomen/CLionProjects/cub3D/src/parser/textures_parser.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_split.c">
+		<Unit filename="/Users/hoomen/CLionProjects/cub3D/src/tools/ft_degree_to_radian.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_splitlen.c">
+		<Unit filename="/Users/hoomen/CLionProjects/cub3D/src/tools/ft_free_all_and_exit.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_strcmp.c">
+		<Unit filename="/Users/hoomen/CLionProjects/cub3D/src/tools/ft_free_split.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_strdup.c">
+		<Unit filename="/Users/hoomen/CLionProjects/cub3D/src/tools/ft_isdigit.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_strjoin.c">
+		<Unit filename="/Users/hoomen/CLionProjects/cub3D/src/tools/ft_itoa.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_strlen.c">
+		<Unit filename="/Users/hoomen/CLionProjects/cub3D/src/tools/ft_rgb_atoi.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_strncmp.c">
+		<Unit filename="/Users/hoomen/CLionProjects/cub3D/src/tools/ft_split.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/src/tools/ft_strtrim.c">
+		<Unit filename="/Users/hoomen/CLionProjects/cub3D/src/tools/ft_splitlen.c">
 			<Option target="cub3D"/>
 		</Unit>
-		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/CMakeLists.txt">
+		<Unit filename="/Users/hoomen/CLionProjects/cub3D/src/tools/ft_strcmp.c">
+			<Option target="cub3D"/>
+		</Unit>
+		<Unit filename="/Users/hoomen/CLionProjects/cub3D/src/tools/ft_strdup.c">
+			<Option target="cub3D"/>
+		</Unit>
+		<Unit filename="/Users/hoomen/CLionProjects/cub3D/src/tools/ft_strjoin.c">
+			<Option target="cub3D"/>
+		</Unit>
+		<Unit filename="/Users/hoomen/CLionProjects/cub3D/src/tools/ft_strlen.c">
+			<Option target="cub3D"/>
+		</Unit>
+		<Unit filename="/Users/hoomen/CLionProjects/cub3D/src/tools/ft_strncmp.c">
+			<Option target="cub3D"/>
+		</Unit>
+		<Unit filename="/Users/hoomen/CLionProjects/cub3D/src/tools/ft_strtrim.c">
+			<Option target="cub3D"/>
+		</Unit>
+		<Unit filename="/Users/hoomen/CLionProjects/cub3D/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/../../../.brew/lib/cmake/glfw3/glfw3Config.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\.brew\lib\cmake\glfw3\"/>
+		<Unit filename="/Users/hoomen/CLionProjects/cub3D/../../.brew/lib/cmake/glfw3/glfw3Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\.brew\lib\cmake\glfw3\"/>
 		</Unit>
-		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/../../../.brew/lib/cmake/glfw3/glfw3ConfigVersion.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\.brew\lib\cmake\glfw3\"/>
+		<Unit filename="/Users/hoomen/CLionProjects/cub3D/../../.brew/lib/cmake/glfw3/glfw3ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\.brew\lib\cmake\glfw3\"/>
 		</Unit>
-		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/../../../.brew/lib/cmake/glfw3/glfw3Targets-release.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\.brew\lib\cmake\glfw3\"/>
+		<Unit filename="/Users/hoomen/CLionProjects/cub3D/../../.brew/lib/cmake/glfw3/glfw3Targets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\.brew\lib\cmake\glfw3\"/>
 		</Unit>
-		<Unit filename="/Users/rmazurit/Documents/42_Projects/cub3D/../../../.brew/lib/cmake/glfw3/glfw3Targets.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\.brew\lib\cmake\glfw3\"/>
+		<Unit filename="/Users/hoomen/CLionProjects/cub3D/../../.brew/lib/cmake/glfw3/glfw3Targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\.brew\lib\cmake\glfw3\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

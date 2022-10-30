@@ -57,10 +57,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/rmazurit/Documents/42_Projects/cub3D
+CMAKE_SOURCE_DIR = /Users/hoomen/CLionProjects/cub3D
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/hoomen/CLionProjects/cub3D/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/CMakeFiles /Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hoomen/CLionProjects/cub3D/cmake-build-debug/CMakeFiles /Users/hoomen/CLionProjects/cub3D/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rmazurit/Documents/42_Projects/cub3D/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hoomen/CLionProjects/cub3D/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,6 +129,54 @@ cub3D/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/build
 .PHONY : cub3D/fast
 
+src/bonus/bonus_initializer.o: src/bonus/bonus_initializer.c.o
+.PHONY : src/bonus/bonus_initializer.o
+
+# target to build an object file
+src/bonus/bonus_initializer.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/bonus/bonus_initializer.c.o
+.PHONY : src/bonus/bonus_initializer.c.o
+
+src/bonus/bonus_initializer.i: src/bonus/bonus_initializer.c.i
+.PHONY : src/bonus/bonus_initializer.i
+
+# target to preprocess a source file
+src/bonus/bonus_initializer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/bonus/bonus_initializer.c.i
+.PHONY : src/bonus/bonus_initializer.c.i
+
+src/bonus/bonus_initializer.s: src/bonus/bonus_initializer.c.s
+.PHONY : src/bonus/bonus_initializer.s
+
+# target to generate assembly for a file
+src/bonus/bonus_initializer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/bonus/bonus_initializer.c.s
+.PHONY : src/bonus/bonus_initializer.c.s
+
+src/bonus/collisions_checker.o: src/bonus/collisions_checker.c.o
+.PHONY : src/bonus/collisions_checker.o
+
+# target to build an object file
+src/bonus/collisions_checker.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/bonus/collisions_checker.c.o
+.PHONY : src/bonus/collisions_checker.c.o
+
+src/bonus/collisions_checker.i: src/bonus/collisions_checker.c.i
+.PHONY : src/bonus/collisions_checker.i
+
+# target to preprocess a source file
+src/bonus/collisions_checker.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/bonus/collisions_checker.c.i
+.PHONY : src/bonus/collisions_checker.c.i
+
+src/bonus/collisions_checker.s: src/bonus/collisions_checker.c.s
+.PHONY : src/bonus/collisions_checker.s
+
+# target to generate assembly for a file
+src/bonus/collisions_checker.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/bonus/collisions_checker.c.s
+.PHONY : src/bonus/collisions_checker.c.s
+
 src/bonus/minimap/minimap.o: src/bonus/minimap/minimap.c.o
 .PHONY : src/bonus/minimap/minimap.o
 
@@ -152,6 +200,30 @@ src/bonus/minimap/minimap.s: src/bonus/minimap/minimap.c.s
 src/bonus/minimap/minimap.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/bonus/minimap/minimap.c.s
 .PHONY : src/bonus/minimap/minimap.c.s
+
+src/bonus/minimap/wall_drawer.o: src/bonus/minimap/wall_drawer.c.o
+.PHONY : src/bonus/minimap/wall_drawer.o
+
+# target to build an object file
+src/bonus/minimap/wall_drawer.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/bonus/minimap/wall_drawer.c.o
+.PHONY : src/bonus/minimap/wall_drawer.c.o
+
+src/bonus/minimap/wall_drawer.i: src/bonus/minimap/wall_drawer.c.i
+.PHONY : src/bonus/minimap/wall_drawer.i
+
+# target to preprocess a source file
+src/bonus/minimap/wall_drawer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/bonus/minimap/wall_drawer.c.i
+.PHONY : src/bonus/minimap/wall_drawer.c.i
+
+src/bonus/minimap/wall_drawer.s: src/bonus/minimap/wall_drawer.c.s
+.PHONY : src/bonus/minimap/wall_drawer.s
+
+# target to generate assembly for a file
+src/bonus/minimap/wall_drawer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/bonus/minimap/wall_drawer.c.s
+.PHONY : src/bonus/minimap/wall_drawer.c.s
 
 src/destructor.o: src/destructor.c.o
 .PHONY : src/destructor.o
@@ -272,6 +344,54 @@ src/hooks_and_events/mouse_hooks.s: src/hooks_and_events/mouse_hooks.c.s
 src/hooks_and_events/mouse_hooks.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/hooks_and_events/mouse_hooks.c.s
 .PHONY : src/hooks_and_events/mouse_hooks.c.s
+
+src/hooks_and_events/movement_hooks.o: src/hooks_and_events/movement_hooks.c.o
+.PHONY : src/hooks_and_events/movement_hooks.o
+
+# target to build an object file
+src/hooks_and_events/movement_hooks.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/hooks_and_events/movement_hooks.c.o
+.PHONY : src/hooks_and_events/movement_hooks.c.o
+
+src/hooks_and_events/movement_hooks.i: src/hooks_and_events/movement_hooks.c.i
+.PHONY : src/hooks_and_events/movement_hooks.i
+
+# target to preprocess a source file
+src/hooks_and_events/movement_hooks.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/hooks_and_events/movement_hooks.c.i
+.PHONY : src/hooks_and_events/movement_hooks.c.i
+
+src/hooks_and_events/movement_hooks.s: src/hooks_and_events/movement_hooks.c.s
+.PHONY : src/hooks_and_events/movement_hooks.s
+
+# target to generate assembly for a file
+src/hooks_and_events/movement_hooks.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/hooks_and_events/movement_hooks.c.s
+.PHONY : src/hooks_and_events/movement_hooks.c.s
+
+src/hooks_and_events/rotation_hooks.o: src/hooks_and_events/rotation_hooks.c.o
+.PHONY : src/hooks_and_events/rotation_hooks.o
+
+# target to build an object file
+src/hooks_and_events/rotation_hooks.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/hooks_and_events/rotation_hooks.c.o
+.PHONY : src/hooks_and_events/rotation_hooks.c.o
+
+src/hooks_and_events/rotation_hooks.i: src/hooks_and_events/rotation_hooks.c.i
+.PHONY : src/hooks_and_events/rotation_hooks.i
+
+# target to preprocess a source file
+src/hooks_and_events/rotation_hooks.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/hooks_and_events/rotation_hooks.c.i
+.PHONY : src/hooks_and_events/rotation_hooks.c.i
+
+src/hooks_and_events/rotation_hooks.s: src/hooks_and_events/rotation_hooks.c.s
+.PHONY : src/hooks_and_events/rotation_hooks.s
+
+# target to generate assembly for a file
+src/hooks_and_events/rotation_hooks.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/hooks_and_events/rotation_hooks.c.s
+.PHONY : src/hooks_and_events/rotation_hooks.c.s
 
 src/initializer/initializer.o: src/initializer/initializer.c.o
 .PHONY : src/initializer/initializer.o
@@ -609,6 +729,30 @@ src/parser/textures_parser.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/parser/textures_parser.c.s
 .PHONY : src/parser/textures_parser.c.s
 
+src/tools/ft_degree_to_radian.o: src/tools/ft_degree_to_radian.c.o
+.PHONY : src/tools/ft_degree_to_radian.o
+
+# target to build an object file
+src/tools/ft_degree_to_radian.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_degree_to_radian.c.o
+.PHONY : src/tools/ft_degree_to_radian.c.o
+
+src/tools/ft_degree_to_radian.i: src/tools/ft_degree_to_radian.c.i
+.PHONY : src/tools/ft_degree_to_radian.i
+
+# target to preprocess a source file
+src/tools/ft_degree_to_radian.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_degree_to_radian.c.i
+.PHONY : src/tools/ft_degree_to_radian.c.i
+
+src/tools/ft_degree_to_radian.s: src/tools/ft_degree_to_radian.c.s
+.PHONY : src/tools/ft_degree_to_radian.s
+
+# target to generate assembly for a file
+src/tools/ft_degree_to_radian.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cub3D.dir/build.make CMakeFiles/cub3D.dir/src/tools/ft_degree_to_radian.c.s
+.PHONY : src/tools/ft_degree_to_radian.c.s
+
 src/tools/ft_free_all_and_exit.o: src/tools/ft_free_all_and_exit.c.o
 .PHONY : src/tools/ft_free_all_and_exit.o
 
@@ -930,9 +1074,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... cub3D"
+	@echo "... src/bonus/bonus_initializer.o"
+	@echo "... src/bonus/bonus_initializer.i"
+	@echo "... src/bonus/bonus_initializer.s"
+	@echo "... src/bonus/collisions_checker.o"
+	@echo "... src/bonus/collisions_checker.i"
+	@echo "... src/bonus/collisions_checker.s"
 	@echo "... src/bonus/minimap/minimap.o"
 	@echo "... src/bonus/minimap/minimap.i"
 	@echo "... src/bonus/minimap/minimap.s"
+	@echo "... src/bonus/minimap/wall_drawer.o"
+	@echo "... src/bonus/minimap/wall_drawer.i"
+	@echo "... src/bonus/minimap/wall_drawer.s"
 	@echo "... src/destructor.o"
 	@echo "... src/destructor.i"
 	@echo "... src/destructor.s"
@@ -948,6 +1101,12 @@ help:
 	@echo "... src/hooks_and_events/mouse_hooks.o"
 	@echo "... src/hooks_and_events/mouse_hooks.i"
 	@echo "... src/hooks_and_events/mouse_hooks.s"
+	@echo "... src/hooks_and_events/movement_hooks.o"
+	@echo "... src/hooks_and_events/movement_hooks.i"
+	@echo "... src/hooks_and_events/movement_hooks.s"
+	@echo "... src/hooks_and_events/rotation_hooks.o"
+	@echo "... src/hooks_and_events/rotation_hooks.i"
+	@echo "... src/hooks_and_events/rotation_hooks.s"
 	@echo "... src/initializer/initializer.o"
 	@echo "... src/initializer/initializer.i"
 	@echo "... src/initializer/initializer.s"
@@ -990,6 +1149,9 @@ help:
 	@echo "... src/parser/textures_parser.o"
 	@echo "... src/parser/textures_parser.i"
 	@echo "... src/parser/textures_parser.s"
+	@echo "... src/tools/ft_degree_to_radian.o"
+	@echo "... src/tools/ft_degree_to_radian.i"
+	@echo "... src/tools/ft_degree_to_radian.s"
 	@echo "... src/tools/ft_free_all_and_exit.o"
 	@echo "... src/tools/ft_free_all_and_exit.i"
 	@echo "... src/tools/ft_free_all_and_exit.s"

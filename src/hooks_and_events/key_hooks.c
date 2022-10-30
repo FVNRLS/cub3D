@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 16:05:58 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/26 10:42:53 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/28 12:53:30 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,19 +17,7 @@
  	If there is a match:
  	Print the appropriate information to the stdout.
 */
-void	check_move_keys(t_data *data, int keycode)
-{
-//	if (keycode == W)
-//		move_forward();
-//	else if (keycode == S)
-//		move_backwards();
-//	else if (keycode == A)
-//		move_left();
-//	else if (keycode == D)
-//		move_right();
-}
-
-void	check_esc_key(mlx_key_data_t keycode, t_data *data)
+void	check_esc_key(t_data *data, mlx_key_data_t keycode)
 {
 	if (keycode.key == MLX_KEY_ESCAPE && keycode.action == MLX_PRESS)
 	{
@@ -44,6 +32,7 @@ void 	check_key_hooks(mlx_key_data_t keycode, void *param)
 
 	data = (t_data*)param;
 
-//	check_move_keys(1data, keycode);
-	check_esc_key(keycode, data);
+	check_move_keys(data, keycode);
+	check_rotation_keys(data, keycode);
+	check_esc_key(data, keycode);
 }

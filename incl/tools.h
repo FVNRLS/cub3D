@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 12:30:49 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/25 12:46:39 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/28 12:53:30 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,6 @@ void	ft_free_all_and_exit(t_data *data);
 char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_strjoin(char *buf, char *tmp);
 char	*ft_itoa(int n);
+double	ft_degree_to_radian(double angle);
 
 #endif

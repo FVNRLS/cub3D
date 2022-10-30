@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   struct.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 12:30:28 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/26 11:43:36 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/10/30 14:14:57 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,10 +55,25 @@ typedef struct s_conf
 
 typedef struct	s_player
 {
-	int 	x;
-	int 	y;
+	double 	x;
+	double 	y;
+	double	x_factor;
+	double	y_factor;
 	char	dir;
+	int 	angle;
 }		t_player;
+
+typedef	struct s_minimap
+{
+	mlx_image_t	*img;
+	int 		size;
+	int 		x_offset;
+	int 		y_offset;
+	int 		x_player;
+	int 		y_player;
+
+
+}		t_minimap;
 
 typedef struct s_data
 {
@@ -71,6 +86,7 @@ typedef struct s_data
 	t_player	*player;
 	mlx_t 		*mlx;
 	mlx_image_t	*img;
+	t_minimap	*minimap;
 	char		**map;
 }		t_data;
 
