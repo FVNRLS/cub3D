@@ -3,15 +3,15 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/29 13:47:53 by rmazurit          #+#    #+#              #
-#    Updated: 2022/08/03 18:49:30 by rmazurit         ###   ########.fr        #
+#    Updated: 2022/10/30 18:01:14 by hoomen           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME 		= 	get_next_line.a
-BONUS_NAME 	= 	get_next_line_bonus.a
+NAME 		= 	libgnl.a
+BONUS_NAME 	= 	libgnl_bonus.a
 
 
 CC 		= 	cc
