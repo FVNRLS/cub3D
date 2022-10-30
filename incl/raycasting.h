@@ -1,26 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   gui.h                                              :+:      :+:    :+:   */
+/*   raycasting.h                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/26 10:50:26 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/30 19:42:01 by hoomen           ###   ########.fr       */
+/*   Created: 2022/10/30 19:24:48 by hoomen            #+#    #+#             */
+/*   Updated: 2022/10/30 19:43:52 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GUI_H
-# define GUI_H
+#ifndef RAYCASTING_H
+# define RAYCASTING_H
 
-//WINDOW SIZE
-# define WIDTH		720
-# define HEIGHT		480
+# include "struct.h"
 
-//COLORS
-# define GREEN	0x00FF00FF
-# define NAVY	0x0000FFFF
-# define SILVER	0x00C0C0C0
-# define RED	0xFF0000FF
+/* raycasting.c */
+bool	check_first_ray(t_data *data, int x, int y, double step);
 
 #endif

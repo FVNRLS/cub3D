@@ -6,28 +6,47 @@
 #    By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/30 14:20:18 by hoomen            #+#    #+#              #
-#    Updated: 2022/10/30 19:22:49 by hoomen           ###   ########.fr        #
+#    Updated: 2022/10/30 20:10:54 by hoomen           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
+# **************************************************************************** #
+# EXECUTABLE                                                                   #
+# **************************************************************************** #
+
 NAME	=	cub3D
-VPATH	=	src
-CC		=	cc -g
+
+# **************************************************************************** #
+# PATH                                                                         #
+# **************************************************************************** #
+
+space :=
+space +=
+VPATH := $(subst $(space),:,$(shell find src -type d))
+
+# **************************************************************************** #
+# COMPILER                                                                     #
+# **************************************************************************** #
+
+CC		=	cc
 CFLAGS	=	#-Werror -Wextra -Wall
+
+# **************************************************************************** #
+# SOURCE FILES                                                                 #
+# **************************************************************************** #
+
 SRC		=	destructor.c error_printer.c main.c
 
 # **************************************************************************** #
 # INITIALIZER                                                                  #
 # **************************************************************************** #
 
-VPATH	+=	src/initializer
 SRC		+=	initializer.c map_objects.c mlx_initializer.c
 
 # **************************************************************************** #
 # PARSER                                                                       #
 # **************************************************************************** #
 
-VPATH	+=	src/parser src/parser/map_parser
 SRC		+=	arguments_checker.c map_borders_checker.c map_creator.c map_parser.c\
 			map_player_parser.c map_void_checker.c\
 			color_extracter.c floor_ceiling_parser.c parser.c textures_parser.c
@@ -36,15 +55,19 @@ SRC		+=	arguments_checker.c map_borders_checker.c map_creator.c map_parser.c\
 # HOOKS AND EVENTS                                                             #
 # **************************************************************************** #
 
-VPATH	+=	src/hooks_and_events src/initializer src/parser
 SRC		+=	hooks_catcher.c key_hooks.c mouse_hooks.c movement_hooks.c\
 			rotation_hooks.c
+
+# **************************************************************************** #
+# RAYCASTING                                                                   #
+# **************************************************************************** #
+
+SRC		+=	first_ray.c
 
 # **************************************************************************** #
 # BONUS                                                                        #
 # **************************************************************************** #
 
-VPATH	+=	src/bonus src/bonus/minimap
 SRC		+=	bonus_initializer.c collisions_checker.c\
 			minimap.c wall_drawer.c
 			
@@ -52,7 +75,6 @@ SRC		+=	bonus_initializer.c collisions_checker.c\
 # TOOLS                                                                        #
 # **************************************************************************** #
 
-VPATH	+=	src/tools
 SRC		+=	ft_degree_to_radian.c ft_free_all_and_exit.c ft_free_split.c\
 			ft_isdigit.c ft_itoa.c ft_rgb_atoi.c ft_split.c ft_splitlen.c\
 			ft_strcmp.c ft_strdup.c ft_strjoin.c ft_strlen.c ft_strncmp.c\
@@ -62,6 +84,7 @@ SRC		+=	ft_degree_to_radian.c ft_free_all_and_exit.c ft_free_split.c\
 # LIBRARIES                                                                    #
 # **************************************************************************** #
 
+VPATH		+=	lib
 MLX_LIB		=	libmlx42.a
 F_MLX		=	lib/minilibx
 MLX_FLAGS	=	-lglfw -Llib -lMLX42 -framework Cocoa -framework OpenGL\
@@ -74,8 +97,7 @@ F_GNL		=	lib/get_next_line
 # OBJECT FILES                                                                 #
 # **************************************************************************** #
 
-OBJ		=	$(SRC:.c=.o)
-
+OBJ		=	$(addprefix obj/,$(SRC:.c=.o))
 
 # **************************************************************************** #
 # RULES                                                                        #
@@ -83,7 +105,7 @@ OBJ		=	$(SRC:.c=.o)
 
 all: $(NAME)
 
-%.o: %.c lib | obj
+obj/%.o: %.c | lib obj
 	$(CC) -c $(CFLAGS) $< -o $@
 
 obj:
@@ -91,7 +113,6 @@ obj:
 
 $(NAME): $(OBJ)
 	$(CC) $(CFLAGS) $(OBJ) $(MLX_FLAGS) $(GNL_FLAGS) -o $(NAME)
-	mv $(OBJ) obj
 
 lib: $(MLX_LIB) $(GNL_LIB)
 
@@ -108,6 +129,6 @@ clean:
 
 fclean: clean
 	$(MAKE) clean -C $(F_MLX)
-	rm -f lib/* 
+	rm -f lib/*.a
 
 .PHONY: all re clean fclean lib

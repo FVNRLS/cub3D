@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 12:29:53 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/30 14:14:54 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/10/30 19:37:49 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@
 # include "hooks.h"
 # include "gui.h"
 # include "bonus.h"
+# include "raycasting.h"
 # include "../lib/get_next_line/get_next_line.h"
 # include "../lib/minilibx/include/MLX42/MLX42.h"
 # include "../lib/minilibx/include/MLX42/MLX42_Input.h"

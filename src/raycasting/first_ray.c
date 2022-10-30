@@ -1,26 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   gui.h                                              :+:      :+:    :+:   */
+/*   first_ray.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/26 10:50:26 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/30 19:42:01 by hoomen           ###   ########.fr       */
+/*   Created: 2022/10/30 19:36:14 by hoomen            #+#    #+#             */
+/*   Updated: 2022/10/30 19:44:03 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GUI_H
-# define GUI_H
+# include "../../incl/cub3D.h"
 
-//WINDOW SIZE
-# define WIDTH		720
-# define HEIGHT		480
+bool	check_first_ray(t_data *data, int x, int y, double step)
+{
+	double	adjacent;
+	double	opposite;
+	double	tan_angle;
 
-//COLORS
-# define GREEN	0x00FF00FF
-# define NAVY	0x0000FFFF
-# define SILVER	0x00C0C0C0
-# define RED	0xFF0000FF
-
-#endif
+	tan_angle = tan(data->player->angle);
+	adjacent = ((double)y / step) - (double)data->player->y;
+	opposite = ((double)x / step) - (double)data->player->x;
+	if (tan_angle * adjacent == opposite)
+		return (true);
+	return (false);
+}

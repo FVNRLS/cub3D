@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   minimap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 14:45:19 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/28 12:53:30 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/10/30 19:43:45 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,6 +51,8 @@ static void	draw_minimap(t_data *data)
 				mlx_put_pixel(data->minimap->img, x, y, GREEN);
 			else if (check_wall(data, x, y, step) == true)
 				mlx_put_pixel(data->minimap->img,x, y, NAVY);
+			else if (check_first_ray(data, x, y, step))
+				mlx_put_pixel(data->minimap->img, x, y, RED);
 			else
 				mlx_put_pixel(data->minimap->img, x, y, 0xFFFFFF1A);
 			x++;
