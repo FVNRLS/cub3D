@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 12:53:41 by hoomen            #+#    #+#             */
-/*   Updated: 2022/10/31 19:33:03 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/10/31 19:42:25 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,6 @@ void	linear_transformation2d(double v[2], double t[2][2])
 	v[X] = transf_x;
 	v[Y] = transf_y;
 }
-
 
 // /* test linear transformation */
 // int main(void)
