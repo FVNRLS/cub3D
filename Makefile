@@ -6,7 +6,7 @@
 #    By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/30 14:20:18 by hoomen            #+#    #+#              #
-#    Updated: 2022/10/30 20:10:54 by hoomen           ###   ########.fr        #
+#    Updated: 2022/10/31 17:58:18 by hoomen           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -85,13 +85,21 @@ SRC		+=	ft_degree_to_radian.c ft_free_all_and_exit.c ft_free_split.c\
 # **************************************************************************** #
 
 VPATH		+=	lib
+
+# minilibX #
 MLX_LIB		=	libmlx42.a
 F_MLX		=	lib/minilibx
 MLX_FLAGS	=	-lglfw -Llib -lMLX42 -framework Cocoa -framework OpenGL\
 				-framework IOKit
+# get_next_line #
 GNL_FLAGS	=	-Llib -lgnl
 GNL_LIB		=	libgnl.a
 F_GNL		=	lib/get_next_line
+
+# my_vectorlib #
+VEC_FLAGS	=	-Llib -lvector
+VEC_LIB	=	libvector.a
+F_VEC		=	lib/my_vector
 
 # **************************************************************************** #
 # OBJECT FILES                                                                 #
@@ -112,23 +120,30 @@ obj:
 	mkdir obj
 
 $(NAME): $(OBJ)
-	$(CC) $(CFLAGS) $(OBJ) $(MLX_FLAGS) $(GNL_FLAGS) -o $(NAME)
+	$(CC) $(CFLAGS) $(OBJ) $(MLX_FLAGS) $(GNL_FLAGS) $(VEC_FLAGS) -o $(NAME)
 
-lib: $(MLX_LIB) $(GNL_LIB)
+lib: $(MLX_LIB) $(GNL_LIB) $(VEC_LIB)
 
 $(MLX_LIB):
 	$(MAKE) all -C $(F_MLX)
+	$(MAKE) clean -C $(F_MLX)
 	mv $(F_MLX)/$(MLX_LIB) ./lib
 
 $(GNL_LIB):
 	$(MAKE) all -C $(F_GNL)
+	$(MAKE) clean -C $(F_GNL)
 	mv $(F_GNL)/$(GNL_LIB) ./lib
+
+$(VEC_LIB):
+	$(MAKE) all -C $(F_VEC)
+	$(MAKE) clean -C $(F_VEC)
+	mv $(F_VEC)/$(VEC_LIB) ./lib
 
 clean:
 	rm -drf obj
 
 fclean: clean
-	$(MAKE) clean -C $(F_MLX)
 	rm -f lib/*.a
+	rm -f $(NAME)
 
 .PHONY: all re clean fclean lib
