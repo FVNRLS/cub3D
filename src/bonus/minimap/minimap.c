@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 14:45:19 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/31 21:25:02 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/10/31 22:37:18 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,10 +36,7 @@ static void	draw_minimap(t_data *data)
 	int 	y;
 	double 	step;
 
-	printf("map->max_x = %i, map->max_y = %i\n", data->tab->max_x, data->tab->max_y);
-	printf("data->map[data->tab->max_x - 1][data->tab->max_y - 1] = %c\n", data->map[data->tab->max_x - 1][data->tab->max_y - 1]);
-	step = (double)data->minimap->size / (MINIMAP_SCOPE);
-
+	step = (double)data->minimap->size / MINIMAP_SCOPE;
 	set_offset(data);
 	y = 0;
 	while (y < data->minimap->size)
