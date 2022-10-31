@@ -6,7 +6,7 @@
 #    By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/30 14:20:18 by hoomen            #+#    #+#              #
-#    Updated: 2022/10/31 17:58:18 by hoomen           ###   ########.fr        #
+#    Updated: 2022/10/31 18:02:50 by hoomen           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -98,8 +98,8 @@ F_GNL		=	lib/get_next_line
 
 # my_vectorlib #
 VEC_FLAGS	=	-Llib -lvector
-VEC_LIB	=	libvector.a
-F_VEC		=	lib/my_vector
+VEC_LIB		=	libvector.a
+F_VEC		=	lib/my_libvector
 
 # **************************************************************************** #
 # OBJECT FILES                                                                 #

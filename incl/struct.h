@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 12:30:28 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/30 14:14:57 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/10/31 18:08:27 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,8 +59,10 @@ typedef struct	s_player
 	double 	y;
 	double	x_factor;
 	double	y_factor;
+	double	x_scalar;
+	double	y_scalar;
 	char	dir;
-	int 	angle;
+	double	angle;
 }		t_player;
 
 typedef	struct s_minimap

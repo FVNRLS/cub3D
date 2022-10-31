@@ -6,20 +6,21 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 12:53:41 by hoomen            #+#    #+#             */
-/*   Updated: 2022/10/31 17:51:05 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/10/31 19:33:03 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "my_vector.h"
-#include <stdio.h>
+#include "libvector.h"
+
+// #include <stdio.h>
 
 /* transform a vector v = {x, y} by applying the transformation matrix 
  * t = {{ix, iy}, {jx, jy}}
  */
-void	linear_transformation2d(int v[2], int t[2][2])
+void	linear_transformation2d(double v[2], double t[2][2])
 {
-	int	transf_x;
-	int	transf_y;
+	double	transf_x;
+	double	transf_y;
 
 	transf_x = (v[X] * t[I][X]) + (v[Y] * t[J][X]);
 	transf_y = (v[X] * t[I][Y]) + (v[Y] * t[J][Y]);

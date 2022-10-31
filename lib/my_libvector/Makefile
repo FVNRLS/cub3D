@@ -6,7 +6,7 @@
 #    By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/31 17:24:08 by hoomen            #+#    #+#              #
-#    Updated: 2022/10/31 17:36:18 by hoomen           ###   ########.fr        #
+#    Updated: 2022/10/31 18:02:20 by hoomen           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ SRC			=	linear_transformation2d.c
 
 OBJ			=	${SRC:.c=.o}
 
-HEADER		=	my_vector.h
+HEADER		=	libvector.h
 
 $(NAME): $(OBJ) $(HEADER)
 	$(CC) $(FLAGS) -c $(SRC)

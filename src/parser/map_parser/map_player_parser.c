@@ -3,25 +3,35 @@
 /*                                                        :::      ::::::::   */
 /*   map_player_parser.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 17:41:27 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/28 12:53:30 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/10/31 18:11:19 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../../incl/cub3D.h"
 
+static void	init_scalars(t_data *data, double angle)
+{
+	data->player->x_scalar = sin(angle);
+	data->player->y_scalar = cos(angle);
+}
+
 static void set_player_angle(t_data *data)
 {
+	double	init_angle;
+
 	if (data->player->dir == PLAYER_N)
-		data->player->angle = 0;
+		init_angle = 0;
 	else if (data->player->dir == PLAYER_E)
-		data->player->angle = 90;
+		init_angle = 0.5 * M_PI;
 	else if (data->player->dir == PLAYER_S)
-		data->player->angle = 180;
+		init_angle = M_PI;
 	else if (data->player->dir == PLAYER_W)
-		data->player->angle = 270;
+		init_angle = 1.5 * M_PI;
+	data->player->angle = init_angle;
+	init_scalars(data, init_angle);
 }
 
 static int	config_player(t_data *data, int x, int y)

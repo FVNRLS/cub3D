@@ -6,42 +6,57 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/30 19:49:48 by hoomen            #+#    #+#             */
-/*   Updated: 2022/10/30 19:50:14 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/10/31 18:19:54 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../incl/cub3D.h"
 
-static void	rotate_left(t_data *data)
+// static void	rotate_left(t_data *data)
+// {
+// 	int	tmp;
+
+// 	tmp	= data->player->angle -	ROTATION_MOD;
+// 	if (tmp	< 0)
+// 		data->player->angle	= 360 +	tmp;
+// 	else
+// 		data->player->angle	= tmp;
+// 	printf("angle: %i\n", data->player->angle);
+// }
+
+// static void	rotate_right(t_data	*data)
+// {
+// 	int	tmp;
+
+// 	tmp	= data->player->angle +	ROTATION_MOD;
+// 	if (tmp	> 359)
+// 		data->player->angle	= tmp -	360;
+// 	else
+// 		data->player->angle	= tmp;
+// 	printf("angle: %i\n", data->player->angle);
+// }
+
+static void	rotate(t_data *data, int direction)
 {
-	int	tmp;
+	double	new_angle;
 
-	tmp	= data->player->angle -	ROTATION_MOD;
-	if (tmp	< 0)
-		data->player->angle	= 360 +	tmp;
+	new_angle = data->player->angle + direction * ROTATION_RADIANS;
+	if (new_angle < 0)
+		data->player->angle = 2 * M_PI + new_angle;
+	else if (new_angle >= 2 * M_PI)
+		data->player->angle = new_angle - 2 * M_PI;
 	else
-		data->player->angle	= tmp;
-	printf("angle: %i\n", data->player->angle);
-}
-
-static void	rotate_right(t_data	*data)
-{
-	int	tmp;
-
-	tmp	= data->player->angle +	ROTATION_MOD;
-	if (tmp	> 359)
-		data->player->angle	= tmp -	360;
-	else
-		data->player->angle	= tmp;
-	printf("angle: %i\n", data->player->angle);
+		data->player->angle = new_angle;
+	data->player->x_scalar = sin(data->player->angle);
+	data->player->y_scalar = cos(data->player->angle);
 }
 
 void	check_rotation_keys(t_data *data, mlx_key_data_t keycode)
 {
 	if (keycode.key	== MLX_KEY_LEFT	&& (keycode.action == MLX_PRESS
 	||	keycode.action == MLX_REPEAT))
-		rotate_left(data);
+		rotate(data, ROTATE_LEFT);
 	else if	(keycode.key ==	MLX_KEY_RIGHT && (keycode.action == MLX_PRESS
 		|| keycode.action == MLX_REPEAT))
-		rotate_right(data);
+		rotate(data, ROTATE_RIGHT);
 }

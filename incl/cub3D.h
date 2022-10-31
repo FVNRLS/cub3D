@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 12:29:53 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/30 19:37:49 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/10/31 18:03:19 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,7 @@
 # include "../lib/minilibx/include/MLX42/MLX42.h"
 # include "../lib/minilibx/include/MLX42/MLX42_Input.h"
 # include "../lib/minilibx/include/MLX42/MLX42_Int.h"
+# include "../lib/my_libvector/libvector.h"
 
 # define RIGHTS		0644
 # define NUM_ITEMS	7

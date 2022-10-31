@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   collisions_checker.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 16:39:50 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/28 13:24:08 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/10/31 19:37:47 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,14 +36,9 @@ void	set_offset(t_data *data)
 	set_offset_y_pos(data);
 }
 
-bool	check_collisions(t_data *data)
+bool	check_collisions(t_data *data, double new_v[2])
 {
-	double new_x;
-	double new_y;
-
-	new_x = data->player->x + data->player->x_factor;
-	new_y = data->player->y + data->player->y_factor;
-    if (data->map[(int)new_x][(int)new_y] == '1')
+    if (data->map[(int)new_v[X]][(int)new_v[Y]] == '1')
         return (true);
 	return (false);
 }

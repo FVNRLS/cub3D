@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   my_vector.h                                        :+:      :+:    :+:   */
+/*   libvector.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 17:19:41 by hoomen            #+#    #+#             */
-/*   Updated: 2022/10/31 17:50:12 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/10/31 18:47:07 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MY_VECTOR_H
-# define MY_VECTOR_H
+#ifndef LIBVECTOR_H
+# define LIBVECTOR_H
 
 /* **************************************************************************** */
 /* DEFINES                                                                      */
@@ -22,12 +22,11 @@
 # define	I	0
 # define	J	1
 
-# define	MV_RIGHT	{{-1, 0}, {0, 1}}
 /* **************************************************************************** */
 /* LINEAR TRANSFORMATION                                                        */
 /* **************************************************************************** */
 
 /* apply a transformation t on a 2d vector v */
-void	linear_transformation2d(int v[2], int t[2][2]);
+void	linear_transformation2d(double v[2], double t[2][2]);
 
 #endif

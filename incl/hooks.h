@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   hooks.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 16:09:03 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/28 12:53:30 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/10/31 19:37:01 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,15 @@
 # define HOOKS_H
 
 # include "../lib/minilibx/include/MLX42/MLX42_Int.h"
+
+# define ROTATION_RADIANS	0.1
+# define STEP				0.3
+# define MV_FORW			1
+# define MV_BACKW			-1
+# define ROTATE_RIGHT		1
+# define ROTATE_LEFT		-1
+# define MV_RIGHT			0
+# define MV_LEFT			1
 
 //META-FUNCTION
 void	hooks_catcher_loop(void *param);
