@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/30 19:49:48 by hoomen            #+#    #+#             */
-/*   Updated: 2022/11/01 14:25:44 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/01 16:40:23 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,3 +37,4 @@ void	check_rotation_keys(t_data *data, mlx_key_data_t keycode)
 		|| keycode.action == MLX_REPEAT))
 		rotate(data, ROTATE_RIGHT);
 }
+ 

@@ -6,31 +6,11 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/30 19:36:14 by hoomen            #+#    #+#             */
-/*   Updated: 2022/11/01 14:47:36 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/01 17:27:05 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 # include "../../incl/cub3D.h"
-
-// bool	check_first_ray(t_data *data, int x, int y, double step)
-// {
-// 	double	player_on_screen[2];
-// 	double	ray_v[2];
-// 	double	factor;
-// 	double	diff;
-
-// 	player_on_screen[X] = (data->player->x - data->minimap->x_offset) * step;
-// 	player_on_screen[Y] = (data->player->y - data->minimap->y_offset) * step;
-// 	ray_v[Y] = (double)y - player_on_screen[Y];
-// 	ray_v[X] = (double)x - player_on_screen[X];
-// 	factor = -1 * (ray_v[Y] / data->player->y_scalar);
-// 	if (factor < 0)
-// 		return (false);
-// 	diff = ray_v[X] - data->player->x_scalar * factor;
-// 	if (diff < 0.5 && diff > -0.5)
-// 		return (true);
-// 	return (false);
-// }
 
 static void	angle_to_scalars(t_data *data)
 {
@@ -66,10 +46,7 @@ static void	cast_ray(t_data *data, double step)
 		pixel[Y] = cast_ray_world_to_map(data->minimap->y_offset, ray[Y], step);
 		if (pixel[X] >= data->minimap->size || pixel[Y] >= data->minimap->size
 			|| pixel[X] < 1 || pixel[Y] < 1)
-		{
-			factor += 0.01;
-			continue ;
-		}
+			break ;
 		mlx_put_pixel(data->minimap->img, pixel[X], pixel[Y], RED);
 		factor += 0.01;
 	}
@@ -90,15 +67,6 @@ void	cast_rays(t_data *data, double step)
 		cast_ray(data, step);
 		data->player->angle += step_angle;
 	}
-
-
-	// cast_ray(data, step);
-	// data->player->angle += (0.25 * M_PI);
-	// angle_to_scalars(data);
-	// cast_ray(data, step);
-	// data->player->angle -= (0.5 * M_PI);
-	// angle_to_scalars(data);
-	// cast_ray(data, step);
 	data->player->angle = player_angle;
 	angle_to_scalars(data);
 	cast_ray(data, step);
