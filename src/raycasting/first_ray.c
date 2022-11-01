@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/30 19:36:14 by hoomen            #+#    #+#             */
-/*   Updated: 2022/10/31 22:44:14 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/01 13:21:25 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,12 +52,19 @@ void	cast_ray(t_data *data, double step)
 	factor = 0.01;
 	while (1)
 	{
-		ray[X] = cam[X] + data->player->x_scalar * factor;
-		ray[Y] = cam[Y] + data->player->x_scalar * factor;
+		ray[X] = cam[X] + (data->player->x_scalar * factor);
+		ray[Y] = cam[Y] - (data->player->y_scalar * factor);
 		if (data->map[(int)ray[X]][(int)ray[Y]] == '1')
 			break ;
 		pixel[X] = cast_ray_world_to_map(data->minimap->x_offset, ray[X], step);
 		pixel[Y] = cast_ray_world_to_map(data->minimap->y_offset, ray[Y], step);
+		if (pixel[X] >= data->minimap->size || pixel[Y] >= data->minimap->size
+			|| pixel[X] < 1 || pixel[Y] < 1)
+		{
+			factor += 0.01;
+			continue ;
+		}
+		mlx_put_pixel(data->minimap->img, pixel[X], pixel[Y], RED);
 		factor += 0.01;
 	}
 }

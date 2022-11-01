@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 14:45:19 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/31 22:37:18 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/01 12:11:08 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,14 +48,15 @@ static void	draw_minimap(t_data *data)
 				mlx_put_pixel(data->minimap->img, x, y, GREEN);
 			else if (check_wall(data, x, y, step) == true)
 				mlx_put_pixel(data->minimap->img,x, y, NAVY);
-			else if (check_first_ray(data, x, y, step))
-				mlx_put_pixel(data->minimap->img, x, y, RED);
+			//else if (check_first_ray(data, x, y, step))
+				//mlx_put_pixel(data->minimap->img, x, y, RED);
 			else
 				mlx_put_pixel(data->minimap->img, x, y, 0xFFFFFF1A);
 			x++;
 		}
 		y++;
 	}
+	cast_ray(data, step);
 }
 
 void	update_minimap(t_data *data)
