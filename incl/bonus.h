@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 14:45:58 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/31 19:37:08 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/01 13:46:35 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,6 @@ void	update_minimap(t_data *data);
 bool	check_wall(t_data *data, int x, int y, double step);
 bool	check_collisions(t_data *data, double new_v[2]);
 void	set_offset(t_data *data);
+void	draw_player(t_data *data, double step);
 
 #endif

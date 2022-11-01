@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   bonus_initializer.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 12:24:42 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/26 15:49:41 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/11/01 14:27:12 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,5 +29,4 @@ void	init_bonus_objects(t_data *data)
 {
 	init_minimap(data);
 	update_minimap(data);
-
 }

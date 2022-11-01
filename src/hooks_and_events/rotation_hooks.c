@@ -6,35 +6,11 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/30 19:49:48 by hoomen            #+#    #+#             */
-/*   Updated: 2022/10/31 21:42:32 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/01 14:25:44 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../incl/cub3D.h"
-
-// static void	rotate_left(t_data *data)
-// {
-// 	int	tmp;
-
-// 	tmp	= data->player->angle -	ROTATION_MOD;
-// 	if (tmp	< 0)
-// 		data->player->angle	= 360 +	tmp;
-// 	else
-// 		data->player->angle	= tmp;
-// 	printf("angle: %i\n", data->player->angle);
-// }
-
-// static void	rotate_right(t_data	*data)
-// {
-// 	int	tmp;
-
-// 	tmp	= data->player->angle +	ROTATION_MOD;
-// 	if (tmp	> 359)
-// 		data->player->angle	= tmp -	360;
-// 	else
-// 		data->player->angle	= tmp;
-// 	printf("angle: %i\n", data->player->angle);
-// }
 
 static void	rotate(t_data *data, int direction)
 {

@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 14:45:19 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/11/01 12:11:08 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/01 14:35:30 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,15 +48,14 @@ static void	draw_minimap(t_data *data)
 				mlx_put_pixel(data->minimap->img, x, y, GREEN);
 			else if (check_wall(data, x, y, step) == true)
 				mlx_put_pixel(data->minimap->img,x, y, NAVY);
-			//else if (check_first_ray(data, x, y, step))
-				//mlx_put_pixel(data->minimap->img, x, y, RED);
 			else
 				mlx_put_pixel(data->minimap->img, x, y, 0xFFFFFF1A);
 			x++;
 		}
 		y++;
 	}
-	cast_ray(data, step);
+	//draw_player(data, step);
+	cast_rays(data, step);
 }
 
 void	update_minimap(t_data *data)
@@ -67,6 +66,6 @@ void	update_minimap(t_data *data)
 	draw_minimap(data);
 	mlx_image_to_window(data->mlx, data->minimap->img, 0, 0);
 //	printf("angle: %d,		x_fact: %lf,	y_fact: %lf\n", data->player->angle, data->player->x_factor, data->player->y_factor);
-	printf("x: %lf,	y: %lf\n", data->player->x, data->player->y);
+	// printf("x: %lf,	y: %lf\n", data->player->x, data->player->y);
 
 }
