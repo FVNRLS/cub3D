@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 12:29:53 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/31 18:03:19 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/01 20:44:12 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@
 # include <stdio.h>
 # include <fcntl.h>
 # include <math.h>
+# include <float.h>
 
 # include "struct.h"
 # include "errors.h"

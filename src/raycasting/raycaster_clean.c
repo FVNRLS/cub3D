@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   raycaster.c                                        :+:      :+:    :+:   */
+/*   raycaster_clean.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 17:27:22 by hoomen            #+#    #+#             */
-/*   Updated: 2022/11/01 21:14:37 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/01 21:47:33 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,9 +64,10 @@ double	delta_x(t_data *data)
 {
 	double	delta;
 	if (data->player->x_scalar == 0)
-		delta = DBL_MAX;
-	else
-		delta = dist_next_line_x(data) / data->player->x_scalar;
+		return (DBL_MAX);
+	delta = dist_next_line_x(data) / data->player->x_scalar;
+	if (delta < 0)
+		delta *= -1;
 	return (delta);
 }
 
@@ -74,9 +75,10 @@ double	delta_y(t_data *data)
 {
 	double	delta;
 	if (data->player->y_scalar == 0)
-		delta = DBL_MAX;
-	else
-		delta = dist_next_line_y(data) / data->player->y_scalar;
+		return (DBL_MAX);
+	delta = dist_next_line_y(data) / data->player->y_scalar;
+	if (delta < 0)
+		delta *= -1;
 	return (delta);
 }
 
@@ -91,18 +93,14 @@ bool	ray_check_wall_x(t_data *data, double next_x, double delta)
 		check_field[X] = next_x;
 	else
 		check_field[X] = next_x - 1;
-	//printf("check move x check_field[X] = %i\n", check_field[X]);
 	if (data->player->y_scalar == 0)
 		y_land = data->player->y;
 	else
 		y_land = data->player->y + data->player->y_scalar * delta;
-	printf("y_scalar = %lf\n", data->player->y_scalar);
-	printf("check move x, y_land = %lf\n", y_land);
 	if (data->player->angle > 1.5 * M_PI || data->player->angle < 0.5 * M_PI)
 		check_field[Y] = (int) floor(y_land);
 	else
 		check_field[Y] = ceil(y_land);
-	//printf("check move x check_field[Y] = %i\n", check_field[Y]);
 	if (check_field[Y] < 0 || check_field[Y] >= data->tab->max_y)
 		return (false);
 	if (data->map[check_field[X]][check_field[Y]] == '1')
@@ -121,18 +119,14 @@ bool	ray_check_wall_y(t_data *data, double next_y, double delta)
 		check_field[Y] = next_y - 1;
 	else
 		check_field[Y] = next_y;
-	//printf("check move y check_field[Y] = %i\n", check_field[Y]);
 	if (data->player->x_scalar == 0)
 		x_land = data->player->x;
 	else
 		x_land = data->player->x + data->player->x_scalar * delta;
-	printf("x_scalar = %lf\n", data->player->x_scalar);
-	printf("check move y, x_land = %lf\n", x_land);
 	if (data->player->angle < M_PI)
 		check_field[X] = (int) floor(x_land);
 	else
 		check_field[X] = (int) floor(x_land) - 1;
-	//printf("check move y check_field[X] = %i\n", check_field[X]);
 	if (check_field[X] < 0 || check_field[X] >= data->tab->max_x)
 		return (false);
 	if (data->map[check_field[X]][check_field[Y]] == '1')
@@ -143,23 +137,41 @@ bool	ray_check_wall_y(t_data *data, double next_y, double delta)
 void	raycaster(t_data *data)
 {
 	double	dist[2];
-	int		next[2];
 	double	delta[2];
+	int		next[2];
+	double	hit_next_x[2];
+	double	hit_next_y[2];
 	bool	wall[2];
 
-	dist[X] = dist_next_line_x(data);
-	dist[Y] = dist_next_line_y(data);
 	next[X] = next_line_x(data);
 	next[Y] = next_line_y(data);
+	dist[X] = dist_next_line_x(data);
+	dist[Y] = dist_next_line_y(data);
 	delta[X] = delta_x(data);
 	delta[Y] = delta_y(data);
-	//printf("dist[X] = %lf, next[X] = %i, delta[X] = %lf\n", dist[X], next[X], delta[X]);
-	//printf("dist[Y] = %lf, next[Y] = %i, delta[Y] = %lf\n", dist[Y], next[Y], delta[Y]);
-	//printf("data->player->x + delta[X] * data->player->x_scalar = %lf\n", data->player->x + delta[X] * data->player->x_scalar);
-	//printf("data->player->y - delta[X] * data->player->y_scalar = %lf\n", data->player->y - delta[X] * data->player->y_scalar);
-	wall[X] = ray_check_wall_x(data, next[X], delta[X]);
-	wall[Y] = ray_check_wall_y(data, next[Y], delta[Y]);
-	printf("wall[X] = %d, wall[Y] = %d\n", wall[X], wall[Y]);
+	hit_next_x[X] = data->player->x + (delta[X] * data->player->x_scalar);
+	hit_next_x[Y] = data->player->y - (delta[X] * data->player->y_scalar);
+	printf("player is at x = %lf\n", data->player->x);
+	printf("players step on vertical axis = %lf\n", data->player->x_scalar);
+	printf("next vertical grid line is: %i\n", next[X]);
+	printf("distance to next vertical grid line along cameraline: %lf\n", delta[X]);
+	printf("next vertical grid line is hit at: (%lf, %lf)\n", hit_next_x[X], hit_next_x[Y]);
+	hit_next_y[Y] = data->player->y - (delta[Y] * data->player->y_scalar);
+	hit_next_y[X] = data->player->x + (delta[Y] * data->player->x_scalar);
+	printf("player is at y = %lf\n", data->player->y);
+	printf("players step on horizontal axis = %lf\n");
+	printf("next horizontal grind line is: %i\n", next[Y]);
+	printf("distance to next horizontal grid line along cameraline: %lf\n", delta[Y]);
+	printf("next horizontal grid line is hit at: (%lf, %lf)\n", hit_next_y[X], hit_next_y[Y]);
+	
+
+
+
+
+
+//	wall[X] = ray_check_wall_x(data, next[X], delta[X]);
+	// wall[Y] = ray_check_wall_y(data, next[Y], delta[Y]);
+	// printf("wall[X] = %d, wall[Y] = %d\n", wall[X], wall[Y]);
 	
 	
 	

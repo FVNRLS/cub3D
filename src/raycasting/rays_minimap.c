@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   first_ray.c                                        :+:      :+:    :+:   */
+/*   rays_minimap.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/30 19:36:14 by hoomen            #+#    #+#             */
-/*   Updated: 2022/11/01 17:27:05 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/01 20:12:36 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,20 +54,20 @@ static void	cast_ray(t_data *data, double step)
 
 void	cast_rays(t_data *data, double step)
 {
-	double	player_angle;
-	double	step_angle;
+	// double	player_angle;
+	// double	step_angle;
 
-	player_angle = data->player->angle;
+	// player_angle = data->player->angle;
 
-	step_angle = (0.4 * M_PI) / 10;
-	data->player->angle -= 0.2 * M_PI;
-	while (data->player->angle <= player_angle + 0.2 * M_PI)
-	{
-		angle_to_scalars(data);
-		cast_ray(data, step);
-		data->player->angle += step_angle;
-	}
-	data->player->angle = player_angle;
-	angle_to_scalars(data);
+	// step_angle = (0.4 * M_PI) / 10;
+	// data->player->angle -= 0.2 * M_PI;
+	// while (data->player->angle <= player_angle + 0.2 * M_PI)
+	// {
+	// 	angle_to_scalars(data);
+	// 	cast_ray(data, step);
+	// 	data->player->angle += step_angle;
+	// }
+	// data->player->angle = player_angle;
+	// angle_to_scalars(data);
 	cast_ray(data, step);
 }
