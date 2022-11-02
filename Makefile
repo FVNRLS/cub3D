@@ -6,7 +6,7 @@
 #    By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/30 14:20:18 by hoomen            #+#    #+#              #
-#    Updated: 2022/11/02 17:31:46 by hoomen           ###   ########.fr        #
+#    Updated: 2022/11/02 19:50:30 by hoomen           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -78,7 +78,7 @@ SRC		+=	bonus_initializer.c collisions_checker.c\
 SRC		+=	ft_degree_to_radian.c ft_free_all_and_exit.c ft_free_split.c\
 			ft_isdigit.c ft_itoa.c ft_rgb_atoi.c ft_split.c ft_splitlen.c\
 			ft_strcmp.c ft_strdup.c ft_strjoin.c ft_strlen.c ft_strncmp.c\
-			ft_strtrim.c
+			ft_strtrim.c ft_abs_dbl.c
 
 # **************************************************************************** #
 # LIBRARIES                                                                    #

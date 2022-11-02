@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 14:45:54 by hoomen            #+#    #+#             */
-/*   Updated: 2022/11/02 18:09:32 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/02 20:04:29 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,6 +83,8 @@ bool	check_hit_vertical(t_data *data, t_ray *ray)
 {
 	int	check_field[2];
 
+	if (data->player->x_scalar == 0)
+		return (false);
 	check_field[X] = get_check_field(ray->ray_pos[X], data->player->x_scalar);
 	check_field[Y] = (int)floor(ray->ray_pos[Y]);
 	if (check_field[Y] < 0)
@@ -98,11 +100,13 @@ bool	check_hit_horizontal(t_data *data, t_ray *ray)
 {
 	int	check_field[2];
 
-	check_field[Y] = get_check_field(ray->ray_pos[Y], data->player->x_scalar);
+	if (data->player->y_scalar == 0)
+		return (false);
+	check_field[Y] = get_check_field(ray->ray_pos[Y], data->player->y_scalar);
 	check_field[X] = (int)floor(ray->ray_pos[X]);
 	if (check_field[X] < 0)
 		return (false);
-	if (check_field[X] >= data->tab->max_y)
+	if (check_field[X] >= data->tab->max_x)
 		return (false);
 	if (data->map[check_field[X]][check_field[Y]] == '1')
 		return (true);
