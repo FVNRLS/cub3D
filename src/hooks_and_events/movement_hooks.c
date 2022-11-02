@@ -29,21 +29,21 @@ void	move_lateral(t_data *data, double angle)
 	update_minimap(data);
 }
 
-void	move(t_data *data, int direction)
-{
-	double	new_v[2];
-	double	new_v_world[2];
+// void	move(t_data *data, int direction)
+// {
+// 	double	new_v[2];
+// 	double	new_v_world[2];
 
-	new_v[X] = direction * STEP * data->player->x_scalar;
-	new_v[Y] = direction * STEP * data->player->y_scalar;
-	new_v_world[X] = data->player->x + new_v[X];
-	new_v_world[Y] = data->player->y + new_v[Y];
-	if (check_collisions(data, new_v_world) == true)
-		return ;
-	data->player->x = new_v_world[X];
-	data->player->y = new_v_world[Y];
-	update_minimap(data);
-}
+// 	new_v[X] = direction * STEP * data->player->x_scalar;
+// 	new_v[Y] = direction * STEP * data->player->y_scalar;
+// 	new_v_world[X] = data->player->x + new_v[X];
+// 	new_v_world[Y] = data->player->y + new_v[Y];
+// 	if (check_collisions(data, new_v_world) == true)
+// 		return ;
+// 	data->player->x = new_v_world[X];
+// 	data->player->y = new_v_world[Y];
+// 	update_minimap(data);
+// }
 
 void	check_move_keys(t_data *data, mlx_key_data_t keycode)
 {
