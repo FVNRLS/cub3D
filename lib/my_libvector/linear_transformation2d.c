@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 12:53:41 by hoomen            #+#    #+#             */
-/*   Updated: 2022/11/01 13:47:30 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/02 15:43:45 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,23 @@
 #include <stdio.h>
 
 /* transform a vector v = {x, y} by applying the transformation matrix 
- * t = {{ix, iy}, {jx, jy}}
+ * t = {{ix, iy}, {jx, jy}} based on the rotation angle, rotating around the
+ * origin.
  */
-void	linear_transformation2d(double v[2], double t[2][2])
+void	rotate_vector(double v[2], double angle)
 {
 	double	transf_x;
 	double	transf_y;
+	double	sin_angle;
+	double	cos_angle;
+	double	t[2][2];
 
+	sin_angle = sin(angle);
+	cos_angle = cos(angle);
+	t[0][0] = cos_angle;
+	t[0][1] = sin_angle;
+	t[1][0] = -1 * sin_angle;
+	t[1][1] = cos_angle;
 	transf_x = (v[X] * t[I][X]) + (v[Y] * t[J][X]);
 	transf_y = (v[X] * t[I][Y]) + (v[Y] * t[J][Y]);
 

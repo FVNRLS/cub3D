@@ -6,12 +6,14 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 17:19:41 by hoomen            #+#    #+#             */
-/*   Updated: 2022/10/31 18:47:07 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/02 15:36:22 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBVECTOR_H
 # define LIBVECTOR_H
+
+# include <math.h>
 
 /* **************************************************************************** */
 /* DEFINES                                                                      */
@@ -26,7 +28,7 @@
 /* LINEAR TRANSFORMATION                                                        */
 /* **************************************************************************** */
 
-/* apply a transformation t on a 2d vector v */
-void	linear_transformation2d(double v[2], double t[2][2]);
+/* apply a transformation on a 2d vector by rotating it around the origin */
+void	rotate_vector(double v[2], double angle);
 
 #endif

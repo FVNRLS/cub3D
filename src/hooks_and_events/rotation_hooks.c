@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/30 19:49:48 by hoomen            #+#    #+#             */
-/*   Updated: 2022/11/01 16:40:23 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/02 15:16:29 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ static void	rotate(t_data *data, int direction)
 	else
 		data->player->angle = new_angle;
 	data->player->x_scalar = sin(data->player->angle);
-	data->player->y_scalar = cos(data->player->angle);
+	data->player->y_scalar = -1 * cos(data->player->angle);
 	update_minimap(data);
 }
 

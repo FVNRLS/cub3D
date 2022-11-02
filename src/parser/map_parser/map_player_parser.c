@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 17:41:27 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/31 18:11:19 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/02 15:23:43 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 static void	init_scalars(t_data *data, double angle)
 {
 	data->player->x_scalar = sin(angle);
-	data->player->y_scalar = cos(angle);
+	data->player->y_scalar = -1 * cos(angle);
 }
 
 static void set_player_angle(t_data *data)

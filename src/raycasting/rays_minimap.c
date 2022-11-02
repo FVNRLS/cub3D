@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/30 19:36:14 by hoomen            #+#    #+#             */
-/*   Updated: 2022/11/01 20:12:36 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/02 15:31:12 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 static void	angle_to_scalars(t_data *data)
 {
 	data->player->x_scalar = sin(data->player->angle);
-	data->player->y_scalar = cos(data->player->angle);
+	data->player->y_scalar = -1 * cos(data->player->angle);
 }
 
 static int	cast_ray_world_to_map(double offset, double ray, double step)
@@ -39,7 +39,7 @@ static void	cast_ray(t_data *data, double step)
 	while (1)
 	{
 		ray[X] = cam[X] + (data->player->x_scalar * factor);
-		ray[Y] = cam[Y] - (data->player->y_scalar * factor);
+		ray[Y] = cam[Y] + (data->player->y_scalar * factor);
 		if (data->map[(int)ray[X]][(int)ray[Y]] == '1')
 			break ;
 		pixel[X] = cast_ray_world_to_map(data->minimap->x_offset, ray[X], step);
