@@ -61,25 +61,19 @@ add_executable(cub3D src/main.c
         src/hooks_and_events/key_hooks.c
         src/hooks_and_events/rotation_hooks.c
         src/hooks_and_events/movement_hooks.c
-<<<<<<< HEAD
-=======
 
         #RAY CASTER
         src/raycasting/raycaster.c
         src/raycasting/delta_calculator.c
         src/raycasting/rays_minimap.c
         src/raycasting/hit_checker.c
->>>>>>> 38223a195207b3123184be0af43ee986b9edcdf4
 
         #BONUS
         src/bonus/bonus_initializer.c
         src/bonus/minimap/minimap.c
         src/bonus/minimap/wall_drawer.c
         src/bonus/collisions_checker.c
-<<<<<<< HEAD
-=======
         src/bonus/minimap/draw_player.c
->>>>>>> 38223a195207b3123184be0af43ee986b9edcdf4
         )
 
 # STATIC LIBRARIES
