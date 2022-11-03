@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 13:26:19 by hoomen            #+#    #+#             */
-/*   Updated: 2022/11/01 14:24:36 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/03 13:30:10 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ void	draw_player(t_data *data, double step)
 			x_sqr = (pos[X] - cam[X]) * (pos[X] - cam[X]);
 			y_sqr = (pos[Y] - cam[Y]) * (pos[Y] - cam[Y]);
 			if (x_sqr + y_sqr < (r * r))
-				mlx_put_pixel(data->img, pos[X], (pos[Y]), GREEN);
+				mlx_put_pixel(data->minimap->img, pos[X], (pos[Y]), GREEN);
 			pos[X]++;
 		}
 		pos[Y]++;

@@ -6,29 +6,11 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 14:45:19 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/11/01 18:02:49 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/03 13:30:22 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../../incl/cub3D.h"
-
-static bool check_player_pos(t_data *data, int x, int y, double step)
-{
-	double h;
-	double k;
-	double r;
-	double x_sqr;
-	double y_sqr;
-
-	r = (double) data->minimap->size / 80;
-	h = (data->player->x - data->minimap->x_offset) * step;
-	k = (data->player->y - data->minimap->y_offset) * step;
-	x_sqr = (x - h) * (x - h);
-	y_sqr = (y - k) * (y - k);
-	if (x_sqr + y_sqr <= (r * r))
-		return (true);
-	return(false);
-}
 
 static void	draw_minimap(t_data *data)
 {
@@ -44,9 +26,7 @@ static void	draw_minimap(t_data *data)
 		x = 0;
 		while (x < data->minimap->size)
 		{
-			if (check_player_pos(data, x, y, step) == true)
-				mlx_put_pixel(data->minimap->img, x, y, GREEN);
-			else if (check_wall(data, x, y, step) == true)
+			if (check_wall(data, x, y, step) == true)
 				mlx_put_pixel(data->minimap->img,x, y, NAVY);
 			else
 				mlx_put_pixel(data->minimap->img, x, y, 0xFFFFFF1A);
@@ -54,13 +34,14 @@ static void	draw_minimap(t_data *data)
 		}
 		y++;
 	}
-	//draw_player(data, step);
+	draw_player(data, step);
 	cast_rays(data, step);
 }
 
 void	update_minimap(t_data *data)
 {
-	mlx_delete_image(data->mlx, data->minimap->img);
+	if (data->minimap->img)
+		mlx_delete_image(data->mlx, data->minimap->img);
 	data->minimap->img = mlx_new_image(data->mlx, data->minimap->size,
 									   data->minimap->size);
 	draw_minimap(data);

@@ -5,10 +5,12 @@
 #                                                     +:+ +:+         +:+      #
 #    By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/10/30 14:20:18 by hoomen            #+#    #+#              #
-#    Updated: 2022/11/02 19:50:30 by hoomen           ###   ########.fr        #
+#    Created: 2022/11/03 13:28:05 by hoomen            #+#    #+#              #
+#    Updated: 2022/11/03 13:31:57 by hoomen           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
+
+
 
 # **************************************************************************** #
 # EXECUTABLE                                                                   #
@@ -62,7 +64,8 @@ SRC		+=	hooks_catcher.c key_hooks.c mouse_hooks.c movement_hooks.c\
 # RAYCASTING                                                                   #
 # **************************************************************************** #
 
-SRC		+=	rays_minimap.c raycaster_clean.c
+SRC		+=	raycaster.c delta_calculator.c rays_minimap.c\
+			hit_checker.c
 
 # **************************************************************************** #
 # BONUS                                                                        #
@@ -70,7 +73,7 @@ SRC		+=	rays_minimap.c raycaster_clean.c
 
 SRC		+=	bonus_initializer.c collisions_checker.c\
 			minimap.c wall_drawer.c draw_player.c
-			
+
 # **************************************************************************** #
 # TOOLS                                                                        #
 # **************************************************************************** #
