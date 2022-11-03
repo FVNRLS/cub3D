@@ -3,18 +3,24 @@
 /*                                                        :::      ::::::::   */
 /*   raycaster.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
+/*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 14:45:54 by hoomen            #+#    #+#             */
-/*   Updated: 2022/11/03 13:25:00 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/03 20:02:24 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../incl/cub3D.h"
 
-double	raycaster_loop(t_data *data)
+double	calc_wall_height(t_ray *ray,t_render *render)
 {
-	bool	hit;
+	double wall_height;
+
+}
+
+double	raycaster_loop(t_data *data, t_render *render)
+{
+	int		hit;
 	t_ray	ray;
 	double	delta[2];
 
@@ -37,8 +43,12 @@ double	raycaster_loop(t_data *data)
 			hit = check_hit_horizontal(data, &ray);
 		}
 		printf("wall is hit at: x = %lf, y = %lf\n", ray.ray_pos[X], ray.ray_pos[Y]);
+		printf("hit = %i\n", hit);
 	}
+
 	//printf("wall is hit at: x = %lf, y = %lf\n", ray.ray_pos[X], ray.ray_pos[Y]);
+	render->texture = hit;
+	//render->height = calc_height(ray);
 	return (0);
 	// return the distance from the player's eye to the first collision
 	// return (ray.ray_pos[X] / data->player->x_scal);

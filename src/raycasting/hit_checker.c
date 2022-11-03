@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 12:11:37 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/11/03 12:12:44 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/11/03 20:02:24 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,36 +21,44 @@ int		get_check_field(double ray_pos, double scalar)
 	return ((int)ceil(ray_pos));
 }
 
-bool	check_hit_vertical(t_data *data, t_ray *ray)
+int	check_hit_vertical(t_data *data, t_ray *ray)
 {
 	int	check_field[2];
 
 	if (data->player->x_scalar == 0)
-		return (false);
+		return (NOT_HIT);
 	check_field[X] = get_check_field(ray->ray_pos[X], data->player->x_scalar);
 	check_field[Y] = (int)floor(ray->ray_pos[Y]);
 	if (check_field[Y] < 0)
-		return (false);
+		return (NOT_HIT);
 	if (check_field[Y] >= data->tab->max_y)
-		return (false);
+		return (NOT_HIT);
 	if (data->map[check_field[X]][check_field[Y]] == '1')
-		return (true);
-	return (false);
+	{
+		if (data->player->x_scalar > 0)
+			return (HIT_E);
+		return (HIT_W);
+	}
+	return (NOT_HIT);
 }
 
-bool	check_hit_horizontal(t_data *data, t_ray *ray)
+int	check_hit_horizontal(t_data *data, t_ray *ray)
 {
 	int	check_field[2];
 
 	if (data->player->y_scalar == 0)
-		return (false);
+		return (NOT_HIT);
 	check_field[Y] = get_check_field(ray->ray_pos[Y], data->player->y_scalar);
 	check_field[X] = (int)floor(ray->ray_pos[X]);
 	if (check_field[X] < 0)
-		return (false);
+		return (NOT_HIT);
 	if (check_field[X] >= data->tab->max_x)
-		return (false);
+		return (NOT_HIT);
 	if (data->map[check_field[X]][check_field[Y]] == '1')
-		return (true);
-	return (false);
+	{
+		if (data->player->y_scalar > 0)
+			return (HIT_S);
+		return (HIT_N);
+	}
+	return (NOT_HIT);
 }
