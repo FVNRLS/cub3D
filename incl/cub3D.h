@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   cub3D.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 12:29:53 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/26 11:43:36 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/11/03 15:39:24 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@
 # include <math.h>
 # include <stdio.h>
 # include <fcntl.h>
+# include <math.h>
+# include <float.h>
 
 # include "struct.h"
 # include "errors.h"
@@ -26,10 +28,12 @@
 # include "hooks.h"
 # include "gui.h"
 # include "bonus.h"
+# include "raycasting.h"
 # include "../lib/get_next_line/get_next_line.h"
 # include "../lib/minilibx/include/MLX42/MLX42.h"
 # include "../lib/minilibx/include/MLX42/MLX42_Input.h"
 # include "../lib/minilibx/include/MLX42/MLX42_Int.h"
+# include "../lib/my_libvector/libvector.h"
 
 # define RIGHTS		0644
 # define NUM_ITEMS	7

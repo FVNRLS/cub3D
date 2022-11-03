@@ -1,0 +1,8 @@
+.vscode
+cmake-build-debug/**
+**/*.a
+**/*.o
+cub3D
+**/*.idea
+**/*.idea/**
+.idea/**
