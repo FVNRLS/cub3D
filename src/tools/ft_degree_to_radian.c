@@ -1,26 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   gui.h                                              :+:      :+:    :+:   */
+/*   ft_degree_to_radian.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: rmazurit <rmazurit@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/26 10:50:26 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/11/03 15:44:42 by rmazurit         ###   ########.fr       */
+/*   Created: 2022/10/27 11:02:32 by rmazurit          #+#    #+#             */
+/*   Updated: 2022/10/27 11:02:32 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GUI_H
-# define GUI_H
+#include "../../incl/cub3D.h"
 
-//WINDOW SIZE
-# define WIDTH		720
-# define HEIGHT		480
-
-//COLORS
-# define GREEN	0x00FF00A1
-# define NAVY	0x0000FFFF
-# define SILVER	0x00C0C0C0
-# define RED	0xFF0000A1
-
-#endif
+double	ft_degree_to_radian(double angle)
+{
+	return (angle * M_PI / 180.0);
+}

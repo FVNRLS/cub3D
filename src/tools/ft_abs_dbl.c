@@ -1,24 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   hooks_catcher.c                                    :+:      :+:    :+:   */
+/*   ft_abs_dbl.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/25 16:06:45 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/11/03 15:44:42 by rmazurit         ###   ########.fr       */
+/*   Created: 2022/11/02 19:48:26 by hoomen            #+#    #+#             */
+/*   Updated: 2022/11/03 13:23:00 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../incl/cub3D.h"
-
-void	hooks_catcher_loop(void *param)
+#include <float.h>
+/* return the absolute value of a double */
+double	ft_abs_dbl(double value)
 {
-    t_data *data;
-
-    data = (t_data *) param;
-    mlx_key_hook(data->mlx, &check_key_hooks, data);
-//    bool mlx_loop_hook(mlx_t* mlx, void (*f)(void*), void* param);
-
-    mlx_mouse_hook(data->mlx, (mlx_mousefunc)&check_mouse_hooks, data);
+	if (value == DBL_MIN)
+		return (0);
+	if (value < 0)
+		return (value * -1);
+	return (value);
 }
