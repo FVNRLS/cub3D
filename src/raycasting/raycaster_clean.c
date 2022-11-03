@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 14:45:54 by hoomen            #+#    #+#             */
-/*   Updated: 2022/11/02 20:04:29 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/03 11:21:39 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -155,4 +155,9 @@ double	raycaster_loop(t_data *data)
 	return (0);
 	// return the distance from the player's eye to the first collision
 	// return (ray.ray_pos[X] / data->player->x_scal);
+}
+
+void	render(t_data *data)
+{
+	
 }
