@@ -14,18 +14,18 @@
 
 static void	set_offset_x_pos(t_data *data)
 {
+	if (data->minimap->x_offset + MINIMAP_SCOPE > data->tab->max_x)
+		data->minimap->x_offset = data->tab->max_x - MINIMAP_SCOPE;
 	if (data->minimap->x_offset < 0)
 		data->minimap->x_offset = 0;
-	else if (data->minimap->x_offset + MINIMAP_SCOPE > data->tab->max_x)
-		data->minimap->x_offset = data->tab->max_x - MINIMAP_SCOPE;
 }
 
 static void	set_offset_y_pos(t_data *data)
 {
+	if (data->minimap->y_offset + MINIMAP_SCOPE > data->tab->max_y)
+		data->minimap->y_offset = data->tab->max_y - MINIMAP_SCOPE;
 	if (data->minimap->y_offset < 0)
 		data->minimap->y_offset = 0;
-	else if (data->minimap->y_offset + MINIMAP_SCOPE > data->tab->max_y)
-		data->minimap->y_offset = data->tab->max_y - MINIMAP_SCOPE;
 }
 
 void	set_offset(t_data *data)
