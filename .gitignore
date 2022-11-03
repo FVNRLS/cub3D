@@ -1,5 +1,5 @@
 .vscode
 cmake-build-debug/**
-**/.a
-**/.o
+**/*.a
+**/*.o
 cub3D

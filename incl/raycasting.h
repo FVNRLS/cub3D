@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/30 19:24:48 by hoomen            #+#    #+#             */
-/*   Updated: 2022/11/03 13:26:07 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/03 21:12:40 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ void	move_delta(t_data *data, t_ray *ray, double delta);
 /* hit_checkers.c */
 bool	check_hit_vertical(t_data *data, t_ray *ray);
 bool	check_hit_horizontal(t_data *data, t_ray *ray);
+void	cast(t_data *data);
 
 
 

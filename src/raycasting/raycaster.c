@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 14:45:54 by hoomen            #+#    #+#             */
-/*   Updated: 2022/11/03 13:25:00 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/03 17:55:33 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,4 +42,8 @@ double	raycaster_loop(t_data *data)
 	return (0);
 	// return the distance from the player's eye to the first collision
 	// return (ray.ray_pos[X] / data->player->x_scal);
+
+	// yDist = ray->ray_pos[Y] - data->player->y;
+	// xDist = ray->ray_pos[X] - data->player->x;
+	// Euclidian = yDist / data->player->y_scal;
 }

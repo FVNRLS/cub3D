@@ -6,7 +6,7 @@
 #    By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/03 13:28:05 by hoomen            #+#    #+#              #
-#    Updated: 2022/11/03 13:31:57 by hoomen           ###   ########.fr        #
+#    Updated: 2022/11/03 21:34:48 by hoomen           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -65,7 +65,7 @@ SRC		+=	hooks_catcher.c key_hooks.c mouse_hooks.c movement_hooks.c\
 # **************************************************************************** #
 
 SRC		+=	raycaster.c delta_calculator.c rays_minimap.c\
-			hit_checker.c
+			hit_checker.c file2.c
 
 # **************************************************************************** #
 # BONUS                                                                        #
@@ -146,7 +146,6 @@ clean:
 	rm -drf obj
 
 fclean: clean
-	rm -f lib/*.a
 	rm -f $(NAME)
 
 .PHONY: all re clean fclean lib
