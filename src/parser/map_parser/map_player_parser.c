@@ -3,35 +3,32 @@
 /*                                                        :::      ::::::::   */
 /*   map_player_parser.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
+/*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 17:41:27 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/11/03 13:46:40 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/11/03 15:10:15 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../../incl/cub3D.h"
 
-static void	init_scalars(t_data *data, double angle)
+static void	init_scalars(t_data *data)
 {
-	data->player->x_scalar = sin(angle);
-	data->player->y_scalar = -1 * cos(angle);
+	data->player->x_scalar = sin(data->player->angle);
+	data->player->y_scalar = -1 * cos(data->player->angle);
 }
 
 static void set_player_angle(t_data *data)
 {
-	double	init_angle;
-
 	if (data->player->dir == PLAYER_N)
-		init_angle = 0;
+		data->player->angle = 0;
 	else if (data->player->dir == PLAYER_E)
-		init_angle = 0.5 * M_PI;
+		data->player->angle = 0.5 * M_PI;
 	else if (data->player->dir == PLAYER_S)
-		init_angle = M_PI;
+		data->player->angle = M_PI;
 	else if (data->player->dir == PLAYER_W)
-		init_angle = 1.5 * M_PI;
-	data->player->angle = init_angle;
-	init_scalars(data, init_angle);
+		data->player->angle = 1.5 * M_PI;
+	init_scalars(data);
 }
 
 static int	config_player(t_data *data, int x, int y)
