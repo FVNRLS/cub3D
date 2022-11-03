@@ -12,12 +12,6 @@
 
 # include "../../incl/cub3D.h"
 
-static void	angle_to_scalars(t_data *data)
-{
-	data->player->x_scalar = sin(data->player->angle);
-	data->player->y_scalar = -1 * cos(data->player->angle);
-}
-
 static int	cast_ray_world_to_map(double offset, double ray, double step)
 {
 	double	ray_on_screen;
