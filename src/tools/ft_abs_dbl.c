@@ -10,6 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+<<<<<<< HEAD
 /* return the absolute value of a double */
 double	ft_abs_dbl(double value)
 {
@@ -19,3 +20,15 @@ double	ft_abs_dbl(double value)
 		return (abs * -1);
 	return (abs);
 }
+=======
+#include <float.h>
+/* return the absolute value of a double */
+double	ft_abs_dbl(double value)
+{
+	if (value == DBL_MIN)
+		return (0);
+	if (value < 0)
+		return (value * -1);
+	return (value);
+}
+>>>>>>> 38223a195207b3123184be0af43ee986b9edcdf4

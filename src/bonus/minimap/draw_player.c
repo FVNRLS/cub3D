@@ -32,7 +32,11 @@ void	draw_player(t_data *data, double step)
 			x_sqr = (pos[X] - cam[X]) * (pos[X] - cam[X]);
 			y_sqr = (pos[Y] - cam[Y]) * (pos[Y] - cam[Y]);
 			if (x_sqr + y_sqr < (r * r))
+<<<<<<< HEAD
 				mlx_put_pixel(data->img, pos[X], (pos[Y]), GREEN);
+=======
+				mlx_put_pixel(data->minimap->img, pos[X], (pos[Y]), GREEN);
+>>>>>>> 38223a195207b3123184be0af43ee986b9edcdf4
 			pos[X]++;
 		}
 		pos[Y]++;

@@ -39,6 +39,7 @@ add_executable(cub3D src/main.c
         src/error_printer.c
 
         #TOOLS
+        src/tools/ft_abs_dbl.c
         src/tools/ft_strlen.c
         src/tools/ft_strncmp.c
         src/tools/ft_split.c
@@ -60,19 +61,35 @@ add_executable(cub3D src/main.c
         src/hooks_and_events/key_hooks.c
         src/hooks_and_events/rotation_hooks.c
         src/hooks_and_events/movement_hooks.c
+<<<<<<< HEAD
+=======
+
+        #RAY CASTER
+        src/raycasting/raycaster.c
+        src/raycasting/delta_calculator.c
+        src/raycasting/rays_minimap.c
+        src/raycasting/hit_checker.c
+>>>>>>> 38223a195207b3123184be0af43ee986b9edcdf4
 
         #BONUS
         src/bonus/bonus_initializer.c
         src/bonus/minimap/minimap.c
         src/bonus/minimap/wall_drawer.c
         src/bonus/collisions_checker.c
+<<<<<<< HEAD
+=======
+        src/bonus/minimap/draw_player.c
+>>>>>>> 38223a195207b3123184be0af43ee986b9edcdf4
         )
 
 # STATIC LIBRARIES
-ADD_LIBRARY(get_next_line STATIC IMPORTED)
-SET_TARGET_PROPERTIES(get_next_line PROPERTIES IMPORTED_LOCATION ${CMAKE_SOURCE_DIR}/lib/get_next_line/get_next_line.a)
+ADD_LIBRARY(libgnl STATIC IMPORTED)
+SET_TARGET_PROPERTIES(libgnl PROPERTIES IMPORTED_LOCATION ${CMAKE_SOURCE_DIR}/lib/get_next_line/libgnl.a)
+
+ADD_LIBRARY(libvector STATIC IMPORTED)
+SET_TARGET_PROPERTIES(libvector PROPERTIES IMPORTED_LOCATION ${CMAKE_SOURCE_DIR}/lib/my_libvector/libvector.a)
 
 ADD_LIBRARY(libmlx42 STATIC IMPORTED)
 SET_TARGET_PROPERTIES(libmlx42 PROPERTIES IMPORTED_LOCATION ${CMAKE_SOURCE_DIR}/lib/minilibx/libmlx42.a)
 find_package(glfw3 3.3 REQUIRED)
-TARGET_LINK_LIBRARIES(cub3D get_next_line libmlx42 glfw)
+TARGET_LINK_LIBRARIES(cub3D libgnl libvector libmlx42 glfw)
