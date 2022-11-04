@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/30 19:24:48 by hoomen            #+#    #+#             */
-/*   Updated: 2022/11/04 17:27:46 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/04 17:33:20 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,5 +31,6 @@ bool	check_hit_horizontal(t_data *data, t_ray *ray);
 
 /* render.c */
 void	render(t_data *data);
+void	init_dda(t_data *data, t_ray *ray, double camera_x);
 
 #endif

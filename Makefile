@@ -6,7 +6,7 @@
 #    By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/03 13:28:05 by hoomen            #+#    #+#              #
-#    Updated: 2022/11/04 17:26:56 by hoomen           ###   ########.fr        #
+#    Updated: 2022/11/04 17:33:56 by hoomen           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -64,8 +64,7 @@ SRC		+=	hooks_catcher.c key_hooks.c mouse_hooks.c movement_hooks.c\
 # RAYCASTING                                                                   #
 # **************************************************************************** #
 
-SRC		+=	raycaster.c delta_calculator.c rays_minimap.c\
-			hit_checker.c render.c
+SRC		+=	rays_minimap.c render.c dda_initializer.c
 
 # **************************************************************************** #
 # BONUS                                                                        #
