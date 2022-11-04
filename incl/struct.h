@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 12:30:28 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/11/03 13:26:12 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/04 13:58:14 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,6 +59,7 @@ typedef struct	s_player
 	double 	y;
 	double	x_scalar;
 	double	y_scalar;
+	double	camplane[2];
 	char	dir;
 	double	angle;
 }		t_player;
@@ -72,6 +73,17 @@ typedef	struct s_minimap
 	int 		x_player;
 	int 		y_player;
 }		t_minimap;
+
+typedef struct s_render
+{
+	double	raydir[2];
+	int		map[2];
+	double	deltadist[2];
+	double	sidedist[2];
+	int		step;
+	int		side;
+	bool	hit;
+}			t_render;
 
 // typedef struct s_rays
 // {

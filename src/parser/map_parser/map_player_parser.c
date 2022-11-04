@@ -6,32 +6,34 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 17:41:27 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/11/03 13:29:53 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/04 13:53:08 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../../incl/cub3D.h"
 
-static void	init_scalars(t_data *data, double angle)
+static void	init_camera_plane(t_data *data)
 {
-	data->player->x_scalar = sin(angle);
-	data->player->y_scalar = -1 * cos(angle);
+	printf("data->player->x_scalar = %lf, data->player->y_scalar = %lf\n", data->player->x_scalar, data->player->y_scalar);
+	data->player->camplane[X] = data->player->x_scalar;
+	data->player->camplane[Y] = data->player->y_scalar;
+	rotate_vector(data->player->camplane, 0.5 * M_PI);
+	printf("data->player->camplane[X] = %lf, data->player->camplane[Y] = %lf\n", data->player->camplane[X], data->player->camplane[Y]);
 }
 
 static void set_player_angle(t_data *data)
 {
-	double	init_angle;
-
 	if (data->player->dir == PLAYER_N)
-		init_angle = 0;
+		data->player->angle = 0;
 	else if (data->player->dir == PLAYER_E)
-		init_angle = 0.5 * M_PI;
+		data->player->angle = 0.5 * M_PI;
 	else if (data->player->dir == PLAYER_S)
-		init_angle = M_PI;
+		data->player->angle = M_PI;
 	else if (data->player->dir == PLAYER_W)
-		init_angle = 1.5 * M_PI;
-	data->player->angle = init_angle;
-	init_scalars(data, init_angle);
+		data->player->angle = 1.5 * M_PI;
+	data->player->x_scalar = sin(data->player->angle);
+	data->player->y_scalar = -1 * cos(data->player->angle);
+	init_camera_plane(data);
 }
 
 static int	config_player(t_data *data, int x, int y)

@@ -1,4 +1,4 @@
-#include "incl/cub3D.h"
+#include "cub3D.h"
 #include <stdio.h>
 
 void	drawverline(t_data *data, int x, int wallstart, int wallend, int color)
@@ -44,9 +44,11 @@ void	cast(t_data *data)
 	dir[Y] = data->player->y_scalar;
 	pos[X] = data->player->x;
 	pos[Y] = data->player->y;
-	plane[X] = 0;
-	plane[Y] = -1;
-	rotate_vector(plane, data->player->angle + (0.5 * M_PI));
+	plane[X] = data->player->camplane[X];
+	plane[Y] = data->player->camplane[Y];
+	//plane[X] = 0;
+	//plane[Y] = -1;
+	//rotate_vector(plane, data->player->angle + (0.5 * M_PI));
 	// a ray that hits the camera plane at 1/3 of its vector length, has a raydir[X] of dir + plane[X] !!
 		// add also their y coordinates, since adding two vectors is adding their y- and x-coordinates
 	// if the player rotates, the camera rotates as well. Rotate both with the rotate_vector function.
