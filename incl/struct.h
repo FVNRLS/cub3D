@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 12:30:28 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/11/04 18:33:45 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/04 18:59:31 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,11 +26,15 @@ typedef struct s_tab
 
 typedef struct s_texture
 {
-	char	*north;
-	char	*south;
-	char	*west;
-	char	*east;
-}		t_texture;
+	char			*north;
+	char			*south;
+	char			*west;
+	char			*east;
+	mlx_texture_t	*t_north;
+	mlx_texture_t	*t_south;
+	mlx_texture_t	*t_west;
+	mlx_texture_t	*t_east;
+}					t_texture;
 
 typedef struct s_color
 {

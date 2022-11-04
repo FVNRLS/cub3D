@@ -3,3 +3,5 @@ cmake-build-debug/**
 **/*.a
 **/*.o
 cub3D
+a.out
+.DS_Store

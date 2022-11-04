@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 14:57:15 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/11/04 18:33:48 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/04 19:24:48 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int main(int argc, char **argv)
 {
 	t_data	data;
 
-//	atexit(check_leaks);
+	//atexit(check_leaks);
 	if (argc != 2)
 		return (print_int_error(ARG_ERROR, NULL));
 	init_environment(&data);

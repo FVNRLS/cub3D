@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   map_objects.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 12:30:10 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/25 12:46:39 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/11/04 19:01:55 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,6 +69,10 @@ static void	init_textures(t_data *data)
 	data->texture->south = NULL;
 	data->texture->east = NULL;
 	data->texture->west = NULL;
+	data->texture->t_north = NULL;
+	data->texture->t_south = NULL;
+	data->texture->t_east = NULL;
+	data->texture->t_west = NULL;
 }
 
 static void init_ceiling_floor(t_data *data)
