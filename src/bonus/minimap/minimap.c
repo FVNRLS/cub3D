@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   minimap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 14:45:19 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/11/03 15:44:42 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/11/04 18:38:25 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,4 @@ void	update_minimap(t_data *data)
 									   data->minimap->size);
 	draw_minimap(data);
 	mlx_image_to_window(data->mlx, data->minimap->img, 0, 0);
-//	printf("angle: %d,		x_fact: %lf,	y_fact: %lf\n", data->player->angle, data->player->x_factor, data->player->y_factor);
-	// printf("x: %lf,	y: %lf\n", data->player->x, data->player->y);
-
 }

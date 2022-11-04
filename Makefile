@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: rmazurit <rmazurit@student.42.fr>          +#+  +:+       +#+         #
+#    By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/11/03 15:50:20 by rmazurit          #+#    #+#              #
-#    Updated: 2022/11/03 15:50:20 by rmazurit         ###   ########.fr        #
+#    Created: 2022/11/03 13:28:05 by hoomen            #+#    #+#              #
+#    Updated: 2022/11/04 18:33:05 by hoomen           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -62,8 +62,7 @@ SRC		+=	hooks_catcher.c key_hooks.c mouse_hooks.c movement_hooks.c\
 # RAYCASTING                                                                   #
 # **************************************************************************** #
 
-SRC		+=	raycaster.c delta_calculator.c rays_minimap.c\
-			hit_checker.c
+SRC		+=	rays_minimap.c render.c dda_initializer.c
 
 # **************************************************************************** #
 # BONUS                                                                        #
@@ -109,19 +108,26 @@ F_VEC		=	lib/my_libvector
 OBJ		=	$(addprefix obj/,$(SRC:.c=.o))
 
 # **************************************************************************** #
+# HEADERS                                                                      #
+# **************************************************************************** #
+
+INC		= -I incl
+
+# **************************************************************************** #
 # RULES                                                                        #
 # **************************************************************************** #
+
 
 all: $(NAME)
 
 obj/%.o: %.c | lib obj
-	$(CC) -c $(CFLAGS) $< -o $@
+	$(CC) -c $(CFLAGS) $(INC) $< -o $@
 
 obj:
 	mkdir obj
 
 $(NAME): $(OBJ)
-	$(CC) $(CFLAGS) $(OBJ) $(MLX_FLAGS) $(GNL_FLAGS) $(VEC_FLAGS) -o $(NAME)
+	$(CC) $(CFLAGS) $(INC) $(OBJ) $(MLX_FLAGS) $(GNL_FLAGS) $(VEC_FLAGS) -o $(NAME)
 
 lib: $(MLX_LIB) $(GNL_LIB) $(VEC_LIB)
 
@@ -144,7 +150,6 @@ clean:
 	rm -drf obj
 
 fclean: clean
-	rm -f lib/*.a
 	rm -f $(NAME)
 
 .PHONY: all re clean fclean lib

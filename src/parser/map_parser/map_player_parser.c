@@ -3,19 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   map_player_parser.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 17:41:27 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/11/03 15:44:42 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/11/04 18:38:51 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../../incl/cub3D.h"
 
-static void	init_scalars(t_data *data)
+static void	init_camera_plane(t_data *data)
 {
-	data->player->x_scalar = sin(data->player->angle);
-	data->player->y_scalar = -1 * cos(data->player->angle);
+	data->player->camplane[X] = data->player->x_scalar;
+	data->player->camplane[Y] = data->player->y_scalar;
+	rotate_vector(data->player->camplane, 0.5 * M_PI);
 }
 
 static void set_player_angle(t_data *data)
@@ -28,7 +29,9 @@ static void set_player_angle(t_data *data)
 		data->player->angle = M_PI;
 	else if (data->player->dir == PLAYER_W)
 		data->player->angle = 1.5 * M_PI;
-	init_scalars(data);
+	data->player->x_scalar = sin(data->player->angle);
+	data->player->y_scalar = -1 * cos(data->player->angle);
+	init_camera_plane(data);
 }
 
 static int	config_player(t_data *data, int x, int y)

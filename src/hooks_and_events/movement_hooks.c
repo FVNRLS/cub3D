@@ -26,6 +26,7 @@ void	move_lateral(t_data *data, double angle)
 		return ;
 	data->player->x = new_v_world[X];
 	data->player->y = new_v_world[Y];
+	render(data);
 	update_minimap(data);
 }
 

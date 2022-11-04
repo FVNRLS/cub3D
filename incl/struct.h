@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 12:30:28 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/11/03 15:44:42 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/11/04 18:33:45 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,6 @@ typedef struct s_color
 	int 	b;
 }		t_color;
 
-
 typedef struct s_conf
 {
 	int		fd;
@@ -59,6 +58,7 @@ typedef struct	s_player
 	double 	y;
 	double	x_scalar;
 	double	y_scalar;
+	double	camplane[2];
 	char	dir;
 	double	angle;
 }		t_player;
@@ -73,24 +73,24 @@ typedef	struct s_minimap
 	int 		y_player;
 }		t_minimap;
 
-// typedef struct s_rays
-// {
-// 	int			next_gridline[2];
-// 	double		delta[2];
-// 	double		hit_next_vertical_gridline[2];
-// 	double		hit_next_horizontal_gridline[2];
-// 	double		ray_pos[2];
-// }				t_rays;
-
 typedef struct s_ray
 {
-	double	ray_pos[2];
-	double	ray_scal[2];
-	// int		next_gridline[2];//
-	// double	dist_to_next_gridline[2];//
-	// double	delta[2];//
-	// double	hit_next_gridline[2];//
+	double	raydir[2];
+	int		map[2];
+	double	deltadist[2];
+	double	sidedist[2];
+	int		step[2];
+	int		side;
 }			t_ray;
+
+typedef struct s_render
+{
+	double	perpwalldist;
+	int		lineheight;
+	int		wallstart;
+	int		wallend;
+	int		wall_texture;  //NORTH / WEST / EAST / SOUTH (which to put)
+}			t_render;
 
 typedef struct s_data
 {
@@ -101,7 +101,6 @@ typedef struct s_data
 	t_color		*color;
 	t_tab		*tab;
 	t_player	*player;
-	// t_rays		*rays;
 	mlx_t 		*mlx;
 	mlx_image_t	*img;
 	t_minimap	*minimap;

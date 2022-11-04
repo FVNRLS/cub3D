@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/30 19:49:48 by hoomen            #+#    #+#             */
-/*   Updated: 2022/11/02 15:16:29 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/04 17:27:17 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,10 @@ static void	rotate(t_data *data, int direction)
 		data->player->angle = new_angle;
 	data->player->x_scalar = sin(data->player->angle);
 	data->player->y_scalar = -1 * cos(data->player->angle);
+	data->player->camplane[X] = data->player->x_scalar;
+	data->player->camplane[Y] = data->player->y_scalar;
+	rotate_vector(data->player->camplane, 0.5 * M_PI);
+	render(data);
 	update_minimap(data);
 }
 
