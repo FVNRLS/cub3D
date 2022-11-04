@@ -6,26 +6,25 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 17:30:42 by hoomen            #+#    #+#             */
-/*   Updated: 2022/11/04 17:35:04 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/04 17:36:36 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cub3D.h"
 
-
-void	get_raydir(t_ray *ray, t_data *data, double camera_x)
+static void	get_raydir(t_ray *ray, t_data *data, double camera_x)
 {
 		ray->raydir[X] = data->player->x_scalar + data->player->camplane[X] * camera_x;  // direction of the ray
 		ray->raydir[Y] = data->player->y_scalar + data->player->camplane[Y] * camera_x;
 }
 
-void	get_mapcoords(t_ray *ray, t_data *data)
+static void	get_mapcoords(t_ray *ray, t_data *data)
 {
 		ray->map[X] = (int)data->player->x; // current square the ray is in
 		ray->map[Y] = (int)data->player->y;
 }
 
-void	get_deltas(t_ray *ray)
+static void	get_deltas(t_ray *ray)
 {
 	if (ray->raydir[X] == 0)
 		ray->deltadist[X] = DBL_MAX;
@@ -37,7 +36,7 @@ void	get_deltas(t_ray *ray)
 		ray->deltadist[Y] = ft_abs_dbl(1 / ray->raydir[Y]);
 }
 
-void	go_to_first_gridline(t_data *data, t_ray *ray)
+static void	go_to_first_gridline(t_data *data, t_ray *ray)
 {
 	if (ray->raydir[X] < 0)
 	{

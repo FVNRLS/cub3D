@@ -1,6 +1,6 @@
 #include "cub3D.h"
 
-void	drawverline(t_data *data, t_render *rend, int x)
+static void	drawverline(t_data *data, t_render *rend, int x)
 {
 	int	y;
 	int	h;
@@ -15,9 +15,7 @@ void	drawverline(t_data *data, t_render *rend, int x)
 		mlx_put_pixel(data->img, x, y, 255);
 }
 
-
-
-void	get_render_info(t_render *rend, t_ray *ray, t_data *data)
+static void	get_render_info(t_render *rend, t_ray *ray, t_data *data)
 {
 	if (ray->side == 0)
 		rend->perpwalldist = ray->sidedist[X] - ray->deltadist[X];
@@ -32,7 +30,7 @@ void	get_render_info(t_render *rend, t_ray *ray, t_data *data)
 		rend->wallend = data->img->height - 1;
 }
 
-void	get_textures(t_render *rend, t_ray *ray, t_data *data)
+static void	get_textures(t_render *rend, t_ray *ray, t_data *data)
 {
 	if (ray->side == 0 && ray->raydir[X] < 0)
 		rend->wall_texture = RED;
@@ -44,7 +42,7 @@ void	get_textures(t_render *rend, t_ray *ray, t_data *data)
 		rend->wall_texture = GREEN;
 }
 
-void	calc_wall_dist(t_ray *ray, t_data *data, double camera_x)
+static void	calc_wall_dist(t_ray *ray, t_data *data, double camera_x)
 {
 	bool	hit;
 

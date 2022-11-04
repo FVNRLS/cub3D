@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 14:57:15 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/11/03 13:25:34 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/04 17:39:31 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ int main(int argc, char **argv)
 		ft_free_all_and_exit(&data);
 	hooks_catcher_loop(&data);
 	init_bonus_objects(&data);
+	render(&data);
     mlx_loop(data.mlx);
 	free_all_resources(&data);
 	return (EXIT_SUCCESS);
