@@ -8,11 +8,11 @@ static void	drawverline(t_data *data, t_render *rend, int x)
 	y = -1;
 	h = data->img->height;
 	while (++y < rend->wallstart)
-		mlx_put_pixel(data->img, x, y, 255);
+		mlx_put_pixel(data->img, x, y, data->color->ceil);
 	while (++y < rend->wallend)
 		mlx_put_pixel(data->img, x, y, rend->wall_texture);
 	while (++y < h)
-		mlx_put_pixel(data->img, x, y, 255);
+		mlx_put_pixel(data->img, x, y, data->color->floor);
 }
 
 static void	get_render_info(t_render *rend, t_ray *ray, t_data *data)
