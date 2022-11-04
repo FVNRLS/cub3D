@@ -122,9 +122,13 @@ void	cast(t_data *data)
 		wallend = lineheight / 2 + h / 2;
 		if (wallend >= h)
 			wallend = h - 1;
-		if (side == 1)
+		if (side == 0 && raydir[X] < 0) // we hit west
 			color = RED;
-		else
+		else if (side == 0 && raydir[X] >= 0) // we hit east
+			color = NAVY;
+		else if (side == 1 && raydir[Y] < 0) // we hit north
+			color = SILVER;
+		else // we hit south
 			color = GREEN;
 		drawverline(data, x, wallstart, wallend, color);
 		x++;
