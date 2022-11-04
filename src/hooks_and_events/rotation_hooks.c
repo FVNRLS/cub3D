@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/30 19:49:48 by hoomen            #+#    #+#             */
-/*   Updated: 2022/11/04 13:53:59 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/04 17:27:17 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ static void	rotate(t_data *data, int direction)
 	data->player->camplane[X] = data->player->x_scalar;
 	data->player->camplane[Y] = data->player->y_scalar;
 	rotate_vector(data->player->camplane, 0.5 * M_PI);
-	cast(data);
+	render(data);
 	update_minimap(data);
 }
 

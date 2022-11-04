@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 16:05:58 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/11/03 21:15:25 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/04 17:27:11 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,10 +34,10 @@ void	check_keys_debugging(t_data *data, mlx_key_data_t keycode)
 		printf("player->angle = %i\n", (int) round(360 * data->player->angle / (2 * M_PI)));
 	}
 	if (keycode.key == MLX_KEY_R && keycode.action == MLX_PRESS)
-		cast(data);
+		render(data);
 		// raycaster_loop(data);
-
 }
+
 void 	check_key_hooks(mlx_key_data_t keycode, void *param)
 {
 	t_data *data;

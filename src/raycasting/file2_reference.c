@@ -40,7 +40,7 @@ void	cast(t_data *data)
 
 	mlx_delete_image(data->mlx, data->img);
 	data->img = mlx_new_image(data->mlx, WIDTH, HEIGHT);
-	dir[X] = data->player->x_scalar;
+	data->player->x_scalar = data->player->x_scalar;
 	dir[Y] = data->player->y_scalar;
 	pos[X] = data->player->x;
 	pos[Y] = data->player->y;
@@ -60,7 +60,7 @@ void	cast(t_data *data)
 	{
 		cameraX = 2 * x / w - 1;
 
-		raydir[X] = dir[X] + plane[X] * cameraX;  // direction of the ray
+		raydir[X] = data->player->x_scalar + plane[X] * cameraX;  // direction of the ray
 		raydir[Y] = dir[Y] + plane[Y] * cameraX;
 
 		map[X] = (int)pos[X]; // current square the ray is in
