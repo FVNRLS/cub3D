@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 18:53:37 by hoomen            #+#    #+#             */
-/*   Updated: 2022/11/05 18:43:57 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/05 20:23:23 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,7 +68,11 @@
 // 	return (EXIT_SUCCESS);
 // }
 
-
+static int	calc_for_high_wall(t_data *data, t_render *rend, int y)
+{
+	// printf("lineheight = %i, imgheight = %i\n");
+	return (0);
+}
 
 int	get_texture_color(t_data *data, t_render *rend, int y)
 {
@@ -83,15 +87,38 @@ int	get_texture_color(t_data *data, t_render *rend, int y)
 	double	y_proportion;
 	double	y_position_on_wall;
 
+	double	wall_outside;
+	double	proportion_outside;
+	double	proportion_inside;
+	double pixel_offset_y;
+	int pixels_inside;
+
+
 	x_coord = (int)round(data->texture->text_xcoord * (data->texture->current->width - 1));
-	y_position_on_wall = (double)(y - rend->wallstart);
-	y_proportion = y_position_on_wall / ((double)rend->lineheight);
-	y_coord = y_proportion * (data->texture->current->height);
+	// if (rend->lineheight > data->img->height)
+		// y_coord = calc_for_high_wall(data, rend, y);
+	if (rend->lineheight > data->img->height)
+	{
+		wall_outside = (double)(rend->lineheight - data->img->height);
+		proportion_outside = wall_outside / ((double)rend->lineheight);
+		proportion_inside = 1.0 - proportion_outside;
+		pixels_inside = proportion_inside * (double)data->texture->current->height;
+
+
+		pixel_offset_y = (proportion_outside / 2.0) * (double)data->texture->current->height;
+		y_coord = pixel_offset_y + (int)round(((double)y / (double)data->img->height) * pixels_inside);
+	}
+	else
+	{
+		y_position_on_wall = (double)(y - rend->wallstart);
+		y_proportion = y_position_on_wall / ((double)rend->lineheight);
+		y_coord = y_proportion * (data->texture->current->height);
+	}
 	byte = (y_coord * data->texture->current->width * 4) + (x_coord * 4);
 	r = data->texture->current->pixels[byte];
 	g = data->texture->current->pixels[byte + 1];
 	b = data->texture->current->pixels[byte + 2];
-	t = data->texture->current->pixels[byte + 3];
+	t = data->texture->current->pixels[byte + 3]; 
 	//printf("x_coord = %i, y_coord = %i\n", x_coord, y_coord);
 	return (r << 24 | g << 16 | b << 8 | t); 
 }
