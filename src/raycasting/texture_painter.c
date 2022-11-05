@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 18:53:37 by hoomen            #+#    #+#             */
-/*   Updated: 2022/11/05 20:23:23 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/05 20:36:15 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,13 +100,19 @@ int	get_texture_color(t_data *data, t_render *rend, int y)
 	if (rend->lineheight > data->img->height)
 	{
 		wall_outside = (double)(rend->lineheight - data->img->height);
+		// printf("wall_outside = %lf\n", wall_outside);
 		proportion_outside = wall_outside / ((double)rend->lineheight);
+		// printf("proportion outside = %lf\n", proportion_outside);
 		proportion_inside = 1.0 - proportion_outside;
+		// printf("proportion inside = %lf\n", proportion_inside);
 		pixels_inside = proportion_inside * (double)data->texture->current->height;
 
 
 		pixel_offset_y = (proportion_outside / 2.0) * (double)data->texture->current->height;
-		y_coord = pixel_offset_y + (int)round(((double)y / (double)data->img->height) * pixels_inside);
+		// printf("pixel_offset_y = %lf\n")
+		y_coord = (int)round(pixel_offset_y + (((double)y / (double)data->img->height) * pixels_inside));
+		// printf("x_coord = %i, y_coord = %i\n", x_coord, y_coord);
+		// printf("------------------------------------------------\n");
 	}
 	else
 	{
