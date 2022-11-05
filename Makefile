@@ -6,7 +6,7 @@
 #    By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/03 13:28:05 by hoomen            #+#    #+#              #
-#    Updated: 2022/11/04 18:33:05 by hoomen           ###   ########.fr        #
+#    Updated: 2022/11/05 14:57:46 by hoomen           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -89,8 +89,8 @@ VPATH		+=	lib
 # minilibX #
 MLX_LIB		=	libmlx42.a
 F_MLX		=	lib/minilibx
-MLX_FLAGS	=	-lglfw -Llib -lMLX42 -framework Cocoa -framework OpenGL\
-				-framework IOKit
+MLX_FLAGS	=	-L/Users/$(USER)/.brew/opt/glfw/lib -lglfw -Llib -lMLX42\
+				-framework Cocoa -framework OpenGL -framework IOKit
 # get_next_line #
 GNL_FLAGS	=	-Llib -lgnl
 GNL_LIB		=	libgnl.a
@@ -111,7 +111,7 @@ OBJ		=	$(addprefix obj/,$(SRC:.c=.o))
 # HEADERS                                                                      #
 # **************************************************************************** #
 
-INC		= -I incl
+INC		= -I incl -I /Users/$(USER)/.brew/include
 
 # **************************************************************************** #
 # RULES                                                                        #
