@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 12:30:28 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/11/04 18:59:31 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/05 17:17:28 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,8 @@ typedef struct s_texture
 	mlx_texture_t	*t_south;
 	mlx_texture_t	*t_west;
 	mlx_texture_t	*t_east;
+	double			text_xcoord;
+	mlx_texture_t	*current;
 }					t_texture;
 
 typedef struct s_color
@@ -89,12 +91,12 @@ typedef struct s_ray
 
 typedef struct s_render
 {
-	double	perpwalldist;
-	int		lineheight;
-	int		wallstart;
-	int		wallend;
-	int		wall_texture;  //NORTH / WEST / EAST / SOUTH (which to put)
-}			t_render;
+	double				perpwalldist;
+	int					lineheight;
+	int					wallstart;
+	int					wallend;
+	mlx_texture_t		*wall_texture;  //NORTH / WEST / EAST / SOUTH (which to put)
+}						t_render;
 
 typedef struct s_data
 {

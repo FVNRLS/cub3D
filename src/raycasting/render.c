@@ -10,7 +10,7 @@ static void	drawverline(t_data *data, t_render *rend, int x)
 	while (++y < rend->wallstart)
 		mlx_put_pixel(data->img, x, y, data->color->ceil);
 	while (++y < rend->wallend)
-		mlx_put_pixel(data->img, x, y, rend->wall_texture);
+		mlx_put_pixel(data->img, x, y, get_texture_color(data, rend, y));
 	while (++y < h)
 		mlx_put_pixel(data->img, x, y, data->color->floor);
 }
@@ -30,16 +30,16 @@ static void	get_render_info(t_render *rend, t_ray *ray, t_data *data)
 		rend->wallend = data->img->height - 1;
 }
 
-static void	get_textures(t_render *rend, t_ray *ray, t_data *data)
+static void	get_textures(t_ray *ray, t_data *data)
 {
 	if (ray->side == 0 && ray->raydir[X] < 0)
-		rend->wall_texture = RED;
+		data->texture->current = data->texture->t_west;
 	else if (ray->side == 0 && ray->raydir[X] >= 0)
-		rend->wall_texture = NAVY;
+		data->texture->current = data->texture->t_east;
 	else if (ray->side == 1 && ray->raydir[Y] < 0)
-		rend->wall_texture = SILVER;
+		data->texture->current = data->texture->t_north;
 	else // we hit south
-		rend->wall_texture = GREEN;
+		data->texture->current = data->texture->t_south;
 }
 
 static void	calc_wall_dist(t_ray *ray, t_data *data, double camera_x)
@@ -64,6 +64,7 @@ static void	calc_wall_dist(t_ray *ray, t_data *data, double camera_x)
 		if (data->map[ray->map[X]][ray->map[Y]] == '1')
 			hit = true;
 	}
+	get_x_coord_texture(ray, data);
 }
 
 void	render(t_data *data)
@@ -82,7 +83,7 @@ void	render(t_data *data)
 		init_dda(data, &ray, camera_x);
 		calc_wall_dist(&ray, data, camera_x);
 		get_render_info(&rend, &ray, data);
-		get_textures(&rend, &ray, data);
+		get_textures(&ray, data);
 		drawverline(data, &rend, x);
 		x++;
 	}

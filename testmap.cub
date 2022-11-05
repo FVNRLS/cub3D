@@ -1,9 +1,9 @@
-NO ./textures/barrel.png
+NO ./textures/redbrick.png
 SO ./textures/bluestone.png
 
 WE ./textures/colorstone.png
 
-EA 
+EA ./textures/mossy.png
 
 
 
