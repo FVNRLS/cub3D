@@ -6,7 +6,7 @@
 #    By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/03 13:28:05 by hoomen            #+#    #+#              #
-#    Updated: 2022/11/06 13:05:17 by hoomen           ###   ########.fr        #
+#    Updated: 2022/11/06 15:15:16 by hoomen           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -112,6 +112,8 @@ OBJ		=	$(addprefix obj/,$(SRC:.c=.o))
 # HEADERS                                                                      #
 # **************************************************************************** #
 
+H_FILES = bonus.h cub3D.h errors.h gui.h hooks.h raycasting.h struct.h tools.h
+HDR		= $(addprefix incl/,$(H_FILES))
 INC		= -I incl -I /Users/$(USER)/.brew/include
 
 # **************************************************************************** #
@@ -121,7 +123,7 @@ INC		= -I incl -I /Users/$(USER)/.brew/include
 
 all: $(NAME)
 
-obj/%.o: %.c | lib obj
+obj/%.o: %.c $(HDR) | lib obj
 	$(CC) -c $(CFLAGS) $(INC) $< -o $@
 
 obj:
@@ -152,5 +154,8 @@ clean:
 
 fclean: clean
 	rm -f $(NAME)
+
+clean_libs:
+	cd lib && rm -f $(MLX_LIB) $(GNL_LIB) $(VEC_LIB)
 
 .PHONY: all re clean fclean lib

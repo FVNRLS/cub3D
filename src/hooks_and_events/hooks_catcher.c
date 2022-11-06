@@ -1,24 +1,21 @@
 /* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   hooks_catcher.c                                    :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/25 16:06:45 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/11/03 15:44:42 by rmazurit         ###   ########.fr       */
-/*                                                                            */
+/*																			  */
+/*														  :::	   ::::::::	  */
+/*	 hooks_catcher.c									:+:		 :+:	:+:	  */
+/*													  +:+ +:+		  +:+	  */
+/*	 By: hoomen	<hoomen@student.42.fr>				+#+	 +:+	   +#+		  */
+/*												  +#+#+#+#+#+	+#+			  */
+/*	 Created: 2022/10/25 16:06:45 by rmazurit		   #+#	  #+#			  */
+/*	 Updated: 2022/11/06 15:50:33 by hoomen			  ###	########.fr		  */
+/*																			  */
 /* ************************************************************************** */
 
 #include "../../incl/cub3D.h"
 
-void	hooks_catcher_loop(void *param)
+void	hooks_catcher_loop(t_data *data)
 {
-    t_data *data;
-
-    data = (t_data *) param;
-    mlx_key_hook(data->mlx, &check_key_hooks, data);
-//    bool mlx_loop_hook(mlx_t* mlx, void (*f)(void*), void* param);
-
-    mlx_mouse_hook(data->mlx, (mlx_mousefunc)&check_mouse_hooks, data);
+    data->mouse_x = data->img->width / 2;
+    data->mouse_old_x = data->img->width / 2;
+	mlx_key_hook(data->mlx,	&check_key_hooks, (void	*)data);
+	mlx_cursor_hook(data->mlx, (mlx_cursorfunc)&check_cursor, (void *)data);
 }

@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 14:57:15 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/11/05 15:02:25 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/06 17:28:20 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,15 @@
 void	check_leaks(void)
 {
 	system("leaks cub3D");
+}
+
+void	render_loop(void *param)
+{
+	t_data	*data;
+
+	data = (t_data *)param;
+	render(data);
+	update_minimap(data);
 }
 
 int main(int argc, char **argv)
@@ -31,7 +40,7 @@ int main(int argc, char **argv)
 		ft_free_all_and_exit(&data);
 	hooks_catcher_loop(&data);
 	init_bonus_objects(&data);
-	render(&data);
+	mlx_loop_hook(data.mlx, &render_loop, (void *)&data);
     mlx_loop(data.mlx);
 	free_all_resources(&data);
 	return (EXIT_SUCCESS);

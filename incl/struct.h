@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 12:30:28 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/11/06 12:58:53 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/06 16:02:23 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,6 +69,7 @@ typedef struct	s_player
 	double	angle;
 }		t_player;
 
+
 typedef	struct s_minimap
 {
 	mlx_image_t	*img;
@@ -102,6 +103,8 @@ typedef struct s_data
 {
 	bool		parse_error;
 	bool		map_parsed;
+	int			mouse_x;
+	int			mouse_old_x;
 	t_conf		*conf;
 	t_texture	*texture;
 	t_color		*color;

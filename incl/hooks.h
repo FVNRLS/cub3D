@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 16:09:03 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/11/03 15:44:42 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/11/06 15:56:11 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@
 # define MV_LEFT			1
 
 //META-FUNCTION
-void	hooks_catcher_loop(void *param);
+void	hooks_catcher_loop(t_data *data);
 
 //KEY HOOKS
 void	check_key_hooks(mlx_key_data_t keydata, void *param);
@@ -33,6 +33,10 @@ void	check_move_keys(t_data *data,  mlx_key_data_t keycode);
 void 	check_rotation_keys(t_data *data, mlx_key_data_t keycode);
 
 //MOUSE HOOKS
-void	check_mouse_hooks(mlx_mouse_t mouse, void *param);
+void	check_cursor(void *param);
+
+
+//ROTATION
+void	rotate(t_data *data, int direction);
 
 #endif

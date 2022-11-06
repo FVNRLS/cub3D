@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/30 19:36:14 by hoomen            #+#    #+#             */
-/*   Updated: 2022/11/02 17:39:54 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/06 15:23:19 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ static int	cast_ray_world_to_map(double offset, double ray, double step)
 	return ((int)round(ray_on_screen));
 }
 
-static void	cast_ray(t_data *data, double step)
+void	cast_rays(t_data *data, double step)
 {
 	double	cam[2];
 	double	factor;
@@ -30,7 +30,7 @@ static void	cast_ray(t_data *data, double step)
 	cam[X] = data->player->x;
 	cam[Y] = data->player->y;
 	factor = 0.01;
-	while (1)
+	while (factor < 0.3)
 	{
 		ray[X] = cam[X] + (data->player->x_scalar * factor);
 		ray[Y] = cam[Y] + (data->player->y_scalar * factor);
@@ -44,24 +44,4 @@ static void	cast_ray(t_data *data, double step)
 		mlx_put_pixel(data->minimap->img, pixel[X], pixel[Y], RED);
 		factor += 0.01;
 	}
-}
-
-void	cast_rays(t_data *data, double step)
-{
-	// double	player_angle;
-	// double	step_angle;
-
-	// player_angle = data->player->angle;
-
-	// step_angle = (0.4 * M_PI) / 10;
-	// data->player->angle -= 0.2 * M_PI;
-	// while (data->player->angle <= player_angle + 0.2 * M_PI)
-	// {
-	// 	angle_to_scalars(data);
-	// 	cast_ray(data, step);
-	// 	data->player->angle += step_angle;
-	// }
-	// data->player->angle = player_angle;
-	// angle_to_scalars(data);
-	cast_ray(data, step);
 }

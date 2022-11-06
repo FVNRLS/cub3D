@@ -6,13 +6,13 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/30 19:49:48 by hoomen            #+#    #+#             */
-/*   Updated: 2022/11/04 17:27:17 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/06 17:23:03 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../incl/cub3D.h"
 
-static void	rotate(t_data *data, int direction)
+void	rotate(t_data *data, int direction)
 {
 	double	new_angle;
 
@@ -28,8 +28,8 @@ static void	rotate(t_data *data, int direction)
 	data->player->camplane[X] = data->player->x_scalar;
 	data->player->camplane[Y] = data->player->y_scalar;
 	rotate_vector(data->player->camplane, 0.5 * M_PI);
-	render(data);
-	update_minimap(data);
+	// render(data);
+	// update_minimap(data);
 }
 
 void	check_rotation_keys(t_data *data, mlx_key_data_t keycode)
