@@ -26,8 +26,6 @@ static void	move(t_data *data, double angle)
 		return ;
 	data->player->x = new_v_world[X];
 	data->player->y = new_v_world[Y];
-	// render(data);
-	// update_minimap(data);
 }
 
 void	check_move_keys(t_data *data, mlx_key_data_t keycode)

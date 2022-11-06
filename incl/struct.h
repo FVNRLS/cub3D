@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 12:30:28 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/11/06 16:02:23 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/06 19:47:26 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,7 +96,7 @@ typedef struct s_render
 	int					wallheight;
 	int					wallstart;
 	int					wallend;
-	mlx_texture_t		*wall_texture;  //NORTH / WEST / EAST / SOUTH (which to put)
+	mlx_texture_t		*wall_texture;
 }						t_render;
 
 typedef struct s_data
@@ -104,7 +104,6 @@ typedef struct s_data
 	bool		parse_error;
 	bool		map_parsed;
 	int			mouse_x;
-	int			mouse_old_x;
 	t_conf		*conf;
 	t_texture	*texture;
 	t_color		*color;

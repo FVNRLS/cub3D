@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 15:59:05 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/11/06 16:58:31 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/06 19:47:29 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,7 @@ void	check_cursor(void *param)
 	x = data->mouse_x;
 	mlx_get_mouse_pos(data->mlx, &data->mouse_x, &y);
 	if (data->mouse_x > x)
-		rotate(data, ROTATE_RIGHT * 1);// (data->mouse_x - data->mouse_old_x) * 5);
+		rotate(data, ROTATE_RIGHT * 1);
 	else if (data->mouse_x < x)
-		rotate(data, ROTATE_LEFT * 1);// (data->mouse_old_x - data->mouse_x) * 5);
-	// printf("x = %d\n", data->mouse_x);
-	// data->mouse_x = data->mouse_old_x;
+		rotate(data, ROTATE_LEFT * 1);
 }

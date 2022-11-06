@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 14:57:15 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/11/06 19:36:07 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/06 19:51:56 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,15 +26,6 @@ void	render_loop(void *param)
 	render(data);
 }
 
-// void	minimap_loop(void *param)
-// {
-// 	t_data	*data;
-
-// 	data = (t_data *)param;
-// 	render(data);
-// 	update_minimap(data);
-// }
-
 int main(int argc, char **argv)
 {
 	t_data	data;
@@ -47,10 +38,9 @@ int main(int argc, char **argv)
 	parse_input(&data);
 	if (data.parse_error == true)
 		ft_free_all_and_exit(&data);
-	hooks_catcher_loop(&data);
 	init_bonus_objects(&data);
-	// render(&data);
-	// mlx_loop_hook(data.mlx, &minimap_loop, (void *)&data);
+	mlx_key_hook(data.mlx,	&check_key_hooks, (void	*)&data);
+	mlx_cursor_hook(data.mlx, (mlx_cursorfunc)&check_cursor, (void *)&data);
 	mlx_loop_hook(data.mlx, &render_loop, (void *)&data);
     mlx_loop(data.mlx);
 	free_all_resources(&data);

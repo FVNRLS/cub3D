@@ -1,9 +1,9 @@
-NO ./textures/bluestone.png
-SO ./textures/purplestone.png
+NO ./textures/golden_tapestry_2k.png
+SO ./textures/royal_teppich_2k.png
 
-WE ./textures/colorstone.png
+WE ./textures/goodbricks.png
 
-EA ./textures/mossy.png
+EA ./textures/bricks_256.png
 
 
 

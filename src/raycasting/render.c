@@ -38,7 +38,7 @@ static void	get_textures(t_ray *ray, t_data *data)
 		data->texture->current = data->texture->t_east;
 	else if (ray->side == 1 && ray->raydir[Y] < 0)
 		data->texture->current = data->texture->t_north;
-	else // we hit south
+	else
 		data->texture->current = data->texture->t_south;
 }
 
@@ -74,8 +74,6 @@ void	render(t_data *data)
 	double		camera_x;
 	double		x;
 
-	// mlx_delete_image(data->mlx, data->img);
-	// data->img = mlx_new_image(data->mlx, WIDTH, HEIGHT);
 	x = 0;
 	while (x < data->img->width)
 	{
@@ -87,6 +85,5 @@ void	render(t_data *data)
 		drawverline(data, &rend, x);
 		x++;
 	}
-	// update_minimap(data);
 	mlx_image_to_window(data->mlx, data->img, 0, 0);
 }

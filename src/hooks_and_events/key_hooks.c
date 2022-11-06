@@ -6,17 +6,12 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 16:05:58 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/11/06 18:22:32 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/06 19:50:58 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "incl/cub3D.h"
 
-/*
-	Compare the input keycode with keys (I, C, K, H)
- 	If there is a match:
- 	Print the appropriate information to the stdout.
-*/
 static void	check_esc_key(t_data *data, mlx_key_data_t keycode)
 {
 	if (keycode.key == MLX_KEY_ESCAPE && keycode.action == MLX_PRESS)

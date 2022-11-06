@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 16:09:03 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/11/06 15:56:11 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/06 19:53:30 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,6 @@
 # define ROTATE_LEFT		-1
 # define MV_RIGHT			0
 # define MV_LEFT			1
-
-//META-FUNCTION
-void	hooks_catcher_loop(t_data *data);
 
 //KEY HOOKS
 void	check_key_hooks(mlx_key_data_t keydata, void *param);
