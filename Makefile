@@ -6,7 +6,7 @@
 #    By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/03 13:28:05 by hoomen            #+#    #+#              #
-#    Updated: 2022/11/06 15:15:16 by hoomen           ###   ########.fr        #
+#    Updated: 2022/11/06 18:14:47 by hoomen           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -120,7 +120,6 @@ INC		= -I incl -I /Users/$(USER)/.brew/include
 # RULES                                                                        #
 # **************************************************************************** #
 
-
 all: $(NAME)
 
 obj/%.o: %.c $(HDR) | lib obj
@@ -158,4 +157,4 @@ fclean: clean
 clean_libs:
 	cd lib && rm -f $(MLX_LIB) $(GNL_LIB) $(VEC_LIB)
 
-.PHONY: all re clean fclean lib
+.PHONY: all re clean fclean lib clean_libs
