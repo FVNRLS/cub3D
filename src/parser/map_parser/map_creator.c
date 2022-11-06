@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   map_creator.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/22 11:37:56 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/24 19:26:44 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/11/06 20:19:31 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,10 +85,17 @@ static void	calculate_map_size(t_data *data)
 			if (cnt > data->tab->max_x)
 				data->tab->max_x = cnt - 1;
 			data->tab->max_y++;
+			if (data->tab->max_y == INT_MAX)
+				return ;
 			cnt = 0;
 		}
 		i++;
 		cnt++;
+		if (cnt == INT_MAX)
+		{
+			data->tab->max_y = INT_MAX;
+			return ;
+		}
 	}
 }
 
@@ -127,6 +134,11 @@ int	create_map(t_data *data)
 	if (ret == EXIT_SUCCESS)
 	{
 		calculate_map_size(data);
+		if (data->tab->max_y == INT_MAX)
+		{
+			printf("Error: Mapsize too big\n");
+			return (EXIT_FAILURE);
+		}
 		ret = create_rectangular_map_template(data);
 		if (ret == EXIT_SUCCESS)
 		{
