@@ -63,6 +63,8 @@ static void	calc_wall_dist(t_ray *ray, t_data *data, double camera_x)
 		}
 		if (data->map[ray->map[X]][ray->map[Y]] == '1')
 			hit = true;
+		else if (data->map[ray->map[X]][ray->map[Y]] == 'S')
+			data->sprite.detected = true;
 	}
 	get_x_coord_texture(ray, data);
 }

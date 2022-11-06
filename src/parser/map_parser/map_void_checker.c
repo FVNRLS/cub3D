@@ -3,16 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   map_void_checker.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 11:34:41 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/24 15:32:01 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/11/06 21:41:09 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../../incl/cub3D.h"
-
-
+#include "cub3D.h"
 
 static int	check_bottom_row(t_data *data, int x, int y)
 {

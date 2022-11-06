@@ -6,7 +6,7 @@
 #    By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/03 13:28:05 by hoomen            #+#    #+#              #
-#    Updated: 2022/11/06 19:14:46 by hoomen           ###   ########.fr        #
+#    Updated: 2022/11/06 21:01:41 by hoomen           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -55,7 +55,7 @@ SRC		+=	arguments_checker.c map_borders_checker.c map_creator.c map_parser.c\
 # HOOKS AND EVENTS                                                             #
 # **************************************************************************** #
 
-SRC		+=	hooks_catcher.c key_hooks.c mouse_hooks.c movement_hooks.c\
+SRC		+=	key_hooks.c mouse_hooks.c movement_hooks.c\
 			rotation_hooks.c
 
 # **************************************************************************** #
@@ -70,7 +70,8 @@ SRC		+=	rays_minimap.c render.c dda_initializer.c texture_xcalculator.c\
 # **************************************************************************** #
 
 SRC		+=	bonus_initializer.c collisions_checker.c\
-			minimap.c wall_drawer.c draw_player.c offset_setter.c
+			minimap.c wall_drawer.c draw_player.c offset_setter.c\
+			sprite.c
 
 # **************************************************************************** #
 # TOOLS                                                                        #

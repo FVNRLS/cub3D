@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 12:30:28 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/11/06 19:47:26 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/06 21:59:33 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,11 +99,25 @@ typedef struct s_render
 	mlx_texture_t		*wall_texture;
 }						t_render;
 
+typedef struct s_sprite
+{
+	double			x;
+	double			y;
+	double			z;
+	double			sn;
+	double			cs;
+	bool			detected;
+	bool			collected;
+	xpm_t			*tex;
+	mlx_image_t		*img;
+}				t_sprite;
+
 typedef struct s_data
 {
 	bool		parse_error;
 	bool		map_parsed;
 	int			mouse_x;
+	t_sprite	sprite;
 	t_conf		*conf;
 	t_texture	*texture;
 	t_color		*color;
@@ -114,5 +128,7 @@ typedef struct s_data
 	t_minimap	*minimap;
 	char		**map;
 }		t_data;
+
+
 
 #endif
