@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 12:30:28 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/11/05 17:17:28 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/06 12:58:53 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,7 +92,7 @@ typedef struct s_ray
 typedef struct s_render
 {
 	double				perpwalldist;
-	int					lineheight;
+	int					wallheight;
 	int					wallstart;
 	int					wallend;
 	mlx_texture_t		*wall_texture;  //NORTH / WEST / EAST / SOUTH (which to put)

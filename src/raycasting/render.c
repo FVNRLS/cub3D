@@ -21,11 +21,11 @@ static void	get_render_info(t_render *rend, t_ray *ray, t_data *data)
 		rend->perpwalldist = ray->sidedist[X] - ray->deltadist[X];
 	else
 		rend->perpwalldist = ray->sidedist[Y] - ray->deltadist[Y];
-	rend->lineheight = (data->img->height / rend->perpwalldist);
-	rend->wallstart = (-1 * rend->lineheight) / 2 + data->img->height / 2;
+	rend->wallheight = (data->img->height / rend->perpwalldist);
+	rend->wallstart = (-1 * rend->wallheight) / 2 + data->img->height / 2;
 	if (rend->wallstart < 0)
 		rend->wallstart = 0;
-	rend->wallend = rend->lineheight / 2 + data->img->height / 2;
+	rend->wallend = rend->wallheight / 2 + data->img->height / 2;
 	if (rend->wallend >= data->img->height)
 		rend->wallend = data->img->height - 1;
 }
