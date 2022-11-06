@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 12:24:42 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/11/01 14:27:12 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/06 19:31:01 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,6 @@ static void	init_minimap(t_data *data)
 void	init_bonus_objects(t_data *data)
 {
 	init_minimap(data);
-	update_minimap(data);
+	data->minimap->img = mlx_new_image(data->mlx, data->minimap->size, data->minimap->size);
+	// update_minimap(data);
 }

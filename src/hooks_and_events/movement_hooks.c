@@ -12,7 +12,7 @@
 
 #include "../../incl/cub3D.h"
 
-void	move_lateral(t_data *data, double angle)
+static void	move(t_data *data, double angle)
 {
 	double	new_v[2];
 	double	new_v_world[2];
@@ -34,14 +34,14 @@ void	check_move_keys(t_data *data, mlx_key_data_t keycode)
 {
 	if (keycode.key	== MLX_KEY_W &&	(keycode.action	== MLX_PRESS
 		|| keycode.action == MLX_REPEAT))
-		move_lateral(data, 0);
+		move(data, 0);
 	else if	(keycode.key ==	MLX_KEY_S && (keycode.action ==	MLX_PRESS
 		|| keycode.action == MLX_REPEAT))
-		move_lateral(data, M_PI);
+		move(data, M_PI);
 	else if	(keycode.key ==	MLX_KEY_A && (keycode.action ==	MLX_PRESS
 		|| keycode.action == MLX_REPEAT))
-		move_lateral(data, 1.5 * M_PI);
+		move(data, 1.5 * M_PI);
 	else if	(keycode.key ==	MLX_KEY_D && (keycode.action ==	MLX_PRESS
 		|| keycode.action == MLX_REPEAT))
-		move_lateral(data, 0.5 * M_PI);
+		move(data, 0.5 * M_PI);
 }

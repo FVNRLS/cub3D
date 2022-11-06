@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 14:45:19 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/11/04 18:38:25 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/06 19:26:50 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,10 +40,10 @@ static void	draw_minimap(t_data *data)
 
 void	update_minimap(t_data *data)
 {
-	if (data->minimap->img)
-		mlx_delete_image(data->mlx, data->minimap->img);
-	data->minimap->img = mlx_new_image(data->mlx, data->minimap->size,
-									   data->minimap->size);
+	// if (data->minimap->img)
+		// mlx_delete_image(data->mlx, data->minimap->img);
+	// data->minimap->img = mlx_new_image(data->mlx, data->minimap->size,
+									//    data->minimap->size);
 	draw_minimap(data);
 	mlx_image_to_window(data->mlx, data->minimap->img, 0, 0);
 }
