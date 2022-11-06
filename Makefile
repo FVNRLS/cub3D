@@ -6,7 +6,7 @@
 #    By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/03 13:28:05 by hoomen            #+#    #+#              #
-#    Updated: 2022/11/05 17:34:56 by hoomen           ###   ########.fr        #
+#    Updated: 2022/11/06 13:05:17 by hoomen           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -70,7 +70,7 @@ SRC		+=	rays_minimap.c render.c dda_initializer.c texture_xcalculator.c\
 # **************************************************************************** #
 
 SRC		+=	bonus_initializer.c collisions_checker.c\
-			minimap.c wall_drawer.c draw_player.c
+			minimap.c wall_drawer.c draw_player.c offset_setter.c
 
 # **************************************************************************** #
 # TOOLS                                                                        #
