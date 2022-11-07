@@ -12,7 +12,7 @@
 
 #include "../../../incl/cub3D.h"
 
-static bool map_parsed(t_data *data)
+static bool	map_parsed(t_data *data)
 {
 	if (data->map == NULL)
 	{

@@ -3,20 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   map_creator.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
+/*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/22 11:37:56 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/11/06 20:19:31 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/07 15:52:27 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../../incl/cub3D.h"
 
-static void fill_map_with_objects(t_data *data)
+static void	fill_map_with_objects(t_data *data)
 {
-	int 	x;
-	int 	y;
-	int 	i;
+	int	x;
+	int	y;
+	int	i;
 
 	y = 0;
 	i = 0;
@@ -71,8 +71,8 @@ static int	create_rectangular_map_template(t_data *data)
  * */
 static void	calculate_map_size(t_data *data)
 {
-	int 	i;
-	int 	cnt;
+	int		i;
+	int		cnt;
 	char	*buf;
 
 	buf = data->tab->buf;
@@ -91,17 +91,12 @@ static void	calculate_map_size(t_data *data)
 		}
 		i++;
 		cnt++;
-		if (cnt == INT_MAX)
-		{
-			data->tab->max_y = INT_MAX;
-			return ;
-		}
 	}
 }
 
 static int	read_map(t_data *data)
 {
-	int line;
+	int	line;
 
 	line = 1;
 	data->tab->buf = ft_strdup(data->conf->line);
@@ -128,7 +123,7 @@ static int	read_map(t_data *data)
 
 int	create_map(t_data *data)
 {
-	int ret;
+	int	ret;
 
 	ret = read_map(data);
 	if (ret == EXIT_SUCCESS)
@@ -148,4 +143,3 @@ int	create_map(t_data *data)
 	}
 	return (ret);
 }
-

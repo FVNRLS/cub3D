@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 18:52:08 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/21 16:48:41 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/11/07 16:08:49 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 	Separate colors and combine them back together with bit shifting method.
 	The trgb parameter is always an int, represented as HEX Value.
 */
-
 static int	convert_rgb_to_hex(int r, int g, int b)
 {
 	return (r << 16 | g << 8 | b);
@@ -25,8 +24,8 @@ static int	convert_rgb_to_hex(int r, int g, int b)
 static void	get_rgb_values(t_data *data, char **rgb)
 {
 	char	*r;
-	char 	*g;
-	char 	*b;
+	char	*g;
+	char	*b;
 
 	r = ft_strtrim(rgb[0], " \n");
 	g = ft_strtrim(rgb[1], " \n");
@@ -41,14 +40,14 @@ static void	get_rgb_values(t_data *data, char **rgb)
 
 static int	extract_hex_color(t_data *data, char **rgb)
 {
-	int color;
+	int	color;
 
 	get_rgb_values(data, rgb);
 	if (data->color->r == -1 || data->color->g == -1 || data->color->b == -1)
 		color = -1;
 	else
 		color = convert_rgb_to_hex(data->color->r, data->color->g,
-								   data->color->b);
+				data->color->b);
 	data->color->r = -1;
 	data->color->g = -1;
 	data->color->b = -1;
@@ -57,9 +56,9 @@ static int	extract_hex_color(t_data *data, char **rgb)
 
 static char	*join_arguments(t_data *data)
 {
-	int 	i;
+	int		i;
 	char	*res;
-	int 	len;
+	int		len;
 
 	res = NULL;
 	len = ft_splitlen(data->conf->tokens);
@@ -89,22 +88,13 @@ int	get_color(t_data *data)
 	color_str = join_arguments(data);
 	rgb = ft_split(color_str, ',');
 	if (!color_str || !rgb)
-	{
-		data->parse_error = true;
-		print_error(MALLOC_ERROR, NULL);
-	}
+		parse_error(data, MALLOC_ERROR, NULL);
 	else if (ft_splitlen(rgb) != 3)
-	{
-		data->parse_error = true;
-		print_error(INVALID_TOKEN, color_str);
-	}
+		parse_error(data, INVALID_TOKEN, color_str);
 	else
 		color = extract_hex_color(data, rgb);
-	if (color == -1)
-	{
-		data->parse_error = true;
-		print_error(INVALID_TOKEN, color_str);
-	}
+	if (color == -1 && data->parse_error == false)
+		parse_error(data, INVALID_TOKEN, color_str);
 	ft_free_split(rgb);
 	free(color_str);
 	return (color);

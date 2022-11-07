@@ -6,18 +6,16 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 11:34:41 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/24 15:32:01 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/11/07 15:55:27 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../../incl/cub3D.h"
 
-
-
 static int	check_bottom_row(t_data *data, int x, int y)
 {
 	char	item;
-	int 	i_row;
+	int		i_row;
 
 	i_row = (y + 1);
 	if (i_row < data->tab->max_y)
@@ -44,7 +42,7 @@ static int	check_bottom_row(t_data *data, int x, int y)
 static int	check_middle_row(t_data *data, int x, int y)
 {
 	char	item;
-	int 	i_col;
+	int		i_col;
 
 	i_col = (x - 1);
 	if (i_col >= 0)
@@ -66,7 +64,7 @@ static int	check_middle_row(t_data *data, int x, int y)
 static int	check_top_row(t_data *data, int x, int y)
 {
 	char	item;
-	int 	i_row;
+	int		i_row;
 
 	i_row = (y - 1);
 	if (i_row >= 0)
@@ -92,7 +90,7 @@ static int	check_top_row(t_data *data, int x, int y)
 
 static int	check_item(t_data *data, int x, int y)
 {
-	int 	error_line;
+	int	error_line;
 
 	if (check_top_row(data, x, y) == EXIT_FAILURE)
 	{
@@ -135,9 +133,9 @@ static int	check_item(t_data *data, int x, int y)
 */
 void	check_invalid_void_spaces(t_data *data)
 {
-	int 	x;
-	int 	y;
-	int 	ret;
+	int	x;
+	int	y;
+	int	ret;
 
 	y = 0;
 	ret = 0;

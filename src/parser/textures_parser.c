@@ -12,7 +12,7 @@
 
 #include "../../incl/cub3D.h"
 
-static int parse_north(t_data *data)
+static int	parse_north(t_data *data)
 {
 	if (data->texture->north != NULL)
 		return (print_int_error(TEXTURE_ERROR, NORTH));
@@ -26,7 +26,7 @@ static int parse_north(t_data *data)
 	return (EXIT_SUCCESS);
 }
 
-static int parse_south(t_data *data)
+static int	parse_south(t_data *data)
 {
 	if (data->texture->south != NULL)
 		return (print_int_error(TEXTURE_ERROR, SOUTH));
@@ -40,7 +40,7 @@ static int parse_south(t_data *data)
 	return (EXIT_SUCCESS);
 }
 
-static int parse_east(t_data *data)
+static int	parse_east(t_data *data)
 {
 	if (data->texture->east != NULL)
 		return (print_int_error(TEXTURE_ERROR, EAST));
@@ -54,7 +54,7 @@ static int parse_east(t_data *data)
 	return (EXIT_SUCCESS);
 }
 
-static int parse_west(t_data *data)
+static int	parse_west(t_data *data)
 {
 	if (data->texture->west != NULL)
 		return (print_int_error(TEXTURE_ERROR, WEST));

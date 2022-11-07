@@ -3,18 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   parser.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
+/*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 11:50:41 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/11/04 19:53:09 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/07 16:17:21 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../incl/cub3D.h"
 
-static bool check_extension(char *s)
+static bool	check_extension(char *s)
 {
-	int len;
+	size_t	len;
 
 	len = ft_strlen(s);
 	s += len - 4;
@@ -23,9 +23,9 @@ static bool check_extension(char *s)
 	return (false);
 }
 
-static int get_first_token(t_data *data, char *first)
+static int	get_first_token(t_data *data, char *first)
 {
-	int 	i;
+	int		i;
 	char	c;
 
 	i = 0;
@@ -48,14 +48,13 @@ static int get_first_token(t_data *data, char *first)
 static void	parse_line(t_data *data)
 {
 	char	*first;
-	int 	tok;
+	int		tok;
 
 	data->conf->tokens = ft_split(data->conf->line, SPACE);
 	if (!data->conf->tokens)
 		print_int_error(MALLOC_ERROR, NULL);
 	first = data->conf->tokens[0];
 	tok = get_first_token(data, first);
-
 	if (tok == T_INVALID)
 		print_error(INVALID_TOKEN, first);
 	else if (tok == T_NEWLINE)
@@ -100,7 +99,7 @@ void	parse_input(t_data *data)
 	if (ext_valid == false)
 	{
 		data->parse_error = true;
-		return(print_error(INVALID_EXTENSION, NULL));
+		return (print_error(INVALID_EXTENSION, NULL));
 	}
 	data->conf->fd = open(data->conf->file, O_RDONLY, RIGHTS);
 	if (data->conf->fd < 0)

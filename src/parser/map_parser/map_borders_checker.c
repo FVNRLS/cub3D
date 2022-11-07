@@ -1,31 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   map_checker.c                                      :+:      :+:    :+:   */
+/*   map_borders_checker.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/22 11:53:19 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/22 20:25:07 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/11/07 15:40:06 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../../incl/cub3D.h"
 
-static int check_right_side(t_data *data)
+static int	check_right_side(t_data *data)
 {
-	int 	x;
-	int 	y;
+	int		x;
+	int		y;
 	char	*line;
 
-	y = 1;
-	while (y < (data->tab->max_y - 2))
+	y = 0;
+	while (++y < (data->tab->max_y - 2))
 	{
 		line = ft_itoa(data->conf->line_num + y);
 		if (!line)
 			return (print_int_error(MALLOC_ERROR, NULL));
-		x = data->tab->max_x - 1;
-		while (x >= 0)
+		x = data->tab->max_x;
+		while (--x >= 0)
 		{
 			if (data->map[x][y] == ONE)
 				break ;
@@ -35,29 +35,26 @@ static int check_right_side(t_data *data)
 				free(line);
 				return (EXIT_FAILURE);
 			}
-			x--;
 		}
 		free(line);
-		line = NULL;
-		y++;
 	}
 	return (EXIT_SUCCESS);
 }
 
-static int check_left_side(t_data *data)
+static int	check_left_side(t_data *data)
 {
-	int 	x;
-	int 	y;
+	int		x;
+	int		y;
 	char	*line;
 
-	y = 1;
-	while (y < (data->tab->max_y - 2))
+	y = 0;
+	while (++y < (data->tab->max_y - 2))
 	{
 		line = ft_itoa(data->conf->line_num + y);
 		if (!line)
 			return (print_int_error(MALLOC_ERROR, NULL));
-		x = 0;
-		while (x < data->tab->max_x)
+		x = -1;
+		while (++x < data->tab->max_x)
 		{
 			if (data->map[x][y] == ONE)
 				break ;
@@ -67,18 +64,15 @@ static int check_left_side(t_data *data)
 				free(line);
 				return (EXIT_FAILURE);
 			}
-			x++;
 		}
 		free(line);
-		line = NULL;
-		y++;
 	}
 	return (EXIT_SUCCESS);
 }
 
-static int check_bottom(t_data *data)
+static int	check_bottom(t_data *data)
 {
-	int 	x;
+	int		x;
 	char	*line;
 
 	x = data->tab->max_x - 1;
@@ -100,9 +94,9 @@ static int check_bottom(t_data *data)
 	return (EXIT_SUCCESS);
 }
 
-static int check_top(t_data *data)
+static int	check_top(t_data *data)
 {
-	int 	x;
+	int		x;
 	char	*line;
 
 	x = 0;

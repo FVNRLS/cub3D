@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   map_player_parser.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
+/*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 17:41:27 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/11/04 18:38:51 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/07 15:53:34 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ static void	init_camera_plane(t_data *data)
 	rotate_vector(data->player->camplane, 0.5 * M_PI);
 }
 
-static void set_player_angle(t_data *data)
+static void	set_player_angle(t_data *data)
 {
 	if (data->player->dir == PLAYER_N)
 		data->player->angle = 0;
@@ -36,7 +36,6 @@ static void set_player_angle(t_data *data)
 
 static int	config_player(t_data *data, int x, int y)
 {
-
 	if ((data->player->dir != VOID) || (x == 0 || y == 0))
 	{
 		data->parse_error = true;
@@ -52,7 +51,7 @@ static int	config_player(t_data *data, int x, int y)
 
 static int	check_item_validity(t_data *data, char item, int y_pos)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (i < NUM_ITEMS)
@@ -68,8 +67,8 @@ static int	check_item_validity(t_data *data, char item, int y_pos)
 void	parse_player(t_data *data)
 {
 	char	item;
-	int 	x;
-	int 	y;
+	int		x;
+	int		y;
 
 	y = 0;
 	while (y < data->tab->max_y)

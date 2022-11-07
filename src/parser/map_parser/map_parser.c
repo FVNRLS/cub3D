@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 10:52:59 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/24 18:14:40 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/11/07 16:10:24 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,10 +25,6 @@ void	parse_map(t_data *data)
 			return (print_error(NO_PLAYER, NULL));
 		}
 	}
-
-	if (data->parse_error == false) //del!
-		print_map(data);
-
 	if (data->parse_error == false)
 		check_map_borders(data);
 	if (data->parse_error == false)
