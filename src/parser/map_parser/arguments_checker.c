@@ -67,6 +67,10 @@ static bool	textures_parsed(t_data *data)
 	return (true);
 }
 
+/*
+ * performs final checks on the parsed arguments. If any argument is at its
+ * init value, returns false, which causes parse error and terminates the
+ * program*/
 bool	check_args(t_data *data)
 {
 	if (textures_parsed(data) && colors_parsed(data) && map_parsed(data))

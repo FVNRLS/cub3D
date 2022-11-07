@@ -12,6 +12,9 @@
 
 #include "cub3D.h"
 
+/* specs contains all map specifier
+ * items contains all map elements
+ * */
 static void	create_items_container(t_data *data)
 {
 	data->conf->specs[0] = S_NEWLINE;
@@ -32,6 +35,7 @@ static void	create_items_container(t_data *data)
 	data->conf->items[7] = '\0';
 }
 
+/* init environment to create a map */
 static void	init_config_items(t_data *data)
 {
 	data->conf = malloc(sizeof(t_conf));
@@ -59,6 +63,7 @@ static void	init_config_items(t_data *data)
 	create_items_container(data);
 }
 
+/* init textures container */
 static void	init_textures(t_data *data)
 {
 	data->texture = malloc(sizeof(t_texture));
@@ -74,6 +79,7 @@ static void	init_textures(t_data *data)
 	data->texture->t_west = NULL;
 }
 
+/* init ceiling and floor parameters container */
 static void	init_ceiling_floor(t_data *data)
 {
 	data->color = malloc(sizeof(t_color));

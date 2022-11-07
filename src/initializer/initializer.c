@@ -43,6 +43,7 @@ static void	init_map(t_data *data)
 	data->player->dir = VOID;
 }
 
+/* init all needed objects of the game except the bonus objects */
 void	init_environment(t_data *data)
 {
 	init_flags(data);

@@ -12,6 +12,7 @@
 
 #include "../../incl/cub3D.h"
 
+/* extracts ceil RGB colors from the .cub fd. and converts them into HEX value*/
 void	parse_ceiling(t_data *data)
 {
 	if (data->color->ceil != -1)
@@ -22,6 +23,7 @@ void	parse_ceiling(t_data *data)
 	data->color->ceil = get_color(data);
 }
 
+/* extracts floor RGB colors from the .cub fd. and converts them into HEX value*/
 void	parse_floor(t_data *data)
 {
 	if (data->color->floor != -1)

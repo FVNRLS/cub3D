@@ -19,6 +19,11 @@ static void	init_camera_plane(t_data *data)
 	rotate_vector(data->player->camplane, 0.5 * M_PI);
 }
 
+/*
+ * sets the player angle (converted from degrees to radians)
+ * depending on the player orientation (N,W,E,S)
+ * initializes the starting camera plane depending on the players orientation
+ * */
 static void	set_player_angle(t_data *data)
 {
 	if (data->player->dir == PLAYER_N)
@@ -34,6 +39,10 @@ static void	set_player_angle(t_data *data)
 	init_camera_plane(data);
 }
 
+/*
+ * saves the player position as x and y coordinates, replaces the found element
+ * with '0' and sets the starting player angle
+ * */
 static int	config_player(t_data *data, int x, int y)
 {
 	if ((data->player->dir != VOID) || (x == 0 || y == 0))
@@ -49,6 +58,7 @@ static int	config_player(t_data *data, int x, int y)
 	return (EXIT_SUCCESS);
 }
 
+/* checks if the map element belongs to valid identifiers (items) */
 static int	check_item_validity(t_data *data, char item, int y_pos)
 {
 	int	i;
@@ -64,6 +74,12 @@ static int	check_item_validity(t_data *data, char item, int y_pos)
 	return (print_line_error(data, (y_pos)));
 }
 
+/*
+ * Checks if the player on the parsed has a valid position and isn't defined
+ * multiple times.
+ * If there are no errors - saves the player position as x and y coordinates and
+ * replaces the player element on map with '0'
+ * */
 void	parse_player(t_data *data)
 {
 	char	item;

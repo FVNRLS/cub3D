@@ -14,13 +14,14 @@
 
 /*
 	Separate colors and combine them back together with bit shifting method.
-	The trgb parameter is always an int, represented as HEX Value.
+	The RGB parameter is always an int, represented as HEX Value.
 */
 static int	convert_rgb_to_hex(int r, int g, int b)
 {
 	return (r << 16 | g << 8 | b);
 }
 
+/* converts color arguments (strings) to color values */
 static void	get_rgb_values(t_data *data, char **rgb)
 {
 	char	*r;
@@ -78,6 +79,16 @@ static char	*join_arguments(t_data *data)
 	return (res);
 }
 
+/*
+ * Joins all arguments together and splits them by ',' delimiter in order to get
+ * 3 strings with color values in order: Red, Green, Blue (RGB).
+ * Converts and returns RGB values into HEX-color value (int).
+ *
+ * If number of arguments is not 3 or  the specified color value is invalid,
+ * prints error and returns -1 (init color value), which sets parsing error flag
+ * to true and causes program termination.
+ *
+ * */
 int	get_color(t_data *data)
 {
 	int		color;

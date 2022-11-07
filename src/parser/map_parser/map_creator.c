@@ -12,6 +12,7 @@
 
 #include "../../../incl/cub3D.h"
 
+/* Copies map objects from the buffer to the created rectangular map template */
 static void	fill_map_with_objects(t_data *data)
 {
 	int	x;
@@ -36,7 +37,7 @@ static void	fill_map_with_objects(t_data *data)
 }
 
 /*
- * Malloc map table and fill all slots with 0
+ * Malloc map table and fills all slots with 0
  * */
 static int	create_rectangular_map_template(t_data *data)
 {
@@ -66,7 +67,7 @@ static int	create_rectangular_map_template(t_data *data)
 }
 
 /*
- * Needed size to malloc for the rectangular 2D array.
+ * Calculates needed size to malloc for the rectangular 2D array.
  * Newline doesn't belong to the tab items, so the max. is = max-counter - 1
  * */
 static void	calculate_map_size(t_data *data)
@@ -94,6 +95,7 @@ static void	calculate_map_size(t_data *data)
 	}
 }
 
+/* Reads the total map from fd to a buffer with GNL function */
 static int	read_map(t_data *data)
 {
 	int	line;
@@ -121,6 +123,10 @@ static int	read_map(t_data *data)
 	return (EXIT_SUCCESS);
 }
 
+/*
+ * Creates 2D array (map) with map objects inside.
+ * Empty spaces are filled with VOID elements.
+ * */
 int	create_map(t_data *data)
 {
 	int	ret;

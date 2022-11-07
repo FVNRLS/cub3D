@@ -12,6 +12,7 @@
 
 #include "../../incl/cub3D.h"
 
+/* init graphical environment with window and image to render the game on */
 void	init_mlx(t_data *data)
 {
 	mlx_t		mlx;

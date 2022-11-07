@@ -12,6 +12,7 @@
 
 #include "../../incl/cub3D.h"
 
+/* Checks extension of the configuration file .cub */
 static bool	check_extension(char *s)
 {
 	size_t	len;
@@ -23,6 +24,10 @@ static bool	check_extension(char *s)
 	return (false);
 }
 
+/*
+ * Interprets the first token and returns a flag.
+ * Based on the flag value it will be decided, which element should be parsed.
+ * */
 static int	get_first_token(t_data *data, char *first)
 {
 	int		i;
@@ -45,6 +50,13 @@ static int	get_first_token(t_data *data, char *first)
 	}
 }
 
+/*
+ * Interprets content, returned by GNL in parse_args function.
+ * Splits the content into tokens and decides based on the first token, which
+ * map element is going to be parsed.
+ * Ceiling and floor colors + textures should come before the map elements.
+ * After map is parsed, the parsing ends.
+ * */
 static void	parse_line(t_data *data)
 {
 	char	*first;
@@ -73,6 +85,12 @@ static void	parse_line(t_data *data)
 	ft_free_split(data->conf->tokens);
 }
 
+/*
+ * CORE PARSING FUNCTION
+ * reads .cub file with GNL and interprets its content, until the map is parsed.
+ * The map should be always the last element of the configuration file.
+ * Depending on the content different map elements are going to be parsed.
+ * */
 static int	parse_args(t_data *data)
 {
 	while (data->map_parsed == false)
@@ -90,6 +108,16 @@ static int	parse_args(t_data *data)
 	return (EXIT_SUCCESS);
 }
 
+/*
+ * Parses different elements of the game from specified .cub file.
+ * Checks file extension, opens the file and reads information from it with help
+ * of get_next_line (GNL) function.
+ * During reading interprets and defines the elements values.
+ * After parsing - checks if all elements were parsed successfully.
+ * In case of any error during the different parsing stages
+ * the data->parse_error flag is set to true, which causes free of all
+ * allocated resources and termination of the program.
+ * */
 void	parse_input(t_data *data)
 {
 	bool	ext_valid;

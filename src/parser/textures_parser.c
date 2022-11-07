@@ -68,6 +68,12 @@ static int	parse_west(t_data *data)
 	return (EXIT_SUCCESS);
 }
 
+/*
+ * Saves textures images to be able to access them during the rendering process.
+ * The images are stored with help of mlx_load_png function and stored in
+ * 'mlx_texture' data-type.
+ * There are 4 different textures images: north, south, east, west.
+ * */
 void	parse_textures(t_data *data, int token)
 {
 	int	ret;

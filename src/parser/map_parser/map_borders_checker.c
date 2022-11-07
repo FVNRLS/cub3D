@@ -118,6 +118,7 @@ static int	check_top(t_data *data)
 	return (EXIT_SUCCESS);
 }
 
+/* check if map borders are closed --> always == '1' */
 void	check_map_borders(t_data *data)
 {
 	if (check_top(data) == EXIT_FAILURE)
