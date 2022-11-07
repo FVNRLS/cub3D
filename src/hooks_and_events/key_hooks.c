@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   key_hooks.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 16:05:58 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/11/07 16:26:33 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/11/07 17:24:41 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,4 +38,8 @@ void	check_key_hooks(mlx_key_data_t keycode, void *param)
 	check_rotation_keys(data, keycode);
 	check_mouse_keys(data, keycode);
 	check_esc_key(data, keycode);
+	if (keycode.key == MLX_KEY_R)
+		printf("player x = %lf, player y = %lf\ncam x = %lf, cam y = %lf\n",\
+		data->player->x_scalar, data->player->y_scalar, data->player->camplane[X],\
+		data->player->camplane[Y]);
 }

@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 17:41:27 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/11/07 16:57:52 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/07 19:13:56 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,8 @@
 
 static void	init_camera_plane(t_data *data)
 {
-	data->player->camplane[X] = 0.5 * data->player->x_scalar;
-	data->player->camplane[Y] = 0.5 * data->player->y_scalar;
-	rotate_vector(data->player->camplane, 0.5 * M_PI);
+	data->player->camplane[X] = -1 * FOV * data->player->y_scalar;
+	data->player->camplane[Y] = FOV * data->player->x_scalar;
 }
 
 static void	set_player_angle(t_data *data)

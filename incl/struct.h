@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 12:30:28 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/11/07 15:13:02 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/07 20:35:03 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,8 +74,6 @@ typedef struct s_minimap
 	int			size;
 	int			x_offset;
 	int			y_offset;
-	int			x_player;
-	int			y_player;
 }				t_minimap;
 
 typedef struct s_ray
@@ -94,7 +92,6 @@ typedef struct s_render
 	int				wallheight;
 	int				wallstart;
 	int				wallend;
-	mlx_texture_t	*wall_texture;
 }					t_render;
 
 typedef struct s_data

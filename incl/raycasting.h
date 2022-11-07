@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/30 19:24:48 by hoomen            #+#    #+#             */
-/*   Updated: 2022/11/05 17:34:10 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/07 19:22:44 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 # define RAYCASTING_H
 
 # include "struct.h"
+
+# define FOV 0.66
 
 /* rays_minimap.c */
 void	cast_rays(t_data *data, double step);

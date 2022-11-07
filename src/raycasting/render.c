@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 15:36:17 by hoomen            #+#    #+#             */
-/*   Updated: 2022/11/07 16:21:38 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/11/07 20:03:05 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,10 +29,14 @@ static void	drawverline(t_data *data, t_render *rend, int x)
 
 static void	get_render_info(t_render *rend, t_ray *ray, t_data *data)
 {
+	// if (ray->side == 0)
+	// 	rend->perpwalldist = ray->sidedist[X] - ray->deltadist[X];
+	// else
+	// 	rend->perpwalldist = ray->sidedist[Y] - ray->deltadist[Y];
 	if (ray->side == 0)
-		rend->perpwalldist = ray->sidedist[X] - ray->deltadist[X];
+		rend->perpwalldist = (ray->map[X] - data->player->x + (1 - ray->step[X]) / 2) / ray->raydir[X];
 	else
-		rend->perpwalldist = ray->sidedist[Y] - ray->deltadist[Y];
+		rend->perpwalldist = (ray->map[Y] - data->player->y + (1 - ray->step[Y]) / 2) / ray->raydir[Y];
 	rend->wallheight = (data->img->height / rend->perpwalldist);
 	rend->wallstart = (-1 * rend->wallheight) / 2 + data->img->height / 2;
 	if (rend->wallstart < 0)
@@ -89,7 +93,7 @@ void	render(t_data *data)
 	x = 0;
 	while (x < data->img->width)
 	{
-		camera_x = 2 * x / data->img->width - 1;
+		camera_x = 2 * x / (double)data->img->width - 1;
 		init_dda(data, &ray, camera_x);
 		calc_wall_dist(&ray, data);
 		get_render_info(&rend, &ray, data);
