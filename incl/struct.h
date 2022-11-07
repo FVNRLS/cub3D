@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   struct.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
+/*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 12:30:28 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/11/07 15:13:02 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/07 20:34:56 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,8 +74,6 @@ typedef struct s_minimap
 	int			size;
 	int			x_offset;
 	int			y_offset;
-	int			x_player;
-	int			y_player;
 }				t_minimap;
 
 typedef struct s_ray
@@ -94,7 +92,6 @@ typedef struct s_render
 	int				wallheight;
 	int				wallstart;
 	int				wallend;
-	mlx_texture_t	*wall_texture;
 }					t_render;
 
 typedef struct s_data
@@ -110,6 +107,7 @@ typedef struct s_data
 	mlx_t		*mlx;
 	mlx_image_t	*img;
 	t_minimap	*minimap;
+	int			counter;
 	char		**map;
 }				t_data;
 

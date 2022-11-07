@@ -1,9 +1,9 @@
-NO ./textures/golden_tapestry_2k.png
-SO ./textures/royal_teppich_2k.png
+NO ./textures/barrel.png
+SO ./textures/bluestone.png
 
-WE ./textures/goodbricks.png
+WE ./textures/mossy.png
 
-EA ./textures/bricks_256.png
+EA ./textures/wood.png
 C 135,206,235
 F 124,252,0
 

@@ -6,7 +6,7 @@
 /*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 10:49:12 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/25 12:46:39 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/11/07 17:51:31 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	parse_ceiling(t_data *data)
 	data->color->ceil = get_color(data);
 }
 
-/* extracts floor RGB colors from the .cub fd. and converts them into HEX value*/
+/* extracts floor RGB colors from the .cub fd. and converts them to HEX value */
 void	parse_floor(t_data *data)
 {
 	if (data->color->floor != -1)

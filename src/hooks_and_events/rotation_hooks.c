@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   rotation_hooks.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
+/*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 15:25:08 by hoomen            #+#    #+#             */
-/*   Updated: 2022/11/07 16:21:38 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/11/07 20:19:40 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,8 @@ void	rotate(t_data *data, int direction)
 	data->player->camplane[X] = data->player->x_scalar;
 	data->player->camplane[Y] = data->player->y_scalar;
 	rotate_vector(data->player->camplane, 0.5 * M_PI);
+	render(data);
+	update_minimap(data);
 }
 
 void	check_rotation_keys(t_data *data, mlx_key_data_t keycode)

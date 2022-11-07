@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   movement_hooks.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
+/*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 15:20:28 by hoomen            #+#    #+#             */
-/*   Updated: 2022/11/07 16:21:38 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/11/07 20:19:40 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,8 @@ static void	move(t_data *data, double angle)
 		return ;
 	data->player->x = new_v_world[X];
 	data->player->y = new_v_world[Y];
+	render(data);
+	update_minimap(data);
 }
 
 void	check_move_keys(t_data *data, mlx_key_data_t keycode)
