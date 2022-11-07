@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 14:45:19 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/11/06 19:49:21 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/07 15:15:19 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 static void	draw_minimap(t_data *data)
 {
-	int 	x;
-	int 	y;
-	double 	step;
+	int		x;
+	int		y;
+	double	step;
 
 	step = (double)data->minimap->size / MINIMAP_SCOPE;
 	set_offset(data);
@@ -27,7 +27,7 @@ static void	draw_minimap(t_data *data)
 		while (x < data->minimap->size)
 		{
 			if (check_wall(data, x, y, step) == true)
-				mlx_put_pixel(data->minimap->img,x, y, NAVY);
+				mlx_put_pixel(data->minimap->img, x, y, NAVY);
 			else
 				mlx_put_pixel(data->minimap->img, x, y, 0xFFFFFF1A);
 			x++;
