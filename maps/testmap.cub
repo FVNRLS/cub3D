@@ -1,0 +1,21 @@
+NO ./textures/golden_tapestry_2k.png
+SO ./textures/royal_teppich_2k.png
+
+WE ./textures/goodbricks.png
+
+EA ./textures/bricks_256.png
+
+
+C 135,206,235
+
+F 220,100,0
+
+11111111111
+10000000001
+10000000001
+10000000001
+10000S00001
+10000000001
+10000000001
+10000000001
+11111111111

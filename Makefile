@@ -6,7 +6,7 @@
 #    By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/03 13:28:05 by hoomen            #+#    #+#              #
-#    Updated: 2022/11/07 16:34:50 by hoomen           ###   ########.fr        #
+#    Updated: 2022/11/07 21:09:46 by hoomen           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -160,4 +160,7 @@ clean_libs:
 
 re: fclean clean_libs all
 
-.PHONY: all re clean fclean lib clean_libs
+run:
+	./cub3D maps/testmap.cub
+
+.PHONY: all re clean fclean lib clean_libs run
