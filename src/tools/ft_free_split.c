@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_free_split.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 15:08:31 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/19 15:09:26 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/11/07 15:41:06 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../incl/cub3D.h"
+#include "cub3D.h"
 
 void	ft_free_split(char **split)
 {

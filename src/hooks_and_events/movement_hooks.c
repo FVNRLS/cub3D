@@ -1,16 +1,16 @@
 /* ************************************************************************** */
-/*																			  */
-/*														  :::	   ::::::::	  */
-/*	 movement_hooks.c									:+:		 :+:	:+:	  */
-/*													  +:+ +:+		  +:+	  */
-/*	 By: hoomen	<hoomen@student.42.fr>				+#+	 +:+	   +#+		  */
-/*												  +#+#+#+#+#+	+#+			  */
-/*	 Created: 2022/10/26 17:03:54 by rmazurit		   #+#	  #+#			  */
-/*	 Updated: 2022/10/30 18:24:55 by hoomen			  ###	########.fr		  */
-/*																			  */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   movement_hooks.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/11/07 15:20:28 by hoomen            #+#    #+#             */
+/*   Updated: 2022/11/07 15:24:27 by hoomen           ###   ########.fr       */
+/*                                                                            */
 /* ************************************************************************** */
 
-#include "../../incl/cub3D.h"
+#include "cub3D.h"
 
 static void	move(t_data *data, double angle)
 {
@@ -20,7 +20,7 @@ static void	move(t_data *data, double angle)
 	new_v[X] = STEP * data->player->x_scalar;
 	new_v[Y] = STEP * data->player->y_scalar;
 	rotate_vector(new_v, angle);
-	new_v_world[X] = data->player->x + new_v[X]; 
+	new_v_world[X] = data->player->x + new_v[X];
 	new_v_world[Y] = data->player->y + new_v[Y];
 	if (check_collisions(data, new_v_world) == true)
 		return ;
@@ -30,16 +30,16 @@ static void	move(t_data *data, double angle)
 
 void	check_move_keys(t_data *data, mlx_key_data_t keycode)
 {
-	if (keycode.key	== MLX_KEY_W &&	(keycode.action	== MLX_PRESS
-		|| keycode.action == MLX_REPEAT))
+	if (keycode.key == MLX_KEY_W && (keycode.action == MLX_PRESS
+			|| keycode.action == MLX_REPEAT))
 		move(data, 0);
-	else if	(keycode.key ==	MLX_KEY_S && (keycode.action ==	MLX_PRESS
-		|| keycode.action == MLX_REPEAT))
+	else if (keycode.key == MLX_KEY_S
+		&& (keycode.action == MLX_PRESS || keycode.action == MLX_REPEAT))
 		move(data, M_PI);
-	else if	(keycode.key ==	MLX_KEY_A && (keycode.action ==	MLX_PRESS
-		|| keycode.action == MLX_REPEAT))
+	else if (keycode.key == MLX_KEY_A && (keycode.action == MLX_PRESS
+			|| keycode.action == MLX_REPEAT))
 		move(data, 1.5 * M_PI);
-	else if	(keycode.key ==	MLX_KEY_D && (keycode.action ==	MLX_PRESS
-		|| keycode.action == MLX_REPEAT))
+	else if (keycode.key == MLX_KEY_D && (keycode.action == MLX_PRESS
+			|| keycode.action == MLX_REPEAT))
 		move(data, 0.5 * M_PI);
 }

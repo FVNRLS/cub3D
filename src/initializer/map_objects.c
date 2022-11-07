@@ -6,13 +6,13 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 12:30:10 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/11/04 19:01:55 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/07 15:31:35 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../incl/cub3D.h"
+#include "cub3D.h"
 
-static void create_items_container(t_data *data)
+static void	create_items_container(t_data *data)
 {
 	data->conf->specs[0] = S_NEWLINE;
 	data->conf->specs[1] = NORTH;
@@ -30,10 +30,9 @@ static void create_items_container(t_data *data)
 	data->conf->items[5] = PLAYER_E;
 	data->conf->items[6] = PLAYER_W;
 	data->conf->items[7] = '\0';
-
 }
 
-static void init_config_items(t_data *data)
+static void	init_config_items(t_data *data)
 {
 	data->conf = malloc(sizeof(t_conf));
 	if (!data->conf)
@@ -75,7 +74,7 @@ static void	init_textures(t_data *data)
 	data->texture->t_west = NULL;
 }
 
-static void init_ceiling_floor(t_data *data)
+static void	init_ceiling_floor(t_data *data)
 {
 	data->color = malloc(sizeof(t_color));
 	if (!data->color)

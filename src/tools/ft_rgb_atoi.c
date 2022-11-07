@@ -3,19 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_rgb_atoi.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 13:03:08 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/21 15:24:15 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/11/07 15:41:50 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../incl/cub3D.h"
+#include "cub3D.h"
 
 static bool	check_invalid_chars(char *str)
 {
 	int	i;
-	int len;
+	int	len;
 
 	len = ft_strlen(str);
 	if (len > 3)

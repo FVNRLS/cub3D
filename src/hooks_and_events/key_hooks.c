@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 16:05:58 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/11/06 19:50:58 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/07 15:19:48 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,11 +29,11 @@ static void	check_mouse_keys(t_data *data, mlx_key_data_t keycode)
 		mlx_set_cursor_mode(data->mlx, MLX_MOUSE_NORMAL);
 }
 
-void 	check_key_hooks(mlx_key_data_t keycode, void *param)
+void	check_key_hooks(mlx_key_data_t keycode, void *param)
 {
-	t_data *data;
+	t_data	*data;
 
-	data = (t_data*)param;
+	data = (t_data *)param;
 	check_move_keys(data, keycode);
 	check_rotation_keys(data, keycode);
 	check_mouse_keys(data, keycode);

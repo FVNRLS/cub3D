@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 12:54:23 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/21 13:12:54 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/11/07 15:46:57 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../incl/cub3D.h"
+#include "cub3D.h"
 
 /* Allocates memory with malloc() and returns a new string, which is the result
 of the concatenation of ’str1’ and ’str2’.

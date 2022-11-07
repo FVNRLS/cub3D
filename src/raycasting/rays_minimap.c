@@ -6,11 +6,11 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/30 19:36:14 by hoomen            #+#    #+#             */
-/*   Updated: 2022/11/06 15:23:19 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/07 15:36:06 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "../../incl/cub3D.h"
+#include "cub3D.h"
 
 static int	cast_ray_world_to_map(double offset, double ray, double step)
 {
