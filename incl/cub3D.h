@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   cub3D.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 12:29:53 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/11/03 15:44:42 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/11/07 15:06:34 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,10 +89,8 @@ bool	check_args(t_data *data);
 //COLORIZER
 int		get_color(t_data *data);
 
-
 //DESTRUCTOR
 void	free_all_resources(t_data *data);
-
 
 //TODO: del before submission
 void	print_map(t_data *data);

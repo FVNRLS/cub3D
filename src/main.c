@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 14:57:15 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/11/06 19:51:56 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/07 15:04:41 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void	render_loop(void *param)
 	render(data);
 }
 
-int main(int argc, char **argv)
+int	main(int argc, char **argv)
 {
 	t_data	data;
 
@@ -39,10 +39,11 @@ int main(int argc, char **argv)
 	if (data.parse_error == true)
 		ft_free_all_and_exit(&data);
 	init_bonus_objects(&data);
-	mlx_key_hook(data.mlx,	&check_key_hooks, (void	*)&data);
-	mlx_cursor_hook(data.mlx, (mlx_cursorfunc)&check_cursor, (void *)&data);
+	mlx_set_cursor_mode(data.mlx, MLX_MOUSE_HIDDEN);
+	mlx_key_hook(data.mlx, &check_key_hooks, (void *)&data);
+	mlx_cursor_hook(data.mlx, (void *)&check_cursor, (void *)&data);
 	mlx_loop_hook(data.mlx, &render_loop, (void *)&data);
-    mlx_loop(data.mlx);
+	mlx_loop(data.mlx);
 	free_all_resources(&data);
 	return (EXIT_SUCCESS);
 }

@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 12:30:49 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/11/03 15:44:42 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/11/07 14:37:22 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include <stdlib.h>
 # include "struct.h"
 
-int		ft_strlen(const char *s);
+size_t	ft_strlen(const char *s);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 bool	ft_isdigit(int c);
 int		ft_rgb_atoi(char *str);

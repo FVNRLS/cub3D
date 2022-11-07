@@ -26,7 +26,7 @@ static void	get_render_info(t_render *rend, t_ray *ray, t_data *data)
 	if (rend->wallstart < 0)
 		rend->wallstart = 0;
 	rend->wallend = rend->wallheight / 2 + data->img->height / 2;
-	if (rend->wallend >= data->img->height)
+	if (rend->wallend >= (int) data->img->height)
 		rend->wallend = data->img->height - 1;
 }
 
@@ -42,7 +42,7 @@ static void	get_textures(t_ray *ray, t_data *data)
 		data->texture->current = data->texture->t_south;
 }
 
-static void	calc_wall_dist(t_ray *ray, t_data *data, double camera_x)
+static void	calc_wall_dist(t_ray *ray, t_data *data)
 {
 	bool	hit;
 
@@ -79,7 +79,7 @@ void	render(t_data *data)
 	{
 		camera_x = 2 * x / data->img->width - 1;
 		init_dda(data, &ray, camera_x);
-		calc_wall_dist(&ray, data, camera_x);
+		calc_wall_dist(&ray, data);
 		get_render_info(&rend, &ray, data);
 		get_textures(&ray, data);
 		drawverline(data, &rend, x);

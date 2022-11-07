@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 16:09:03 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/11/06 19:53:30 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/07 15:09:22 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,12 +26,11 @@
 
 //KEY HOOKS
 void	check_key_hooks(mlx_key_data_t keydata, void *param);
-void	check_move_keys(t_data *data,  mlx_key_data_t keycode);
-void 	check_rotation_keys(t_data *data, mlx_key_data_t keycode);
+void	check_move_keys(t_data *data, mlx_key_data_t keycode);
+void	check_rotation_keys(t_data *data, mlx_key_data_t keycode);
 
 //MOUSE HOOKS
-void	check_cursor(void *param);
-
+void	*check_cursor(void *param);
 
 //ROTATION
 void	rotate(t_data *data, int direction);

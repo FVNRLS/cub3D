@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 13:52:07 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/11/04 19:54:56 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/07 14:29:53 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,7 +71,6 @@ static int parse_west(t_data *data)
 void	parse_textures(t_data *data, int token)
 {
 	int	ret;
-	int	len;
 
 	if (ft_splitlen(data->conf->tokens) != 2)
 		ret = (print_int_error(INVALID_TOKEN, data->conf->line));

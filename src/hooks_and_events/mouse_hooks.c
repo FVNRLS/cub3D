@@ -6,13 +6,13 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 15:59:05 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/11/06 19:47:29 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/07 15:04:02 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../incl/cub3D.h"
 
-void	check_cursor(void *param)
+void	*check_cursor(void *param)
 {
 	t_data	*data;
 	int		y;
@@ -25,4 +25,5 @@ void	check_cursor(void *param)
 		rotate(data, ROTATE_RIGHT * 1);
 	else if (data->mouse_x < x)
 		rotate(data, ROTATE_LEFT * 1);
+	return (NULL);
 }

@@ -6,11 +6,11 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 12:24:42 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/11/06 19:49:44 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/07 12:25:34 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../incl/cub3D.h"
+#include "cub3D.h"
 
 static void	init_minimap(t_data *data)
 {

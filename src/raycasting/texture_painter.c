@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 18:53:37 by hoomen            #+#    #+#             */
-/*   Updated: 2022/11/06 12:58:47 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/07 14:50:00 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,7 +66,7 @@ int	get_texture_color(t_data *data, t_render *rend, int y)
 
 	x_texture = (int)round(data->texture->text_xcoord * \
 	(data->texture->current->width - 1));
-	if (rend->wallheight > data->img->height)
+	if ((uint32_t)rend->wallheight > data->img->height)
 		y_texture = calc_for_high_wall((double)rend->wallheight, \
 		(double)data->img->height, \
 		(double)data->texture->current->height, (double)y);

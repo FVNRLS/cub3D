@@ -6,7 +6,7 @@
 #    By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/03 13:28:05 by hoomen            #+#    #+#              #
-#    Updated: 2022/11/06 19:14:46 by hoomen           ###   ########.fr        #
+#    Updated: 2022/11/07 14:27:50 by hoomen           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,7 +29,7 @@ VPATH := $(subst $(space),:,$(shell find src -type d))
 # **************************************************************************** #
 
 CC		=	cc -g
-CFLAGS	=	#-Werror -Wextra -Wall
+CFLAGS	=	-Werror -Wextra -Wall
 
 # **************************************************************************** #
 # SOURCE FILES                                                                 #
@@ -47,15 +47,15 @@ SRC		+=	initializer.c map_objects.c mlx_initializer.c
 # PARSER                                                                       #
 # **************************************************************************** #
 
-SRC		+=	arguments_checker.c map_borders_checker.c map_creator.c map_parser.c\
-			map_player_parser.c map_void_checker.c\
+SRC		+=	arguments_checker.c map_borders_checker.c map_creator.c\
+			map_parser.c map_player_parser.c map_void_checker.c\
 			color_extracter.c floor_ceiling_parser.c parser.c textures_parser.c
 
 # **************************************************************************** #
 # HOOKS AND EVENTS                                                             #
 # **************************************************************************** #
 
-SRC		+=	hooks_catcher.c key_hooks.c mouse_hooks.c movement_hooks.c\
+SRC		+=	key_hooks.c mouse_hooks.c movement_hooks.c\
 			rotation_hooks.c
 
 # **************************************************************************** #

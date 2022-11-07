@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   error_printer.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 12:28:35 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/25 12:46:39 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/11/07 14:57:06 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../incl/cub3D.h"
+#include "cub3D.h"
 
-void	print_error(int	error, char *s)
+void	print_error(int error, char *s)
 {
 	if (error == MALLOC_ERROR)
 		printf("Error\nMemory allocation failed\n");
@@ -40,13 +40,13 @@ void	print_error(int	error, char *s)
 		printf("Error\nMissing input: no map\n");
 }
 
-int 	print_int_error(int error, char *s)
+int	print_int_error(int error, char *s)
 {
 	print_error(error, s);
 	return (EXIT_FAILURE);
 }
 
-int print_line_error(t_data *data, int y_pos)
+int	print_line_error(t_data *data, int y_pos)
 {
 	char	*line;
 
@@ -62,14 +62,13 @@ int print_line_error(t_data *data, int y_pos)
 
 void	*print_null_error(int error, char *s)
 {
-	print_error(error, NULL);
+	print_error(error, s);
 	return (NULL);
 }
 
-//TODO: del before submission
 void	print_map(t_data *data)
 {
-	int x;
+	int	x;
 	int	y;
 
 	printf("\n");

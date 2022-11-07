@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 12:30:28 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/11/06 19:47:26 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/07 15:13:02 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,7 @@ typedef struct s_tab
 	char	**map;
 	int		max_x;
 	int		max_y;
-
-}		t_tab;
+}			t_tab;
 
 typedef struct s_texture
 {
@@ -42,10 +41,10 @@ typedef struct s_color
 {
 	int		ceil;
 	int		floor;
-	int 	r;
-	int 	g;
-	int 	b;
-}		t_color;
+	int		r;
+	int		g;
+	int		b;
+}			t_color;
 
 typedef struct s_conf
 {
@@ -54,31 +53,30 @@ typedef struct s_conf
 	char	*line;
 	char	**tokens;
 	char	**specs;
-	char 	*items;
-	int 	line_num;
-}		t_conf;
+	char	*items;
+	int		line_num;
+}			t_conf;
 
-typedef struct	s_player
+typedef struct s_player
 {
-	double 	x;
-	double 	y;
+	double	x;
+	double	y;
 	double	x_scalar;
 	double	y_scalar;
 	double	camplane[2];
 	char	dir;
 	double	angle;
-}		t_player;
+}			t_player;
 
-
-typedef	struct s_minimap
+typedef struct s_minimap
 {
 	mlx_image_t	*img;
-	int 		size;
-	int 		x_offset;
-	int 		y_offset;
-	int 		x_player;
-	int 		y_player;
-}		t_minimap;
+	int			size;
+	int			x_offset;
+	int			y_offset;
+	int			x_player;
+	int			y_player;
+}				t_minimap;
 
 typedef struct s_ray
 {
@@ -92,12 +90,12 @@ typedef struct s_ray
 
 typedef struct s_render
 {
-	double				perpwalldist;
-	int					wallheight;
-	int					wallstart;
-	int					wallend;
-	mlx_texture_t		*wall_texture;
-}						t_render;
+	double			perpwalldist;
+	int				wallheight;
+	int				wallstart;
+	int				wallend;
+	mlx_texture_t	*wall_texture;
+}					t_render;
 
 typedef struct s_data
 {
@@ -109,10 +107,10 @@ typedef struct s_data
 	t_color		*color;
 	t_tab		*tab;
 	t_player	*player;
-	mlx_t 		*mlx;
+	mlx_t		*mlx;
 	mlx_image_t	*img;
 	t_minimap	*minimap;
 	char		**map;
-}		t_data;
+}				t_data;
 
 #endif
