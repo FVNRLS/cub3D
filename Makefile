@@ -6,7 +6,7 @@
 #    By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/03 13:28:05 by hoomen            #+#    #+#              #
-#    Updated: 2022/11/07 14:27:50 by hoomen           ###   ########.fr        #
+#    Updated: 2022/11/07 15:38:46 by hoomen           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -76,7 +76,7 @@ SRC		+=	bonus_initializer.c collisions_checker.c\
 # TOOLS                                                                        #
 # **************************************************************************** #
 
-SRC		+=	ft_degree_to_radian.c ft_free_all_and_exit.c ft_free_split.c\
+SRC		+=	ft_free_all_and_exit.c ft_free_split.c\
 			ft_isdigit.c ft_itoa.c ft_rgb_atoi.c ft_split.c ft_splitlen.c\
 			ft_strcmp.c ft_strdup.c ft_strjoin.c ft_strlen.c ft_strncmp.c\
 			ft_strtrim.c ft_abs_dbl.c
@@ -156,5 +156,7 @@ fclean: clean
 
 clean_libs:
 	cd lib && rm -f $(MLX_LIB) $(GNL_LIB) $(VEC_LIB)
+
+re: fclean all
 
 .PHONY: all re clean fclean lib clean_libs

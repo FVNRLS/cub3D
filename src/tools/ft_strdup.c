@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rmazurit <rmazurit@student.42.fr>          +#+  +:+       +#+        */
+/*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 13:02:08 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/10/19 13:02:08 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/11/07 15:46:41 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@ str pointed to by str. The returned pointer must be passed to free to
 avoid a memory leak.
 If an error occurs, a null pointer is returned. */
 
-#include "../../incl/cub3D.h"
+#include "cub3D.h"
 
 char	*ft_strdup(char *s1)
 {

@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/30 19:49:48 by hoomen            #+#    #+#             */
-/*   Updated: 2022/11/06 19:45:53 by hoomen           ###   ########.fr       */
+/*   Created: 2022/11/07 15:25:08 by hoomen            #+#    #+#             */
+/*   Updated: 2022/11/07 15:27:02 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../incl/cub3D.h"
+#include "cub3D.h"
 
 void	rotate(t_data *data, int direction)
 {
@@ -32,11 +32,10 @@ void	rotate(t_data *data, int direction)
 
 void	check_rotation_keys(t_data *data, mlx_key_data_t keycode)
 {
-	if (keycode.key	== MLX_KEY_LEFT	&& (keycode.action == MLX_PRESS
-	||	keycode.action == MLX_REPEAT))
+	if (keycode.key == MLX_KEY_LEFT && (keycode.action == MLX_PRESS
+			|| keycode.action == MLX_REPEAT))
 		rotate(data, ROTATE_LEFT);
-	else if	(keycode.key ==	MLX_KEY_RIGHT && (keycode.action == MLX_PRESS
-		|| keycode.action == MLX_REPEAT))
+	else if (keycode.key == MLX_KEY_RIGHT && (keycode.action == MLX_PRESS
+			|| keycode.action == MLX_REPEAT))
 		rotate(data, ROTATE_RIGHT);
 }
- 

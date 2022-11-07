@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/05 16:31:59 by hoomen            #+#    #+#             */
-/*   Updated: 2022/11/05 17:52:26 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/07 15:37:03 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ static double	calc_xcoord_east(t_ray *ray, t_data *data)
 	double	coord_y;
 	double	x_coord_text;
 	double	raylen;
-	
+
 	raylen = ray->sidedist[X] - ray->deltadist[X];
 	dist_y = raylen * ray->raydir[Y];
 	coord_y = data->player->y + dist_y;
@@ -32,7 +32,7 @@ static double	calc_xcoord_west(t_ray *ray, t_data *data)
 	double	coord_y;
 	double	x_coord_text;
 	double	raylen;
-	
+
 	raylen = ray->sidedist[X] - ray->deltadist[X];
 	dist_y = raylen * ray->raydir[Y];
 	coord_y = data->player->y + dist_y;
@@ -46,7 +46,7 @@ static double	calc_xcoord_north(t_ray *ray, t_data *data)
 	double	coord_x;
 	double	x_coord_text;
 	double	raylen;
-	
+
 	raylen = ray->sidedist[Y] - ray->deltadist[Y];
 	dist_x = raylen * ray->raydir[X];
 	coord_x = data->player->x + dist_x;
@@ -60,7 +60,7 @@ static double	calc_xcoord_south(t_ray *ray, t_data *data)
 	double	coord_x;
 	double	x_coord_text;
 	double	raylen;
-	
+
 	raylen = ray->sidedist[Y] - ray->deltadist[Y];
 	dist_x = raylen * ray->raydir[X];
 	coord_x = data->player->x + dist_x;
