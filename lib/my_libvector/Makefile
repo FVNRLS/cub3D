@@ -6,7 +6,7 @@
 #    By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/31 17:24:08 by hoomen            #+#    #+#              #
-#    Updated: 2022/10/31 18:02:20 by hoomen           ###   ########.fr        #
+#    Updated: 2022/11/07 16:32:59 by hoomen           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ CC			=	cc
 
 FLAGS		=	-Wall -Wextra -Werror
 
-SRC			=	linear_transformation2d.c
+SRC			=	rotate_vector.c
 
 OBJ			=	${SRC:.c=.o}
 

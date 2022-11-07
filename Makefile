@@ -6,7 +6,7 @@
 #    By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/03 13:28:05 by hoomen            #+#    #+#              #
-#    Updated: 2022/11/07 15:38:46 by hoomen           ###   ########.fr        #
+#    Updated: 2022/11/07 16:34:50 by hoomen           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -129,7 +129,8 @@ obj:
 	mkdir obj
 
 $(NAME): $(OBJ)
-	$(CC) $(CFLAGS) $(INC) $(OBJ) $(MLX_FLAGS) $(GNL_FLAGS) $(VEC_FLAGS) -o $(NAME)
+	$(CC) $(CFLAGS) $(INC) $(OBJ) $(MLX_FLAGS) $(GNL_FLAGS) $(VEC_FLAGS) -o \
+	$(NAME)
 
 lib: $(MLX_LIB) $(GNL_LIB) $(VEC_LIB)
 
@@ -157,6 +158,6 @@ fclean: clean
 clean_libs:
 	cd lib && rm -f $(MLX_LIB) $(GNL_LIB) $(VEC_LIB)
 
-re: fclean all
+re: fclean clean_libs all
 
 .PHONY: all re clean fclean lib clean_libs

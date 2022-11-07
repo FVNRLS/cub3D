@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 12:53:41 by hoomen            #+#    #+#             */
-/*   Updated: 2022/11/02 15:43:45 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/07 16:32:32 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,6 @@ void	rotate_vector(double v[2], double angle)
 	t[1][1] = cos_angle;
 	transf_x = (v[X] * t[I][X]) + (v[Y] * t[J][X]);
 	transf_y = (v[X] * t[I][Y]) + (v[Y] * t[J][Y]);
-
 	v[X] = transf_x;
 	v[Y] = transf_y;
 }
@@ -45,19 +44,19 @@ void	rotate_vector(double v[2], double angle)
 // 	double r_left[2][2];
 // 	double r_flipy[2][2] = {{-1, 0}, {0, -1}};
 // 	double v[2];
-
+// 
 // 	r_left[I][X] = 0;
 // 	r_left[I][Y] = 1;
 // 	r_left[J][X] = -1;
 // 	r_left[J][Y] = 0;
-
+// 
 // 	v[X] = -0.3;
 // 	v[Y] = 0.8;
-
+// 
 // 	linear_transformation2d(v, r_flipy);
 // 	printf("v[X] = %f, v[Y] = %f\n", v[X], v[Y]);
 // }
-
+// 
 	/* ************************************************************* */
 	/*                                                               */
 	/*     a = t[I][X]    =    0                                     */
