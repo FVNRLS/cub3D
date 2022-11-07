@@ -66,23 +66,31 @@ void	*print_null_error(int error, char *s)
 	return (NULL);
 }
 
-void	print_map(t_data *data)
-{
-	int	x;
-	int	y;
 
-	printf("\n");
-	y = 0;
-	while (y < data->tab->max_y)
-	{
-		x = 0;
-		while (x < data->tab->max_x)
-		{
-			printf("%c", data->map[x][y]);
-			x++;
-		}
-		printf("\n");
-		y++;
-	}
-	printf("\n");
+void	parse_error(t_data *data, int error, char *message)
+{
+	data->parse_error = true;
+	print_error(error, message);
 }
+
+
+//void	print_map(t_data *data)
+//{
+//	int	x;
+//	int	y;
+//
+//	printf("\n");
+//	y = 0;
+//	while (y < data->tab->max_y)
+//	{
+//		x = 0;
+//		while (x < data->tab->max_x)
+//		{
+//			printf("%c", data->map[x][y]);
+//			x++;
+//		}
+//		printf("\n");
+//		y++;
+//	}
+//	printf("\n");
+//}

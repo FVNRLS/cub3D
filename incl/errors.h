@@ -30,5 +30,6 @@ void	print_error(int error, char *s);
 int		print_int_error(int error, char *s);
 void	*print_null_error(int error, char *s);
 int		print_line_error(t_data *data, int y_pos);
+void	parse_error(t_data *data, int error, char *message);
 
 #endif

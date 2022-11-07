@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "incl/cub3D.h"
+#include "cub3D.h"
 
 static void	check_esc_key(t_data *data, mlx_key_data_t keycode)
 {
