@@ -4,6 +4,7 @@ static void	drawverline(t_data *data, t_render *rend, int x)
 {
 	int	y;
 	int	h;
+	int color;
 
 	y = -1;
 	h = data->img->height;
@@ -13,6 +14,18 @@ static void	drawverline(t_data *data, t_render *rend, int x)
 		mlx_put_pixel(data->img, x, y, get_texture_color(data, rend, y));
 	while (++y < h)
 		mlx_put_pixel(data->img, x, y, data->color->floor);
+	if (data->sprite.detected == false)
+		return ;
+	y = (int)data->sprite.start;
+	printf("y at start = %i\n", y);
+	while (y < (int)data->sprite.end)
+	{
+		color = get_texture_color_sprite(data, y);
+		if (color != 0)
+			mlx_put_pixel(data->img, x, y, color);
+		y++;
+	}
+	printf("y at end = %i\n\n", y);
 }
 
 static void	get_render_info(t_render *rend, t_ray *ray, t_data *data)
@@ -64,7 +77,7 @@ static void	calc_wall_dist(t_ray *ray, t_data *data, double camera_x)
 		if (data->map[ray->map[X]][ray->map[Y]] == '1')
 			hit = true;
 		else if (data->map[ray->map[X]][ray->map[Y]] == 'S')
-			data->sprite.detected = true;
+			sprite_collision(data, ray, camera_x);
 	}
 	get_x_coord_texture(ray, data);
 }
@@ -79,6 +92,7 @@ void	render(t_data *data)
 	x = 0;
 	while (x < data->img->width)
 	{
+		data->sprite.detected = false;
 		camera_x = 2 * x / data->img->width - 1;
 		init_dda(data, &ray, camera_x);
 		calc_wall_dist(&ray, data, camera_x);
@@ -87,5 +101,6 @@ void	render(t_data *data)
 		drawverline(data, &rend, x);
 		x++;
 	}
+	//draw_sprite(data);
 	mlx_image_to_window(data->mlx, data->img, 0, 0);
 }

@@ -6,34 +6,11 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/06 20:41:51 by hoomen            #+#    #+#             */
-/*   Updated: 2022/11/06 22:19:42 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/07 12:15:06 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cub3D.h"
-
-// void	check_invalid_void_spaces(t_data *data)
-// {
-// 	int 	x;
-// 	int 	y;
-// 	int 	ret;
-
-// 	y = 0;
-// 	ret = 0;
-// 	while (y < (data->tab->max_y))
-// 	{
-// 		x = 0;
-// 		while (x < data->tab->max_x)
-// 		{
-// 			if (data->map[x][y] == VOID)
-// 				ret = check_item(data, x, y);
-// 			if (ret == EXIT_FAILURE)
-// 				return ;
-// 			x++;
-// 		}
-// 		y++;
-// 	}
-// }
 
 void	set_sprite_position(t_data *data)
 {
@@ -79,16 +56,28 @@ void	init_sprite(t_data *data)
 	data->sprite.collected = false;
 	data->sprite.detected = false;
 	set_sprite_position(data);
-	print_map(data);
+	// print_map(data);
 }
 
-void	draw_sprite(t_data *data)
+void	sprite_collision(t_data *data, t_ray *ray, double camera_x)
 {
-	mlx_image_t *spritimg;
+	double	perp_dist;
+	double	height;
+	double	offset;
 
-	if (data->sprite.detected == false || data->sprite.collected == true)
+	if (data->sprite.detected == true)
 		return ;
-	printf("I will print sprite\n");
-	spritimg = mlx_texture_to_image(data->mlx, &data->sprite.tex->texture);
-	mlx_image_to_window(data->mlx, spritimg, data->img->width / 2, data->img->height / 2);
+	// printf("sprite detected\n");
+	if (ray->side == 0)
+		perp_dist = ray->sidedist[X] - ray->deltadist[X];
+	else
+		perp_dist = ray->sidedist[Y] - ray->deltadist[Y];
+	data->sprite.height = (data->img->height / perp_dist);
+	data->sprite.start = (-1 * data->sprite.height) / 2 + data->img->height / 2;
+	if (data->sprite.start < 0)
+		data->sprite.start = 0;
+	data->sprite.end = data->sprite.height / 2 + data->img->height / 2;
+	if (data->sprite.end >= data->img->height)
+		data->sprite.end = data->img->height - 1;
+	data->sprite.detected = true;
 }

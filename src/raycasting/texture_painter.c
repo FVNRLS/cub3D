@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 18:53:37 by hoomen            #+#    #+#             */
-/*   Updated: 2022/11/06 12:58:47 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/07 12:21:46 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ static int	calc_for_normal_wall(t_data *data, t_render *rend, int y)
 	return (y_coord);
 }
 
-static int	lookup_color(mlx_texture_t *texture, int x_coord, int y_coord)
+int	lookup_color(mlx_texture_t *texture, int x_coord, int y_coord)
 {
 	int	r;
 	int	g;
@@ -73,5 +73,37 @@ int	get_texture_color(t_data *data, t_render *rend, int y)
 	else
 	y_texture = calc_for_normal_wall(data, rend, y);
 	color = lookup_color(data->texture->current, x_texture, y_texture);
+	return (color);
+}
+
+static int	calc_for_normal_sprite(t_data *data, int y)
+{
+	int		y_coord;
+	double	y_proportion;
+	double	y_position_on_wall;
+
+	y_position_on_wall = (double)(y - data->sprite.start);
+	y_proportion = y_position_on_wall / ((double)data->sprite.height);
+	y_coord = y_proportion * (data->sprite.tex->texture.height);
+	return (y_coord);
+}
+
+int	get_texture_color_sprite(t_data *data, int y)
+{
+	int	color;
+	int	x_texture;
+	int	y_texture;
+
+	printf("data->sprite.x = %lf\n", data->sprite.x);
+	x_texture = (int)round(data->sprite.x * \
+	data->sprite.tex->texture.width - 1);
+	// if (data->sprite.height > data->img->height)
+	// 	y_texture = calc_for_high_wall((double)data->sprite.height, \
+	// 	(double)data->img->height, \
+	// 	(double)data->sprite.tex->texture.height, (double)y);
+	// else
+	y_texture = calc_for_normal_sprite(data, y);
+	printf("x_texture = %i, y_texture = %i\n", x_texture, y_texture);
+	color = lookup_color(&data->sprite.tex->texture, x_texture, y_texture);
 	return (color);
 }

@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 12:30:28 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/11/06 21:59:33 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/07 11:48:13 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -106,6 +106,9 @@ typedef struct s_sprite
 	double			z;
 	double			sn;
 	double			cs;
+	double			height;
+	double			start;
+	double			end;
 	bool			detected;
 	bool			collected;
 	xpm_t			*tex;

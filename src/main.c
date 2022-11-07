@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 14:57:15 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/11/06 22:02:44 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/07 11:26:08 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	render_loop(void *param)
 	data = (t_data *)param;
 	update_minimap(data);
 	render(data);
-	draw_sprite(data);
+	// draw_sprite(data);
 }
 
 int main(int argc, char **argv)
