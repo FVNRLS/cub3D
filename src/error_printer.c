@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   error_printer.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
+/*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 12:28:35 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/11/07 14:57:06 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/07 16:24:54 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,13 +66,11 @@ void	*print_null_error(int error, char *s)
 	return (NULL);
 }
 
-
 void	parse_error(t_data *data, int error, char *message)
 {
 	data->parse_error = true;
 	print_error(error, message);
 }
-
 
 //void	print_map(t_data *data)
 //{
