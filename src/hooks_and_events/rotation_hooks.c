@@ -6,7 +6,7 @@
 /*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 15:25:08 by hoomen            #+#    #+#             */
-/*   Updated: 2022/11/07 20:52:08 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/08 11:30:09 by hoomen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,7 @@
 
 void	rotate(t_data *data, int direction)
 {
-	double	new_angle;
 	double	scal[2];
-	double	dir[2];
 	double	plane[2];
 	double	oldscal_x;
 	double	oldplane_x;
@@ -33,6 +31,10 @@ void	rotate(t_data *data, int direction)
 	oldplane_x = plane[X];
 	plane[X] = plane[X] * cos(rot) - plane[Y] * sin(rot);
 	plane[Y] = oldplane_x * sin(rot) + plane[Y] * cos(rot);
+	data->player->x_scalar = scal[X];
+	data->player->y_scalar = scal[Y];
+	data->player->camplane[X] = plane[X];
+	data->player->camplane[Y] = plane[Y];
 	
 
 	// new_angle = data->player->angle + direction * ROTATION_RADIANS;
