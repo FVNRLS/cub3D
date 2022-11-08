@@ -18,7 +18,7 @@
 */
 static int	convert_rgb_to_hex(int r, int g, int b)
 {
-	return (r << 16 | g << 8 | b);
+	return (r << 24 | g << 16 | b << 8 | 0xFF);
 }
 
 /* converts color arguments (strings) to color values */
