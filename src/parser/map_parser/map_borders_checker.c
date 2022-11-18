@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   map_borders_checker.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: rmazurit <rmazurit@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/22 11:53:19 by rmazurit          #+#    #+#             */
 /*   Updated: 2022/11/07 15:40:06 by rmazurit         ###   ########.fr       */

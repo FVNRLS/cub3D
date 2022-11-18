@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   textures_parser.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
+/*   By: rmazurit <rmazurit@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 13:52:07 by rmazurit          #+#    #+#             */
 /*   Updated: 2022/11/07 14:29:53 by hoomen           ###   ########.fr       */

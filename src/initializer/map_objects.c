@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   map_objects.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
+/*   By: rmazurit <rmazurit@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 12:30:10 by rmazurit          #+#    #+#             */
 /*   Updated: 2022/11/07 16:21:38 by rmazurit         ###   ########.fr       */
