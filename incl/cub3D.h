@@ -35,6 +35,10 @@
 # include "../lib/minilibx/include/MLX42/MLX42_Int.h"
 # include "../lib/my_libvector/libvector.h"
 
+# ifndef INT_MAX
+#  define INT_MAX	__INT_MAX__
+# endif
+
 # define RIGHTS		0644
 # define NUM_ITEMS	7
 
