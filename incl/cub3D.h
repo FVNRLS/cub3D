@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   cub3D.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
+/*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 12:29:53 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/11/07 15:06:34 by hoomen           ###   ########.fr       */
+/*   Updated: 2022/11/18 11:16:34 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,15 +84,13 @@ void	check_map_borders(t_data *data);
 void	check_invalid_void_spaces(t_data *data);
 bool	check_args(t_data *data);
 
-//MLX
-
 //COLORIZER
 int		get_color(t_data *data);
 
 //DESTRUCTOR
 void	free_all_resources(t_data *data);
 
-//TODO: del before submission
+//DEBUGGING HELPER
 void	print_map(t_data *data);
 
 #endif

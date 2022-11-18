@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   floor_ceiling_parser.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: rmazurit <rmazurit@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 10:49:12 by rmazurit          #+#    #+#             */
 /*   Updated: 2022/11/07 17:51:31 by rmazurit         ###   ########.fr       */

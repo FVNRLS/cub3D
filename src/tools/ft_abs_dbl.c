@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_abs_dbl.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hoomen <hoomen@student.42.fr>              +#+  +:+       +#+        */
+/*   By: rmazurit <rmazurit@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 19:48:26 by hoomen            #+#    #+#             */
 /*   Updated: 2022/11/03 13:23:00 by hoomen           ###   ########.fr       */

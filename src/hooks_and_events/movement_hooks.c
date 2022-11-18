@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   movement_hooks.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: rmazurit <rmazurit@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 15:20:28 by hoomen            #+#    #+#             */
 /*   Updated: 2022/11/07 20:19:40 by rmazurit         ###   ########.fr       */

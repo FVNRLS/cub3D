@@ -20,7 +20,6 @@
 //COLORS
 # define GREEN	0x00FF00FF
 # define NAVY	0x0000FF55
-# define SILVER	0x00C0C0C0
 # define RED	0xFF0000FF
 
 #endif

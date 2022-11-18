@@ -3,19 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: rmazurit <rmazurit@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 14:57:15 by rmazurit          #+#    #+#             */
-/*   Updated: 2022/11/07 20:37:41 by rmazurit         ###   ########.fr       */
+/*   Updated: 2022/11/18 11:06:49 by rmazurit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cub3D.h"
-
-void	check_leaks(void)
-{
-	system("leaks cub3D");
-}
 
 void	render_loop(void *param)
 {
@@ -34,7 +29,6 @@ int	main(int argc, char **argv)
 	t_data	data;
 
 	data.counter = 0;
-	atexit(check_leaks);
 	if (argc != 2)
 		return (print_int_error(ARG_ERROR, NULL));
 	init_environment(&data);
