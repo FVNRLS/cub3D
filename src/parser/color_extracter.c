@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   color_extracter.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rmazurit <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: rmazurit <rmazurit@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 18:52:08 by rmazurit          #+#    #+#             */
 /*   Updated: 2022/11/07 16:08:49 by rmazurit         ###   ########.fr       */
